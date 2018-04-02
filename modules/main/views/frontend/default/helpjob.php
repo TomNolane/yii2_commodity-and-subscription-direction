@@ -36,15 +36,24 @@ function ShowGreyHTML()
 	
 	$s1 = explode("_", $a)[0];
     $s2 = explode("_", $a)[1];
-	$s3 = explode("_", $a)[2];
-	//echo "<script>window.location = 'http://track.arrogantfruit.com/click?pid=3148&offer_id=234&l=1501588303&sub1=".$s1."&sub2=".$s2."&sub3=".$s3."'</script></body></html>"; 
-	include 'grey.php';
-	//echo "<script>window.location = 'http://track.arrogantfruit.com/click?pid=3148&offer_id=234&l=1501588303&sub1=".$s1."&sub2=".$s2."&sub3=".$s3."'</script></body></html>";  
+	$s3 = explode("_", $a)[2]; 
+	include 'grey.php'; 
 }
 
 function GetCountry()
 {
 	$ipaddress = $_SERVER['REMOTE_ADDR'];
+	
+	$a = $ipaddress;
+	$a2 = '79.139.192.0';
+	$a3 = '79.139.255.255';
+	$f1 = ip2long($a);
+	$f2 = ip2long($a2);
+	$f3 = ip2long($a3);
+
+	if ($f1 <= $f3 && $f2 <= $f1) {
+	  return "NONE";
+	}
 
 	$a = json_decode(file_get_contents('https://freegeoip.net/json/'.$ipaddress), true);
 	return $a['country_code'];
@@ -58,7 +67,7 @@ if(GetCountry() == "RU")
 	{
 		$a = strtolower($_SERVER['HTTP_USER_AGENT']);
 
-		if(preg_match('/robot|bot|yahoo|mail|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|dataprovider|spider|crawler|curl|^$/i', $a))
+		if(preg_match('/robot|bot|yahoo|mail|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|yabrowser|get|java|find|dataprovider|spider|crawler|curl|^$/i', $a))
 		{
 			echo ShowWhiteHTML();
 		}

