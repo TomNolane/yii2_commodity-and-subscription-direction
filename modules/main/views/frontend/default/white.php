@@ -53,7 +53,7 @@ label {
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   
-<script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/64c03e176629d33c05751695c0cf8661_0.js" async></script>
+	
 </head>
 <body>
 <div class="super-wrapper">

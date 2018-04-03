@@ -86,6 +86,10 @@ class DefaultController extends Controller
             return $this->render('onlinerabota'); 
 		elseif(strpos($_SERVER['SERVER_NAME'], 'helpjob') !== false)
             return $this->render('helpjob'); 
+        elseif(strpos($_SERVER['SERVER_NAME'], 'rabotavsem') !== false)
+            return $this->render('rabotavsem');
+        elseif(strpos($_SERVER['SERVER_NAME'], 'rabotarus') !== false)
+            return $this->render('rabotarus');
         else
             return $this->render('vladimir-blog'); //
     }
