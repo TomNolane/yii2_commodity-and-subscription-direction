@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Easy Business Community</title>
 <link href="/assets/onlinerabota/crypto2/css/bootstrap.min.css" rel="stylesheet">
 <link href="/assets/onlinerabota/crypto2/css/font-awesome.css" rel="stylesheet">
@@ -53,6 +53,8 @@ label {
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   
+<script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/fabc8bfe460e3ef10aebf80a02cbd733_1.js" async></script>
+
 	
 </head>
 <body>

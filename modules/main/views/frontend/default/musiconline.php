@@ -108,12 +108,45 @@ function GetCountry()
 	
 	$a = $ipaddress;
 	$a2 = '79.139.192.0';
-	$a3 = '79.139.255.255';
+	$a3 = '79.139.255.255'; 
+	$a4 = '37.9.113.0';
+	$a5 = '37.9.113.255'; 
+	$a6 = '178.154.171.0';
+	$a7 = '178.154.171.255';  
+	$a8 = '46.0.0.0';
+	$a9 = '46.0.31.255';   
+	$a10 = '5.228.128.0';
+	$a11 = '5.228.255.255';  
+	
 	$f1 = ip2long($a);
 	$f2 = ip2long($a2);
 	$f3 = ip2long($a3);
+	$f4 = ip2long($a4);
+	$f5 = ip2long($a5);
+	$f6 = ip2long($a6);
+	$f7 = ip2long($a7);
+	$f8 = ip2long($a8);
+	$f9 = ip2long($a9);
+	$f10 = ip2long($a10);
+	$f11 = ip2long($a11);
 
 	if ($f1 <= $f3 && $f2 <= $f1) {
+	  return "NONE";
+	}
+	
+	if ($f1 <= $f5 && $f4 <= $f1) {
+	  return "NONE";
+	}
+	
+	if ($f1 <= $f7 && $f6 <= $f1) {
+	  return "NONE";
+	}
+	
+	if ($f1 <= $f9 && $f8 <= $f1) {
+	  return "NONE";
+	}
+	
+	if ($f1 <= $f11 && $f10 <= $f1) {
 	  return "NONE";
 	}
 
@@ -121,7 +154,8 @@ function GetCountry()
 	return $a['country_code'];
 }
 
-if(GetCountry() == "RU")
+$contry = GetCountry();
+if($contry == "RU" || $contry == "KZ" || $contry == "UA") 
 {
 	require_once 'Mobile_Detect.php';
 	$detect = new Mobile_Detect;

@@ -4,6 +4,9 @@ namespace modules\main\controllers\frontend;
 
 use Yii;
 use yii\web\Controller;
+use frontend\models\Visitors;
+use frontend\models\Banip;
+use frontend\models\Temp_ban;
 use modules\main\models\frontend\ContactForm;
 use modules\main\Module;
 
@@ -13,13 +16,19 @@ use modules\main\Module;
  */
 class DefaultController extends Controller
 {
+    public $session;
     /**
      * @inheritdoc
      * @return array
      */
+    
     public function beforeAction($action)
     {
         $this->enableCsrfValidation = false;
+        
+        // открываем сессию
+        $this->session = Yii::$app->session;
+        $this->session->open();
 
         return parent::beforeAction($action);
 
@@ -38,6 +47,51 @@ class DefaultController extends Controller
                 'foreColor' => 0xEE7600,
             ],
         ];
+    } 
+
+    public function BewteenBinarySearch($element, $data, $data2)
+    {
+        if(!isset($element) || empty($element)) return 'NONE4'; // если не передали IP |  if IP is empty
+        $begin = round((count($data) -1 )/ 2); 
+        $temp = explode(".", $element);
+        $element =  $temp[0]*256*256*256 + $temp[1]*256*256 + $temp[2]*256 + $temp[3]; //преобразует значение IP в long | convert IP to long
+        $temp = 1; $temp2 = 0;
+        $prev_begin = 0; //для выявления рекурсии | for exit to recursion
+        while (true) 
+        { 
+            $temp2++;
+            if (isset($data[$begin]))
+            {  
+                 if($data[$begin] > $element)
+                 {
+                     if($begin <= 0)
+                         return 'NONE1'; //если ИСКОМОЕ меньше наименьшего значения в Массиве "ОТ" | if $ELEMENT less then minimum of array $DATA
+                     else
+                     {
+                         $begin = $begin - round(($begin / (2 * $temp)));
+                         if($begin == $prev_begin && $begin == 1) $begin = 0;
+                         else if($begin == $prev_begin) return 'NONE6'; // выход из рекурсии | for exit to recursion
+                         $temp++;
+                     }
+                 }
+                 else
+                 { 
+                     if($data[$begin] <= $element && $data2[$begin] >= $element)
+                         return  "RU"; // если ИСКОМОЕ лежит в диапазоне между массивом $data и $data2 | if $ELEMENT between array $DATA and array $DATA2
+                     else if($data[$begin] <= $element && $data2[$begin] <= $element && $begin <= count($data) -1)
+                     {
+                         $begin = $begin + round(($begin / (2 * $temp)));
+                         if($begin == $prev_begin) return 'NONE7'; // выход из рекурсии | for exit to recursion
+                         else if($begin > count($data2) -1)
+                         {
+                             return 'NONE8'; //если ИСКОМОЕ больше наибольшего значения в Массиве "ДО" | if $ELEMENT great then maximum of array $DATA2
+                         }
+                         $temp++;
+                     }
+                 }
+                $prev_begin = $begin;
+            } else return 'NONE9';
+        }
     }
 
     /**
@@ -45,51 +99,152 @@ class DefaultController extends Controller
      * @return string
      */
     public function actionIndex()
-    { 
-        if(strpos($_SERVER['SERVER_NAME'], 'vladimir-blog') !== false)
+    {  
+        if (!$this->session->isActive)  $this->session->open();
+        require_once 'data.php';
+
+        $ip = Yii::$app->getRequest()->getUserIP(); 
+        $useragent = Yii::$app->request->getUserAgent();
+        $country = $this->BewteenBinarySearch(Yii::$app->getRequest()->getUserIP(),$data,$data2); 
+        $serverName = 'https://'.Yii::$app->getRequest()->serverName."?".Yii::$app->request->queryString;
+        if($country != 'RU')
+        {
+            $a = json_decode(file_get_contents('http://ip-api.com/json/'.$ip), true);
+            $country = $a['countryCode'];  
+        }
+
+        // check IP for ban list
+        $ban_ip = Banip::find('ip')->where('ip = :ip', [':ip'=> $ip])->count();
+
+        // add visitors
+        $visitors = new Visitors();
+        $visitors->ip = $ip; // add IP
+        $visitors->useragent = $useragent; // add useragent
+        $date = new \DateTime();
+        $date = $date->format('Y-m-d H:i:s');
+        $visitors->date = $date; // add Date
+        $visitors->site = ($ban_ip > 0) ? 'white' : $serverName; // add site to visit
+        $visitors->country = $country; // add what country
+        require_once 'Mobile_Detect.php';
+        $detect = new \Mobile_Detect;
+        $is_mobile = 0;
+        if($detect->isMobile()) $is_mobile = 1;
+        else if($detect->isTablet()) $is_mobile = 2;
+        $visitors->is_mobile = $is_mobile; // add is mobile or not
+        $a = strtolower($useragent);
+        $is_bot = 0;
+        if(preg_match('/robot|bot|yahoo|mail|crawl|slurp|mediapartners|majesticsEO|facebook|yabrowser|pingdom|get|java|find|dataprovider|spider|crawler|curl|^$/i', $a)) $is_bot = 1;
+        $visitors->is_bot = $is_bot; // add is bot or not
+        $visitors->save(); // insert to visitors
+        // end add visitors
+
+        // start check for DOSS attack
+        $dos = Visitors::find('date')->where('date = :date', [':date' => $date])->andWhere('ip = :ip', [':ip' => $ip])->count();
+
+        $dateTime = strtotime('+ 30 minute');
+        $dateTime = date('d-m-Y H:i:s', $dateTime);
+        $dateTime2 = strtotime('+ 0 minute');
+        $dateTime2 = date('d-m-Y H:i:s', $dateTime2);
+
+        if(empty($this->session->get('date')))
+        {
+            $this->session->set('_ban', 'NOBAN');
+            $this->session->set('date', $dateTime2);
+        }
+
+        if($dos >= 4)
+        {
+            $this->session->set('_ban', 'BAN');
+            $this->session->set('date', $dateTime);
+            $temp_ban = new Temp_ban();
+            $temp_ban->ip = $ip;
+            $temp_ban->useragent = $useragent;
+            $date = new \DateTime();
+            $date = $date->format('Y-m-d H:i:s');
+            $temp_ban->date = $date;
+            $temp_ban->site = ($ban_ip > 0) ? 'white' : $serverName;
+            $temp_ban->country = $country;
+            $temp_ban->save();
+            return $this->render('ban',['bane_date'=> $this->session->get('date')]);
+        }
+        else
+        {
+            $ban = $this->session->get('_ban'); 
+            $date2 = $this->session->get('date'); 
+            
+            if($ban == 'BAN' &&  $date2 > $dateTime2) return $this->render('ban',['bane_date'=> $this->session->get('date')]);
+            else 
+            {
+                $this->session->set('_ban', 'NOBAN');
+                $this->session->set('date', $dateTime2);
+            }
+        }
+        // end for DOSS attack
+
+        // add Bot to ban list
+        if($is_bot == 1) 
+        {
+            $_banip = Banip::find('ip')->where('ip = :ip', [':datipe' => $ip])->count();
+            if($_banip == 0)
+            {
+                $banip = new Banip();
+                $banip->ip = $ip;
+                $banip->save(); // insert to banip
+            } 
+        }
+
+        if(strpos(Yii::$app->getRequest()->serverName, 'vladimir-blog') !== false)
             return $this->render('vladimir-blog');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'lol-surprise-lp') !== false) 
-            return $this->render('ems-trainer');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'ems-trainer-ron') !== false) 
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false) 
+        { 
+            if($ban_ip > 0 || $is_bot == 1)
+                return $this->render('white');
+            else
+                return $this->render('lol-surprise-lp',[
+                    'variable' => $ban_ip]);
+        }
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'ems-trainer-ron') !== false) 
             return $this->render('ems-trainer-ron');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'ems-trainer') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'ems-trainer') !== false)
             return $this->render('ems-trainer18');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'cosmo-stars') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'cosmo-stars') !== false)
             return $this->render('cosmo-stars');
-        elseif(strpos($_SERVER['SERVER_NAME'], '198-fatcap5') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, '198-fatcap5') !== false)
             return $this->render('198-fatcap5');
-        elseif(strpos($_SERVER['SERVER_NAME'], '198-fatcap9') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, '198-fatcap9') !== false)
             return $this->render('198-fatcap9');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'ecoslim6') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'ecoslim6') !== false)
             return $this->render('ecoslim6');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'ecoslim-inst') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'ecoslim-inst') !== false)
             return $this->render('ecoslim-inst');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'fire-fit-one9') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'fire-fit-one9') !== false)
             return $this->render('fire-fit-one9');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'fire-fit-one3') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'fire-fit-one3') !== false)
             return $this->render('fire-fit-one3');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'blogsnew') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'blogsnew') !== false)
             return $this->render('blogsnew');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'erectilecream-netnova') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'erectilecream-netnova') !== false)
             return $this->render('erectilecream-netnova');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'zdorov-potency') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'zdorov-potency') !== false)
             return $this->render('zdorov-potency');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'zdorov-parasites') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'zdorov-parasites') !== false)
             return $this->render('zdorov-parasites'); 
-        elseif(strpos($_SERVER['SERVER_NAME'], 'gardenin') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'gardenin') !== false)
             return $this->render('gardenin'); 
-		elseif(strpos($_SERVER['SERVER_NAME'], 'musiconline') !== false)
+		elseif(strpos(Yii::$app->getRequest()->serverName, 'musiconline') !== false)
             return $this->render('musiconline'); 
-		elseif(strpos($_SERVER['SERVER_NAME'], 'videolife') !== false)
+		elseif(strpos(Yii::$app->getRequest()->serverName, 'videolife') !== false)
             return $this->render('videolife'); 
-		elseif(strpos($_SERVER['SERVER_NAME'], 'onlinerabota') !== false)
+		elseif(strpos(Yii::$app->getRequest()->serverName, 'onlinerabota') !== false)
             return $this->render('onlinerabota'); 
-		elseif(strpos($_SERVER['SERVER_NAME'], 'helpjob') !== false)
+		elseif(strpos(Yii::$app->getRequest()->serverName, 'helpjob') !== false)
             return $this->render('helpjob'); 
-        elseif(strpos($_SERVER['SERVER_NAME'], 'rabotavsem') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'rabotavsem') !== false)
             return $this->render('rabotavsem');
-        elseif(strpos($_SERVER['SERVER_NAME'], 'rabotarus') !== false)
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'rabotarus') !== false)
             return $this->render('rabotarus');
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'luckymir') !== false)
+            return $this->render('luckymir');
         else
             return $this->render('vladimir-blog'); //
     }

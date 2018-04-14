@@ -49,4 +49,9 @@ elseif(strpos($_SERVER['SERVER_NAME'], 'gardenin') !== false)
     echo '<!-- sendpuls gardenin.ml -->';
     echo '<script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/875529502c5c7d925a3920207519a498_0.js" async></script>';
 }
+elseif(strpos($_SERVER['SERVER_NAME'], 'amulet') !== false)
+{
+    echo '<!-- sendpuls amulet.tk -->';
+    echo '<script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/706d30556b7dfaf0ba5fa2ebe8fd805a_1.js" async></script>';
+}
 ?>

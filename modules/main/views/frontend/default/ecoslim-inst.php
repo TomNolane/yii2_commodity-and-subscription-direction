@@ -1,5 +1,5 @@
 <?php 
-require 'stat.php';?>
+//require 'stat.php';?>
 <!DOCTYPE html>
 <html>
 

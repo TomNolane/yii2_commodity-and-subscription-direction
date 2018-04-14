@@ -1,3 +1,28 @@
+<?php
+
+if (empty($_GET['utm_source'])) {
+    $a = "1_2_3";
+}
+else $a = $_GET['utm_source'];	
+	
+	if(empty(explode("_", $a)[0]))
+	{
+		$s1 = "1";
+	}else $s1 = explode("_", $a)[0];
+	
+	if(empty(explode("_", $a)[1]))
+	{
+		$s2 = '2';
+	}else $s2 = explode("_", $a)[1];
+	
+	if(empty(explode("_", $a)[2]))
+	{
+		$s3 = '3';
+    }
+    else $s3 = explode("_", $a)[2]; 
+?>
+
+
 <!DOCTYPE html>
 <html lang=en>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -34,7 +59,7 @@
             <div class=row>
                 <div class=col-lg-12>
                     <div class=intro-message>
-                    <a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+                    <a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
                     <!-- http://go.affzen.com/aff_c?offer_id=3047&aff_id=23263 --> 
                         <img id=noi src="/assets/helpjob/images/ne-noi.png">
                         </a>
@@ -64,7 +89,7 @@
 Не обязательно вставать рано утром с убитым настроением, ехать в переполненном общественном транспорте с такими же серыми людьми, работающими с утра до ночи. И думать - что я тут забыл?!​</p>
                 </div>
                 <div class="col-lg-7 col-sm-6">
-                <a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+                <a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
                     <img class=img-responsive src="/assets/helpjob/images/ipad.jpg" alt="" style="display: block; margin: 0px auto;">
                     </a>
                 </div>
@@ -82,7 +107,7 @@
                     </p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                <a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+                <a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
                     <img class=img-responsive src="/assets/helpjob/images/dog.jpg" alt="">
                     </a>
                 </div>
@@ -103,7 +128,7 @@
                          При этом можно лежать возле бассейна и попивать коктейль.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+                <a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
                     <img class=img-responsive src="/assets/helpjob/images/phones.jpg" alt="">
                     </a>
                 </div>
@@ -138,13 +163,13 @@
                         <p>Задайте себе вопрос &ndash; вы бы хотели, научиться зарабатывать в интернете серьезные деньги? </p>
                         <p><b>Если ваш ответ нет и вам не нужны деньги, покиньте эту страницу &ndash; вам здесь не место…</b></p>
                         <p><b>Если же ответ да, и ты хочешь зарабатывать ежедневно от 9000 руб. и более читай дальше…</b></p>
-                        <p><u> <a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">И так…</a></u></p>
+                        <p><u> <a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">И так…</a></u></p>
                         <p><b>Сегодня я вам расскажу, как и на чем я начала зарабатывать в интернете – вам нужно только повторять за мной!</b></p>
                     </p>
                     <p>Вам не нужно обладать какими-то специальными навыками или знаниями! Абсолютно любой человек может заниматься этим! </p>
                 </div>
                 <div class="col-lg-7 col-sm-6" style="padding-top: 95px;">
-                <a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+                <a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
                     <img class=img-responsive src="/assets/helpjob/images/nout.png" alt="">
                     </a>
                 </div>
@@ -158,12 +183,12 @@
                     <h2>Теперь читайте внимательно!</h2>
                     <div class=body>
                         <br>
-                        <p><b>Вы слышали об игровом казино <u><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">ROX?</a></u></b> Нет? &ndash; тогда вы много чего еще не знаете.</p>
+                        <p><b>Вы слышали об игровом казино <u><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">ROX?</a></u></b> Нет? &ndash; тогда вы много чего еще не знаете.</p>
                         <p>В этом казино есть одна хитрость, о которой я узнал случайно. Не знаю, специально ли эту "дырку" оставили (чтобы хоть кто-то мог ОБЫГРАТЬ У КАЗИНО) или о ней пока не знают хозяева, но эта фишка позволяет реально обмануть казино. И это позволяет мне до сих пор обыгрывать казино и получать большие выигрыши на свой счет.</p>
                         <p><b>Вот я сделал скриншот выплат на мой аккаунт «Сбербанк Онлайн»:</b></p>
                         <br>
                         <center>
-                        <a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+                        <a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
                         <img src="/assets/helpjob/images/sberbank_r.jpg" alt=""></center>
                         </a>
                         <br>
@@ -181,7 +206,7 @@
                     <div class=clearfix></div>
                     <hr class=hrfon>
                     <p class=lead>
-                        <h2 style="font-size:24px;">Первое что вам нужно сделать, это зарегистрироваться в <a target=_blank href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>"><u style="color:#72BF44;">казино ROX</u></a> </b></h2>
+                        <h2 style="font-size:24px;">Первое что вам нужно сделать, это зарегистрироваться в <a target=_blank href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40"><u style="color:#72BF44;">казино ROX</u></a> </b></h2>
                         <br>
                         <p>Затем внимательно посмотреть видео и понять, как устроена схема заработка и обмана казино!</p>
                         <p><b style="color:#ff0000;">Внимание!</b> Только сегодня, 20 марта 2018 г., в течении часа после регистрации ты получишь +200% на свой счет при депозите от 1000 руб! <br>
@@ -195,7 +220,7 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/TqnXau8nIgU" frameborder="0" allowfullscreen></iframe>
                     <br>
                     <!-- <h3 class=text-center>Зарегистрируйтесь и получите 3 000 $ на личный счет:</h3> -->
-                    <a target=_blank href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>" class=btn-1></a>
+                    <a target=_blank href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40" class=btn-1></a>
                 </div>
             </div>
         </div>
@@ -205,16 +230,16 @@
         <br>
         <div class=row>
             <div class="col-lg-5 ">
-            <a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+            <a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
                 <img class=img-responsive src="/assets/helpjob/images/03.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-5 col-lg-offset-1">
                 <h2 class=section-heading>После регистрации вам нужно:</h2>
                 <ul class=fa-ul>
-                    <li><i class="fa-li fa fa-check"></i>Подтвердить почту и зайти в <u><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">"Личный кабинет"</a></u>.</li>
-                    <li><i class="fa-li fa fa-check"></i>Нажать <u> <a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">"КАССА" </a> </u>и внести депозит.</li>
-                    <li><i class="fa-li fa fa-check"></i>Выбрать игру <u><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">«Fruit Cocktail »</a></u> - и играть по методике, которую я написал ниже.</li>
+                    <li><i class="fa-li fa fa-check"></i>Подтвердить почту и зайти в <u><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">"Личный кабинет"</a></u>.</li>
+                    <li><i class="fa-li fa fa-check"></i>Нажать <u> <a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">"КАССА" </a> </u>и внести депозит.</li>
+                    <li><i class="fa-li fa fa-check"></i>Выбрать игру <u><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">«Fruit Cocktail »</a></u> - и играть по методике, которую я написал ниже.</li>
                 </ul>
             </div>
         </div>
@@ -238,7 +263,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-7 col-sm-7">
-                    <a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+                    <a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
                         <img class="img-responsive a55" src="/assets/helpjob/images/04.jpg" alt="">
                         </a>
                         <br>
@@ -248,7 +273,7 @@
                         </ul>
                         <hr>
                         <h4>
-Вот такая простая методика заработка в онлайн казино ROX. Все очень просто, <u><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">ошибиться просто невозможно!</a></u></h4>
+Вот такая простая методика заработка в онлайн казино ROX. Все очень просто, <u><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">ошибиться просто невозможно!</a></u></h4>
                     </div>
                 </div>
             </div>
@@ -285,7 +310,7 @@
 <br>
 
 <div class="row">
-<div class="col-md-1 imgA"><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>"><img src="/assets/helpjob/images/wom/images44.jpg" width="65px" alt="ava"></a></div>
+<div class="col-md-1 imgA"><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40"><img src="/assets/helpjob/images/wom/images44.jpg" width="65px" alt="ava"></a></div>
 <div class="col-md-11">
 <form name="MSMGS_FORM" method="POST" id="MSMGS_FORM" commentform="3" method="post"  class="dtc">
 <input class="w45" value="" tabindex="1" id="author"name="MSMGS_FORM[USER_LOGIN]" id="MSMGS_FORM_USER_LOGIN" type="text" placeholder="Ваше имя">
@@ -299,52 +324,52 @@
 
 
 <div class="comments">
-<a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>"><img src="/assets/helpjob/images/wom/20.jpg" alt="ava"></a>
-<div class="wrap"><h4><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">Александр</a> <span class="mc-comment-bullet">•</span> <span>2017-10-17</span></h4>
+<a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40"><img src="/assets/helpjob/images/wom/20.jpg" alt="ava"></a>
+<div class="wrap"><h4><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">Александр</a> <span class="mc-comment-bullet">•</span> <span>2017-10-17</span></h4>
 <p>
 Час назад зарегистрировался начал пробовать – пока что я в плюсе на 525 рублей, посмотрим что будет дальше.  
 </p></div>
 </div><!--/ .comments-->
 <div class=comments>
-<a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+<a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
 <img src="/assets/helpjob/images/wom/1.jpg" width="" height="" alt=avatar class="ava">
 </a>
-<div class=wrap><h4><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">Матвей</a> <span class=mc-comment-bullet>•</span> <span>2017-10-17</span></h4>
+<div class=wrap><h4><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">Матвей</a> <span class=mc-comment-bullet>•</span> <span>2017-10-17</span></h4>
 <p>
 Здравствуйте. Да, вы правы, я не слышал про автомат Fruit Cocktail.
 Из любопытства я решил попробовать свою удачу на этом автомате по вашей методике. И как не странно, я выиграл 2400 рублей, и это довольно таки неплохо.
 </p></div>
 </div>
 <div class=comments>
-<a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+<a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
 <img src="/assets/helpjob/images/wom/6.jpg" width="" height="" alt=avatar class="ava">
 </a>
-<div class=wrap><h4><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">Элина Воронина</a> <span class=mc-comment-bullet>•</span> <span>2017-10-16</span></h4>
+<div class=wrap><h4><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">Элина Воронина</a> <span class=mc-comment-bullet>•</span> <span>2017-10-16</span></h4>
 <p>Замечательная статья. В начале, мне не повезло, потому что делала слишком маленькую ставку за раунд, но после восьмой неудачной попытки, я решила повысить ставку и собрала 5 книжек на одной линии! я получила небольшой выигрыш в 27000 рублей! Быстрый и очень просто вывод выигрыша убедил меня полностью. И спасибо за бонус в 10000 рублей я быстро потратила его, но в итоге выиграла гораздо больше :P </p>
 <div class=thumbs>
-<a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>"><i class="fa fa-thumbs-o-up"></i></a>
-<a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>"><i class="fa fa-thumbs-o-down"></i></a>
+<a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40"><i class="fa fa-thumbs-o-up"></i></a>
+<a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40"><i class="fa fa-thumbs-o-down"></i></a>
 <span class=mc-comment-bullet>•</span>
 <a class=comment-reply href="#comments">Ответить</a>
 </div>
-<p><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>"><img class="img-responsive" src="/assets/helpjob/images/el_voronina.jpg" alt=""></a></p>
+<p><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40"><img class="img-responsive" src="/assets/helpjob/images/el_voronina.jpg" alt=""></a></p>
 
 </div>
 </div>
 <div class=comments>
-<a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+<a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
 <img src="/assets/helpjob/images/wom/7.jpg" width="" height="" alt=avatar class="ava">
 </a>
-<div class=wrap><h4><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">Марина Ниркевич</a> <span class=mc-comment-bullet>•</span> <span>2017-10-15</span></h4>
+<div class=wrap><h4><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">Марина Ниркевич</a> <span class=mc-comment-bullet>•</span> <span>2017-10-15</span></h4>
 <p>
 Здравствуйте. Вчера пробовала играть по вашей методике, получилось выиграть 2808 рублей. Спасибо!
 </p></div>
 </div>
 <div class=comments>
-<a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+<a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
 <img src="/assets/helpjob/images/wom/2.jpg" width="" height="" alt=avatar class="ava">
 </a>
-<div class=wrap><h4><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">Евгений</a> <span class=mc-comment-bullet>•</span> <span>2017-10-13</span></h4>
+<div class=wrap><h4><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">Евгений</a> <span class=mc-comment-bullet>•</span> <span>2017-10-13</span></h4>
 <p>
 Спасибо. Нужно будет попробовать…
 
@@ -352,22 +377,22 @@
 </p></div>
 </div>
 <div class=comments>
-<a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+<a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
 <img src="/assets/helpjob/images/wom/8.jpg" width="" height="" alt=avatar class="ava">
 </a>
-<div class=wrap><h4><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">Екатерина Волкова</a> <span class=mc-comment-bullet>•</span> <span>2017-10-12</span></h4>
+<div class=wrap><h4><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">Екатерина Волкова</a> <span class=mc-comment-bullet>•</span> <span>2017-10-12</span></h4>
 <p>
 Я уже второй раз играю в казино, первый раз был не очень удачно. Положила около 3000 рублей на казино, дали отличный бонус, я начала играть в Шарки и сорвала джекпот, урааа, круто! Теперь у меня на моем счете казино Вулкан больше, чем 200 тысяч рублей! Думаю, что сегодня выведу на карточку!:) 
 </p>
-<p><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>"><img class="img-responsive" src="/assets/helpjob/images/volkova.jpg" alt=""></a></p>
+<p><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40"><img class="img-responsive" src="/assets/helpjob/images/volkova.jpg" alt=""></a></p>
 
 </div>
 </div>
 <div class=comments>
-<a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">
+<a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">
 <img src="/assets/helpjob/images/wom/3.jpg" width="" height="" alt=avatar class="ava">
 </a>
-<div class=wrap><h4><a href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>">Саша</a> <span class=mc-comment-bullet>•</span> <span>2017-10-10</span></h4>
+<div class=wrap><h4><a href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40">Саша</a> <span class=mc-comment-bullet>•</span> <span>2017-10-10</span></h4>
 <p>
 Классный способ! Сегодня выиграл 1300 рублей, играл 1 час.</p></div>
 </div>
@@ -375,9 +400,9 @@
 <center>
 <h2>
 Хотите зарабатывать в интеренете? Действуйте прямо сейчас! <br>
-Время не стоит на месте...
+Время не стоит на месте... 
 </h2>
-<a target=_blank href="http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=<?php echo $s1;?>&subid2=<?php echo $s2;?>&subid3=<?php echo $s3;?>" class=btn-1></a>
+<a target=_blank href="http://prtn.tcplist.com/jsdfyedmd/?refer=916c1d40" class=btn-1></a>
 </center>
 <hr>
 <p class="copyright text-muted small text-center">Copyright &copy; Labvesa 2017. All Rights Reserved</p>
@@ -398,4 +423,4 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 </body>
 
 
-</html>
+</html> 

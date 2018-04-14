@@ -1,6 +1,6 @@
 <?php
 return [
-    'name' => 'Yii2-advanced-start',
+    'name' => 'DIMA THE BEST',
     'timeZone' => 'Europe/Moscow',
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'aliases' => [
@@ -21,11 +21,19 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2_advanced_start',
-            'username' => 'dve6qqi1dve6qqi1',
-            'password' => 'thomas',
+            'dsn' => 'mysql:host=localhost;dbname=admin_musiconline',
+            'username' => 'admin_mysql',
+            'password' => '1VH4wal27A',
             'charset' => 'utf8',
             'tablePrefix' => 'tbl_',
+        ],
+        'db2' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=admin_musiconline',
+            'username' => 'admin_mysql',
+            'password' => '1VH4wal27A',
+            'charset' => 'utf8',
+            'tablePrefix' => '',
         ],
         'authManager' => [
             'class' => 'yii\rbac\DbManager',
