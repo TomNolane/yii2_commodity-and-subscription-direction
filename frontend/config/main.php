@@ -52,7 +52,7 @@ return [
             'enableStrictParsing' => true,
             'rules' => [],
         ],
-    ],
+    ], 
     'as afterAction' => [
         'class' => '\modules\users\behavior\LastVisitBehavior',
     ],

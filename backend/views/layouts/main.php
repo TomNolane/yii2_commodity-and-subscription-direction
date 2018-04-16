@@ -16,6 +16,7 @@ use modules\main\Module as MainModule;
 use modules\users\Module as UserModule;
 use modules\rbac\Module as RbacModule;
 use modules\sites\Module as SitesModule;
+use modules\stats\Module as StatsModule;
 
 iCheckAsset::register($this);
 AppAsset::register($this);
@@ -41,6 +42,8 @@ $homeUrl = is_string(Yii::$app->homeUrl) ? Yii::$app->homeUrl : '/';
     <title><?= Yii::$app->name . ' | ' . Html::encode($this->title) ?></title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <?php $this->head() ?>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <?php $this->beginBody() ?>
@@ -227,6 +230,11 @@ $homeUrl = is_string(Yii::$app->homeUrl) ? Yii::$app->homeUrl : '/';
                     'visible' => Yii::$app->user->can(\modules\rbac\models\Permission::PERMISSION_MANAGER_USERS),
                 ],
                 [
+                    'label' => '<i class="fa fa-bar-chart"></i> <span>' . StatsModule::t('module', 'Статистика') . '</span>',
+                    'url' => ['/stats/default/index'],
+                    'visible' => Yii::$app->user->can(\modules\rbac\models\Permission::PERMISSION_MANAGER_USERS),
+                ],
+                [
                     'label' => '<i class="fa fa-unlock"></i> <span>' . RbacModule::t('module', 'RBAC') . '</span> <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>',
                     'url' => ['/rbac/default/index'],
                     'options' => ['class' => 'treeview'],
@@ -321,6 +329,17 @@ $homeUrl = is_string(Yii::$app->homeUrl) ? Yii::$app->homeUrl : '/';
 </div>
 
 <?php $this->endBody() ?>
+<?php 
+$serverName = Yii::$app->getRequest()->pathInfo;
+if(strpos($serverName, 'stats') !== false) { ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/dataTables.bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+        });
+</script>
+<?php }?>
 </body>
 </html>
 <?php $this->endPage() ?>

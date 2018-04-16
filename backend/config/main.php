@@ -17,7 +17,8 @@ return [
         'modules\main\Bootstrap',
         'modules\users\Bootstrap',
         'modules\rbac\Bootstrap',
-		'modules\sites\Bootstrap',
+        'modules\sites\Bootstrap',
+        'modules\stats\Bootstrap',
     ],
     'modules' => [
         'main' => [
@@ -32,8 +33,8 @@ return [
                 'userClass' => 'modules\users\models\User',
             ]
         ],
-		'sites' => [
-            'class' => 'modules\sites\Module',
+		'stats' => [
+            'class' => 'modules\stats\Module',
         ],
     ],
     'components' => [

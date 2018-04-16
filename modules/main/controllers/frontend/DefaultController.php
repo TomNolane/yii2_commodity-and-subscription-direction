@@ -28,7 +28,7 @@ class DefaultController extends Controller
         
         // открываем сессию
         $this->session = Yii::$app->session;
-        $this->session->open();
+        if (!$this->session->isActive)  $this->session->open();
 
         return parent::beforeAction($action);
 
@@ -99,8 +99,7 @@ class DefaultController extends Controller
      * @return string
      */
     public function actionIndex()
-    {  
-        if (!$this->session->isActive)  $this->session->open();
+    {   
         require_once 'data.php';
 
         $ip = Yii::$app->getRequest()->getUserIP(); 
@@ -134,6 +133,7 @@ class DefaultController extends Controller
         $a = strtolower($useragent);
         $is_bot = 0;
         if(preg_match('/robot|bot|yahoo|mail|crawl|slurp|mediapartners|majesticsEO|facebook|yabrowser|pingdom|get|java|find|dataprovider|spider|crawler|curl|^$/i', $a)) $is_bot = 1;
+        else if ($detect->isBot()) $is_bot = 1;
         $visitors->is_bot = $is_bot; // add is bot or not
         $visitors->save(); // insert to visitors
         // end add visitors
@@ -184,7 +184,7 @@ class DefaultController extends Controller
         // add Bot to ban list
         if($is_bot == 1) 
         {
-            $_banip = Banip::find('ip')->where('ip = :ip', [':datipe' => $ip])->count();
+            $_banip = Banip::find('ip')->where('ip = :ip', [':ip' => $ip])->count();
             if($_banip == 0)
             {
                 $banip = new Banip();
@@ -192,14 +192,14 @@ class DefaultController extends Controller
                 $banip->save(); // insert to banip
             } 
         }
+		
+		if($ban_ip > 0 || $is_bot == 1 || $country != 'RU')
+                return $this->render('white');
 
         if(strpos(Yii::$app->getRequest()->serverName, 'vladimir-blog') !== false)
             return $this->render('vladimir-blog');
         elseif(strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false) 
-        { 
-            if($ban_ip > 0 || $is_bot == 1)
-                return $this->render('white');
-            else
+        {  
                 return $this->render('lol-surprise-lp',[
                     'variable' => $ban_ip]);
         }

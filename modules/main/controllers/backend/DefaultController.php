@@ -55,7 +55,7 @@ class DefaultController extends Controller
                 'text' => Module::t('module', 'Will close in {n, plural, one{# second} few{# seconds} many{# second} other{# seconds}}.', ['n' => $time / 1000]),
                 'timer' => $time,
             ]
-        ]);
+        ]); 
         return $this->render('index');
     }
 }

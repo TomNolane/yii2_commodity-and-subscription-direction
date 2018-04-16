@@ -6,7 +6,7 @@ use Yii;
 use Yii\base\Model;
 use yii\db\ActiveRecord;
 
-class Sites extends ActiveRecord
+class Visitors extends ActiveRecord
 {
     public static function getDb()
     { 
@@ -15,6 +15,6 @@ class Sites extends ActiveRecord
 
     public static function tablesName()
     {
-        return 'sites';
+        return 'visitors';
     }
 }
