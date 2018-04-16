@@ -115,6 +115,10 @@ class DefaultController extends Controller
         // check IP for ban list
         $ban_ip = Banip::find('ip')->where('ip = :ip', [':ip'=> $ip])->count();
 
+        // check for row parammetras 
+        if(strpos(Yii::$app->request->queryString, '{source}') !== false || strpos(Yii::$app->request->queryString, '{campaign_id}') !== false || strpos(Yii::$app->request->queryString, '{keyword}') !== false || strpos(Yii::$app->request->queryString, '{SRC}') !== false || strpos(Yii::$app->request->queryString, '{PHRASE}') !== false)
+            $ban_ip = 1;
+        
         // add visitors
         $visitors = new Visitors();
         $visitors->ip = $ip; // add IP
@@ -132,7 +136,7 @@ class DefaultController extends Controller
         $visitors->is_mobile = $is_mobile; // add is mobile or not
         $a = strtolower($useragent);
         $is_bot = 0;
-        if(preg_match('/robot|bot|yahoo|mail|crawl|slurp|mediapartners|majesticsEO|facebook|yabrowser|pingdom|get|java|find|dataprovider|spider|crawler|curl|^$/i', $a)) $is_bot = 1;
+        if(preg_match('/robot|bot|yahoo|mail|antivirus|fetcher|mail.ru_bot|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|radioclicker|dataprovider|spider|crawler|curl|^$/i', $a)) $is_bot = 1;
         else if ($detect->isBot()) $is_bot = 1;
         $visitors->is_bot = $is_bot; // add is bot or not
         $visitors->save(); // insert to visitors

@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="/assets/ecoslim-inst/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/ecoslim-inst/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
     <script type="text/javascript" src="/assets/ecoslim-inst/js/jquery.placeholder.js"></script>
     <script type="text/javascript" src="/assets/ecoslim-inst/js/count.js"></script>
     <script type="text/javascript" src="/assets/ecoslim-inst/js/slick.min.js"></script>

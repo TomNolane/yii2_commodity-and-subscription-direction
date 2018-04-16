@@ -5,7 +5,7 @@
     <title>EMS-Trainer</title>
     <meta name="description" content="EMS-Trainer - быстрая накачка мышц. EMS-Trainer - новинка 2016">
     <meta name="keywords" content="EMS-Trainer, емс трейнер, пояс для пышц">
-
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
     <link rel="icon" type="image/x-icon" href="/assets/www-ems-trainer/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/www-ems-trainer/favicon.ico">
 

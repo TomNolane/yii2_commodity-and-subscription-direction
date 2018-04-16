@@ -8,6 +8,7 @@
     <title>Schlechter Atem wird durch Parasiten hervorgerufen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/x-icon" href="/favicon2.ico" rel="shortcut icon">
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
 <link href="http://dev-prod.blogsnew.com/parasitelixir_medizinblog_de/css/style.css" rel="stylesheet">
 <link href="http://dev-prod.blogsnew.com/parasitelixir_medizinblog_de/css/media.css" rel="stylesheet">
 <script src="http://dev-prod.blogsnew.com/assets/fa05b143/jquery.min.js"></script> 

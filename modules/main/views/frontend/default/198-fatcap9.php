@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/assets/198-fatcap9/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/198-fatcap9/favicon.ico" type="image/x-icon">
     <!-- META -->
-
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
     <meta name="viewport" content="width=640">
 
     <!-- Connect CSS files -->

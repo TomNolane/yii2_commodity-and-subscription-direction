@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="/assets/amulet/css/settings.css">
 	<link rel="stylesheet" href="/assets/amulet/css/timer.css">
 	<link rel="stylesheet" href="/assets/amulet/css/style.css"> 
-
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
 <link rel="stylesheet" type="text/css" href="https://static.best-gooods.ru/fonts/roboto.css">
 <script src="https://static.best-gooods.ru/js/jquery.js" type="text/javascript"></script>
 <script src="https://static.best-gooods.ru/js/plugins.js" type="text/javascript"></script>

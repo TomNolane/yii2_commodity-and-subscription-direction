@@ -9,6 +9,7 @@ $lk = $request->get("lk","0");
     <title>ПОЗДРАВЛЯЕМ! ВАШ ЗАКАЗ ПРИНЯТ!</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <!-- Icons -->
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
     <link rel="shortcut icon" href="/assets/ems-trainer/favicon_3.ico" type="image/x-icon">
     <link rel="icon" href="/assets/ems-trainer/favicon_3.ico" type="image/x-icon">
     <style>

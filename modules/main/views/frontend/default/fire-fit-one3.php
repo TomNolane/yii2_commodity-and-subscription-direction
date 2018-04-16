@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/fire-fit-one3/fonts/roboto.css">
     <script src="/assets/fire-fit-one3/js/jquery.js" type="text/javascript"></script>
     <script src="/assets/fire-fit-one3/js/plugins.js" type="text/javascript"></script>
-
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
     <script src="/assets/fire-fit-one3/js/detect.js" type="text/javascript"></script>
 
     <link href="/assets/fire-fit-one3/css/popup-m1-style.css?v=4" rel="stylesheet" type="text/css" />

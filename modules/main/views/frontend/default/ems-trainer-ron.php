@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="EMS-Trainer - быстрая накачка мышц. EMS-Trainer - новинка 2016">
     <meta name="keywords" content="EMS-Trainer, емс трейнер, пояс для пышц">
-
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
     <!-- Icons -->
     <link rel="shortcut icon" href="/assets/ems-trainer/favicon_3.ico" type="image/x-icon">
     <link rel="icon" href="/assets/ems-trainer/favicon_3.ico" type="image/x-icon">

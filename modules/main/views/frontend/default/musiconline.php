@@ -1,7 +1,7 @@
 <?php
 function ShowWhiteHTML()
 {
-	$ee = 0;
+	
 	echo '<!DOCTYPE html>
 	<html class="no-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@ function ShowWhiteHTML()
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript> 
     <!-- Bootstrap and Font Awesome css-->
     <link rel="stylesheet" href="/assets/musiconline/font-awesome.css">
     <link rel="stylesheet" href="/assets/musiconline/bootstrap.min.css">
@@ -78,11 +79,8 @@ function ShowGreyHTML()
 	if (empty($_GET['utm_source'])) {
 		ShowWhiteHTML();
 		return;
-	}
-	echo '<!doctype><html><header><noscript><meta http-equiv="refresh"content="0; url=/"></noscript>  <style>body {margin: 0;}</style></header><body>';
-	 
-	$ee = 1;
-	//include 'stat.php'; 
+  } 
+  
 	$a = $_GET['utm_source'];	
 	
 	if(empty(explode("_", $a)[0]))
@@ -102,7 +100,7 @@ function ShowGreyHTML()
 		ShowWhiteHTML();
 		return;
 	}
-     
+  echo '<!doctype><html><header><noscript><meta http-equiv="refresh"content="0; url=/"></noscript>  <style>body {margin: 0;}</style></header><body>';
 	echo '<script src="http://some-muzik-file.ru/code/05e8b6c3b326772f51f10f4960096372.js"></script></body></html>';
 }
 

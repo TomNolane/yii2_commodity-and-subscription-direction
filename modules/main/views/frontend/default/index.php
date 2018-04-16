@@ -1,18 +1,13 @@
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-
-</script>
-
 <!DOCTYPE html>
 <html xmlns="//www.w3.org/1999/xhtml">
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width">
-
+<noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
 <title> Блог Владимира Филяева. Как я накачал тело за 1 месяц</title>
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
 <link media="all" href="/assets/my/index.css" type="text/css" rel="stylesheet">
 </head>
 <body cz-shortcut-listen="true">

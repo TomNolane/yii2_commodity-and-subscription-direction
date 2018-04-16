@@ -10,6 +10,7 @@ header('Access-Control-Allow-Origin: https://api.zcpa.ru');
     <meta name="csrf-token" content="ckFYVU1XYnQRKBYkeDUjMBsTLGQqDygkJAwKDX8kFVknBRY6KyQvNw==">
     <title>ZDOROV Propolis Cream</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
 <link type="image/x-icon" href="/favicon2.ico" rel="shortcut icon">
 <link href="http://dev-prod.zc.de.zdorov-potency.com/css/style.css" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet">

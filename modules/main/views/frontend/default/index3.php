@@ -2,7 +2,7 @@
 <html class="" lang="ru">
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-
+<noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
 	<meta charset="utf-8">
 	<title>EMS-Trainer</title>
 	<meta name="description" content="EMS-Trainer - быстрая накачка мышц. EMS-Trainer - новинка 2016" />

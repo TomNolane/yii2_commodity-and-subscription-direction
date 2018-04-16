@@ -6,7 +6,7 @@
     <meta name="description" content="Программа корректировки веса Guarchibao FatCap со скидкой и доставкой по СНГ">
     <meta name="keywords" content="Guarchibao FatCap, купить Guarchibao FatCap, Guarchibao FatCap цена, Guarchibao FatCap отзывы, Guarchibao FatCap для похудения">
     <link rel="shortcut icon" href="https://198-fatcap5.tk/assets/198-fatcap5/favicon.ico" type="image/x-icon">
-
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
     <meta name="viewport" content="width=480">
     <link media="all" href="/assets/198-fatcap5/main.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="/assets/198-fatcap5/slick.css">

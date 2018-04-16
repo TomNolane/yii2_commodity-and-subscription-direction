@@ -5,6 +5,7 @@
     <meta charset=utf-8>
     <meta http-equiv=X-UA-Compatible content="IE=edge">
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
     <title>Зарабатывай от 9698 рублей в день!</title>
     <link rel=icon href="/assets/helpjob/images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/assets/helpjob/images/favicon.ico" type="image/x-icon">
@@ -24,7 +25,7 @@
 	
 
 
-<script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/c6706273d202b56ecb1fad465fc6c289_1.js" async></script>
+<script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/ccc9f57c2449a4ff121feb817579c2d9_1.js" async></script>
     <script src="/assets/helpjob/js/referal.js"></script> 
 </head> 
 

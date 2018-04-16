@@ -10,6 +10,7 @@
   <link href="/assets/ecoslim6/css/owl.carousel.css" rel="stylesheet" type="text/css">
   <link href="/assets/ecoslim6/css/normalize.css" rel="stylesheet">
   <link href="/assets/ecoslim6/css/style.css" rel="stylesheet">
+  <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,900,500&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" type="text/css">

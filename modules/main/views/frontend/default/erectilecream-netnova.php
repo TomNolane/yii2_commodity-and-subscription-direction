@@ -14,6 +14,7 @@
 <link href="http://dev-prod.blogsnew.com/erectilecream_netnova_de/css/style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700&amp;subset=latin,cyrillic" rel="stylesheet">
 <script src="http://dev-prod.blogsnew.com/assets/fa05b143/jquery.min.js"></script> 
+<noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
 <?php require 'sendpuls.php';?>
 </head>
 <body>

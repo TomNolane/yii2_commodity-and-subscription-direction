@@ -7,7 +7,7 @@
     <!-- Favicon -->
     <link rel="icon" href="http://infocdn.org/img/products_new/2517.png" type="image/png">
     <link rel="shortcut icon" href="http://infocdn.org/img/products_new/2517.png" type="image/png">
-
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
     <!-- OG -->
     <meta property="og:url" content="http://f.gardeninfatflex.com/" />
     <meta property="og:type" content="website" />

@@ -3,6 +3,7 @@
 <head>
 	<title>Пользовательское соглашение</title>
 	<meta charset="UTF-8" />
+	<noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
 </head>
 <body>
 <div style="padding: 20px; font-size: 14px;font-family: 'PT Sans';">

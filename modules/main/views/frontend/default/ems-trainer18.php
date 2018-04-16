@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>EMS-Trainer - эффективная прокачка мышц</title>
-
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
     <meta name="description" content="Быстрая доставка. Оплата при получении. Купить онлайн со скидкой.">
     <meta name="keywords" content="EMS-Trainer, EMS-Trainer купить, EMS-Trainer заказать, EMS-Trainer стоимость, EMS-Trainer цена, EMS-Trainer отзывы">
     <meta name="viewport" content="width=480">

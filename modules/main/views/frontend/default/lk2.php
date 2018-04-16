@@ -7,7 +7,7 @@ $lk = $request->get("lk","0");
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Спецпредложение от нашего интернет-магазина, товары по супер цене! Скидки до 80%.</title>
-
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https:/assets/lk2/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https:/assets/lk2/favicon.ico" type="image/x-icon">

@@ -114,8 +114,8 @@ class Cloaking {
 		}
 		echo '<!doctype><html><header><noscript><meta http-equiv="refresh"content="0; url=/"></noscript>  <style>body {margin: 0;}</style></header><body>';
 		
-		$ee = 1;
-		//include 'stat.php'; 
+		
+		 
 		$this->bl = "grey";
 		$a = Yii::$app->request->get('utm_source');	 
 		

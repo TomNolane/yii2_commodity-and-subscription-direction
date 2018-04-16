@@ -1,7 +1,7 @@
 <?php
 function ShowWhiteHTML()
 {
-	$ee = 0;
+	
 	require_once 'white2.php';
 }
 
@@ -12,8 +12,8 @@ function ShowGreyHTML()
 		ShowWhiteHTML();
 		return;
 	}
-	$ee = 1;
-	//include 'stat.php';
+	
+	
 	$a = $_GET['utm_source'];	 
 	if(empty(explode("_", $a)[0]))
 	{

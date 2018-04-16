@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="RUY1UmJEOXQSE0cEDHR/EiEnBGoaFkoyIh5.az0XbjtxLnwfKnMJQA==">
     <title>Propolis-Elixier DEPARAZIT gegen Parasiten</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
 <link type="image/x-icon" href="/favicon2.ico" rel="shortcut icon">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700|Roboto:300,400,400i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet">
 <link href="http://dev-prod.b.de.zdorov-parasites.com/css/jquery.formstyler.css" rel="stylesheet">
