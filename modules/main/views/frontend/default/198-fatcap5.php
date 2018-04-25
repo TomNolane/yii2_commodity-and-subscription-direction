@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Программа корректировки веса Guarchibao FatCap</title>
     <meta name="description" content="Программа корректировки веса Guarchibao FatCap со скидкой и доставкой по СНГ">
@@ -14,9 +14,20 @@
     <link href="/assets/198-fatcap5/css.css" rel="stylesheet" type="text/css"> 
     <script src="/assets/198-fatcap5/timer.min.js"></script>
     <link href="/assets/198-fatcap5/css(1).css" rel="stylesheet" type="text/css">
-    <?php require 'sendpuls.php';?>
+    <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
 </head> 
 <body class="m1modal-show"> 
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
     <div class="main-wrap">
         <div class="section block-1">
             <div class="container-1 clearfix">
@@ -503,7 +514,7 @@
 </div>
 <?php 
 require 'script2.php';
-require 'yandex-metrika.php';
+
 ?>
 </body> 
 </html>

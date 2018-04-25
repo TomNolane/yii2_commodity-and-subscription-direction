@@ -2135,10 +2135,20 @@
             }
         };
     </script>
-    <?php require 'sendpuls.php';?>
-</head>
-
+    <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
 
     <script type="text/javascript">
         var ad1_notify = new Object(),
@@ -3841,7 +3851,7 @@
      });
 </script>
     <?php  
-require 'yandex-metrika.php';
+
 ?> 
 </body>
 </html>

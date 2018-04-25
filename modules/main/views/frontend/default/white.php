@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
+<head> 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,11 +52,20 @@ label {
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   
-<script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/fabc8bfe460e3ef10aebf80a02cbd733_1.js" async></script>
-
-	
-</head>
+	<?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>   
 <div class="super-wrapper">
 <header>
 <div class="container">

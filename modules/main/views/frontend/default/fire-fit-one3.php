@@ -33,10 +33,20 @@
             M1.validateAndSendForm(false, M1Text);
         });
     </script>
-    <?php require 'sendpuls.php';?>
-</head>
-
+ <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
     <div class="container">
         <div class="header">
             <div class="header_in">
@@ -1304,7 +1314,7 @@
     <script type="text/javascript" src="/assets/fire-fit-one3/js/script.js"></script>
     <?php 
 require 'script4.php';
-require 'yandex-metrika.php';
+
 ?>
 </body> 
 </html>

@@ -24,12 +24,21 @@
     </script>
 	
 
-
-<script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/ccc9f57c2449a4ff121feb817579c2d9_1.js" async></script>
-    <script src="/assets/helpjob/js/referal.js"></script> 
+ <script src="/assets/helpjob/js/referal.js"></script> 
+ <?php 
+        // counts
+       echo $model['facebook'];
+      echo $model['senpuls'];
+      echo $model['google_analytics'];
+      echo $model['metrika'];
+    ?>
 </head> 
-
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
     <div class=intro-header>
         <div class=container>
             <div class=row>

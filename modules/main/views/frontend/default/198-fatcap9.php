@@ -19,10 +19,20 @@
     <link rel="stylesheet" href="/assets/198-fatcap9/font-size.min.css" type="text/css">
     <link rel="stylesheet" href="/assets/198-fatcap9/style.css" type="text/css">
     <link rel="stylesheet" href="/assets/198-fatcap9/fotorama.css">
-    <?php require 'sendpuls.php';?>
-</head>
-
-<body class="">
+    <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
+<body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
     <div class="block header">
         <div class="wrap rel">
             <p class="sfh px20 no-padding">
@@ -595,7 +605,7 @@
 </div>
 <?php 
 require 'script2.php';
-require 'yandex-metrika.php';
+
 ?>
 </body> 
 </html>

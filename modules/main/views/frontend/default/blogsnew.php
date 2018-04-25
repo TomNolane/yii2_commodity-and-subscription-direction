@@ -12,9 +12,20 @@
 <link href="http://dev-prod.blogsnew.com/parasitelixir_medizinblog_de/css/style.css" rel="stylesheet">
 <link href="http://dev-prod.blogsnew.com/parasitelixir_medizinblog_de/css/media.css" rel="stylesheet">
 <script src="http://dev-prod.blogsnew.com/assets/fa05b143/jquery.min.js"></script> 
-<?php require 'sendpuls.php';?> 
-</head>
+<?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
     <div style="text-align: right !important; padding: 0 15px !important; margin: 15px auto 5px !important; max-width: 980px !important;font-size:14px !important;">
         Anzeige
     </div>
@@ -455,7 +466,7 @@
         </div>
     </div>
 <?php  
-require 'yandex-metrika.php';
+
 ?>
 </body>
 </html>

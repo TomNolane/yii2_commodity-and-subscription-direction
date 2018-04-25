@@ -12,7 +12,7 @@ if($name == "0" || mb_strlen($name) < 1 || mb_strlen($name) > 25)
     return;
 }
 
-if($phone == "0" || mb_strlen($phone) < 9 || mb_strlen($phone) > 15)
+if($phone == "0" || mb_strlen($phone) < 9 || mb_strlen($phone) > 18)
 {  
     echo $phone."2";
     return;
@@ -20,7 +20,7 @@ if($phone == "0" || mb_strlen($phone) < 9 || mb_strlen($phone) > 15)
 
 $pattern = '/^\d$/';
 $phone = preg_replace($pattern,"",$phone);
-$connection = Yii::$app->db;
+$connection = Yii::$app->db2;
 
 if(!filter_var($email, FILTER_VALIDATE_EMAIL))
 {  

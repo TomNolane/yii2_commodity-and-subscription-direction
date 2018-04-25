@@ -26,7 +26,20 @@
 </style>
 <script src="http://dev-prod.b.de.zdorov-parasites.com/assets/fa05b143/jquery.min.js"></script></head>
 
+<?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>  
     <div class="wrapper">
         <section class="intro">
             <div class="container">
@@ -770,7 +783,7 @@ $('#form2').click(function () {
 });
 </script>
 <?php  
-require 'yandex-metrika.php';
+
 ?>
 </body>
 </html>

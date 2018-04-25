@@ -26,8 +26,11 @@ class Bootstrap
         $urlManager->addRules(
             [
                 // Declaration of rules here
-                'sites' => 'sites/default/index',
-                //'<_a:(agreement|lk|lk2|lk3|lk4|order|save|politics|about|contact|captcha)>' => 'main/default/<_a>',
+                // 'sites' => 'sites/default/index',
+                // 'update' => 'sites/default/update',
+                // 'view' => 'sites/default/view',
+
+                '<_a:(index|update|view|update|view|create|_form|_search)>' => 'sites/default/<_a>',
             ]
         );
     }

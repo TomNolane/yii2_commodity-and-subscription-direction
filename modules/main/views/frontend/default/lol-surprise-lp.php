@@ -1,4 +1,4 @@
 <?php
     //include 'cloaking.php';
-    echo $variable;
+    echo $model['enable'];
 ?>

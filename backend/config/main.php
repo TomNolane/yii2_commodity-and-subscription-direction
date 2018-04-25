@@ -36,6 +36,9 @@ return [
 		'stats' => [
             'class' => 'modules\stats\Module',
         ],
+        'sites' => [
+            'class' => 'modules\sites\Module',
+        ], 
     ],
     'components' => [
         'request' => [

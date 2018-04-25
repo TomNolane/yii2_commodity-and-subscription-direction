@@ -9,8 +9,20 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
 <link media="all" href="/assets/my/index.css" type="text/css" rel="stylesheet">
-</head>
+<?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body cz-shortcut-listen="true">
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?> 
 	<div class="container">
 		 <a href="https://ems-trainer.tk" target="_blank"  > <div class="header"></div>
 			 </a> 
@@ -598,9 +610,5 @@
 						Блог Владимира Филяева. © <span class="nowyear">2017</span>
 					</div>
 	</div>
-
-
-
-
 </body>
 </html>

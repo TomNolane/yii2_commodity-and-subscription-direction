@@ -15,9 +15,20 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700&amp;subset=latin,cyrillic" rel="stylesheet">
 <script src="http://dev-prod.blogsnew.com/assets/fa05b143/jquery.min.js"></script> 
 <noscript><meta http-equiv="refresh"content="0; url=/"></noscript>
-<?php require 'sendpuls.php';?>
-</head>
+<?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
 
         <div class="container">
         <div class="row" id="logo">
@@ -530,7 +541,7 @@ comment</span></span>
 <script src="http://dev-prod.blogsnew.com/erectilecream_netnova_de/js/bootstrap.min.js"></script>
 
 <?php  
-require 'yandex-metrika.php';
+
 ?>
 </body>
 </html>

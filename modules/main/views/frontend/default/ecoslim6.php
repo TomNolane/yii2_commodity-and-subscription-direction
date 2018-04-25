@@ -45,9 +45,20 @@
                     M1.validateAndSendForm(false, M1Text);
                 });
                 </script>
-            <?php require 'sendpuls.php';?>
-</head>
+             <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
   <header class="header">
     <div class="container">
       <div class="logo"><img alt="Eco Slim - уникальное средство для похудения" title="Eco Slim - уникальное средство для похудения"  src="/assets/ecoslim6/img/logo.png" width="192" height="60" class="center-img" alt="" /> </div>
@@ -147,7 +158,7 @@
   <script src="/assets/ecoslim6/js/script.js"></script>
   <?php 
 require 'script3.php';
-require 'yandex-metrika.php';
+
 ?>
 </body>
 </html>

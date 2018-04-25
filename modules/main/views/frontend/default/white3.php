@@ -8,8 +8,7 @@
     <title>ПЛОСКИЙ ЖИВОТИК БЕЗ СПОРТА И ДИЕТ - СОВЕТЫ ОТ ЗВЕЗД</title>
     <link href="/assets/cosmo-stars/favicon-new.ico" rel="icon" type="image/x-icon" />
     <link href="/assets/cosmo-stars/css/main.css" rel="stylesheet" />
-    <link href="/assets/cosmo-stars/css/responsive.css" rel="stylesheet" />
-    
+    <link href="/assets/cosmo-stars/css/responsive.css" rel="stylesheet" /> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
    <style>
@@ -140,9 +139,20 @@ img.avacom {
 img { max-width: 100%; height: auto !important; }
 </style>
 
-<?php require 'sendpuls.php';?>
-</head>
+<?php 
+    // counts
+    echo $model['facebook'];
+    echo $model['senpuls'];
+    echo $model['google_analytics'];
+    echo $model['metrika'];
+?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>  
      
 <!-- header -->
     <div class="header">
@@ -538,6 +548,6 @@ img { max-width: 100%; height: auto !important; }
             <p>© 2007 — 2017 ООО «Фэшн Пресс». При размещении материалов на Сайте Пользователь безвозмездно предоставляет ООО «Фэшн Пресс» неисключительные права на использование, воспроизведение, распространение, создание производных произведений, а также 0на демонстрацию материалов и доведение их до всеобщего сведения через сайт www.cosmo.ru и на официальных страницах этого сайта на www.facebook.com, vk.com, twitter.com, instagram.com. Партнер "Рамблера".</p>
         </div>
     </div>
-<?php require 'yandex-metrika.php';?>
+<?php ?>
 </body>
 </html>

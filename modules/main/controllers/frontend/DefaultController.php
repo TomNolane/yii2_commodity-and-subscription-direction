@@ -7,6 +7,7 @@ use yii\web\Controller;
 use frontend\models\Visitors;
 use frontend\models\Banip;
 use frontend\models\Temp_ban;
+use backend\models\Sites;
 use modules\main\models\frontend\ContactForm;
 use modules\main\Module;
 
@@ -115,9 +116,22 @@ class DefaultController extends Controller
         // check IP for ban list
         $ban_ip = Banip::find('ip')->where('ip = :ip', [':ip'=> $ip])->count();
 
+        $show_white = false;
         // check for row parammetras 
         if(strpos(Yii::$app->request->queryString, '{source}') !== false || strpos(Yii::$app->request->queryString, '{campaign_id}') !== false || strpos(Yii::$app->request->queryString, '{keyword}') !== false || strpos(Yii::$app->request->queryString, '{SRC}') !== false || strpos(Yii::$app->request->queryString, '{PHRASE}') !== false)
-            $ban_ip = 1;
+            $show_white = true;
+
+        $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
+        if($model2['enable'] == 0)
+            $show_white = true;
+
+        if(strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false)
+        {
+            $show_white = false;
+            $ban_ip = 0;
+            $country = "RU";
+        }
+         
         
         // add visitors
         $visitors = new Visitors();
@@ -126,7 +140,7 @@ class DefaultController extends Controller
         $date = new \DateTime();
         $date = $date->format('Y-m-d H:i:s');
         $visitors->date = $date; // add Date
-        $visitors->site = ($ban_ip > 0) ? 'white' : $serverName; // add site to visit
+        $visitors->site = ($ban_ip > 0 || $show_white) ? 'white' : $serverName; // add site to visit
         $visitors->country = $country; // add what country
         require_once 'Mobile_Detect.php';
         $detect = new \Mobile_Detect;
@@ -136,7 +150,7 @@ class DefaultController extends Controller
         $visitors->is_mobile = $is_mobile; // add is mobile or not
         $a = strtolower($useragent);
         $is_bot = 0;
-        if(preg_match('/robot|bot|yahoo|mail|antivirus|fetcher|mail.ru_bot|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|radioclicker|dataprovider|spider|crawler|curl|^$/i', $a)) $is_bot = 1;
+        if(preg_match('/robot|bot|facebookexternalhit|facebot|yahoo|mail|antivirus|fetcher|mail.ru_bot|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|radioclicker|dataprovider|spider|crawler|curl|^$/i', $a)) $is_bot = 1;
         else if ($detect->isBot()) $is_bot = 1;
         $visitors->is_bot = $is_bot; // add is bot or not
         $visitors->save(); // insert to visitors
@@ -166,7 +180,7 @@ class DefaultController extends Controller
             $date = new \DateTime();
             $date = $date->format('Y-m-d H:i:s');
             $temp_ban->date = $date;
-            $temp_ban->site = ($ban_ip > 0) ? 'white' : $serverName;
+            $temp_ban->site = ($ban_ip > 0 || $show_white == true || $country != 'RU') ? 'white' : $serverName;
             $temp_ban->country = $country;
             $temp_ban->save();
             return $this->render('ban',['bane_date'=> $this->session->get('date')]);
@@ -197,60 +211,36 @@ class DefaultController extends Controller
             } 
         }
 		
-		if($ban_ip > 0 || $is_bot == 1 || $country != 'RU')
-                return $this->render('white');
+		if($is_bot == 1 || $country != 'RU' || $show_white)
+            return $this->render('white',['model' => $model2]);
 
-        if(strpos(Yii::$app->getRequest()->serverName, 'vladimir-blog') !== false)
-            return $this->render('vladimir-blog');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false) 
-        {  
-                return $this->render('lol-surprise-lp',[
-                    'variable' => $ban_ip]);
-        }
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'ems-trainer-ron') !== false) 
-            return $this->render('ems-trainer-ron');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'ems-trainer') !== false)
-            return $this->render('ems-trainer18');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'cosmo-stars') !== false)
-            return $this->render('cosmo-stars');
-        elseif(strpos(Yii::$app->getRequest()->serverName, '198-fatcap5') !== false)
-            return $this->render('198-fatcap5');
-        elseif(strpos(Yii::$app->getRequest()->serverName, '198-fatcap9') !== false)
-            return $this->render('198-fatcap9');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'ecoslim6') !== false)
-            return $this->render('ecoslim6');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'ecoslim-inst') !== false)
-            return $this->render('ecoslim-inst');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'fire-fit-one9') !== false)
-            return $this->render('fire-fit-one9');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'fire-fit-one3') !== false)
-            return $this->render('fire-fit-one3');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'blogsnew') !== false)
-            return $this->render('blogsnew');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'erectilecream-netnova') !== false)
-            return $this->render('erectilecream-netnova');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'zdorov-potency') !== false)
-            return $this->render('zdorov-potency');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'zdorov-parasites') !== false)
-            return $this->render('zdorov-parasites'); 
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'gardenin') !== false)
-            return $this->render('gardenin'); 
-		elseif(strpos(Yii::$app->getRequest()->serverName, 'musiconline') !== false)
-            return $this->render('musiconline'); 
-		elseif(strpos(Yii::$app->getRequest()->serverName, 'videolife') !== false)
-            return $this->render('videolife'); 
-		elseif(strpos(Yii::$app->getRequest()->serverName, 'onlinerabota') !== false)
-            return $this->render('onlinerabota'); 
-		elseif(strpos(Yii::$app->getRequest()->serverName, 'helpjob') !== false)
-            return $this->render('helpjob'); 
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'rabotavsem') !== false)
-            return $this->render('rabotavsem');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'rabotarus') !== false)
-            return $this->render('rabotarus');
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'luckymir') !== false)
-            return $this->render('luckymir');
-        else
-            return $this->render('vladimir-blog'); //
+        if(strpos(Yii::$app->getRequest()->serverName, 'vladimir-blog') !== false) return $this->render('vladimir-blog',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false) return $this->render('lol-surprise-lp',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'ems-trainer-ron') !== false) return $this->render('ems-trainer-ron',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'ems-trainer') !== false) return $this->render('ems-trainer18',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'cosmo-stars') !== false) return $this->render('cosmo-stars',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, '198-fatcap5') !== false) return $this->render('198-fatcap5',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, '198-fatcap9') !== false) return $this->render('198-fatcap9',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'ecoslim6') !== false) return $this->render('ecoslim6',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'ecoslim-inst') !== false) return $this->render('ecoslim-inst',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'fire-fit-one9') !== false) return $this->render('fire-fit-one9',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'fire-fit-one3') !== false) return $this->render('fire-fit-one3',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'blogsnew') !== false) return $this->render('blogsnew',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'erectilecream-netnova') !== false) return $this->render('erectilecream-netnova',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'zdorov-potency') !== false) return $this->render('zdorov-potency',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'zdorov-parasites') !== false) return $this->render('zdorov-parasites',['model' => $model2]); 
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'gardenin') !== false) return $this->render('gardenin',['model' => $model2]); 
+		elseif(strpos(Yii::$app->getRequest()->serverName, 'musiconline') !== false) return $this->render('musiconline',['model' => $model2]); 
+		elseif(strpos(Yii::$app->getRequest()->serverName, 'videolife') !== false) return $this->render('videolife',['model' => $model2]); 
+		elseif(strpos(Yii::$app->getRequest()->serverName, 'onlinerabota') !== false) return $this->render('onlinerabota',['model' => $model2]); 
+		elseif(strpos(Yii::$app->getRequest()->serverName, 'helpjob') !== false) return $this->render('helpjob',['model' => $model2]); 
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'rabotavsem') !== false) return $this->render('rabotavsem',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'rabotarus') !== false) return $this->render('rabotarus',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'luckymir') !== false) return $this->render('luckymir',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'amulet') !== false) return $this->render('amulet',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false) return $this->render('best-money',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'banks-off') !== false) return $this->render('banks-off',['model' => $model2]);
+        else return $this->render('vladimir-blog'); 
     }
 
     /**
@@ -285,17 +275,7 @@ class DefaultController extends Controller
             Yii::$app->session->setFlash('error', Module::t('module', 'There was an error sending email.'));
         }
         return $this->refresh();
-    }
-
-    /**
-     * Displays about page.
-     *
-     * @return mixed
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
-    }
+    } 
 
     /**
      * Displays about page.
@@ -325,17 +305,7 @@ class DefaultController extends Controller
     public function actionAgreement()
     {
         return $this->render('agreement'); 
-    }
-	
-	/**
-     * Displays seestats page.
-     *
-     * @return mixed
-     */
-    public function actionSeestats()
-    {
-        return $this->render('seestats'); 
-    }
+    } 
 
     /**
      * Displays lk page.
@@ -344,7 +314,8 @@ class DefaultController extends Controller
      */
     public function actionLk()
     {
-        return $this->render('lk'); 
+        $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
+        return $this->render('lk',['model' => $model2]); 
     }
 
      /**
@@ -354,7 +325,8 @@ class DefaultController extends Controller
      */
     public function actionLk2()
     {
-        return $this->render('lk2'); 
+        $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
+        return $this->render('lk2',['model' => $model2]); 
     }
 
     /**
@@ -364,7 +336,8 @@ class DefaultController extends Controller
      */
     public function actionLk3()
     {
-        return $this->render('lk3'); 
+        $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
+        return $this->render('lk3',['model' => $model2]);
     }
 
     /**
@@ -374,7 +347,19 @@ class DefaultController extends Controller
      */
     public function actionLk4()
     {
-        return $this->render('lk4'); 
+        $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
+        return $this->render('lk4',['model' => $model2]); 
+    }
+
+    /**
+     * Displays lk5 page.
+     *
+     * @return mixed
+     */
+    public function actionLk5()
+    {
+        $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
+        return $this->render('lk5',['model' => $model2]); 
     }
 
     /**

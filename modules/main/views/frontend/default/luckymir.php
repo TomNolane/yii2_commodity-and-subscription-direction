@@ -48,13 +48,22 @@ else $a = $_GET['utm_source'];
     });
     </script>
 	
-
-
-<script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/c6706273d202b56ecb1fad465fc6c289_1.js" async></script>
     <script src="/assets/helpjob/js/referal.js"></script> 
-</head> 
 
+ <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>   
     <div class=intro-header>
         <div class=container>
             <div class=row>

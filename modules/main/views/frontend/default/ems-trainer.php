@@ -223,9 +223,20 @@
             });
         });
     </script> 
-    <?php require 'sendpuls.php';?>
-</head>
+     <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body class="pace-done">
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?> 
     <div id="m1-form-book" class="m1modal book" style="display: none;">
         <a class="close-m1"></a>
         <div class="font_book_popup">
@@ -648,7 +659,7 @@
 </div> 
 <?php 
 require 'script.php';
-require 'yandex-metrika.php';
+
 ?>
 </body> 
 </html>

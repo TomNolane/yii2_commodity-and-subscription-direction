@@ -14,9 +14,20 @@
 <title> Блог Владимира Филяева. Как я накачал тело за 1 месяц</title>
 
 <link media="all" href="/assets/my/index.css" type="text/css" rel="stylesheet">
-<?php require 'sendpuls.php';?>
-</head>
+<?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body cz-shortcut-listen="true">
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
 	<div class="container">
 		 <a href="https://ems-trainer.tk" target="_blank"  > <div class="header"></div>
 			 </a> 
@@ -607,6 +618,6 @@
 
 
 
-<?php require 'yandex-metrika.php';?>
+<?php ?>
 </body>
 </html>

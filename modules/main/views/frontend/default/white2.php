@@ -2,20 +2,16 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <!DOCTYPE html>
 <html lang="en-US">
-    <!--<![endif]-->
-
+    <!--<![endif]--> 
     <head>
         <meta charset="utf-8">
-        <title>
-            videolife.ml
-        </title><!-- Behavioral Meta Data -->
+        <title>videolife.ml</title><!-- Behavioral Meta Data -->
         <meta content="yes" name="apple-mobile-web-app-capable">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"><!-- Core Meta Data -->
         <meta content="ThemeWagon" name="author">
         <meta content="The most spectacular coming soon template!" name="description">
         <meta content="Comming Soon, Responsive, Landing Page, One Page" name="keywords"><!-- Open Graph Meta Data -->
         <meta content="The most spectacular coming soon template!">
-        <meta content="ThemeWagon">
         <meta content="ThemeWagon">
         <meta content="website">
         <meta content="index.html">
@@ -24,7 +20,6 @@
         <meta content="@themewagon" name="twitter:creator">
         <meta content="ThemeWagon" name="twitter:title">
         <meta content="Imminent - The most spectacular coming soon template!" name="twitter:description">
-
         <link href="favicon.png" rel="shortcut icon" type="image/png">
 
         <!--[if lt IE 9]>
@@ -43,8 +38,20 @@
         <!-- Javascript -->
 
         <script src="/assets/videolife/js/jquery.js"></script>
-    </head>
-    <body>
+        <?php 
+        // counts
+      echo $model['facebook'];
+      echo $model['senpuls'];
+      echo $model['google_analytics'];
+      echo $model['metrika'];
+    ?>
+</head> 
+<body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>  
         <div class="preloader">
             <div class="loading">
                 <h2>
@@ -179,6 +186,5 @@
         <script src="/assets/videolife/js/plugins.js"></script> 
         <script src="/assets/videolife/js/jquery.countdown.min.js"></script> 
         <script src="/assets/videolife/js/main.js"></script>
-
     </body>
 </html>

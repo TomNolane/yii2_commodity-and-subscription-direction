@@ -168,10 +168,20 @@ img.avacom {
 img { max-width: 100%; height: auto !important; }
 </style>
 
-<?php require 'sendpuls.php';?>
-</head>
+ <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
-     
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>  
 <!-- header -->
     <div class="header">
         <div class="header_top">
@@ -495,47 +505,7 @@ img { max-width: 100%; height: auto !important; }
                       
                     </div>
                 </div>
-            </div>
-
-
-
-
-
-<!-- 
-
-            <div class="comment">
-                <img src="/assets/cosmo-stars/ava/12.jpg" class="avacom"/>
-                <div class="text">
-                    <p><span>Валентина (Казань) </span> Ну смотрите, морщины спрашивать не будут, появятся неожиданно. У меня первые вообще лет в 20 появились. Если бы не крема на основе улиточной слизи, моей коже пришлось бы туго.</p>
-                 
-				   <div class="reply">
-                        <p><a target="_blank" href="ibsw.php?ref=&lnk=0&land=&s=&w=&t=&p=&m=&lt=1&domain=" >ОТВЕТИТЬ &#149; <img src="/assets/cosmo-stars/images/icon_5.png"/> 24</a></p>
-                      
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <img src="/assets/cosmo-stars/ava/2.jpg" class="avacom"/>
-                <div class="text">
-                    <p><span>Елена (Новосибирск) </span>  Девочки, я только что была на <a href="ibsw.php?ref=&lnk=0&land=&s=&w=&t=&p=&m=&lt=1&domain=" target="_blank">официальном сайте</a>. Там сегодня ТАКУЮ скидку сделали! Успевайте!
-</p>
-				 
-                    <div class="reply">
-                        <p><a target="_blank" href="ibsw.php?ref=&lnk=0&land=&s=&w=&t=&p=&m=&lt=1&domain=" >ОТВЕТИТЬ &#149; <img src="/assets/cosmo-stars/images/icon_5.png"/> 56</a></p>
-                      
-                    </div>
-                </div>
-            </div>
-
-            -->
-       
-
-
-
-
-
-
+            </div>  
             <a target="_blank"  class="button">Заказать</a>
         </div>
     </div>
@@ -566,6 +536,6 @@ img { max-width: 100%; height: auto !important; }
             <p>© 2007 — 2017 ООО «Фэшн Пресс». При размещении материалов на Сайте Пользователь безвозмездно предоставляет ООО «Фэшн Пресс» неисключительные права на использование, воспроизведение, распространение, создание производных произведений, а также 0на демонстрацию материалов и доведение их до всеобщего сведения через сайт www.cosmo.ru и на официальных страницах этого сайта на www.facebook.com, vk.com, twitter.com, instagram.com. Партнер "Рамблера".</p>
         </div>
     </div>
-<?php require 'yandex-metrika.php';?>
+<?php ?>
 </body>
 </html>

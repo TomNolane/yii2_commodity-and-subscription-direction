@@ -384,9 +384,20 @@
 
         });
     </script>  
-    <?php require 'sendpuls.php';?>
-</head>
+    <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
     <section class="b1">
         <div class="wrap">
             <img src="/assets/ems-trainer/product01.png">
@@ -560,7 +571,7 @@
 </div>
 <?php 
 require 'script.php';
-require 'yandex-metrika.php';
+
 ?>
 </body>
 </html>

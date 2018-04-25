@@ -2,8 +2,20 @@
 <head>
 <noscript><meta http-equiv="refresh"content="0; url=/"></noscript> 
 <meta charset="UTF-8" />
-</head>
+<?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
 <div style="padding: 20px; font-size: 14px;font-family: 'PT Sans';">
 	<h1 style="font-family: 'PT Sans'; padding: 0; margin: 0; margin-bottom: 16px; font-size:19pt; font-weight: bold;">Политика конфиденциальности</h1>
 		

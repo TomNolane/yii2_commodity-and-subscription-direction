@@ -27,9 +27,20 @@ $lk = $request->get("lk","0");
     <script src="/assets/lk2/jquery.js" type="text/javascript"></script>
     <script src="/assets/lk2/plugins.js" type="text/javascript"></script> 
     <script src="/assets/lk2/detect.js" type="text/javascript"></script> 
-    <?php require 'sendpuls.php';?>
-</head>
-<body class="man" style="background-color: #474b68;"> 
+    <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
+<body class="man" style="background-color: #474b68;">
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>   
     <style>
         .man .block-1 .top-title>div {
             background: url(/assets/lk2/img/phone-icon-2-lighter.png) center bottom no-repeat;
@@ -299,7 +310,7 @@ $lk = $request->get("lk","0");
  
     <?php 
 require 'script_all.php';
-require 'yandex-metrika.php';
+
 ?>
 </body> 
 </html>

@@ -4,11 +4,24 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-use modules\sites\Module;
+use modules\sites\Module; 
+use yii\bootstrap\ActiveForm;
+use yii\grid\GridView;
+use yii\widgets\Pjax;
 
 $this->title = Module::t('module', 'All sites');
 $this->params['breadcrumbs'][] = Module::t('module', 'All sites');
 ?>
+
+<style>
+.wrap {
+    overflow-wrap: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    line-break: auto;
+    hyphens: manual;
+}
+</style>
 
 <div class="sites-backend-default-index">
     <div class="box">
@@ -18,23 +31,79 @@ $this->params['breadcrumbs'][] = Module::t('module', 'All sites');
             <div class="box-tools pull-right"></div>
         </div>
 		<div class="box-body">
-			<ul><a target="blank" href="https://ecoslim6.tk/">https://ecoslim6.tk/</a></ul>
-			<ul><a target="blank" href="https://ecoslim-inst.tk/">https://ecoslim-inst.tk/</a></ul>
-			<ul><a target="blank" href="https://fire-fit-one9.tk/">https://fire-fit-one9.tk/</a></ul>
-			<ul><a target="blank" href="https://fire-fit-one3.tk/">https://fire-fit-one3.tk/</a></ul>
-			<ul><a target="blank" href="https://198-fatcap9.tk/">https://198-fatcap9.tk/</a></ul>
-			<ul><a target="blank" href="https://198-fatcap5.tk/">https://198-fatcap5.tk/</a></ul>
-			<ul><a target="blank" href="https://lol-surprise-lp.tk/">https://lol-surprise-lp.tk/</a></ul>
-			<ul><a target="blank" href="https://lol-surprise-lp1.tk/">https://lol-surprise-lp1.tk/</a></ul>
-			<ul><a target="blank" href="https://ems-trainer-ron.tk/">https://ems-trainer-ron.tk/</a></ul>
-			<ul><a target="blank" href="https://ems-trainer.tk/">https://ems-trainer.tk/</a></ul>
-			<ul><a target="blank" href="https://cosmo-stars.ml/">https://cosmo-stars.ml/</a></ul>
-			<ul><a target="blank" href="https://vladimir-blog.ml/">https://vladimir-blog.ml/</a></ul>
-			<ul><a target="blank" href="http://erectilecream-netnova.ml/">http://erectilecream-netnova.ml/</a></ul>
-			<ul><a target="blank" href="http://zdorov-parasites.ml/">http://zdorov-parasites.ml/</a></ul>
-			<ul><a target="blank" href="http://blogsnew.tk/">http://blogsnew.tk/</a></ul>
-			<ul><a target="blank" href="http://zdorov-potency.tk/">http://zdorov-potency.tk/</a></ul>
-			<ul><a target="blank" href="http://gardenin.ml">http://gardenin.ml</a></ul>
+
+
+
+
+<div class="sites-index">
+<div class="row">
+<div class="col-md-12">
+<h1><?= Html::encode($this->title) ?></h1>
+<?php Pjax::begin(); ?>
+<?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+
+<p>
+    <?= Html::a('Добавить сайт', ['create'], ['class' => 'btn btn-success']) ?>
+</p>
+
+<?= GridView::widget([
+    'dataProvider' => $dataProvider,
+    'filterModel' => $searchModel, 
+    'tableOptions' => [
+        'class' => 'table table-striped table-bordered'
+    ],
+    
+    'columns' => [
+        ['class' => 'yii\grid\SerialColumn'], 
+        [
+            'attribute' => 'site', 
+            'headerOptions' => ['class' => 'text-center'],
+            'format' => 'text'
+        ],
+        [
+            'attribute' => 'senpuls',
+            'contentOptions' => ['class' => 'wrap'],
+            'headerOptions' => ['class' => 'text-center'],
+            'format' => 'ntext'
+        ],
+        [
+            'attribute' => 'metrika',
+            'contentOptions' => ['class' => 'wrap'],
+            'headerOptions' => ['class' => 'text-center'],
+            'format' => 'ntext'
+        ],
+        [
+            'attribute' => 'facebook',
+            'contentOptions' => ['class' => 'wrap'],
+            'headerOptions' => ['class' => 'text-center'],
+            'format' => 'ntext'
+        ],
+        [
+            'attribute' => 'google_analytics',
+            'contentOptions' => ['class' => 'wrap'],
+            'headerOptions' => ['class' => 'text-center'],
+            'format' => 'ntext'
+        ],
+        [
+            'attribute' => 'adsense',
+            'contentOptions' => ['class' => 'wrap'],
+            'headerOptions' => ['class' => 'text-center'],
+            'format' => 'ntext'
+        ],
+        [
+            'attribute' => 'yandex_rtb',
+            'contentOptions' => ['class' => 'wrap'],
+            'headerOptions' => ['class' => 'text-center'],
+            'format' => 'ntext'
+        ],
+        'enable', 
+        ['class' => 'yii\grid\ActionColumn'],
+    ],
+]); ?>
+<?php Pjax::end(); ?>
+</div> </div></div>
+
+			 
 		</div>
     </div>
 </div>

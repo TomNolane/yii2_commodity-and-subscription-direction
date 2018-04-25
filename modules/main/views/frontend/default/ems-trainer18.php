@@ -40,9 +40,20 @@
             M1.validateAndSendForm(false, M1Text);
         });
     </script>
-    <?php require 'sendpuls.php';?>
-</head>
+     <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
     <div class="main-wrap">
 
         <!-- Шапка-v1 -->
@@ -694,7 +705,7 @@
 </div>
 <?php 
 require 'script.php';
-require 'yandex-metrika.php';
+
 ?>
 </body>
 </html>

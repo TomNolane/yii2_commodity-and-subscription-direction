@@ -18,9 +18,20 @@
 <script src="https://static.best-gooods.ru/js/plugins.js" type="text/javascript"></script>
 
 <script src="https://static.best-gooods.ru/js/detect.js" type="text/javascript"></script>
-<?php require 'sendpuls.php';?>
-</head>
+<?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
 <link href="https://static.best-gooods.ru/css/popup-m1-style.css?v=4" rel="stylesheet" type="text/css"/>
 <script src="/assets/ecoslim-inst/js/popup-m1.js?v=4" type="text/javascript"></script>
 
@@ -169,7 +180,7 @@ $(function(){
 <script src="/assets/amulet/js/main.js"></script>
 <?php 
 require 'script5.php';
-require 'yandex-metrika.php';
+
 ?>
 </body>
 </html>

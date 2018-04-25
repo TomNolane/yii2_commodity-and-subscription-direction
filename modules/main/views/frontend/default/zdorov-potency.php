@@ -26,9 +26,20 @@ header('Access-Control-Allow-Origin: https://api.zcpa.ru');
 }
 </style>
 <script src="http://dev-prod.zc.de.zdorov-potency.com/assets/fa05b143/jquery.min.js"></script>
-<?php require 'sendpuls.php';?>
-</head>
+<?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head> 
 <body>
+<?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>  
     <header class="header">
     <div class="container">
       <div class="row justify-content-between align-items-center">
@@ -754,7 +765,7 @@ $('#form2').click(function () {
 
 </script>
 <?php  
-require 'yandex-metrika.php';
+
 ?>
 </body>
 </html>
