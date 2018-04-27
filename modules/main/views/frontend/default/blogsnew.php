@@ -13,12 +13,12 @@
 <link href="http://dev-prod.blogsnew.com/parasitelixir_medizinblog_de/css/media.css" rel="stylesheet">
 <script src="http://dev-prod.blogsnew.com/assets/fa05b143/jquery.min.js"></script> 
 <?php 
-        // counts
-       echo $model['facebook'];
-       echo $model['senpuls'];
-       echo $model['google_analytics'];
-       echo $model['metrika'];
-    ?>
+    // counts
+    echo $model['facebook'];
+    echo $model['senpuls'];
+    echo $model['google_analytics'];
+    echo $model['metrika'];
+?>
 </head> 
 <body>
 <?php 

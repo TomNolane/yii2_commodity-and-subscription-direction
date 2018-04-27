@@ -945,6 +945,13 @@ echo $model['yandex_rtb'];
 	</div>
 </div> 	     
 <div class="preimuch">
+ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9509439067407055",
+    enable_page_level_ads: true
+  });
+</script>
  <div class="center-block">
   <h2>Наши преимущества</h2>
    <div class="block_preimuch">
