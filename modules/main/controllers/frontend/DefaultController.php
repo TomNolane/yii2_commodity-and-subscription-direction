@@ -48,7 +48,7 @@ class DefaultController extends Controller
                 'foreColor' => 0xEE7600,
             ],
         ];
-    } 
+    }
 
     public function BewteenBinarySearch($element, $data, $data2)
     {
@@ -106,7 +106,7 @@ class DefaultController extends Controller
         $ip = Yii::$app->getRequest()->getUserIP(); 
         $useragent = Yii::$app->request->getUserAgent();
         $country = $this->BewteenBinarySearch(Yii::$app->getRequest()->getUserIP(),$data,$data2); 
-        $serverName = 'https://'.Yii::$app->getRequest()->serverName."?".Yii::$app->request->queryString;
+        $serverName = 'https://'.Yii::$app->getRequest()->serverName."?".urldecode(Yii::$app->request->queryString);
         if($country != 'RU')
         {
             $a = json_decode(file_get_contents('http://ip-api.com/json/'.$ip), true);
@@ -118,7 +118,7 @@ class DefaultController extends Controller
 
         $show_white = false;
         // check for row parammetras 
-        if(strpos(Yii::$app->request->queryString, '{source}') !== false || strpos(Yii::$app->request->queryString, '{campaign_id}') !== false || strpos(Yii::$app->request->queryString, '{keyword}') !== false || strpos(Yii::$app->request->queryString, '{SRC}') !== false || strpos(Yii::$app->request->queryString, '{PHRASE}') !== false  || strpos(Yii::$app->request->queryString, '{campaignid}') !== false)
+        if(strpos(urldecode(Yii::$app->request->queryString), '{source}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{campaign_id}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{keyword}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{SRC}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{PHRASE}') !== false  || strpos(urldecode(Yii::$app->request->queryString), '{campaignid}') !== false || strpos(Yii::$app->request->queryString, '%7D') !== false || strpos(Yii::$app->request->queryString, '%7B') !== false)
            $show_white = true;
 
 
@@ -214,9 +214,18 @@ class DefaultController extends Controller
 		
 		if($is_bot == 1 || $country != 'RU' || $show_white)
 		{
-			if($show_white || strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false) {
+			if($show_white && strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false) {
 				return $this->render('best-money',['model' => $model2]);
-			}
+            }
+            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'newgame') !== false) {
+				return $this->render('newgame',['model' => $model2]);
+            }
+            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'videolife') !== false) {
+				return $this->render('white2',['model' => $model2]);
+            }
+            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'travelbylife') !== false) {
+				return $this->render('travelbylife',['model' => $model2]);
+            }
 			else return $this->render('white',['model' => $model2]);
 		}
             
@@ -245,13 +254,14 @@ class DefaultController extends Controller
         elseif(strpos(Yii::$app->getRequest()->serverName, 'rabotarus') !== false) return $this->render('rabotarus',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'luckymir') !== false) return $this->render('luckymir',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'amulet') !== false) return $this->render('amulet',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'travelbylife') !== false) return $this->render('travelbylife',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false) 
         {  
-			if (empty(Yii::$app->request->get('utm_source', ''))) { 
+			if (empty(urldecode(Yii::$app->request->get('utm_source', '')))) { 
 				 return $this->render('best-money',['model' => $model2]);
 			}  
 
-			$a = Yii::$app->request->get('utm_source', '');	
+			$a = urldecode(Yii::$app->request->get('utm_source', ''));	
 
 			if(empty(explode("_", $a)[0]))
 			{ 
@@ -275,11 +285,11 @@ class DefaultController extends Controller
         elseif(strpos(Yii::$app->getRequest()->serverName, 'banks-off') !== false) return $this->render('banks-off',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'newgame') !== false) 
         {
-           if (empty(Yii::$app->request->get('utm_source', ''))) { 
+           if (empty(urldecode(Yii::$app->request->get('utm_source', '')))) { 
                 return $this->render('newgame',['model' => $model2]);
            }  
 
-           $a = Yii::$app->request->get('utm_source', '');	
+           $a = urldecode(Yii::$app->request->get('utm_source', ''));	
 
            if(empty(explode("_", $a)[0]))
            { 
@@ -437,7 +447,7 @@ class DefaultController extends Controller
      * @return mixed
      */
     public function actionSave()
-    {
+    { 
         return $this->render('save'); 
     }
 }

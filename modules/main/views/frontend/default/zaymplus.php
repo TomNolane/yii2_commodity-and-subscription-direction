@@ -196,20 +196,31 @@
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="https://zaymplus.ru/js/jquery.mask.min.js"></script>
 <script>
-$(document).ready(function(){$("input[name=passportCode]").on("keyup",function(){if($(this).val().length>6){$.ajax({url:'https://robotseverovostok.ru/dev.php/pcode/'+$(this).val(),success:function(data){$("input[name=kem_vidan]").val(data);},error:function(data){console.log(data);}});}});if($(window).width()>=600){$("input[name=email]").suggestions({serviceUrl:"https://suggestions.dadata.ru/suggestions/api/4_1/rs",token:"76af43fb2643b4cc1d8c2a753eb56a8728f2dc89",type:"EMAIL",mobileWidth:0,suggest_local:false,count:5,autoSelectFirst:true});
-    // $("input[name=fio]").suggestions({serviceUrl:"https://suggestions.dadata.ru/suggestions/api/4_1/rs",token:"76af43fb2643b4cc1d8c2a753eb56a8728f2dc89",type:"NAME",mobileWidth:0,count:5,autoSelectFirst:true});}
-if($(window).width()>=600){$("input[name=name_org]").suggestions({serviceUrl:"https://suggestions.dadata.ru/suggestions/api/4_1/rs",token:"76af43fb2643b4cc1d8c2a753eb56a8728f2dc89",type:"PARTY",count:5,mobileWidth:0,autoSelectFirst:true,onSelect:function(suggestion){$("input[name=adress_org]").val(suggestion.data.address.value);}});}
-function join(arr){var separator=arguments.length>1?arguments[1]:", ";return arr.filter(function(n){return n}).join(separator);}
-function makeRegionString(address){return join([address.region]);}
-function formatRegionSelected(suggestion){return makeRegionString(suggestion.data);}
-$("#regionSpent").suggestions({serviceUrl:"https://suggestions.dadata.ru/suggestions/api/4_1/rs",token:"76af43fb2643b4cc1d8c2a753eb56a8728f2dc89",type:"ADDRESS",hint:false,bounds:"region",autoSelectFirst:true,addon:'none',mobileWidth:0,formatSelected:formatRegionSelected,onSelect:function(suggestion){$(".addr").show();document.getElementById('citySpent').focus();document.getElementById('citySpent').selectionStart=0;}});function makeCityString(address){return join([(address.city!==address.region&&address.city||""),address.settlement]);}
-function formatCitySelected(suggestion){return makeCityString(suggestion.data);}
-$("#citySpent").suggestions({serviceUrl:"https://suggestions.dadata.ru/suggestions/api/4_1/rs",token:"76af43fb2643b4cc1d8c2a753eb56a8728f2dc89",type:"ADDRESS",hint:false,bounds:"city-settlement",autoSelectFirst:true,addon:'none',mobileWidth:0,formatSelected:formatCitySelected,constraints:$("#regionSpent"),onSelect:function(suggestion){document.getElementById('streetSpent').focus();document.getElementById('streetSpent').selectionStart=0;}});function makeStreetString(address){return join([address.street]);}
-function formatStreetSelected(suggestion){return makeStreetString(suggestion.data);}
-$("#streetSpent").suggestions({serviceUrl:"https://suggestions.dadata.ru/suggestions/api/4_1/rs",token:"76af43fb2643b4cc1d8c2a753eb56a8728f2dc89",type:"ADDRESS",hint:false,bounds:"street",autoSelectFirst:true,addon:'none',mobileWidth:0,formatSelected:formatStreetSelected,constraints:$("#citySpent"),onSelect:function(suggestion){document.getElementById('houseSpent').focus();document.getElementById('houseSpent').selectionStart=0;}});function makeHouseString(address){return join([join([address.house,address.block_type,address.block]," ")]);}
-function formatHouseSelected(suggestion){return makeHouseString(suggestion.data);}
-$("#houseSpent").suggestions({serviceUrl:"https://suggestions.dadata.ru/suggestions/api/4_1/rs",token:"76af43fb2643b4cc1d8c2a753eb56a8728f2dc89",type:"ADDRESS",hint:false,bounds:"house",autoSelectFirst:true,addon:'none',mobileWidth:0,formatSelected:formatHouseSelected,constraints:$("#streetSpent"),onSelect:function(suggestion){document.getElementById('flatSpent').focus();document.getElementById('flatSpent').selectionStart=0;}});if($("#houseSpent").length>0){$("#houseSpent").suggestions().fixData();}
-function dadata_usr(region_p){alert(region_p);$("#citySpent").suggestions({serviceUrl:"https://suggestions.dadata.ru/suggestions/api/4_1/rs",token:"76af43fb2643b4cc1d8c2a753eb56a8728f2dc89",type:"ADDRESS",hint:false,bounds:"city-settlement",autoSelectFirst:true,addon:'none',mobileWidth:0,formatSelected:formatCitySelected,constraints:{label:"",locations:{region:region_p},},onSelect:function(suggestion){document.getElementById('streetSpent').focus();document.getElementById('streetSpent').selectionStart=0;}});};});
+$(document).ready(function () {
+            $("input[name=passportCode]").on("keyup", function () {
+                if ($(this).val().length > 6) {
+                    $.ajax({
+                        url: 'https://robotseverovostok.ru/dev.php/pcode/' + $(this).val(),
+                        success: function (data) {
+                            $("input[name=kem_vidan]").val(data);
+                        },
+                        error: function (data) {
+                            console.log(data);
+                        }
+                    });
+                }
+            });
+            if ($(window).width() >= 600) {
+                $("input[name=email]").suggestions({
+                    serviceUrl: "https://suggestions.dadata.ru/suggestions/api/4_1/rs",
+                    token: "76af43fb2643b4cc1d8c2a753eb56a8728f2dc89",
+                    type: "EMAIL",
+                    mobileWidth: 0,
+                    suggest_local: false,
+                    count: 5,
+                    autoSelectFirst: true
+                });
+            };}); 
 </script>
 <script type="text/javascript">
 $(document).ready(function() {
