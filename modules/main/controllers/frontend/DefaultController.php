@@ -151,8 +151,8 @@ class DefaultController extends Controller
         $visitors->is_mobile = $is_mobile; // add is mobile or not
         $a = strtolower($useragent);
         $is_bot = 0;
-        if(preg_match('/robot|bot|facebookexternalhit|facebot|yahoo|mail|antivirus|fetcher|mail.ru_bot|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|radioclicker|dataprovider|spider|crawler|curl|^$/i', $a)) $is_bot = 1;
-        else if ($detect->isBot()) $is_bot = 1;
+        if(preg_match('/robot|bot|facebookexternalhit|facebot|ia_archiver|Google-Adwords-DisplayAds|Go-http-client|Riddle|socketcrawler|NetcraftSurveyAgent|yahoo|mail|antivirus|fetcher|mail.ru_bot|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|radioclicker|dataprovider|spider|crawler|curl|^$/i', $a)) $is_bot = 1;
+        if ($detect->isBot() || $detect->isSpider()) $is_bot = 1;
         $visitors->is_bot = $is_bot; // add is bot or not
         $visitors->save(); // insert to visitors
         // end add visitors
