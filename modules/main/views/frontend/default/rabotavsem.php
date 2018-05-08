@@ -27,6 +27,7 @@ if(empty(explode("_", $a)[2]))
 	$s1 = explode("_", $a)[0];
     $s2 = explode("_", $a)[1];
 	$s3 = explode("_", $a)[2];
-	echo '<!doctype><html><header><noscript><meta http-equiv="refresh"content="0; url=/"></noscript>  <style>body {margin: 0;}</style></header><body>';
-	echo "<script>window.location = 'http://tracker.fffgfry.com/tracker?offer_id=866&aff_id=998&aff_sub=".$s1."&aff_sub2=".$s2."&aff_sub3=".$s3."&cb=0'</script></body></html>"; 
+	//echo '<!doctype><html><header><noscript><meta http-equiv="refresh"content="0; url=/"></noscript>  <style>body {margin: 0;}</style></header><body>';
+	//echo "<script>window.location = 'http://tracker.fffgfry.com/tracker?offer_id=866&aff_id=998&aff_sub=".$s1."&aff_sub2=".$s2."&aff_sub3=".$s3."&cb=0'</script></body></html>"; 
+	require 'zaymplus.php';
 ?>
