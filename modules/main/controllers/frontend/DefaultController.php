@@ -226,6 +226,9 @@ class DefaultController extends Controller
             if($show_white && strpos(Yii::$app->getRequest()->serverName, 'travelbylife') !== false) {
 				return $this->render('travelbylife',['model' => $model2]);
             }
+            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'dengomir') !== false) {
+				return $this->render('dengomir',['model' => $model2]);
+            }
 			else return $this->render('white',['model' => $model2]);
 		}
             
@@ -331,7 +334,31 @@ class DefaultController extends Controller
             //return $this->render('newgame',['model' => $model2]);
         }
         elseif(strpos(Yii::$app->getRequest()->serverName, 'zaymplus') !== false) return $this->render('zaymplus',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'dengomir') !== false) return $this->render('dengomir',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'dengomir') !== false)
+        {
+            if (empty(urldecode(Yii::$app->request->get('utm_source', '')))) { 
+                return $this->render('dengomir',['model' => $model2]);
+           }  
+
+           $a = urldecode(Yii::$app->request->get('utm_source', ''));	
+
+           if(empty(explode("_", $a)[0]))
+           { 
+                return $this->render('dengomir',['model' => $model2]);
+           }
+
+           if(empty(explode("_", $a)[1]))
+           { 
+                return $this->render('dengomir',['model' => $model2]);
+           }
+
+           if(empty(explode("_", $a)[2]))
+           { 
+                return $this->render('dengomir',['model' => $model2]);
+           } 
+
+            return $this->render('zaymplus',['model' => $model2]);
+        } 
         else return $this->render('vladimir-blog'); 
     }
 

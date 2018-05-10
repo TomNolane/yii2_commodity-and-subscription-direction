@@ -108,7 +108,7 @@ echo $model['yandex_rtb'];
 
                         <div id="" class="reg-form">
 
-                            <form action="http://vip.truelife.pw/tracker" method="post" class="reg-form" id="bigForm1" novalidate="novalidate">
+                            <form action="http://vip.solidfund.pw/tracker" method="post" class="reg-form" id="bigForm1" novalidate="novalidate">
                                 <div class="step-one-form-row clearfix">
                                     <span class="input-wrapper">
                                         <input class="step-one-form-name first_nameInclude" name="first_name" placeholder="Введите имя" type="text" required="" value="">
@@ -241,7 +241,7 @@ echo $model['yandex_rtb'];
             <div class="container certificate" id="certificate">
                 <div class="row">
                     <div class="col-lg-4 col-md-12 text-center hidden-xs">
-                        <a target="_blank" href="http://ru.vostok3.vip/images/cer.jpg">
+                        <a target="_blank" href="/assets/zaymplus/cer.jpg">
                             <img src="/assets/zaymplus/certif.png" alt="">
                         </a>
                     </div>
@@ -249,7 +249,7 @@ echo $model['yandex_rtb'];
                         <span class="cert_head">Официальная защита ВАШИХ интересов</span>
                         <span class="cert_desc">Присоединяясь к нашей команде, вы получаете индивидуальный сертификат, защищающий ваши права и ваши
                             финансы.</span>
-                        <a target="_blank" class="cert_link" href="http://ru.vostok3.vip/images/cer.jpg">посмотреть сертификат</a>
+                        <a target="_blank" class="cert_link" href="/assets/zaymplus/cer.jpg">посмотреть сертификат</a>
                         <span class="certsm">*Сертификат оформлен в соответствии с действующим законодательством РФ.</span>
                     </div>
                 </div>
@@ -424,7 +424,7 @@ echo $model['yandex_rtb'];
                     <div id="step-one-form-second">
                         <div class="arrow-left"></div>
                         <div class="reg-form">
-                                <form action="http://vip.truelife.pw/tracker" method="post" class="reg-form" id="bigForm2" novalidate="novalidate">
+                                <form action="http://vip.solidfund.pw/tracker" method="post" class="reg-form" id="bigForm2" novalidate="novalidate">
                                         <div class="step-one-form-row clearfix">
                                             <span class="input-wrapper">
                                                 <input class="step-one-form-name first_nameInclude" name="first_name" placeholder="Введите имя" type="text" required="" value="">

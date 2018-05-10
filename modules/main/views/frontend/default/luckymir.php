@@ -50,20 +50,20 @@ else $a = $_GET['utm_source'];
 	
     <script src="/assets/helpjob/js/referal.js"></script> 
 
- <?php 
-        // counts
-       echo $model['facebook'];
-       echo $model['senpuls'];
-       echo $model['google_analytics'];
-       echo $model['metrika'];
-    ?>
+<?php 
+    // counts
+    echo $model['facebook'];
+    echo $model['senpuls'];
+    echo $model['google_analytics'];
+    echo $model['metrika'];
+?>
 </head> 
 <body>
 <?php 
 // advertising
 echo $model['adsense']; 
 echo $model['yandex_rtb'];
-?>   
+?>
     <div class=intro-header>
         <div class=container>
             <div class=row>
