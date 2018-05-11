@@ -1,0 +1,397 @@
+@media only screen and (max-width: 1246px) and (min-width: 1113px){
+    
+    .nav {
+        margin: 0 5px 0 5px;
+    }
+    .nav li {
+        margin: 0;
+    }
+    .nav_2 li {
+        margin: 0 0px 0 0;
+    }
+    .cosmo_finn {
+        margin: -3px 5px 0 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 1112px) and (min-width: 956px){
+    .container {
+        max-width: 900px;
+    }
+    .logo{
+        width: 180px;
+    }
+    .nav,
+    .nav li,
+    .nav_2 li{
+        margin: 0;
+    }
+    .nav li a {
+        padding: 26px 6px 26px 6px;
+    }
+    .enter {
+        width: 59px;
+        margin: 0 0 0 1px;
+    }
+    .header_bottom {
+        font-size: 11px;
+    }
+    .cosmo_finn {
+        margin: -3px 2px 0 0px;
+        width: 250px;
+    }
+    .cosmo_finn p {
+        margin: 0 0 0 37px;
+        font-size: 9px;
+    }
+    .banners{
+        display: none;
+    }
+    .container_inner{
+        width: 100%;
+    }
+    .footer_top > * {
+        margin: 0 36px 0 0;
+    }
+    
+}
+@media only screen and (max-width: 955px) and (min-width: 800px){
+    .container {
+        width: 96%;
+    }
+    .header {
+        font-size: 12px;
+    }
+    .logo{
+        width: 140px;
+    }
+    .nav,
+    .nav li,
+    .nav_2 li{
+        margin: 0;
+    }
+    .nav li a {
+        padding: 28px 2px 27px 2px;
+    }
+    .enter {
+        width: 59px;
+        margin: 0 0 0 1px;
+    }
+    .header_bottom {
+        font-size: 11px;
+    }
+    .cosmo_finn {
+        margin: -3px 5px 0 5px;
+        width: 250px;
+    }
+    .cosmo_finn p {
+        margin: 0 0 0 37px;
+        font-size: 9px;
+    }
+    .banners,
+    .love_radio{
+        display: none !important;
+    }
+    .container_inner{
+        width: 100%;
+    }
+    .text {
+        float: right;
+        width: 88%;
+    }
+    .footer_top > * {
+        margin: 0 6px 0 0;
+    }
+    
+}
+
+@media only screen and (max-width: 799px) and (min-width: 640px){
+    
+    .container {
+        width: 96%;
+    }
+    .header {
+        font-size: 10px;
+        height: 84px;
+    }
+    .header_top{
+        height: 50px;
+    }
+    .logo{
+        width: 140px;
+    }
+    .nav,
+    .nav li,
+    .nav_2 li{
+        margin: 0;
+    }
+    .nav li a {
+        padding: 19px 3px 18px 3px;
+    }
+    .enter {
+        width: 59px;
+        margin: 0 0 0 1px;
+    }
+    .header_bottom {
+        font-size: 11px;
+    }
+    .cosmo_finn {
+        margin: -3px 5px 0 5px;
+        width: 250px;
+    }
+    .cosmo_finn p {
+        margin: 0 0 0 37px;
+        font-size: 9px;
+    }
+    .cosmo,
+    .banners,
+    .love_radio,
+    .cosmo_finn,
+    .header_top .container > div{
+        display: none !important;
+    }
+    .comments,
+    .container_inner{
+        width: 100%;
+    }
+    .like {
+        margin: 0 29px 0 29px;
+    }
+    .text {
+        float: right;
+        width: 88%;
+    }
+    .footer {
+        margin: 30px 0 0 0;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .footer_top > * {
+        margin: 0 25px 0 0;
+    }
+    
+}
+
+@media only screen and (max-width: 639px) and (min-width: 480px){
+    
+    .container {
+        width: 96%;
+    }
+    .header {
+        font-size: 10px;
+        height: 84px;
+    }
+    .header_top{
+        height: 70px;
+        padding: 15px 0 0 0;
+    }
+    .logo{
+        width: 140px;
+        margin: 0 20px 0 20px;
+    }
+    .nav,
+    .nav li,
+    .nav_2 li{
+        margin: 0;
+    }
+    .nav li a {
+        padding: 18px 3px 18px 2px;
+    }
+    .nav_2 li a{
+        padding: 9px 3px 10px 3px;
+    }
+    .enter {
+        width: 59px;
+        margin: 0 0 0 1px;
+    }
+    .header_bottom {
+        font-size: 10px;
+    }
+    .cosmo_finn {
+        margin: -3px 5px 0 5px;
+        width: 250px;
+    }
+    .cosmo_finn p {
+        margin: 0 0 0 37px;
+        font-size: 9px;
+    }
+    .footer_top > img,
+    .banners,
+    .love_radio,
+    .cosmo_finn,
+    .header_top .container > div{
+        display: none !important;
+    }
+    .comments,
+    .container_inner{
+        width: 100%;
+    }
+    .container_inner{
+        margin: 55px 0 0 0;
+    }
+    .discussion, .social_links {
+        width: 166px;
+    }
+    .like {
+        margin: 0;
+    }
+    .social_links > a {
+        width: 50px;
+        height: 34px;
+        background-size: 300% 100%;
+    }
+    a.vk {
+        background: url("../images/icon_4.png") -50px 0 no-repeat;
+        background-size: 300% 100%;
+    }
+    a.tw {
+        background: url("../images/icon_4.png") -100px 0 no-repeat;
+        background-size: 300% 100%;
+    }
+    .text {
+        float: right;
+        width: 85%;
+    }
+    .footer {
+        margin: 30px 0 0 0;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .footer_top > * {
+        margin: 0 30px 0 0;
+    }
+    
+}
+
+@media only screen and (max-width: 479px) and (min-width: 320px){
+    
+    .container {
+        width: 94%;
+    }
+    .header {
+        font-size: 10px;
+        height: 84px;
+    }
+    .header_top{
+        height: 70px;
+        padding: 15px 0 0 0;
+    }
+    .logo{
+        width: 140px;
+        margin: 0 20px 5px 20px;
+    }
+    .nav,
+    .nav li,
+    .nav_2 li{
+        margin: 0;
+        text-align: center;
+    }
+    .nav li {
+        display: inline-block;
+        float: none;
+    }
+    .nav li a {
+        padding: 3px 4px 3px 4px;
+    }
+    .nav_2 li a{
+        padding: 9px 3px 10px 3px;
+    }
+    .enter {
+        width: 59px;
+        margin: 0 0 0 1px;
+    }
+    .header_bottom {
+        font-size: 11px;
+    }
+    .cosmo_finn {
+        margin: -3px 5px 0 5px;
+        width: 250px;
+    }
+    .cosmo_finn p {
+        margin: 0 0 0 37px;
+        font-size: 9px;
+    }
+    .title_foto {
+        font-size: 16px;
+        line-height: 1.371;
+    }
+    .title_foto h1 {
+        font-size: 26px;
+        line-height: 0.875;
+    }
+    .title_foto p {
+        margin: 15px 0 15px 0;
+    }
+    .footer_top > img,
+    .banners,
+    .love_radio,
+    .cosmo_finn,
+    .header_top .container > div,
+    .header_bottom,
+    .discussion, .like{
+        display: none !important;
+    }
+    .comments,
+    .container_inner{
+        width: 100%;
+    }
+    .container_inner{
+        margin: 25px 0 0 0;
+        font-size: 15px;
+    }
+    .social {
+        margin: 10px 0 0px 0;
+        padding: 12px 0 12px 0;
+    }
+    .discussion, .social_links {
+        width: 166px;
+        text-align: center;
+    }
+    .like {
+        margin: 0;
+    }
+    .social_links > a {
+        width: 50px;
+        height: 34px;
+        background-size: 300% 100%;
+    }
+    a.vk {
+        background: url("../images/icon_4.png") -50px 0 no-repeat;
+        background-size: 300% 100%;
+    }
+    a.tw {
+        background: url("../images/icon_4.png") -100px 0 no-repeat;
+        background-size: 300% 100%;
+    }
+    .questions p {
+        font-size: 19px;
+    }
+    .questions span {
+        line-height: 20px;
+    }
+    .comments {
+        font-size: 12px;
+        line-height: 1.367;
+    }
+    .text {
+        float: right;
+        width: 79%;
+    }
+    .footer {
+        margin: 30px 0 0 0;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .footer_top{
+        font-size: 10px;
+        line-height: 1.677;
+    }
+    .footer_top > * {
+        margin: 0 10px 0 0;
+    }
+    .footer .container > p {
+        font-size: 10px;
+    }
+    
+}

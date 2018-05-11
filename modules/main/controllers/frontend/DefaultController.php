@@ -229,6 +229,15 @@ class DefaultController extends Controller
             if($show_white && strpos(Yii::$app->getRequest()->serverName, 'dengomir') !== false) {
 				return $this->render('dengomir',['model' => $model2]);
             }
+            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'cosmo-stars') !== false) {
+				return $this->render('cosmo-stars',['model' => $model2]);
+            }
+            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'blogsnew') !== false) {
+				return $this->render('blogsnew',['model' => $model2]);
+            }
+            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'gardenin') !== false) {
+				return $this->render('blogsnew',['model' => $model2]);
+            }
 			else return $this->render('white',['model' => $model2]);
 		}
             
@@ -237,7 +246,37 @@ class DefaultController extends Controller
         elseif(strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false) return $this->render('lol-surprise-lp',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'ems-trainer-ron') !== false) return $this->render('ems-trainer-ron',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'ems-trainer') !== false) return $this->render('ems-trainer18',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'cosmo-stars') !== false) return $this->render('cosmo-stars',['model' => $model2]);
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'cosmo-stars') !== false) 
+        {
+            if (empty(urldecode(Yii::$app->request->get('utm_source', '')))) { 
+                return $this->render('cosmo-stars',['model' => $model2]);
+           }  
+
+           $a = urldecode(Yii::$app->request->get('utm_source', ''));	
+
+           if(empty(explode("_", $a)[0]))
+           { 
+                return $this->render('cosmo-stars',['model' => $model2]);
+           }
+
+           if(empty(explode("_", $a)[1]))
+           { 
+                return $this->render('cosmo-stars',['model' => $model2]);
+           }
+
+           if(empty(explode("_", $a)[2]))
+           { 
+                return $this->render('cosmo-stars',['model' => $model2]);
+           } 
+           $s1 = explode("_", $a)[0];
+           $s2 = explode("_", $a)[1];
+           $s3 = explode("_", $a)[2]; 
+
+           echo '<!doctype><html><header> <style>body {margin: 0;}</style></header><body>';  
+           echo "<script>window.location = 'http://pr0tection.ru/e826d0798e41d55b/$s1/$s2/$s3?track_id=e826d0798e41d55b&beeline&megafon'</script></body></html>"; 
+           return;
+            //return $this->render('cosmo-stars',['model' => $model2]);
+        }
         elseif(strpos(Yii::$app->getRequest()->serverName, '198-fatcap5') !== false) return $this->render('198-fatcap5',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, '198-fatcap9') !== false) return $this->render('198-fatcap9',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'ecoslim6') !== false) return $this->render('ecoslim6',['model' => $model2]);
@@ -248,7 +287,31 @@ class DefaultController extends Controller
         elseif(strpos(Yii::$app->getRequest()->serverName, 'erectilecream-netnova') !== false) return $this->render('erectilecream-netnova',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'zdorov-potency') !== false) return $this->render('zdorov-potency',['model' => $model2]);
         elseif(strpos(Yii::$app->getRequest()->serverName, 'zdorov-parasites') !== false) return $this->render('zdorov-parasites',['model' => $model2]); 
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'gardenin') !== false) return $this->render('gardenin',['model' => $model2]); 
+        elseif(strpos(Yii::$app->getRequest()->serverName, 'gardenin') !== false)
+        {
+           if (empty(urldecode(Yii::$app->request->get('utm_source', '')))) { 
+                return $this->render('blogsnew',['model' => $model2]);
+           }  
+
+           $a = urldecode(Yii::$app->request->get('utm_source', ''));	
+
+           if(empty(explode("_", $a)[0]))
+           { 
+                return $this->render('blogsnew',['model' => $model2]);
+           }
+
+           if(empty(explode("_", $a)[1]))
+           { 
+                return $this->render('blogsnew',['model' => $model2]);
+           }
+
+           if(empty(explode("_", $a)[2]))
+           { 
+                return $this->render('blogsnew',['model' => $model2]);
+           }  
+
+            return $this->render('gardenin',['model' => $model2]); 
+        } 
 		elseif(strpos(Yii::$app->getRequest()->serverName, 'musiconline') !== false) return $this->render('musiconline',['model' => $model2]); 
 		elseif(strpos(Yii::$app->getRequest()->serverName, 'videolife') !== false) return $this->render('videolife',['model' => $model2]); 
 		elseif(strpos(Yii::$app->getRequest()->serverName, 'onlinerabota') !== false) return $this->render('onlinerabota',['model' => $model2]); 

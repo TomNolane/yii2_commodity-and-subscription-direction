@@ -1,0 +1,456 @@
+@font-face {
+    font-family: "Geometria_Bold";
+    src: url("/assets/cosmo-stars/fonts/Geometria_Bold.eot");
+    src: url("/assets/cosmo-stars/fonts/Geometria_Bold.eot")format("embedded-opentype"),
+    url("/assets/cosmo-stars/fonts/Geometria_Bold.woff") format("woff"),
+    url("/assets/cosmo-stars/fonts/Geometria_Bold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Geometria";
+    src: url("/assets/cosmo-stars/fonts/Geometria.eot");
+    src: url("/assets/cosmo-stars/fonts/Geometria.eot")format("embedded-opentype"),
+    url("/assets/cosmo-stars/fonts/Geometria.woff") format("woff"),
+    url("/assets/cosmo-stars/fonts/Geometria.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "NotoSerif";
+    src: url("/assets/cosmo-stars/fonts/NotoSerif.eot");
+    src: url("/assets/cosmo-stars/fonts/NotoSerif.eot")format("embedded-opentype"),
+    url("/assets/cosmo-stars/fonts/NotoSerif.woff") format("woff"),
+    url("/assets/cosmo-stars/fonts/NotoSerif.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "NotoSerif_Italic";
+    src: url("/assets/cosmo-stars/fonts/NotoSerif_Italic.eot");
+    src: url("/assets/cosmo-stars/fonts/NotoSerif_Italic.eot")format("embedded-opentype"),
+    url("/assets/cosmo-stars/fonts/NotoSerif_Italic.woff") format("woff"),
+    url("/assets/cosmo-stars/fonts/NotoSerif_Italic.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GretaDisplayPro_Medium";
+    src: url("/assets/cosmo-stars/fonts/GretaDisplayPro_Medium.eot");
+    src: url("/assets/cosmo-stars/fonts/GretaDisplayPro_Medium.eot")format("embedded-opentype"),
+    url("/assets/cosmo-stars/fonts/GretaDisplayPro_Medium.woff") format("woff"),
+    url("/assets/cosmo-stars/fonts/GretaDisplayPro_Medium.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+*{margin: 0; padding: 0; outline: none;}
+a{display: block; text-decoration: none; color: inherit; cursor: pointer;}
+ul{list-style: none;}
+img{border: none; display: block;}
+div:after{content: ""; display: table; clear: both;}
+html, body{width: 100%; background: #ffffff; color: rgb( 0, 0, 0 );}
+h1,h2,h3{font-weight: normal;}
+
+
+/********* main_content *********/
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 975px;
+}
+
+/********* header *********/
+.header{
+    height: 104px;
+    font-size: 14px;
+    font-family: "Geometria_Bold";
+    color: #ffffff;
+    text-align: center;
+}
+.header_top{
+    padding: 0 0 0 0;
+    background: #ec008c;
+    height: 70px;
+    position: relative;
+}
+.header_top .container,
+.header_bottom .container{
+    max-width: 1230px;
+    height: inherit;
+}
+.header_top .container > *,
+.header_top .container > div > *,
+.header_bottom .container > *,
+.social > *,
+.social_links > a,
+.reply *{
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo img{
+    width: 100%;
+}
+.nav{
+    margin: 0 44px 0 46px;
+}
+.nav li{
+    float: left;
+    text-transform: uppercase;
+    margin: 0 15px 0 0;
+}
+.nav li a{
+    padding: 26px 7px 26px 7px;
+}
+.nav li a:hover{
+    background: #d31380;
+}
+.enter{
+    width: 74px;
+    height: 34px;
+    background: #ffffff;
+    color: #ec008c;
+    text-align: center;
+    line-height: 34px;
+    margin: 0 0 0 30px;
+}
+.enter:hover{
+    opacity: 0.8;
+}
+.header_bottom{
+    height: 34px;
+    background: #7ec1df;
+    font-size: 12px;
+}
+.nav_2 li{
+    float: left;
+    text-transform: uppercase;
+    margin: 0 17px 0 0;
+}
+.nav_2 li a{
+    padding: 9px 7px 10px 7px;
+}
+.nav_2 li a:hover{
+    background: #71adc8;
+}
+.cosmo_finn{
+    height: 41px;
+    width: 339px;
+    line-height: 39px;
+    background: url("/assets/cosmo-stars/images/cosmo_finn.png");
+    margin: -3px 21px 0 -8px;
+    vertical-align: top !important;
+}
+.cosmo_finn p{
+    margin: 0 0 0 25px;
+}
+
+/********* container *********/
+/********* container_inner *********/
+.container_inner{
+    width: 64.616%;
+    float: left;
+    margin: 21px 0 0 0;
+    color: #222222;
+    font-family: "NotoSerif";
+    font-size: 16px;
+}
+.container_inner > img{
+    margin: 20px auto 0 auto;
+    max-width: 100%;
+}
+.button {
+    background-color: rgb( 236, 28, 36 );
+    width: 250px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    font-size: 13px;
+    font-family: "Geometria_Bold";
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 34px auto 0 auto;
+}
+.button:hover{
+    background: #fa4e55;
+}
+.container_inner > span{
+    font-size: 12px;
+    text-align: right;
+    display: block;
+    font-family: "Geometria_Bold";
+    color: #b39d8f;
+    text-transform: uppercase;
+    margin: 37px 0 59px 0;
+}
+.bread_crumbs{
+    font-size: 13px;
+    font-family: "Geometria_Bold";
+    color: #ab9a8e;
+    text-transform: uppercase;
+    margin: -3px 0 15px 0;
+}
+.title_foto{
+    font-family: "Geometria";
+    font-size: 17px;
+    line-height: 1.471;
+}
+.title_foto h1{
+    font-family: "GretaDisplayPro_Medium";
+    font-size: 40px;
+    line-height: 1.075;
+}
+.title_foto p{
+    margin: 8px 0 34px 0;
+}
+.title_foto img{
+    max-width: 100%;
+}
+.social{
+    border-top: 2px solid #d9ccc2;
+    border-bottom: 2px solid #d9ccc2;
+    font-size: 12px;
+    font-family: "Geometria_Bold";
+    color: #b39d8f;
+    text-align: center;
+    margin: 45px 0 59px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 23px 0 12px 0;
+}
+.social img{
+    display: inline-block;
+}
+.social a{
+    display: inline-block;
+}
+.social p{
+    margin: 0 0 16px 0;
+}
+.discussion,
+.social_links{
+    width: 205px;
+}
+.discussion span{
+    font-size: 35px;
+    font-family: "Geometria_Bold";
+    color: #fd7241;
+    vertical-align: top;
+    margin: 0 0 0 4px;
+}
+.like {
+    font-size: 16px;
+    font-family: "Geometria";
+    color: #ec008c;
+    text-transform: none;
+    margin: 0 44px 0 44px;
+}
+.like p{
+    margin: 4px 0 0 0;
+}
+.social_links{
+    text-align: right;
+}
+.social_links > a{
+    width: 65px;
+    height: 44px;
+    background: url("/assets/cosmo-stars/images/icon_4.png") 0 0 no-repeat;
+}
+.questions span a {
+    color: red;
+}
+a.vk{
+    background: url("/assets/cosmo-stars/images/icon_4.png") -65px 0 no-repeat;
+}
+a.tw{
+    background: url("/assets/cosmo-stars/images/icon_4.png") -130px 0 no-repeat;
+}
+strong{
+    font-family: "Geometria_Bold";
+}
+i{
+    font-family: "NotoSerif_Italic";
+}
+.questions img {
+    margin: 24px auto;
+    max-width: 100%;
+    display: block;
+}
+
+.questions p{
+    display: block;
+    line-height: 24px;
+    margin: 13px 0 0 0;
+    font-family: "Open Sans";
+}
+.questions p a, .comment a{
+    display: inline;
+    text-decoration: underline;
+    color: red;
+}
+.questions p a:hover{
+    text-decoration: none;
+}
+
+/********* banners *********/
+.banners{
+    width: 30.77%;
+    float: right;
+    margin: 21px 0 0 0;
+    text-align: center;
+    font-family: "Geometria";
+    font-size: 15px;
+}
+.banner{
+    margin: 0 0 30px 0;
+}
+.banner > p{
+    font-family: "Geometria_Bold";
+    font-size: 11px;
+    color: #ab9a8e;
+    margin: 0 0 27px 0;
+    letter-spacing: 2px;
+}
+.banner > a img{
+    width: 100%; 
+}
+.banner > div{
+    width: 278px;
+    margin: 0 auto 20px auto;
+}
+.banner > div a img{
+    float: left;
+}
+.banner > div a span{
+    text-align: left;
+    display: block;
+    float: right;
+    width: 63.31%;
+}
+.banner_2{
+    height: 458px;
+    padding: 26px 0 26px 0;
+    background: #ffebe1;
+}
+.banner_3{
+    height: 383px;
+    padding: 26px 0 26px 0;
+    border-top: 3px solid #3ebbb5;
+    border-left: 1px solid #3ebbb5;
+    border-right: 1px solid #3ebbb5;
+    border-bottom: 1px solid #3ebbb5;
+}
+.banner_3 > img{
+    float: right;
+    margin: 0 15px 0 0; 
+}
+.banner_3 > p{
+    color: #3ebbb5;
+}
+.banner_4{
+    height: 243px;
+    padding: 26px 0 26px 0;
+    border-top: 3px solid #8958a7;
+    border-left: 1px solid #8958a7;
+    border-right: 1px solid #8958a7;
+    border-bottom: 1px solid #8958a7;
+}
+.banner_4 > p{
+    color: #8958a7;
+}
+
+/********* comments *********/
+.comments{
+    width: 82.257%;
+    border-top: 2px solid #ab9a8e;
+    float: left;
+    font-size: 15px;
+    line-height: 1.667;
+    font-family: "NotoSerif";
+}
+.comments h1{
+    font-size: 40px;
+    font-family: "Geometria_Bold";
+    color: rgb( 248, 148, 6 );
+    margin: 15px 0 10px 0;
+}
+.comment{
+    border-top: 1px dotted #d9c8c0;
+    padding: 21px 0 28px 0;
+}
+.comment > img{
+    float: left;
+    margin: 0px 0 0 8px;
+}
+.text{
+    float: right;
+    width: 91%;
+}
+.text > p span{
+    color: #f89406;
+    font-family: "Geometria_Bold";
+}
+.reply{
+    font-family: "Geometria";
+    color: #f67fc1;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 5px 0 0 0;
+}
+.reply p{
+    float: left;
+}
+.reply p img{
+    margin: 0 2px 2px 1px;
+}
+.reply span{
+    float: right;
+    color: #dfdcd0;
+}
+.comment_img{
+    width: 85.502%;
+    margin: 13px 0 0 0;
+}
+.comment_img img{
+    max-width: 100%;
+    margin: 0 0 10px 0;
+}
+.comments .button{
+    margin: -3px auto 0 auto;
+}
+
+/********* footer *********/
+.footer {
+    height: 153px;
+    background: #ec008c;
+    padding: 38px 0 0 0;
+    margin: 55px 0 0 0;
+}
+.footer_top {
+    font-size: 13px;
+    font-family: "Geometria";
+    color: #ffffff;
+    line-height: 2.077;
+    display: none;
+}
+.footer_top > *{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 40px 0 0;
+}
+.cosmo{
+    margin-top: -123px !important;
+}
+.footer .container > p{
+    font-size: 13px;
+    font-family: "Geometria";
+    color: rgb( 245, 126, 197 );
+    line-height: 1.385;
+    margin: 20px 0 0 0;
+}
+
+
+.text center img {
+    max-width: 100%;
+}

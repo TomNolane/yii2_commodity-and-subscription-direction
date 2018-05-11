@@ -1,0 +1,105 @@
+body,
+html{width:100%;height:100%;}
+body,h1,h2,h3,h4,h5,h6{font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;}
+.width1{max-width:800px;;margin:0 auto;padding:0;}
+.lead{font-size:18px;font-weight:400;}
+#noi{position:absolute;top:50px;left:600px;}
+.btn-circle{width:70px;height:70px;margin-top:15px;padding:7px 16px;border:2px solid #fff;border-radius:35px;font-size:40px;color:#fff;background:0 0;-webkit-transition:background .3s ease-in-out;-moz-transition:background .3s ease-in-out;transition:background .3s ease-in-out;}
+.btn-circle:hover,
+.btn-circle:focus{outline:0;color:#fff;background:rgba(255,255,255,.1);}
+.btn-circle i.animated{-webkit-transition-property:-webkit-transform;-webkit-transition-duration:1s;-moz-transition-property:-moz-transform;-moz-transition-duration:1s;}
+.btn-circle:hover i.animated{-webkit-animation-name:pulse;-moz-animation-name:pulse;-webkit-animation-duration:1.5s;-moz-animation-duration:1.5s;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;}
+@-webkit-keyframes pulse{0{-webkit-transform:scale(1);transform:scale(1);}
+50%{-webkit-transform:scale(1.2);transform:scale(1.2);}
+100%{-webkit-transform:scale(1);transform:scale(1);}
+}
+.center-side{text-align:center;}
+@-moz-keyframes pulse{0{-moz-transform:scale(1);transform:scale(1);}
+50%{-moz-transform:scale(1.2);transform:scale(1.2);}
+100%{-moz-transform:scale(1);transform:scale(1);}
+}
+.intro-header{padding-top:50px;padding-bottom:50px;text-align:center;color:#f8f8f8;background:url("/assets/helpjob/images/intro-bg.jpg") no-repeat center center;background-size:cover;}
+.intro-message{position:relative;padding-top:20%;padding-bottom:20%;}
+.intro-message > h1{margin:0;text-shadow:2px 2px 3px rgba(0,0,0,0.6);font-size:5em;}
+.intro-divider{width:400px;border-top:1px solid #f8f8f8;border-bottom:1px solid rgba(0,0,0,0.2);}
+.intro-message > h3{text-shadow:2px 2px 3px rgba(0,0,0,0.6);}
+@media(max-width:767px){.intro-message{padding-bottom:15%;}
+.intro-message > h1{font-size:3em;}
+ul.intro-social-buttons > li{display:block;margin-bottom:20px;padding:0;}
+ul.intro-social-buttons > li:last-child{margin-bottom:0;}
+.intro-divider{width:100%;}
+}
+.network-name{text-transform:uppercase;font-size:14px;font-weight:400;letter-spacing:2px;}
+.content-section-a{padding:50px 0;background-color:#f8f8f8;}
+.content-section-b{padding:50px 0;border-top:1px solid #e7e7e7;border-bottom:1px solid #e7e7e7;}
+.content-section-b ul{font-size:1.5em;font-weight:normal;}
+.section-heading{margin-bottom:30px;}
+.section-heading-spacer{float:left;width:200px;border-top:3px solid #e7e7e7;}
+.size2{font-size:1.5em;}
+.banner{padding:10px 0 50px;color:#f8f8f8;background:url("/assets/helpjob/images/banner-bg.jpg") no-repeat center center;background-size:cover;}
+.banner3{padding:10px 30px 50px;color:#f8f8f8;box-shadow:;background:url("/assets/helpjob/images/fon2.jpg") no-repeat center center;background-size:cover;}
+.contact{float:left;padding:5px 0 10px 0;width:50%;}
+.contact span{color:#333;background:#FFF;}
+#pere{text-decoration:line-through;background:none;color:red;}
+.redborder{border:3px solid red;border-radius:10px;}
+.btn1{margin-left:90px;}
+.banner h2{margin:0;text-shadow:2px 2px 3px rgba(0,0,0,0.6);font-size:3em;margin-top:60px;}
+.banner p{font-size:1.5em;}
+.hrfon{margin-left:20px;width:300px;}
+.banner ul{margin-bottom:0;}
+.banner-social-buttons{float:right;margin-top:0;}
+.banner2{padding:10px 0 50px;color:#f8f8f8;background:url("/assets/helpjob/images/fon.jpg") no-repeat center center;background-size:cover;}
+.banner2 h2{margin:0;text-shadow:2px 2px 3px rgba(0,0,0,0.6);font-size:2em;}
+@media(max-width:1199px){ul.banner-social-buttons{float:left;margin-top:15px;}
+}
+@media(max-width:767px){.banner h2{margin:0;text-shadow:2px 2px 3px rgba(0,0,0,0.6);font-size:3em;}
+ul.banner-social-buttons > li{display:block;margin-bottom:20px;padding:0;}
+ul.banner-social-buttons > li:last-child{margin-bottom:0;}
+}
+footer{padding:50px 25px;background-color:#f8f8f8;width:100%;}
+p.copyright{margin:15px 0 0;}
+.btn-1{background:url("/assets/helpjob/images/btn-1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);display:block;height:91px;margin:30px auto;width:650px;}
+.btn-1:hover{background-position:0 -91px;display:block;}
+li{padding-bottom:15px;font-size:18px;}
+.a55{display:block;margin:0 auto;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{line-height:1.3em;}
+#about2 > h2{color:#72e600;}
+footer hr{border-color:#ddd;box-shadow:0 1px 0 rgba(255,255,255,0.8);margin-bottom:45px;}
+#comments textarea{width:100%}
+.comments:after{content:"";clear:both;display:block;}
+.comments{border-bottom:1px solid rgba(0, 0, 0, 0.12);box-shadow:0 1px 0 #fff;display:block;margin-bottom:12px;padding-bottom:10px;}
+.comments:last-child{border-bottom:0;box-shadow:none;}
+.comments .wrap{width:90%;padding-left:10px;}
+.comments p{font:normal 13px/18px "Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;}
+.comments img,.comments .wrap{float:left;}
+.imgA{width:6.333%;}
+.comments .ava,.imgA img{background:none repeat scroll 0 0 rgba(255, 255, 255, 0.4);border-radius:3px !important;box-shadow:0 1px 2px rgba(0, 0, 0, 0.12);margin:1px;max-width:none;padding:3px;height:48px;width:48px;}
+.comments a{color:#4c4c4c;font-size:13px;font-weight:bold;text-decoration:none !important;}
+.mc-comment-bullet{color:#999;font-size:10px;margin:0 5px;}
+.comments h4 span{color:#999;font-size:11px;transition:color 0.1s linear 0s;}
+.comments h4 span:hover{color:#777;cursor:pointer;}
+.comments h4{margin:0;}
+.thumbs a{font-size:16px;color:#999;margin-left:5px;vertical-align:middle;}
+.thumbs a:hover:first-child{color:#2e9fff;}
+.thumbs a:hover:last-child{color:#ff2f2f;}
+.comments a.comment-reply{color:#999;font-size:11px;margin-left:0 !important;transition:color 0.1s linear 0s;}
+.comments a.comment-reply:hover{color:#777;}
+input{width:45%;}
+textarea{height:39px;max-width:750px;transition:min-height 0.1s ease-in-out 0s !important;}
+textarea.active{min-height:80px;resize:vertical;}
+textarea,input{background:none repeat scroll 0 0 white;border-radius:5px;box-shadow:0 1px 4px rgba(0, 0, 0, 0.16) inset;padding:10px !important;border:1px solid #c6c6c6;display:block;color:#333;font:14px arial;resize:none;margin-bottom:10px;}
+form{max-width:750px;}
+#send_post{background-color:#faa732;-moz-background:linear-gradient(to bottom, #fbb450, #f89406);-webkit-background:linear-gradient(to bottom, #fbb450, #f89406);-o-background:linear-gradient(to bottom, #fbb450, #f89406);background:linear-gradient(to bottom, #fbb450, #f89406);background-repeat:repeat-x;border:1px solid #E19C3C;border-bottom-color:rgba(0, 0, 0, 0.35);color:#fff;box-shadow:0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05) !important;border-radius:4px;float:right;padding:5px 15px;font:13px/18px arial;display:none;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);}
+#send_post:hover{background:#f89406;color:#fff;}
+.dbl{display:block !important;}
+@media only screen and (max-width:1360px){
+.banner{background:#8572A5;}
+.width1 {
+border-radius: 20px 20px 50px 50px / 20px 20px 60px 60px;
+border:7px solid #fff;
+border-bottom:0;
+margin: 0 auto;
+max-width: 80%;
+padding: 15px 25px;
+}
+}

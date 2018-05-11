@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body { margin: 0px; padding: 0px; font-family: Arial,Tahoma,sans-serif; font-size: 15px; background: rgb(248, 246, 243) none repeat scroll 0% 0%; }
+a { color: rgb(10, 120, 194); outline: medium none; text-decoration: underline; }
+a:hover { text-decoration: none; }
+p { margin: 0px 0px 11px; }
+img { border: medium none; display: inline-block; }
+.middle { width: 100%; max-width: 600px; margin: 10px auto; text-align: center; }
+.btn { display: inline-block; color: rgb(214, 4, 59); font-size: 26px; margin: 10px auto; }
+.btn:hover { color: rgb(39, 201, 66); }
+.wrapper { width: 98%; max-width: 960px; margin: 0px auto; border: 1px solid rgb(204, 204, 204); }
+.wrapper > div { text-align: center; padding: 10px 0px; }
+#header { background: rgb(243, 233, 241) url(../img/59edb4a3b6d9bbc1fb078fd7aeb7cf4a.jpg) no-repeat scroll 0% 0%; color: rgb(255, 255, 255); font-size: 13px; height: 450px; text-align: left; }
+a.head { text-decoration: none; }
+.miniHeader { display: none; }
+#content { background: rgb(255, 255, 255) none repeat scroll 0% 0%; padding: 0px; text-align: left; font-size: 16px; line-height: 24px; }
+#content .padWrap { padding: 15px; }
+#content h1 { font-size: 32px; line-height: 1.2; font-weight: bold; margin: 0px 0px 15px; }
+#content img { max-width: 100%; display: block; margin: 20px auto; }
+.startdate { display: block; position: relative; top: -10px; margin-bottom: 10px; color: rgb(102, 102, 102); font-style: italic; }
+.blockQuote { padding-left: 65px; min-height: 60px; margin: 15px 0px; }
+img.expert { float: left; width: 200px !important; margin: 5px 15px 5px 0px !important; }
+#comments { background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+#comments h2 { background: rgb(119, 119, 119) none repeat scroll 0% 0%; padding: 15px; color: rgb(255, 255, 255); font-size: 32px; font-weight: normal; margin: 0px; }
+#comments .item { text-align: left; padding: 10px; margin: 10px 0px; min-height: 80px; border-bottom: 1px solid rgb(229, 229, 229); }
+#comments .item .info { margin-left: 65px; }
+#comments .item > img { position: absolute; width: 50px; border: 2px solid rgb(172, 172, 172); }
+#comments .item .name { font-size: 16px; font-style: italic; font-weight: bold; color: rgb(102, 102, 102); }
+#comments .item .info p { display: block; font-size: 15px; line-height: 19px; margin-top: 4px; }
+#comments .item .info img { max-width: 100%; display: block; margin: 0px auto; }
+a.button24 { display: inline-block; color: white; text-decoration: none; padding: 0.5em 2em; margin: 30px 0px; outline: medium none; border-width: 2px 0px; border-style: solid none; border-color: rgb(195, 8, 50) rgb(0, 0, 0) rgb(190, 0, 28); border-radius: 36px; background: rgb(227, 53, 32) linear-gradient(rgb(243, 96, 47), rgb(227, 13, 35)) repeat scroll 0% 0%; transition: all 0.2s ease 0s; font-size: 22px; line-height: 1.4; }
+a.button24:hover { background: rgb(245, 49, 61) linear-gradient(rgb(245, 30, 43), rgb(245, 20, 25)) repeat scroll 0% 0%; }
+a.button24:active { background: rgb(245, 13, 25) linear-gradient(rgb(245, 47, 24), rgb(245, 17, 46)) repeat scroll 0% 0%; }
+@media screen and (max-width: 600px) {
+    .miniHeader { display: block; width: 100% !important; }
+    #header { background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; height: auto; padding: 0px; }
+    #content h1 { font-size: 24px; }
+    .blockQuote { padding-left: 0px; }
+    img.expert { width: 75px !important; }
+}

@@ -58,4 +58,4 @@ $context  = stream_context_create($options2);
 $result2 = file_get_contents($url2, false, $context); 
  
 //header('Location: /lk');
-echo '<script>document.location = "/lk4"</script>';
+echo '<script>document.location = "https://mikrodengi.tk/lk"</script>';

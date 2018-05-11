@@ -1,0 +1,361 @@
+@font-face {
+  font-family: pfcentromedium;
+  src: url('../fonts/PFCentroSansPro-Medium.otf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: pfcentroreg;
+  src: url('../fonts/PFCentroSansPro-Reg.otf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: pfcentroublack;
+  src: url('../fonts/PFCentroSansPro-UltraBlackIt.otf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: pfcentroblack;
+  src: url('../fonts/PFCentroSansPro-Black.otf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: pfcentroBold;
+  src: url('../fonts/PFCentroSansPro-Bold.otf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: pfcentroItalic;
+  src: url('../fonts/PFCentroSansPro-Italic.otf');
+  font-weight: 900;
+}
+
+* {
+  outline: none
+}
+
+a {
+  color: #3399cc;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font: 16px pfcentroreg;
+  outline: none;
+  height: 100%;
+}
+
+header {
+  position: relative
+}
+
+header a {
+  text-decoration: none
+}
+
+header ul, footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.super-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: url(../img/header-bg.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+}
+
+header h1 {
+  font-size: 48px;
+  color: white;
+  font-family: pfcentromedium;
+}
+
+header h1 span {
+  font-family: pfcentroublack;
+}
+
+.text-logo {
+  margin-top: 100px;
+}
+
+.text-logo p {
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+  font-family: pfcentroreg;
+}
+
+.get-access {
+  padding: 30px 0;
+}
+
+.get-access h2 {
+  font-family: pfcentroblack;
+  font-size: 30px;
+  color: #fefefe;
+}
+
+.wrap-all-btn {
+  position: relative;
+
+}
+
+.get-access button {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  top: 45px;
+  color: #ff3333;
+  font-size: 18px;
+  font-family: pfcentromedium;
+  background: #fff;
+  background-position: 172px;
+  width: 230px;
+  height: 65px;
+  border: none;
+  transition: all 1s;
+  border-radius: 5px;
+  transform: scale(1, 1);
+  z-index: 10;
+
+}
+
+.bg-button {
+  transition: all 1s;
+  opacity: 0.5;
+}
+
+.wrap-all-btn button:hover + .bg-button {
+  transform: scale(0, 0);
+  opacity: 0;
+}
+
+.wrap-all-btn button:hover {
+  background: #ff3333;
+  color: white;
+}
+
+main {
+  text-align: center;
+
+}
+
+main h2 {
+  font-size: 36px;
+  font-family: pfcentroBold;
+  color: black;
+}
+
+main h2 span {
+  font-family: pfcentroublack;
+}
+
+.under-title {
+  font-family: pfcentroItalic;
+  font-size: 18px;
+  color: #666666;
+}
+
+.what-easy {
+  margin-top: 80px;
+}
+
+.what-easy-item {
+  text-align: center;
+}
+
+.what-easy-item p {
+  font-family: pfcentroBold;
+  font-size: 18px;
+  color: black;
+  line-height: 30px;
+  padding: 0 28px;
+}
+
+.this-course {
+  background: url(../img/this-course-bg.png) no-repeat;
+  padding: 70px 0;
+  background-size: cover;
+}
+
+.this-course-wrapper {
+  margin-top: 50px;
+}
+
+.this-course h2 {
+  color: white;
+}
+
+.this-course-item {
+  display: flex;
+  margin: 20px 0;
+  align-items: flex-start;
+}
+
+.this-course-item p {
+  color: white;
+  text-align: left;
+  margin: 0;
+  font-family: pfcentroreg;
+  line-height: 30px;
+  font-size: 18px;
+  padding: 0 25px;
+}
+
+.whatdidyoutake {
+  padding: 70px 0;
+}
+
+.what-is {
+  padding: 70px 0;
+}
+
+.whatdidyoutake ul {
+  list-style: none;
+  text-align: left;
+}
+
+.whatdidyoutake ul li {
+  color: black;
+  font-size: 18px;
+  font-family: pfcentroreg;
+  padding-bottom: 22px;
+}
+
+.what-take {
+  margin-top: 50px;
+}
+
+.to-cent {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-sec {
+  background: url(../img/bg-sec-bottom.png) no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+}
+
+.bottom-sec p {
+  font-size: 30px;
+  font-family: pfcentroreg;
+  color: white;
+}
+
+.bottom-sec p span {
+  font-family: pfcentroBold
+}
+
+.bottom-sec p strong {
+  font-family: pfcentroublack;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-footer {
+  font-size: 18px;
+  font-family: pfcentroublack;
+  color: black;
+  margin-left: 10px;
+}
+
+.light {
+  font-family: pfcentroItalic;
+  font-size: 18px;
+  color: #666666;
+}
+
+footer {
+  padding: 12px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .this-course {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .this-course-item {
+    align-items: center;
+  }
+
+  .to-cent {
+    display: block;
+  }
+
+  header {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .get-access button {
+    top: 40px;
+  }
+
+  .text-logo {
+    margin-top: 30px;
+  }
+
+  .this-course-item p {
+    margin-top: 20px;
+  }
+
+  .this-course-wrapper {
+    margin-top: 0;
+  }
+
+  .this-course-item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bottom-sec {
+    background-size: cover;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  .this-couse-title img {
+    display: none;
+  }
+
+}

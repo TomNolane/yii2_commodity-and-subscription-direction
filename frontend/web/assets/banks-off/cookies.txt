@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+banks-off.ru	TRUE	/	FALSE	1999999999	PHPSESSID	dj3g9h8pujgcliu878ja4ipke5
+

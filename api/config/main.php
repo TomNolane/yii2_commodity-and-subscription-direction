@@ -57,11 +57,18 @@ return [
                 ],
                 [
                     'class' => 'yii\rest\UrlRule',
-                    'controller' => [
-                        'v1/message'
-                    ],
-                    'pluralize' => false,
+                    'controller' => 'v1/youtube', 
+                    'tokens' => [
+                        '{id}' => '<id:\\w+>'
+                    ]
                 ],
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'controller' => 'v1/country',
+                    'tokens' => [
+                        '{id}' => '<id:\\w+>'
+                    ]
+                ]
             ],
         ],
         'cache' => [

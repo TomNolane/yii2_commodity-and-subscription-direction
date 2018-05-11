@@ -14,7 +14,7 @@ class Message extends Model
     /**
      * @var string
      */
-    public $message = 'This message api v1.';
+    public $message = 'This message api v2.';
 
     /**
      * @inheritdoc
