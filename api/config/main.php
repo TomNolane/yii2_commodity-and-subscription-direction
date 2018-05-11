@@ -58,9 +58,8 @@ return [
                 [
                     'class' => 'yii\rest\UrlRule',
                     'controller' => 'v1/youtube', 
-                    'tokens' => [
-                        '{id}' => '<id:\\w+>'
-                    ]
+                    'except' => ['post','get'],
+                    'extraPatterns' => ['GET search' => 'search']
                 ],
                 [
                     'class' => 'yii\rest\UrlRule',
