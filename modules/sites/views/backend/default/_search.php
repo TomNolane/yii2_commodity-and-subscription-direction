@@ -36,6 +36,12 @@ use yii\widgets\ActiveForm;
 
     <?php echo $form->field($model, 'enable') ?>
 
+    <?php echo $form->field($model, 'white') ?>
+
+    <?php echo $form->field($model, 'grey') ?>
+
+    <?php echo $form->field($model, 'utm_enable') ?>
+
     <div class="form-group">
         <?= Html::submitButton('Поиск', ['class' => 'btn btn-primary']) ?>
         <?= Html::resetButton('Сбросить', ['class' => 'btn btn-default']) ?>

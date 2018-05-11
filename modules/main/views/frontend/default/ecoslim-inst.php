@@ -1,8 +1,5 @@
-<?php 
-//require 'stat.php';?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Eco Slim - уникальное средство для похудения. Цены, отзывы...</title>
     <meta name="description" content="Eco Slim - уникальное средство для похудения. Цены, отзывы...">

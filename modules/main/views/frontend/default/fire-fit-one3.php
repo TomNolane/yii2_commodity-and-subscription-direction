@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">

@@ -37,6 +37,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'adsense:ntext',
             'yandex_rtb:ntext',
             'enable',
+            'white:ntext',
+            'grey:ntext',
+            'utm_enable',
         ],
     ]) ?>
 

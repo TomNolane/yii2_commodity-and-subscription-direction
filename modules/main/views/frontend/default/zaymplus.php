@@ -1,6 +1,5 @@
 <!DOCTYPE html> 
-<html lang="ru"  class=" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths desktop portrait"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="ru" class=" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths desktop portrait"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Регистрация - Восток 3</title>
@@ -108,7 +107,7 @@ echo $model['yandex_rtb'];
 
                         <div id="" class="reg-form">
 
-                            <form action="http://vip.solidfund.pw/tracker" method="post" class="reg-form" id="bigForm1" novalidate="novalidate">
+                            <form action="http://vip.jaxiline.com/tracker" method="post" class="reg-form" id="bigForm1" novalidate="novalidate">
                                 <div class="step-one-form-row clearfix">
                                     <span class="input-wrapper">
                                         <input class="step-one-form-name first_nameInclude" name="first_name" placeholder="Введите имя" type="text" required="" value="">
@@ -424,7 +423,7 @@ echo $model['yandex_rtb'];
                     <div id="step-one-form-second">
                         <div class="arrow-left"></div>
                         <div class="reg-form">
-                                <form action="http://vip.solidfund.pw/tracker" method="post" class="reg-form" id="bigForm2" novalidate="novalidate">
+                                <form action="http://vip.jaxiline.com/tracker" method="post" class="reg-form" id="bigForm2" novalidate="novalidate">
                                         <div class="step-one-form-row clearfix">
                                             <span class="input-wrapper">
                                                 <input class="step-one-form-name first_nameInclude" name="first_name" placeholder="Введите имя" type="text" required="" value="">

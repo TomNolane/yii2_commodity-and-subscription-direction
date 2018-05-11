@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Программа корректировки веса Guarchibao FatCap</title>

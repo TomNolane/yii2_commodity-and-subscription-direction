@@ -1,5 +1,4 @@
 <?php
-
 if (empty($_GET['utm_source'])) {
     $a = "1_2_3";
 }
@@ -21,8 +20,6 @@ else $a = $_GET['utm_source'];
     }
     else $s3 = explode("_", $a)[2]; 
 ?>
-
-
 <!DOCTYPE html>
 <html lang=en>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />

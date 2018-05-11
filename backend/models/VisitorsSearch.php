@@ -18,8 +18,8 @@ class VisitorsSearch extends Sites
     public function rules()
     {
         return [
-            [['id', 'enable'], 'integer'],
-            [['site', 'senpuls', 'metrika', 'facebook', 'google_analytics', 'adsense', 'yandex_rtb'], 'safe'],
+            [['id', 'enable', 'utm_enable'], 'integer'],
+            [['site', 'senpuls', 'metrika', 'facebook', 'google_analytics', 'adsense', 'yandex_rtb', 'white', 'grey'], 'safe'],
         ];
     }
 
@@ -61,6 +61,7 @@ class VisitorsSearch extends Sites
         $query->andFilterWhere([
             'id' => $this->id,
             'enable' => $this->enable,
+            'utm_enable' => $this->utm_enable
         ]);
 
         $query->andFilterWhere(['like', 'site', $this->site])
@@ -69,7 +70,9 @@ class VisitorsSearch extends Sites
             ->andFilterWhere(['like', 'facebook', $this->facebook])
             ->andFilterWhere(['like', 'google_analytics', $this->google_analytics])
             ->andFilterWhere(['like', 'adsense', $this->adsense])
-            ->andFilterWhere(['like', 'yandex_rtb', $this->yandex_rtb]);
+            ->andFilterWhere(['like', 'yandex_rtb', $this->yandex_rtb])
+            ->andFilterWhere(['like', 'white', $this->white])
+            ->andFilterWhere(['like', 'grey', $this->grey]);
 
         return $dataProvider;
     }

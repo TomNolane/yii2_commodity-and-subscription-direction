@@ -1,35 +1,10 @@
 <?php
-if (empty($_GET['utm_source'])) { 
-	include 'white.php';
-	return;
-}  
-
-$a = $_GET['utm_source'];	
-
-if(empty(explode("_", $a)[0]))
-{ 
-	include 'white.php';
-	return;
-}
-
-if(empty(explode("_", $a)[1]))
-{ 
-	include 'white.php';
-	return;
-}
-
-if(empty(explode("_", $a)[2]))
-{ 
-	include 'white.php';
-	return;
-}
-
 $s1 = explode("_", $a)[0];
 $s2 = explode("_", $a)[1];
 $s3 = explode("_", $a)[2]; 
 ?>
 <!DOCTYPE html>
-<html lang=en>
+<html lang=ru>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
     <meta charset=utf-8>

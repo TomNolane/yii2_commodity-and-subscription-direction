@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="robots" content="index/follow" />
-
     <meta property="fb:app_id" content=""/>
     <meta property="og:title" content="Играйте в MMO игру бесплатно - Crossout - MMO action game"/>
     <meta property="og:description" content=""/>

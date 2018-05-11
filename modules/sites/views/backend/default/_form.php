@@ -28,6 +28,12 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'enable')->textInput() ?>
 
+    <?= $form->field($model, 'white')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'grey')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'utm_enable')->textInput() ?>
+
     <div class="form-group">
         <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
     </div>

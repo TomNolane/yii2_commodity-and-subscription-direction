@@ -106,7 +106,16 @@ class DefaultController extends Controller
         $ip = Yii::$app->getRequest()->getUserIP(); 
         $useragent = Yii::$app->request->getUserAgent();
         $country = $this->BewteenBinarySearch(Yii::$app->getRequest()->getUserIP(),$data,$data2); 
-        $serverName = 'https://'.Yii::$app->getRequest()->serverName."?".urldecode(Yii::$app->request->queryString);
+        require_once 'Mobile_Detect.php';
+        $detect = new \Mobile_Detect;
+        $a = strtolower($useragent);
+        $is_bot = 0;
+        if(preg_match('/robot|bot|facebookexternalhit|facebot|ia_archiver|Google-Adwords-DisplayAds|Go-http-client|Riddle|socketcrawler|NetcraftSurveyAgent|yahoo|mail|antivirus|fetcher|mail.ru_bot|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|radioclicker|dataprovider|spider|crawler|curl|^$/i', $a)) $is_bot = 1;
+        if ($detect->isBot() || $detect->isSpider()) $is_bot = 1;
+
+        if(!empty(urldecode(Yii::$app->request->queryString))) $serverName = 'https://'.Yii::$app->getRequest()->serverName."?".urldecode(Yii::$app->request->queryString);
+        else $serverName = 'https://'.Yii::$app->getRequest()->serverName;
+
         if($country != 'RU')
         {
             $a = json_decode(file_get_contents('http://ip-api.com/json/'.$ip), true);
@@ -121,18 +130,34 @@ class DefaultController extends Controller
         if(strpos(urldecode(Yii::$app->request->queryString), '{source}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{campaign_id}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{keyword}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{SRC}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{PHRASE}') !== false  || strpos(urldecode(Yii::$app->request->queryString), '{campaignid}') !== false || strpos(Yii::$app->request->queryString, '%7D') !== false || strpos(Yii::$app->request->queryString, '%7B') !== false)
            $show_white = true;
 
-
         $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
-        if($model2['enable'] == 0)
-            $show_white = true;
 
-        if(strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false)
+        // if utm is enable, check
+        if($model2['utm_enable'] == 1)
         {
-            //$show_white = false;
-            //$ban_ip = 0;
-            //$country = "RU";
+            if (empty(urldecode(Yii::$app->request->get('utm_source', '')))) $show_white = true;
+            else
+            {
+                $a = urldecode(Yii::$app->request->get('utm_source', ''));	
+
+                if(empty(explode("_", $a)[0])) $show_white = true; 
+                else if(empty(explode("_", $a)[1])) $show_white = true;
+                else if(empty(explode("_", $a)[2])) $show_white = true;
+
+                $s1 = explode("_", $a)[0]; $s2 = explode("_", $a)[1]; $s3 = explode("_", $a)[2];
+            } 
         }
-         
+        
+        if($is_bot == 1 || $country != 'RU' || $show_white || $model2['enable'] == 0 || $ban_ip > 0)
+		{
+            if(!empty(urldecode(Yii::$app->request->queryString))) $serverName = $model2['white']."?".urldecode(Yii::$app->request->queryString)."--white";
+            else $serverName = $model2['white']."--white";
+        }
+        else
+        {
+            if(!empty(urldecode(Yii::$app->request->queryString))) $serverName = $model2['grey']."?".urldecode(Yii::$app->request->queryString);
+            else $serverName = $model2['grey'];
+        }
         
         // add visitors
         $visitors = new Visitors();
@@ -141,18 +166,12 @@ class DefaultController extends Controller
         $date = new \DateTime();
         $date = $date->format('Y-m-d H:i:s');
         $visitors->date = $date; // add Date
-        $visitors->site = ($ban_ip > 0 || $show_white) ? 'white' : $serverName; // add site to visit
+        $visitors->site = "https://".$serverName; // add site to visit
         $visitors->country = $country; // add what country
-        require_once 'Mobile_Detect.php';
-        $detect = new \Mobile_Detect;
         $is_mobile = 0;
         if($detect->isMobile()) $is_mobile = 1;
         else if($detect->isTablet()) $is_mobile = 2;
         $visitors->is_mobile = $is_mobile; // add is mobile or not
-        $a = strtolower($useragent);
-        $is_bot = 0;
-        if(preg_match('/robot|bot|facebookexternalhit|facebot|ia_archiver|Google-Adwords-DisplayAds|Go-http-client|Riddle|socketcrawler|NetcraftSurveyAgent|yahoo|mail|antivirus|fetcher|mail.ru_bot|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|radioclicker|dataprovider|spider|crawler|curl|^$/i', $a)) $is_bot = 1;
-        if ($detect->isBot() || $detect->isSpider()) $is_bot = 1;
         $visitors->is_bot = $is_bot; // add is bot or not
         $visitors->save(); // insert to visitors
         // end add visitors
@@ -171,7 +190,7 @@ class DefaultController extends Controller
             $this->session->set('date', $dateTime2);
         }
 
-        if($dos >= 4)
+        if($dos >= 3)
         {
             $this->session->set('_ban', 'BAN');
             $this->session->set('date', $dateTime);
@@ -181,7 +200,7 @@ class DefaultController extends Controller
             $date = new \DateTime();
             $date = $date->format('Y-m-d H:i:s');
             $temp_ban->date = $date;
-            $temp_ban->site = ($ban_ip > 0 || $show_white == true || $country != 'RU') ? 'white' : $serverName;
+            $temp_ban->site = ($ban_ip > 0 || $show_white == true || $country != 'RU') ? ('white;original='.$serverName) : $serverName;
             $temp_ban->country = $country;
             $temp_ban->save();
             return $this->render('ban',['bane_date'=> $this->session->get('date')]);
@@ -211,218 +230,8 @@ class DefaultController extends Controller
                 $banip->save(); // insert to banip
             } 
         }
-		
-		if($is_bot == 1 || $country != 'RU' || $show_white)
-		{
-			if($show_white && strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false) {
-				return $this->render('best-money',['model' => $model2]);
-            }
-            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'newgame') !== false) {
-				return $this->render('newgame',['model' => $model2]);
-            }
-            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'videolife') !== false) {
-				return $this->render('white2',['model' => $model2]);
-            }
-            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'travelbylife') !== false) {
-				return $this->render('travelbylife',['model' => $model2]);
-            }
-            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'dengomir') !== false) {
-				return $this->render('dengomir',['model' => $model2]);
-            }
-            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'cosmo-stars') !== false) {
-				return $this->render('cosmo-stars',['model' => $model2]);
-            }
-            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'blogsnew') !== false) {
-				return $this->render('blogsnew',['model' => $model2]);
-            }
-            if($show_white && strpos(Yii::$app->getRequest()->serverName, 'gardenin') !== false) {
-				return $this->render('blogsnew',['model' => $model2]);
-            }
-			else return $this->render('white',['model' => $model2]);
-		}
-            
-
-        if(strpos(Yii::$app->getRequest()->serverName, 'vladimir-blog') !== false) return $this->render('vladimir-blog',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false) return $this->render('lol-surprise-lp',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'ems-trainer-ron') !== false) return $this->render('ems-trainer-ron',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'ems-trainer') !== false) return $this->render('ems-trainer18',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'cosmo-stars') !== false) 
-        {
-            if (empty(urldecode(Yii::$app->request->get('utm_source', '')))) { 
-                return $this->render('cosmo-stars',['model' => $model2]);
-           }  
-
-           $a = urldecode(Yii::$app->request->get('utm_source', ''));	
-
-           if(empty(explode("_", $a)[0]))
-           { 
-                return $this->render('cosmo-stars',['model' => $model2]);
-           }
-
-           if(empty(explode("_", $a)[1]))
-           { 
-                return $this->render('cosmo-stars',['model' => $model2]);
-           }
-
-           if(empty(explode("_", $a)[2]))
-           { 
-                return $this->render('cosmo-stars',['model' => $model2]);
-           } 
-           $s1 = explode("_", $a)[0];
-           $s2 = explode("_", $a)[1];
-           $s3 = explode("_", $a)[2]; 
-
-           echo '<!doctype><html><header> <style>body {margin: 0;}</style></header><body>';  
-           echo "<script>window.location = 'http://pr0tection.ru/e826d0798e41d55b/$s1/$s2/$s3?track_id=e826d0798e41d55b&beeline&megafon'</script></body></html>"; 
-           return;
-            //return $this->render('cosmo-stars',['model' => $model2]);
-        }
-        elseif(strpos(Yii::$app->getRequest()->serverName, '198-fatcap5') !== false) return $this->render('198-fatcap5',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, '198-fatcap9') !== false) return $this->render('198-fatcap9',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'ecoslim6') !== false) return $this->render('ecoslim6',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'ecoslim-inst') !== false) return $this->render('ecoslim-inst',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'fire-fit-one9') !== false) return $this->render('fire-fit-one9',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'fire-fit-one3') !== false) return $this->render('fire-fit-one3',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'blogsnew') !== false) return $this->render('blogsnew',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'erectilecream-netnova') !== false) return $this->render('erectilecream-netnova',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'zdorov-potency') !== false) return $this->render('zdorov-potency',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'zdorov-parasites') !== false) return $this->render('zdorov-parasites',['model' => $model2]); 
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'gardenin') !== false)
-        {
-           if (empty(urldecode(Yii::$app->request->get('utm_source', '')))) { 
-                return $this->render('blogsnew',['model' => $model2]);
-           }  
-
-           $a = urldecode(Yii::$app->request->get('utm_source', ''));	
-
-           if(empty(explode("_", $a)[0]))
-           { 
-                return $this->render('blogsnew',['model' => $model2]);
-           }
-
-           if(empty(explode("_", $a)[1]))
-           { 
-                return $this->render('blogsnew',['model' => $model2]);
-           }
-
-           if(empty(explode("_", $a)[2]))
-           { 
-                return $this->render('blogsnew',['model' => $model2]);
-           }  
-
-            return $this->render('gardenin',['model' => $model2]); 
-        } 
-		elseif(strpos(Yii::$app->getRequest()->serverName, 'musiconline') !== false) return $this->render('musiconline',['model' => $model2]); 
-		elseif(strpos(Yii::$app->getRequest()->serverName, 'videolife') !== false) return $this->render('videolife',['model' => $model2]); 
-		elseif(strpos(Yii::$app->getRequest()->serverName, 'onlinerabota') !== false) return $this->render('onlinerabota',['model' => $model2]); 
-		elseif(strpos(Yii::$app->getRequest()->serverName, 'helpjob') !== false) return $this->render('helpjob',['model' => $model2]); 
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'rabotavsem') !== false) return $this->render('rabotavsem',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'rabotarus') !== false) return $this->render('rabotarus',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'luckymir') !== false) return $this->render('luckymir',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'amulet') !== false) return $this->render('amulet',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'travelbylife') !== false) return $this->render('travelbylife',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'best-money') !== false) 
-        {  
-			if (empty(urldecode(Yii::$app->request->get('utm_source', '')))) { 
-				 return $this->render('best-money',['model' => $model2]);
-			}  
-
-			$a = urldecode(Yii::$app->request->get('utm_source', ''));	
-
-			if(empty(explode("_", $a)[0]))
-			{ 
-				 return $this->render('best-money',['model' => $model2]);
-			}
-
-			if(empty(explode("_", $a)[1]))
-			{ 
-				 return $this->render('best-money',['model' => $model2]);
-			}
-
-			if(empty(explode("_", $a)[2]))
-			{ 
-				 return $this->render('best-money',['model' => $model2]);
-            } 
-            $s1 = explode("_", $a)[0];
-            $s2 = explode("_", $a)[1];
-            $s3 = explode("_", $a)[2];
-			echo '<!doctype><html><header><noscript><meta http-equiv="refresh"content="0; url=/"></noscript>  <style>body {margin: 0;}</style></header><body>';
-			echo "<script>window.location = 'http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b&subid1=".$s1."&subid2=".$s2."&subid3=".$s3."'</script></body></html>";   
-			return;
-			//return $this->render('best-money',['model' => $model2]);
-		}
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'banks-off') !== false) return $this->render('banks-off',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'newgame') !== false) 
-        {
-           if (empty(urldecode(Yii::$app->request->get('utm_source', '')))) { 
-                return $this->render('newgame',['model' => $model2]);
-           }  
-
-           $a = urldecode(Yii::$app->request->get('utm_source', ''));	
-
-           if(empty(explode("_", $a)[0]))
-           { 
-                return $this->render('newgame',['model' => $model2]);
-           }
-
-           if(empty(explode("_", $a)[1]))
-           { 
-                return $this->render('newgame',['model' => $model2]);
-           }
-
-           if(empty(explode("_", $a)[2]))
-           { 
-                return $this->render('newgame',['model' => $model2]);
-           } 
-
-           if(empty(explode("_", $a)[3]))
-           { 
-                return $this->render('newgame',['model' => $model2]);
-           } 
-
-           echo '<!doctype><html><header><noscript><meta http-equiv="refresh"content="0; url=/"></noscript><style>body {margin: 0;}</style></header><body>';
-           $s1 = explode("_", $a)[3]; 
-           $link = "https://app.appsflyer.com/id1299543298?pid=advertise_95037&c=YWR2ZXJ0aXNlX2NwaV85NTAzN19iZXRtYXhf&clickid=$s1&af_adset=$a";
-           /*$link1 = "http://playony.ru/go/3c5512f77200426ba0eee42428aa9b3e365b64d1eb0a0b0b/";
-           $link2 = "http://casnogame.com/go/3c5512f71d01426ba0eee42428aa9b3e365b64d1eb0a0b0b/";
-
-            if(date('s') % 2 == 0)
-                $link =  $link1;
-            else $link =  $link2;
-            
-
-           echo "<script>window.location = '".$link."?utm_source=".$a."'</script></body></html>";   */
-           echo "<script>window.location = '".$link."'</script></body></html>";  
-           return;
-            //return $this->render('newgame',['model' => $model2]);
-        }
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'zaymplus') !== false) return $this->render('zaymplus',['model' => $model2]);
-        elseif(strpos(Yii::$app->getRequest()->serverName, 'dengomir') !== false)
-        {
-            if (empty(urldecode(Yii::$app->request->get('utm_source', '')))) { 
-                return $this->render('dengomir',['model' => $model2]);
-           }  
-
-           $a = urldecode(Yii::$app->request->get('utm_source', ''));	
-
-           if(empty(explode("_", $a)[0]))
-           { 
-                return $this->render('dengomir',['model' => $model2]);
-           }
-
-           if(empty(explode("_", $a)[1]))
-           { 
-                return $this->render('dengomir',['model' => $model2]);
-           }
-
-           if(empty(explode("_", $a)[2]))
-           { 
-                return $this->render('dengomir',['model' => $model2]);
-           } 
-
-            return $this->render('zaymplus',['model' => $model2]);
-        } 
-        else return $this->render('vladimir-blog'); 
+        $a = urldecode(Yii::$app->request->get('utm_source', ''));
+        return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a]);
     }
 
     /**

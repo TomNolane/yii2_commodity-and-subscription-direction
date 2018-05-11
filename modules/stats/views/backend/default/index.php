@@ -107,12 +107,12 @@ $this->params['breadcrumbs'][] = Module::t('module', 'Label');
 			});
 			// go to white page all
 			$r4 = array_filter($r10, function($item){
-				if($item['country'] != 'RU' || $item['site'] == 'white' || $item['is_bot'] == 1)
+				if($item['country'] != 'RU' || strpos(strtolower($item['site']), 'white') !== false || $item['is_bot'] == 1)
 					return 1;
 			}); 
 			// go to white page uniq
 			$r5 = array_filter($r11, function($item){
-				if($item['country'] != 'RU' || $item['site'] == 'white' || $item['is_bot'] == 1)
+				if($item['country'] != 'RU' || strpos(strtolower($item['site']), 'white') !== false || $item['is_bot'] == 1)
 					return 1;
 			});  
  

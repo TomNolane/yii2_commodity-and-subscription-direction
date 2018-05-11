@@ -33,8 +33,9 @@ class Sites extends \yii\db\ActiveRecord
     {
         return [
             [['site'], 'required'],
-            [['senpuls', 'metrika', 'facebook', 'google_analytics', 'adsense', 'yandex_rtb'], 'string'],
+            [['senpuls', 'metrika', 'facebook', 'google_analytics', 'adsense', 'yandex_rtb', 'white', 'grey'], 'string'],
             [['enable'], 'integer'],
+            [['utm_enable'], 'integer'],
             [['site'], 'string', 'max' => 255],
         ];
     }
@@ -53,6 +54,9 @@ class Sites extends \yii\db\ActiveRecord
             'adsense' => 'Adwords',
             'yandex_rtb' => 'Yandex Rtb',
             'enable' => 'Включен',
+            'white' => 'Белая',
+            'grey' => 'Серая',
+            'utm_enable' => 'UTM включено'
         ];
     }
 

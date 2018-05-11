@@ -96,7 +96,20 @@ $this->params['breadcrumbs'][] = Module::t('module', 'All sites');
             'headerOptions' => ['class' => 'text-center'],
             'format' => 'ntext'
         ],
-        'enable', 
+        'enable',
+        [
+            'attribute' => 'white',
+            'contentOptions' => ['class' => 'wrap'],
+            'headerOptions' => ['class' => 'text-center'],
+            'format' => 'ntext'
+        ],
+        [
+            'attribute' => 'grey',
+            'contentOptions' => ['class' => 'wrap'],
+            'headerOptions' => ['class' => 'text-center'],
+            'format' => 'ntext'
+        ],
+        'utm_enable', 
         ['class' => 'yii\grid\ActionColumn'],
     ],
 ]); ?>
