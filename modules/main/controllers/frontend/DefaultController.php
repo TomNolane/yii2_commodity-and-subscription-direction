@@ -126,8 +126,8 @@ class DefaultController extends Controller
         $ban_ip = Banip::find('ip')->where('ip = :ip', [':ip'=> $ip])->count();
 
         $show_white = false;
-        // check for row parammetras 
-        if(strpos(urldecode(Yii::$app->request->queryString), '{source}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{campaign_id}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{keyword}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{SRC}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{PHRASE}') !== false  || strpos(urldecode(Yii::$app->request->queryString), '{campaignid}') !== false || strpos(Yii::$app->request->queryString, '%7D') !== false || strpos(Yii::$app->request->queryString, '%7B') !== false)
+        // check for row parammetras strpos(urldecode(Yii::$app->request->queryString), '{source}') !== false ||
+        if( strpos(urldecode(Yii::$app->request->queryString), '{campaign_id}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{keyword}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{SRC}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{PHRASE}') !== false  || strpos(urldecode(Yii::$app->request->queryString), '{campaignid}') !== false || strpos(Yii::$app->request->queryString, '%7D') !== false || strpos(Yii::$app->request->queryString, '%7B') !== false)
            $show_white = true;
 
         $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
