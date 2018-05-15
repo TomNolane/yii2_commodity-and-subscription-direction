@@ -17,7 +17,7 @@ class Youtube extends ActiveRecord
      */
     public static function tableName()
     {
-        return 'Youtube';
+        return 'youtube';
     }
     /**
      * @inheritdoc

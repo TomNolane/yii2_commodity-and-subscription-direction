@@ -7,6 +7,7 @@ use yii\web\Controller;
 use frontend\models\Visitors;
 use frontend\models\Banip;
 use frontend\models\Temp_ban;
+use frontend\models\Youtube;
 use backend\models\Sites;
 use modules\main\models\frontend\ContactForm;
 use modules\main\Module;
@@ -231,6 +232,12 @@ class DefaultController extends Controller
             } 
         }
         $a = urldecode(Yii::$app->request->get('utm_source', ''));
+        
+        if(strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false)
+        {
+            $model3 = Youtube::find()->select('*')->all();
+            return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a, "model3" => $model3]);
+        }
         return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a]);
     }
 
