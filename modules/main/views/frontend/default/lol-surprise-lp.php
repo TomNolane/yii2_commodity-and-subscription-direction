@@ -60,6 +60,9 @@ http://www.templatemo.com/tm-500-fluid-gallery
             width: 100%;
             padding: 20px;
             }
+        footer {
+            display: none;
+        }
         </style>
         <?php 
         // counts
@@ -92,8 +95,8 @@ echo $model['yandex_rtb'];
                         <div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
                             <ul class="nav navbar-nav">
                                 <li class="nav-item active selected">
-                                    <a class="nav-link" href="#0" data-no="1">Тренд <span class="sr-only">(current)</span></a>
-                                </li>                                
+                                    <a class="nav-link" href="#0" data-no="1">Главная <span class="sr-only">(current)</span></a>
+                                </li>  
                                 <li class="nav-item">
                                     <a class="nav-link" href="#0" data-no="2">Фильмы</a>
                                 </li>
@@ -101,11 +104,11 @@ echo $model['yandex_rtb'];
                                     <a class="nav-link" href="#0" data-no="3">Мультики</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#0" data-no="4">О сервисе</a>
+                                    <a class="nav-link" href="#0" data-no="4">Тренд</a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" href="#0" data-no="5">Контакты</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>                        
                     </div>
@@ -114,13 +117,146 @@ echo $model['yandex_rtb'];
             </div> 
 
             <ul class="cd-hero-slider">
-
-                <!-- Page 1 Gallery One -->
+            
+                <!-- Главная -->
                 <li class="selected">                    
                     <div class="cd-full-width">
                         <div class="container-fluid js-tm-page-content" data-page-no="1" data-page-type="gallery">
                             <div class="tm-img-gallery-container">
-                                <div class="tm-img-gallery gallery-one">
+                                <div class="tm-img-gallery"> 
+                                <div class="tm-about-page">
+                                <div class="row tm-white-box-margin-b">
+                                    <div class="col-xs-12">
+                                        <div class="tm-flex">
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding">
+                                                <h2 class="tm-text-title">Более 1000 фильмов и мультиков на нашем сайте</h2>
+                                                <p class="tm-text">Приветствуем Вас посетитель данного сайта! На этом сайте вы найдете множество фильмов, мультиков и других видео (новых, популярных, старых, любимых) на любой вкус. Совершенно бесплатно и без всякой регистрации! Достаточно перейти в нашу картотеку и наслаждаться просмотром.</p>
+                                                <p class="tm-text">Наша картотека:<br>
+                                                <a href="#" id="a_1">Фильмы</a><br>
+                                                <a href="#" id="a_2">Мультфильмы</a><br>
+                                                <a href="#" id="a_3">Как заработать (тренд недели)</a>
+                                                </p> 
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>  
+                                </div>                                 
+                            </div>
+                        </div>                                                    
+                    </div>                    
+                </li>
+
+                
+
+                <!-- Фильмы-->
+                <li>                    
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="2" data-page-type="gallery">
+                            <div class="tm-img-gallery-container">
+                                <div class="tm-img-gallery gallery-4">
+                                <?php
+                                    $temp = 0;
+                                    foreach($model3 as $key)
+                                    {
+                                        if($key['category'] == "films")
+                                        {
+                                            if( $key['description'] != "нету описания")
+                                            {
+                                                $h = preg_replace('/<h1[^>]*?>([\\s\\S]*?)<\/h1>/','\\1', $key['description']);
+                                          
+                                                $h = preg_replace('/<a[^>]*?>([\\s\\S]*?)<\/a>/','\\1', $h);
+                                                $h = preg_replace('/<\/a>/','\\1', $h);
+                                                $h = preg_replace('/<b[^>]*?>([\\s\\S]*?)<\/b>/','\\1', $h);
+                                                $h = preg_replace('/<div[^>]*?>([\\s\\S]*?)<\/div>/','\\1', $h);
+                                                $h = preg_replace('/<span[^>]*?>([\\s\\S]*?)<\/span>/','\\1', $h);
+                                                $h = preg_replace('/<i[^>]*?>([\\s\\S]*?)<\/i>/','\\1', $h);
+                                            }
+                                            else $h = "";
+    
+                                            //if($temp == 20) break;
+                                            if(empty($key['thumbnail'])) continue;
+                                            echo '<div class="grid-item">
+                                            <figure class="effect-sadie">
+                                                    <img data-src="https://i.ytimg.com/vi/'.$key['short_url'].'/hqdefault.jpg" alt="Image" class="img-fluid tm-img">
+                                                    <figcaption>
+                                                        <h2 class="tm-figure-title"></h2>
+                                                        <p class="tm-figure-description">'.$key['title'].'</p>
+                                                        <a class="popup-youtube" title="'.$key['title'].'<br><br>Фильмы бесплатно и онлайн"  rel="nofollow" href="http://www.youtube.com/watch?v='.$key['short_url'].'">'.$h.'</a>
+                                                    </figcaption>           
+                                                </figure>
+                                            </div>';
+    
+                                            $temp++;
+                                        } 
+                                    }
+                                ?> 
+                                     
+
+                                </div>                                 
+                            </div>
+                        </div>                      
+                    </div>
+                </li>
+
+                <!-- Мультики -->
+                <li>
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="3" data-page-type="gallery">                        
+                            <div class="tm-img-gallery-container">
+                                <div class="tm-img-gallery gallery-4"> 
+                                    
+                                <?php
+                                    $temp = 0;
+                                    foreach($model3 as $key)
+                                    {
+                                        if($key['category'] == "mults")
+                                        {
+                                            if( $key['description'] != "нету описания")
+                                            {
+                                                $h = preg_replace('/<h1[^>]*?>([\\s\\S]*?)<\/h1>/','\\1', $key['description']);
+                                          
+                                                $h = preg_replace('/<a[^>]*?>([\\s\\S]*?)<\/a>/','\\1', $h);
+                                                $h = preg_replace('/<\/a>/','\\1', $h);
+                                                $h = preg_replace('/<b[^>]*?>([\\s\\S]*?)<\/b>/','\\1', $h);
+                                                $h = preg_replace('/<div[^>]*?>([\\s\\S]*?)<\/div>/','\\1', $h);
+                                                $h = preg_replace('/<span[^>]*?>([\\s\\S]*?)<\/span>/','\\1', $h);
+                                                $h = preg_replace('/<i[^>]*?>([\\s\\S]*?)<\/i>/','\\1', $h);
+                                            }
+                                            else $h = "";
+    
+                                            //if($temp == 20) break;
+                                            if(empty($key['thumbnail'])) continue;
+                                            echo '<div class="grid-item">
+                                            <figure class="effect-sadie">
+                                                    <img data-src="https://i.ytimg.com/vi/'.$key['short_url'].'/hqdefault.jpg" alt="Image" class="img-fluid tm-img">
+                                                    <figcaption>
+                                                        <h2 class="tm-figure-title"></h2>
+                                                        <p class="tm-figure-description">'.$key['title'].'</p>
+                                                        <a class="popup-youtube" title="'.$key['title'].'<br><br>Мультии бесплатно и онлайн"  rel="nofollow" href="http://www.youtube.com/watch?v='.$key['short_url'].'">'.$h.'</a>
+                                                    </figcaption>           
+                                                </figure>
+                                            </div>';
+    
+                                            $temp++;
+                                        } 
+                                    }
+                                ?> 
+                                
+
+                                </div>                      
+                            </div> 
+                        </div>         
+                    </div>  
+                </li>
+
+                <!-- Тренд -->
+                <li>                    
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="4" data-page-type="gallery">
+                            <div class="tm-img-gallery-container">
+                                <div class="tm-img-gallery gallery-4">
                                 <!-- Gallery One pop up connected with JS code below -->
 
 
@@ -148,7 +284,7 @@ echo $model['yandex_rtb'];
                                             if(empty($key['thumbnail'])) continue;
                                             echo '<div class="grid-item">
                                             <figure class="effect-sadie">
-                                                    <img src="https://i.ytimg.com/vi/'.$key['short_url'].'/hqdefault.jpg" alt="Image" class="img-fluid tm-img">
+                                                    <img data-src="https://i.ytimg.com/vi/'.$key['short_url'].'/hqdefault.jpg" alt="Image" class="img-fluid tm-img">
                                                     <figcaption>
                                                         <h2 class="tm-figure-title"></h2>
                                                         <p class="tm-figure-description">'.$key['title'].'</p>
@@ -167,108 +303,7 @@ echo $model['yandex_rtb'];
                     </div>                    
                 </li>
 
-                <!-- Page 2 Gallery Two -->
-                <li>                    
-                    <div class="cd-full-width">
-                        <div class="container-fluid js-tm-page-content" data-page-no="2" data-page-type="gallery">
-                            <div class="tm-img-gallery-container">
-                                <div class="tm-img-gallery gallery-two">
-                                <?php
-                                    $temp = 0;
-                                    foreach($model3 as $key)
-                                    {
-                                        if($key['category'] == "films")
-                                        {
-                                            if( $key['description'] != "нету описания")
-                                            {
-                                                $h = preg_replace('/<h1[^>]*?>([\\s\\S]*?)<\/h1>/','\\1', $key['description']);
-                                          
-                                                $h = preg_replace('/<a[^>]*?>([\\s\\S]*?)<\/a>/','\\1', $h);
-                                                $h = preg_replace('/<\/a>/','\\1', $h);
-                                                $h = preg_replace('/<b[^>]*?>([\\s\\S]*?)<\/b>/','\\1', $h);
-                                                $h = preg_replace('/<div[^>]*?>([\\s\\S]*?)<\/div>/','\\1', $h);
-                                                $h = preg_replace('/<span[^>]*?>([\\s\\S]*?)<\/span>/','\\1', $h);
-                                                $h = preg_replace('/<i[^>]*?>([\\s\\S]*?)<\/i>/','\\1', $h);
-                                            }
-                                            else $h = "";
-    
-                                            //if($temp == 20) break;
-                                            if(empty($key['thumbnail'])) continue;
-                                            echo '<div class="grid-item">
-                                            <figure class="effect-sadie">
-                                                    <img src="https://i.ytimg.com/vi/'.$key['short_url'].'/hqdefault.jpg" alt="Image" class="img-fluid tm-img">
-                                                    <figcaption>
-                                                        <h2 class="tm-figure-title"></h2>
-                                                        <p class="tm-figure-description">'.$key['title'].'</p>
-                                                        <a class="popup-youtube" title="'.$key['title'].'<br><br>Фильмы бесплатно и онлайн"  rel="nofollow" href="http://www.youtube.com/watch?v='.$key['short_url'].'">'.$h.'</a>
-                                                    </figcaption>           
-                                                </figure>
-                                            </div>';
-    
-                                            $temp++;
-                                        } 
-                                    }
-                                ?> 
-                                     
-
-                                </div>                                 
-                            </div>
-                        </div>                      
-                    </div>
-                </li>
-
-                <!-- Page 3 Gallery Three -->
-                <li>
-                    <div class="cd-full-width">
-                        <div class="container-fluid js-tm-page-content" data-page-no="3" data-page-type="gallery">                        
-                            <div class="tm-img-gallery-container">
-                                <div class="tm-img-gallery gallery-three"> 
-                                    
-                                <?php
-                                    $temp = 0;
-                                    foreach($model3 as $key)
-                                    {
-                                        if($key['category'] == "mults")
-                                        {
-                                            if( $key['description'] != "нету описания")
-                                            {
-                                                $h = preg_replace('/<h1[^>]*?>([\\s\\S]*?)<\/h1>/','\\1', $key['description']);
-                                          
-                                                $h = preg_replace('/<a[^>]*?>([\\s\\S]*?)<\/a>/','\\1', $h);
-                                                $h = preg_replace('/<\/a>/','\\1', $h);
-                                                $h = preg_replace('/<b[^>]*?>([\\s\\S]*?)<\/b>/','\\1', $h);
-                                                $h = preg_replace('/<div[^>]*?>([\\s\\S]*?)<\/div>/','\\1', $h);
-                                                $h = preg_replace('/<span[^>]*?>([\\s\\S]*?)<\/span>/','\\1', $h);
-                                                $h = preg_replace('/<i[^>]*?>([\\s\\S]*?)<\/i>/','\\1', $h);
-                                            }
-                                            else $h = "";
-    
-                                            //if($temp == 20) break;
-                                            if(empty($key['thumbnail'])) continue;
-                                            echo '<div class="grid-item">
-                                            <figure class="effect-sadie">
-                                                    <img src="https://i.ytimg.com/vi/'.$key['short_url'].'/hqdefault.jpg" alt="Image" class="img-fluid tm-img">
-                                                    <figcaption>
-                                                        <h2 class="tm-figure-title"></h2>
-                                                        <p class="tm-figure-description">'.$key['title'].'</p>
-                                                        <a class="popup-youtube" title="'.$key['title'].'<br><br>Мультии бесплатно и онлайн"  rel="nofollow" href="http://www.youtube.com/watch?v='.$key['short_url'].'">'.$h.'</a>
-                                                    </figcaption>           
-                                                </figure>
-                                            </div>';
-    
-                                            $temp++;
-                                        } 
-                                    }
-                                ?> 
-                                
-
-                                </div>                      
-                            </div> 
-                        </div>         
-                    </div>  
-                </li>
-
-                <!-- Page 4 About -->
+                <!-- Page 4 About 
                 <li>
                     <div class="cd-full-width">
                         <div class="container-fluid js-tm-page-content tm-page-width tm-pad-b" data-page-no="4">
@@ -326,11 +361,11 @@ echo $model['yandex_rtb'];
                             </div>
                                                    
                         </div>              
-                    </div> <!-- .cd-full-width -->
+                    </div> 
 
-                </li>
+                </li> -->
 
-                <!-- Page 5 Contact Us -->
+                <!-- 
                 <li>
                     <div class="cd-full-width">
                         <div class="container-fluid js-tm-page-content tm-page-pad" data-page-no="5">
@@ -341,8 +376,7 @@ echo $model['yandex_rtb'];
                                             <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
                                                 <h2 class="tm-contact-info">Feel free to say Hi!</h2>
                                                 <p class="tm-text">Nulla sed urna at ligula maximus blandit. Mauris nisi ligula, ultricies ac diam id, hendrerit tincidunt ipsum. Maecenas non massa justo.</p>                                                
-                                                
-                                                <!-- contact form -->
+                                                 
                                                 <form action="index.html" method="post" class="tm-contact-form">
 
                                                     <div class="form-group">
@@ -376,9 +410,9 @@ echo $model['yandex_rtb'];
 
                         </div>
                         
-                    </div> <!-- .cd-full-width -->
-                </li>
-            </ul> <!-- .cd-hero-slider -->
+                    </div> 
+                </li> Page 5 Contact Us -->
+            </ul>  
             
             <footer class="tm-footer">
             
@@ -513,6 +547,24 @@ echo $model['yandex_rtb'];
                     }        
                 });
 
+                $('.gallery-4').magnificPopup({
+                    delegate: 'a', // child items selector, by clicking on it popup will open
+                    type: 'iframe',
+                    gallery:{enabled:true},
+                    iframe: {
+                        markup: '<div class="mfp-iframe-scaler">'+
+                                '<div class="mfp-close"></div>'+
+                                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                                '<div class="mfp-title">Some caption</div>'+
+                                '</div>'
+                    },
+                    callbacks: {
+                    markupParse: function(template, values, item) {
+                        values.title = item.el.attr('title');
+                    }
+                    }        
+                });
+
                 /* Collapse menu after click 
                 -----------------------------------------*/
                 $('#tmNavbar a').click(function(){
@@ -540,6 +592,41 @@ echo $model['yandex_rtb'];
                 $(".tm-copyright-year").text(new Date().getFullYear());
                            
             });  
+ 
+            function ready() {
+                setTimeout(func, 1000);
+                
+            }  
+            function ready2() {
+                setTimeout(func2, 1000);
+                
+            } 
+            function func()
+            {
+                $('img[data-src]').each(function() { 
+                    $(this).attr('src', $(this).attr('data-src')).removeAttr('data-src');
+                }); 
+               
+            }
+            function func2()
+            {
+                $('footer').css("display","block");
+            }
+            document.addEventListener("DOMContentLoaded", ready);
+            document.addEventListener("DOMContentLoaded", ready2);
+            $('.nav-link').click(function(){
+                $('footer').css("display","none");
+                ready2();
+            });
+            $("#a_1").click(function(){
+                $("a.nav-link")[1].click();
+            });
+            $("#a_2").click(function(){
+                $("a.nav-link")[2].click();
+            });
+            $("#a_3").click(function(){
+                $("a.nav-link")[3].click();
+            });
         </script>            
 
 </body>

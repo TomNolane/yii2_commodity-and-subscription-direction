@@ -128,7 +128,7 @@ class DefaultController extends Controller
 
         $show_white = false;
         // check for row parammetras strpos(urldecode(Yii::$app->request->queryString), '{source}') !== false ||
-        if( strpos(urldecode(Yii::$app->request->queryString), '{campaign_id}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{keyword}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{SRC}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{PHRASE}') !== false  || strpos(urldecode(Yii::$app->request->queryString), '{campaignid}') !== false || strpos(Yii::$app->request->queryString, '%7D') !== false || strpos(Yii::$app->request->queryString, '%7B') !== false)
+        if( strpos(urldecode(Yii::$app->request->queryString), '{campaign_id}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{keyword}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{SRC}') !== false || strpos(urldecode(Yii::$app->request->queryString), '{PHRASE}') !== false  || strpos(urldecode(Yii::$app->request->queryString), '{campaignid}') !== false || strpos(Yii::$app->request->queryString, '%7D') !== false || strpos(Yii::$app->request->queryString, '%7B') !== false || strpos(Yii::$app->request->queryString, '{{campaign.id}}') !== false || strpos(Yii::$app->request->queryString, '{{placement}}') !== false || strpos(Yii::$app->request->queryString, '{{site_source_name}}') !== false)
            $show_white = true;
 
         $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
