@@ -1,0 +1,50 @@
+window.Adform.Tracking.TrackingPointId = 33692753;
+window.Adform.Tracking.TrackingPointName = "www.casinoeuro.com/en/";
+try{
+var tpPageName = window.Adform.Tracking.TrackingPointName || Adform.Tracking.Vars.PageName;
+if (tpPageName) {
+	var adf_marketID = 1172282;
+	var adf_marketPrefix = "UK - Casinoeuro - ";
+	var order = Adform.Tracking.Vars.Order || {};
+	order.itms = order.products || Adform.Tracking.Vars.Products || [];
+	
+    // SEGMENTS
+    // --------
+    var adf_encdMarketPrefix = encodeURIComponent(adf_marketPrefix);
+    
+    // Segments by sex
+    if (order.sv10.toLowerCase().match(/female/) || order.sv10.toLowerCase().match(/male/) || order.sv10.toLowerCase() == 'f' || order.sv10.toLowerCase() == 'm'){
+        if (order.sv10.toLowerCase().match(/female/) || order.sv10.toLowerCase() == 'f') {
+            new Image().src = "https://track.adform.net/Serving/TrackPoint/?pm="+adf_marketID+"&ADFPageName="+adf_encdMarketPrefix+"Female";
+        };
+        if (order.sv10.toLowerCase().match(/male/) || order.sv10.toLowerCase() == 'm') {
+            new Image().src = "https://track.adform.net/Serving/TrackPoint/?pm="+adf_marketID+"&ADFPageName="+adf_encdMarketPrefix+"Male";
+        };
+    };
+
+    // Segments by language
+    if (order.sv3.length > 0 && order.sv3.toLowerCase() != '-') {
+        if (order.sv3.toLowerCase() == 'undefined' || order.sv3.toLowerCase() == 'unknown'){
+            new Image().src = "https://track.adform.net/Serving/TrackPoint/?pm="+adf_marketID+"&ADFPageName="+adf_encdMarketPrefix+"Unknown%20Language";
+        } else {
+            var adf_langPrefx = encodeURIComponent(order.sv3.toUpperCase()) + "%20Language";
+            new Image().src = "https://track.adform.net/Serving/TrackPoint/?pm="+adf_marketID+"&ADFPageName="+adf_encdMarketPrefix+adf_langPrefx+"";
+        }
+    };
+    
+    // Segments by login status
+    if (order.sv4.length > 0 && !order.sv4.toLowerCase().match(/undefined/)) {
+        var adf_loginTypePrefx = encodeURIComponent(order.sv4) + "%20User";
+        new Image().src = "https://track.adform.net/Serving/TrackPoint/?pm="+adf_marketID+"&ADFPageName="+adf_encdMarketPrefix+adf_loginTypePrefx+"";
+    };
+   
+
+    // ACTUAL MIRROR
+    // -------------
+	var order = Adform.Tracking.Vars.Order || {};
+	order.itms = order.products || Adform.Tracking.Vars.Products || [];
+	delete order.products;
+	delete Adform.Tracking.Vars.Products;
+	adf.track(adf_marketID, adf_marketPrefix+"All other pages", order); 
+};
+}catch(e){}

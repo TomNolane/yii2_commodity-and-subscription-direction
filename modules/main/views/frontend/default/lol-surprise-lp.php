@@ -61,10 +61,21 @@ http://www.templatemo.com/tm-500-fluid-gallery
             padding: 20px;
             }
         </style>
+        <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
 </head>
 
     <body>
-        
+    <?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
         <!-- Content -->
         <div class="cd-hero">
 
