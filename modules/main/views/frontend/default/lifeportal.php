@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="/assets/lol-surprise-lp/favicon.png">
-    <title>Лучшее бесплатное видео онлайн!</title>
+    <title>Best free video online!</title>
 <!--
 Fluid Gallery Template
 http://www.templatemo.com/tm-500-fluid-gallery
@@ -87,7 +87,7 @@ echo $model['yandex_rtb'];
                 <nav class="navbar">
                     <div class="tm-navbar-bg">
                         
-                        <a class="navbar-brand text-uppercase" href="#"><img src="/assets/lol-surprise-lp/favicon.png" class="img-fluid" alt="Lifeportal.ml">   Lifeportal.ml</a>
+                        <a class="navbar-brand text-uppercase" href="#"><img src="/assets/lol-surprise-lp/favicon.png" class="img-fluid" alt="Lifeportal.ml">Lifeportal.ml</a>
 
                         <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
                             &#9776;
@@ -95,16 +95,16 @@ echo $model['yandex_rtb'];
                         <div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
                             <ul class="nav navbar-nav">
                                 <li class="nav-item active selected">
-                                    <a class="nav-link" href="#0" data-no="1">Главная <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#0" data-no="1">Main page <span class="sr-only">(current)</span></a>
                                 </li>  
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#0" data-no="2">Фильмы</a>
+                                    <a class="nav-link" href="#0" data-no="2">Films</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#0" data-no="3">Мультики</a>
+                                    <a class="nav-link" href="#0" data-no="3">Cartoons</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#0" data-no="4">Тренд</a>
+                                    <a class="nav-link" href="#0" data-no="4">Music video</a>
                                 </li>
                                 <!-- <li class="nav-item">
                                     <a class="nav-link" href="#0" data-no="5">Контакты</a>
@@ -129,14 +129,13 @@ echo $model['yandex_rtb'];
                                     <div class="col-xs-12">
                                         <div class="tm-flex">
                                             <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding">
-                                                <h2 class="tm-text-title">Более 1000 фильмов и мультиков на нашем сайте</h2>
-                                                <p class="tm-text">Приветствуем Вас посетитель данного сайта! На этом сайте вы найдете множество фильмов, мультиков и других видео (новых, популярных, старых, любимых) на любой вкус. Совершенно бесплатно и без всякой регистрации! Достаточно перейти в нашу картотеку и наслаждаться просмотром.</p>
-                                                <p class="tm-text">Наша картотека:<br>
-                                                <a href="#" id="a_1">Фильмы</a><br>
-                                                <a href="#" id="a_2">Мультфильмы</a><br>
-                                                <a href="#" id="a_3">Как заработать (тренд недели)</a>
-                                                </p> 
-                                                
+                                                <h2 class="tm-text-title">More than 1000 movies and cartoons on our website</h2>
+                                                <p class="tm-text">Welcome to this site! On this site you will find a lot of movies, cartoons and other videos (new, popular, old, favorite) for every taste. Absolutely free and without any registration! It is enough to go to our file Cabinet and enjoy watching.</p>
+                                                <p class="tm-text">Our filing Cabinet:<br>
+                                                <a href="#" id="a_1">Films</a><br>
+                                                <a href="#" id="a_2">Cartoons</a><br>
+                                                <a href="#" id="a_3">Music video</a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -160,9 +159,10 @@ echo $model['yandex_rtb'];
                                     $temp = 0;
                                     foreach($model3 as $key)
                                     {
+                                        if($temp == 300) break;
                                         if($key['category'] == "films")
                                         {
-                                            if( $key['description'] != "нету описания")
+                                            if( $key['description'] != "empty")
                                             {
                                                 $h = preg_replace('/<h1[^>]*?>([\\s\\S]*?)<\/h1>/','\\1', $key['description']);
                                           
@@ -174,16 +174,16 @@ echo $model['yandex_rtb'];
                                                 $h = preg_replace('/<i[^>]*?>([\\s\\S]*?)<\/i>/','\\1', $h);
                                             }
                                             else $h = "";
-    
+                                            
                                             //if($temp == 20) break;
                                             if(empty($key['thumbnail'])) continue;
                                             echo '<div class="grid-item">
                                             <figure class="effect-sadie">
-                                                    <img data-src="https://i.ytimg.com/vi/'.$key['short_url'].'/hqdefault.jpg" alt="Image" class="img-fluid tm-img">
+                                                    <img data-src="'.$key['thumbnail'].'" alt="Image" class="img-fluid tm-img">
                                                     <figcaption>
                                                         <h2 class="tm-figure-title"></h2>
                                                         <p class="tm-figure-description">'.$key['title'].'</p>
-                                                        <a class="popup-youtube" title="'.$key['title'].'<br><br>Фильмы бесплатно и онлайн"  rel="nofollow" href="http://www.youtube.com/watch?v='.$key['short_url'].'">'.$h.'</a>
+                                                        <a class="popup-youtube" title="'.$key['title'].'<br><br>'.$h.'"  rel="nofollow" href="http://www.youtube.com/watch?v='.$key['short_url'].'">'.$h.'</a>
                                                     </figcaption>           
                                                 </figure>
                                             </div>';
@@ -211,9 +211,10 @@ echo $model['yandex_rtb'];
                                     $temp = 0;
                                     foreach($model3 as $key)
                                     {
-                                        if($key['category'] == "mults")
+                                        if($temp == 300) break;
+                                        if($key['category'] == "cartoons")
                                         {
-                                            if( $key['description'] != "нету описания")
+                                            if( $key['description'] != "empty")
                                             {
                                                 $h = preg_replace('/<h1[^>]*?>([\\s\\S]*?)<\/h1>/','\\1', $key['description']);
                                           
@@ -230,11 +231,11 @@ echo $model['yandex_rtb'];
                                             if(empty($key['thumbnail'])) continue;
                                             echo '<div class="grid-item">
                                             <figure class="effect-sadie">
-                                                    <img data-src="https://i.ytimg.com/vi/'.$key['short_url'].'/hqdefault.jpg" alt="Image" class="img-fluid tm-img">
+                                                    <img data-src="'.$key['thumbnail'].'" alt="Image" class="img-fluid tm-img">
                                                     <figcaption>
                                                         <h2 class="tm-figure-title"></h2>
                                                         <p class="tm-figure-description">'.$key['title'].'</p>
-                                                        <a class="popup-youtube" title="'.$key['title'].'<br><br>Мультии бесплатно и онлайн"  rel="nofollow" href="http://www.youtube.com/watch?v='.$key['short_url'].'">'.$h.'</a>
+                                                        <a class="popup-youtube" title="'.$key['title'].'<br><br>'.$h.'"  rel="nofollow" href="http://www.youtube.com/watch?v='.$key['short_url'].'">'.$h.'</a>
                                                     </figcaption>           
                                                 </figure>
                                             </div>';
@@ -264,9 +265,10 @@ echo $model['yandex_rtb'];
                                     $temp = 0;
                                     foreach($model3 as $key)
                                     {
-                                        if($key['category'] == "work")
+                                        if($temp == 300) break;
+                                        if($key['category'] == "music")
                                         {
-                                            if( $key['description'] != "нету описания")
+                                            if( $key['description'] != "empty")
                                             {
                                                 $h = preg_replace('/<h1[^>]*?>([\\s\\S]*?)<\/h1>/','\\1', $key['description']);
                                           
@@ -284,7 +286,7 @@ echo $model['yandex_rtb'];
                                             if(empty($key['thumbnail'])) continue;
                                             echo '<div class="grid-item">
                                             <figure class="effect-sadie">
-                                                    <img data-src="https://i.ytimg.com/vi/'.$key['short_url'].'/hqdefault.jpg" alt="Image" class="img-fluid tm-img">
+                                                    <img data-src="'.$key['thumbnail'].'" alt="Image" class="img-fluid tm-img">
                                                     <figcaption>
                                                         <h2 class="tm-figure-title"></h2>
                                                         <p class="tm-figure-description">'.$key['title'].'</p>
