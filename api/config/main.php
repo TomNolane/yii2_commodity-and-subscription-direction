@@ -63,7 +63,7 @@ return [
                 ],
                 [
                     'class' => 'yii\rest\UrlRule',
-                    'controller' => 'v1/youtube2', 
+                    'controller' => 'v1/youtubeen', 
                     'except' => ['post','get'],
                     'extraPatterns' => ['GET search' => 'search']
                 ],

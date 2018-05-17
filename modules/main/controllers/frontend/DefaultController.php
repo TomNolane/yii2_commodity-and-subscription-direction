@@ -233,7 +233,7 @@ class DefaultController extends Controller
         }
         $a = urldecode(Yii::$app->request->get('utm_source', ''));
         
-        if(strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false)
+        if(strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false || strpos(Yii::$app->getRequest()->serverName, 'lifeportal') !== false)
         {
             $model3 = Youtube::find()->select('*')->all();
             return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a, "model3" => $model3]);

@@ -6,7 +6,7 @@ use \yii\db\ActiveRecord;
  *
  * @author Budi Irawan <deerawan@gmail.com>
  */
-class Youtube2 extends ActiveRecord
+class Youtubeen extends ActiveRecord
 {
     public static function getDb()
     { 
@@ -17,7 +17,7 @@ class Youtube2 extends ActiveRecord
      */
     public static function tableName()
     {
-        return 'youtube2';
+        return 'youtubeen';
     }
     /**
      * @inheritdoc

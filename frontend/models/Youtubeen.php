@@ -6,7 +6,7 @@ use Yii;
 use Yii\base\Model;
 use yii\db\ActiveRecord;
 
-class Youtube2 extends ActiveRecord
+class Youtubeen extends ActiveRecord
 {
     public static function getDb()
     { 
@@ -15,6 +15,6 @@ class Youtube2 extends ActiveRecord
 
     public static function tablesName()
     {
-        return 'Youtube2';
+        return 'Youtubeen';
     }
 }

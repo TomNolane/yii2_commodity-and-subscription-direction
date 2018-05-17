@@ -8,9 +8,9 @@ use yii\data\ActiveDataProvider;
  *
  * @author Budi Irawan <deerawan@gmail.com>
  */
-class Youtube2Controller extends ActiveController
+class YoutubeenController extends ActiveController
 {
-    public $modelClass = 'api\modules\v1\models\Youtube2';
+    public $modelClass = 'api\modules\v1\models\Youtubeen';
 
     public function actionSearch()
     {
