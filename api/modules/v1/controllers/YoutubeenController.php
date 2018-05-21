@@ -4,9 +4,8 @@ use yii\rest\ActiveController;
 
 use yii\data\ActiveDataProvider;
 /**
- * youtube Controller API
+ * youtubeen Controller API
  *
- * @author Budi Irawan <deerawan@gmail.com>
  */
 class YoutubeenController extends ActiveController
 {
@@ -14,25 +13,37 @@ class YoutubeenController extends ActiveController
 
     public function actionSearch()
     {
+        $page = 1;
         if (!empty($_GET)) {
             $model = new $this->modelClass;
-            foreach ($_GET as $key => $value) {
-                if (!$model->hasAttribute($key)) {
-                    throw new \yii\web\HttpException(404, 'Invalid attribute:' . $key);
+            foreach ($_GET as $key => $value) 
+            {
+                if($key == "page" && !empty($value))
+                {
+                    $int = (int) preg_replace('/[^0-9]/', '', $value);
+                    $page = abs($int);
+                }
+                else
+                {
+                    if (!$model->hasAttribute($key)) {
+                        throw new \yii\web\HttpException(404, 'Invalid attribute:' . $key);
+                    }
                 }
             }
             try {
 
             $query = $model->find();
                 foreach ($_GET as $key => $value) {
-                    $query->andWhere(['like', $key, $value,false]);
+                    if($key != "page")
+                        $query->andWhere([ '=', $key , $value ]);
                 }
 
                 $provider = new ActiveDataProvider([
                     'query' => $query,
                     'pagination' => [
                     'defaultPageSize' => 20,
-                ],
+                    'page' => ($page -1)
+                    ],
                 ]);
             } catch (Exception $ex) {
                 throw new \yii\web\HttpException(500, 'Internal server error');

@@ -6,7 +6,6 @@ use yii\data\ActiveDataProvider;
 /**
  * youtube Controller API
  *
- * @author Budi Irawan <deerawan@gmail.com>
  */
 class YoutubeController extends ActiveController
 {
@@ -18,8 +17,8 @@ class YoutubeController extends ActiveController
         if (!empty($_GET)) {
             $model = new $this->modelClass;
             
-            foreach ($_GET as $key => $value) {
-
+            foreach ($_GET as $key => $value) 
+            {
                 if($key == "page" && !empty($value))
                 {
                     $int = (int) preg_replace('/[^0-9]/', '', $value);

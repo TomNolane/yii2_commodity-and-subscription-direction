@@ -171,33 +171,11 @@ echo $model['yandex_rtb'];
         <div class="cd-full-width">
           <div class="container-fluid js-tm-page-content" data-page-no="2" data-page-type="gallery">
             <div class="tm-img-gallery-container">
-              <div class="tm-img-gallery gallery-4">
- 
-
+              <div class="tm-img-gallery gallery-4"> 
   
                 <div class="columns">
                     <youtube-component v-for="youtube in youtubes" :youtube="youtube" />
-                </div>
-                  
- 
-                  
-
-
-
-                <?php
-                // echo '<div class="grid-item">
-                //       <figure class="effect-sadie">
-                //               <img data-src="https://i.ytimg.com/vi/'.$key['short_url'].'/hqdefault.jpg" alt="Image" class="img-fluid tm-img">
-                //               <figcaption>
-                //                   <h2 class="tm-figure-title"></h2>
-                //                   <p class="tm-figure-description">'.$key['title'].'</p>
-                //                   <a class="popup-youtube" title="'.$key['title'].'<br><br>Фильмы бесплатно и онлайн"  rel="nofollow" href="http://www.youtube.com/watch?v='.$key['short_url'].'">'.$h.'</a>
-                //               </figcaption>           
-                //           </figure>
-                //       </div>';
-                ?>
-
-
+                </div> 
 
               </div>
               <div class="form-group">
@@ -222,7 +200,16 @@ echo $model['yandex_rtb'];
             <div class="tm-img-gallery-container">
               <div class="tm-img-gallery gallery-4">
 
-
+              <div class="columns">
+                    <youtube-component2 v-for="youtube2 in youtubes2" :youtube2="youtube2" />
+                </div> 
+                <div class="form-group">
+                <div class="d-flex justify-content-center">
+                  <button v-on:click="add2" id="singlebutton2" name="singlebutton2" class="btn btn-primary btn-film btn-lg">
+                  Ещё
+                  </button>
+                </div>
+              </div>
 
               </div>
             </div>
@@ -237,7 +224,16 @@ echo $model['yandex_rtb'];
             <div class="tm-img-gallery-container">
               <div class="tm-img-gallery gallery-4">
                 <!-- Gallery One pop up connected with JS code below -->
-
+                <div class="columns">
+                    <youtube-component3 v-for="youtube3 in youtubes3" :youtube3="youtube3" />
+                </div> 
+                <div class="form-group">
+                <div class="d-flex justify-content-center">
+                  <button v-on:click="add3" id="singlebutton3" name="singlebutton3" class="btn btn-primary btn-film btn-lg">
+                  Ещё
+                  </button>
+                </div>
+              </div>
 
               </div>
             </div>
@@ -5145,6 +5141,8 @@ echo $model['yandex_rtb'];
  
   
   var _current_page_films = 1; var all_pages_films = 1; var _scrolled = false; 
+  var _current_page_films2 = 1; var all_pages_films2 = 1; var _scrolled2 = false; 
+  var _current_page_films3 = 1; var all_pages_films3 = 1; var _scrolled3 = false; 
   // document.addEventListener("DOMContentLoaded", ready);
   // function ready()
   // {
@@ -5175,6 +5173,38 @@ Vue.component('youtube-component', {
     </div>`,
   props: {
     youtube: {}
+  }
+});
+
+Vue.component('youtube-component2', {
+  template: `<div class="grid-item">
+      <figure class="effect-sadie">
+              <img :src="'https://i.ytimg.com/vi/'+youtube2.short_url + '/hqdefault.jpg'" alt="Image" class="img-fluid tm-img">
+              <figcaption>
+                  <h2 class="tm-figure-title">{{youtube2.title}}</h2>
+                  <p class="tm-figure-description">{{youtube2.description}}</p>
+                  <a class="popup-youtube" :title="youtube2.title+'<br><br>'+youtube2.description"  rel="nofollow" :href="'http://www.youtube.com/watch?v='+youtube2.short_url">{{youtube2.description}}</a>
+              </figcaption>           
+          </figure>
+    </div>`,
+  props: {
+    youtube2: {}
+  }
+});
+
+Vue.component('youtube-component3', {
+  template: `<div class="grid-item">
+      <figure class="effect-sadie">
+              <img :src="'https://i.ytimg.com/vi/'+youtube3.short_url + '/hqdefault.jpg'" alt="Image" class="img-fluid tm-img">
+              <figcaption>
+                  <h2 class="tm-figure-title">{{youtube3.title}}</h2>
+                  <p class="tm-figure-description">{{youtube3.description}}</p>
+                  <a class="popup-youtube" :title="youtube3.title+'<br><br>'+youtube3.description"  rel="nofollow" :href="'http://www.youtube.com/watch?v='+youtube3.short_url">{{youtube3.description}}</a>
+              </figcaption>           
+          </figure>
+    </div>`,
+  props: {
+    youtube3: {}
   }
 });
 
@@ -5232,12 +5262,28 @@ var app = new Vue({
     youtube: [],
     current_page_films: _current_page_films,
     all_pages_films: all_pages_films,
-    scrolled: _scrolled
+    scrolled: _scrolled,
+    youtubes2: [],
+    youtube2: [],
+    current_page_films2: _current_page_films2,
+    all_pages_films2: all_pages_films2,
+    scrolled2: _scrolled2,
+    youtubes3: [],
+    youtube3: [],
+    current_page_films3: _current_page_films3,
+    all_pages_films3: all_pages_films3,
+    scrolled3: _scrolled3
   };
 }, 
   computed: {
         resource: function() {
             return this.$resource('https://lol-surprise-lp1.tk/api/v1/youtubes/search?category=films&page='+this.current_page_films)
+        },
+        resource2: function() {
+            return this.$resource('https://lol-surprise-lp1.tk/api/v1/youtubes/search?category=mults&page='+this.current_page_films2)
+        },
+        resource3: function() {
+            return this.$resource('https://lol-surprise-lp1.tk/api/v1/youtubes/search?category=mults&page='+this.current_page_films3)
         }
     }, 
   methods: {
@@ -5251,25 +5297,27 @@ var app = new Vue({
         if(_current_page_films < all_pages_films && _scrolled == false)
         _scrolled = true;
         _current_page_films++;
-          app.current_page_films = _current_page_films;
-        //this.$set(this, current_page_films, _current_page_films);
-        //contact.phpVue.set(app.current_page_films, 0, {current_page_films: _current_page_films++});
-        
-        
+        app.current_page_films = _current_page_films;
         this.getAllPosts();
-       
       }
-        
-      //alert(3333);
-      //console.log(window.scrollY);
-    // this.scrolled = window.scrollY > 0;
-    // alert(22);
   },
   add: function (event) {
     _scrolled = true;
     _current_page_films++;
     app.current_page_films = _current_page_films;
     this.getAllPosts();
+  },
+  add2: function (event) {
+    _scrolled2 = true;
+    _current_page_films2++;
+    app.current_page_films2 = _current_page_films2;
+    this.getAllPosts2();
+  },
+  add3: function (event) {
+    _scrolled3 = true;
+    _current_page_films3++;
+    app.current_page_films3 = _current_page_films3;
+    this.getAllPosts3();
   },
     getAllPosts: function() {
       _scrolled = true;
@@ -5289,13 +5337,11 @@ var app = new Vue({
                 {
                   app.youtubes.shift();
                 }
-                //scrollToTop(1000);
               }
 
-                   
-              //$(window).scrollTop(window.scrollY-20);
-              //app.$set(app.youtubes, response.data)
-              //this.youtubes = response.data;
+              if(_current_page_films == all_pages_films)
+                $("#singlebutton").hide();
+                
               var fff = setInterval(function() { 
                 _scrolled = false;
                }, 4000);
@@ -5305,14 +5351,81 @@ var app = new Vue({
               _current_page_films--;
                console.log(error);
             })
-        }
+        },
+        getAllPosts2: function() {
+        _scrolled2 = true;
+        var options = { 
+                  headers: {
+                      'Content-Type': 'application/json'
+                  }
+              }
+              this.resource2.get().then(function(response) {
+                console.log(response);
+                all_pages_films2 = response.headers.map['x-pagination-page-count'][0];
+                _current_page_films2 = response.headers.map['x-pagination-current-page'][0];
+                app.youtubes2 = app.youtubes2.concat(response.data);
+                if(app.youtubes2.length % 100 == 0)
+                {
+                  for(var i = 0; i < response.data.length; i++)
+                  {
+                    app.youtubes2.shift();
+                  }
+                }
+
+                if(_current_page_films2 == all_pages_films2)
+                  $("#singlebutton2").hide();
+                  
+                var fff = setInterval(function() { 
+                  _scrolled2 = false;
+                }, 4000);
+                
+
+              }, function(error) {
+                _current_page_films2--;
+                console.log(error);
+              })
+          },
+          getAllPosts3: function() {
+          _scrolled3 = true;
+          var options = { 
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }
+                this.resource3.get().then(function(response) {
+                  console.log(response);
+                  all_pages_films3 = response.headers.map['x-pagination-page-count'][0];
+                  _current_page_films3 = response.headers.map['x-pagination-current-page'][0];
+                  app.youtubes3 = app.youtubes3.concat(response.data);
+                  if(app.youtubes3.length % 100 == 0)
+                  {
+                    for(var i = 0; i < response.data.length; i++)
+                    {
+                      app.youtubes3.shift();
+                    }
+                  }
+
+                  if(_current_page_films3 == all_pages_films3)
+                    $("#singlebutton3").hide();
+                    
+                  var fff = setInterval(function() { 
+                    _scrolled3 = false;
+                  }, 4000);
+                  
+
+                }, function(error) {
+                  _current_page_films3--;
+                  console.log(error);
+                })
+            }
     },
+    
     created: function() {
          this.getAllPosts();
-         //window.addEventListener('scroll', this.handleScroll);
+         this.getAllPosts2();
+         this.getAllPosts3();
     },
     destroyed: function()  {
-  //window.removeEventListener('scroll', this.handleScroll);
 }
 }); 
   </script>
