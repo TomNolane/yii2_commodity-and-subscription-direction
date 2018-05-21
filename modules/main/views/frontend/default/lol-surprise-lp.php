@@ -176,8 +176,7 @@ echo $model['yandex_rtb'];
                 <div class="columns">
                     <youtube-component v-for="youtube in youtubes" :youtube="youtube" />
                 </div> 
-
-              </div>
+ 
               <div class="form-group">
                 <div class="d-flex justify-content-center">
                   <button v-on:click="add" id="singlebutton" name="singlebutton" class="btn btn-primary btn-film btn-lg">
@@ -5134,31 +5133,11 @@ echo $model['yandex_rtb'];
       $("a.nav-link")[3].click();
     });
   </script> 
-
-  
-
   <script> 
- 
-  
   var _current_page_films = 1; var all_pages_films = 1; var _scrolled = false; 
   var _current_page_films2 = 1; var all_pages_films2 = 1; var _scrolled2 = false; 
   var _current_page_films3 = 1; var all_pages_films3 = 1; var _scrolled3 = false; 
-  // document.addEventListener("DOMContentLoaded", ready);
-  // function ready()
-  // {
-  //   window.onscroll = () => {
-  //     let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight  === document.documentElement.offsetHeight;
 
-  //     if (bottomOfWindow) {
-  //       if(_current_page_films < all_pages_films)
-  //       {
-  //         // current_page_films++;
-  //         // app.getAllPosts();
-  //         // alert(1);
-  //       } 
-  //     }
-  //   };
-  // }
  
 Vue.component('youtube-component', {
   template: `<div class="grid-item">
@@ -5210,49 +5189,7 @@ Vue.component('youtube-component3', {
 
 var fff = setInterval(function() {
   $(window).resize();
-}, 1000);
-
-function getPosition(el) {
-  var xPos = 0;
-  var yPos = 0;
- 
-  while (el) {
-    if (el.tagName == "BODY") {
-      // deal with browser quirks with body/window/document and page scroll
-      var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
-      var yScroll = el.scrollTop || document.documentElement.scrollTop;
- 
-      xPos += (el.offsetLeft - xScroll + el.clientLeft);
-      yPos += (el.offsetTop - yScroll + el.clientTop);
-    } else {
-      // for all other non-BODY elements
-      xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
-      yPos += (el.offsetTop - el.scrollTop + el.clientTop);
-    }
- 
-    el = el.offsetParent;
-  }
-  return {
-    x: xPos,
-    y: yPos
-  };
-}
-
-function scrollToTop(scrollDuration) {
-const   scrollHeight = window.scrollY,
-        scrollStep = Math.PI / ( scrollDuration / 15 ),
-        cosParameter = scrollHeight / 2;
-var     scrollCount = 0,
-        scrollMargin,
-        scrollInterval = setInterval( function() {
-            if ( window.scrollY != 0 ) {
-                scrollCount = scrollCount + 1;  
-                scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
-                window.scrollTo( window.scrollY, ( scrollHeight - scrollMargin ) );
-            } 
-            else clearInterval(scrollInterval); 
-        }, 15 );
-}
+}, 1000); 
 
 var app = new Vue({
   el: '#app',
@@ -5430,5 +5367,4 @@ var app = new Vue({
 }); 
   </script>
 </body>
-
 </html>
