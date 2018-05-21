@@ -367,7 +367,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	padding: 10px;
 }
 
-.cd-hero-slider .cd-full-width { text-align: left; }
+.cd-hero-slider .cd-full-width { text-align: center; }
 
 .tm-2-col-textbox-2 {
 	width: 100%;

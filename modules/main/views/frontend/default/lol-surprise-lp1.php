@@ -1,6308 +1,5321 @@
-<!DOCTYPE html> 
-<html class="no-js" lang="ru"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Липоксин</title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
-    <link rel="shortcut icon" href="assets/lol-surprise-lp1/1/favicon.ico" type="image/x-icon">
-	<style>
-	@charset "UTF-8";
- 
-
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes bounce {
-  from,
-  20%,
-  53%,
-  80%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  40%,
-  43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
-  }
-}
-
-@keyframes bounce {
-  from,
-  20%,
-  53%,
-  80%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  40%,
-  43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
-  }
-}
-
-.bounce {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-transform-origin: center bottom;
-  transform-origin: center bottom;
-}
-
-@-webkit-keyframes flash {
-  from,
-  50%,
-  to {
-    opacity: 1;
-  }
-
-  25%,
-  75% {
-    opacity: 0;
-  }
-}
-
-@keyframes flash {
-  from,
-  50%,
-  to {
-    opacity: 1;
-  }
-
-  25%,
-  75% {
-    opacity: 0;
-  }
-}
-
-.flash {
-  -webkit-animation-name: flash;
-  animation-name: flash;
-}
- 
-
-@-webkit-keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.pulse {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-}
-
-@-webkit-keyframes rubberBand {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes rubberBand {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.rubberBand {
-  -webkit-animation-name: rubberBand;
-  animation-name: rubberBand;
-}
-
-@-webkit-keyframes shake {
-  from,
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-}
-
-@keyframes shake {
-  from,
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-}
-
-.shake {
-  -webkit-animation-name: shake;
-  animation-name: shake;
-}
-
-@-webkit-keyframes headShake {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  6.5% {
-    -webkit-transform: translateX(-6px) rotateY(-9deg);
-    transform: translateX(-6px) rotateY(-9deg);
-  }
-
-  18.5% {
-    -webkit-transform: translateX(5px) rotateY(7deg);
-    transform: translateX(5px) rotateY(7deg);
-  }
-
-  31.5% {
-    -webkit-transform: translateX(-3px) rotateY(-5deg);
-    transform: translateX(-3px) rotateY(-5deg);
-  }
-
-  43.5% {
-    -webkit-transform: translateX(2px) rotateY(3deg);
-    transform: translateX(2px) rotateY(3deg);
-  }
-
-  50% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@keyframes headShake {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  6.5% {
-    -webkit-transform: translateX(-6px) rotateY(-9deg);
-    transform: translateX(-6px) rotateY(-9deg);
-  }
-
-  18.5% {
-    -webkit-transform: translateX(5px) rotateY(7deg);
-    transform: translateX(5px) rotateY(7deg);
-  }
-
-  31.5% {
-    -webkit-transform: translateX(-3px) rotateY(-5deg);
-    transform: translateX(-3px) rotateY(-5deg);
-  }
-
-  43.5% {
-    -webkit-transform: translateX(2px) rotateY(3deg);
-    transform: translateX(2px) rotateY(3deg);
-  }
-
-  50% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-.headShake {
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-name: headShake;
-  animation-name: headShake;
-}
-
-@-webkit-keyframes swing {
-  20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
-  }
-
-  40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg);
-  }
-
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-  }
-
-  80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
-  }
-
-  to {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
-}
-
-@keyframes swing {
-  20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
-  }
-
-  40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg);
-  }
-
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-  }
-
-  80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
-  }
-
-  to {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
-}
-
-.swing {
-  -webkit-transform-origin: top center;
-  transform-origin: top center;
-  -webkit-animation-name: swing;
-  animation-name: swing;
-}
-
-@-webkit-keyframes tada {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  10%,
-  20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40%,
-  60%,
-  80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes tada {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  10%,
-  20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40%,
-  60%,
-  80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.tada {
-  -webkit-animation-name: tada;
-  animation-name: tada;
-}
- 
-
-@-webkit-keyframes wobble {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  15% {
-    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-  }
-
-  30% {
-    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-  }
-
-  45% {
-    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-  }
-
-  60% {
-    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-  }
-
-  75% {
-    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes wobble {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  15% {
-    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-  }
-
-  30% {
-    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-  }
-
-  45% {
-    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-  }
-
-  60% {
-    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-  }
-
-  75% {
-    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.wobble {
-  -webkit-animation-name: wobble;
-  animation-name: wobble;
-}
-
-@-webkit-keyframes jello {
-  from,
-  11.1%,
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  22.2% {
-    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
-    transform: skewX(-12.5deg) skewY(-12.5deg);
-  }
-
-  33.3% {
-    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
-    transform: skewX(6.25deg) skewY(6.25deg);
-  }
-
-  44.4% {
-    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
-    transform: skewX(-3.125deg) skewY(-3.125deg);
-  }
-
-  55.5% {
-    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
-    transform: skewX(1.5625deg) skewY(1.5625deg);
-  }
-
-  66.6% {
-    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
-  }
-
-  77.7% {
-    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
-    transform: skewX(0.390625deg) skewY(0.390625deg);
-  }
-
-  88.8% {
-    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
-    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
-  }
-}
-
-@keyframes jello {
-  from,
-  11.1%,
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  22.2% {
-    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
-    transform: skewX(-12.5deg) skewY(-12.5deg);
-  }
-
-  33.3% {
-    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
-    transform: skewX(6.25deg) skewY(6.25deg);
-  }
-
-  44.4% {
-    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
-    transform: skewX(-3.125deg) skewY(-3.125deg);
-  }
-
-  55.5% {
-    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
-    transform: skewX(1.5625deg) skewY(1.5625deg);
-  }
-
-  66.6% {
-    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
-  }
-
-  77.7% {
-    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
-    transform: skewX(0.390625deg) skewY(0.390625deg);
-  }
-
-  88.8% {
-    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
-    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
-  }
-}
-
-.jello {
-  -webkit-animation-name: jello;
-  animation-name: jello;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-}
-
-@-webkit-keyframes bounceIn {
-  from,
-  20%,
-  40%,
-  60%,
-  80%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  20% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-
-  40% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9);
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(1.03, 1.03, 1.03);
-    transform: scale3d(1.03, 1.03, 1.03);
-  }
-
-  80% {
-    -webkit-transform: scale3d(0.97, 0.97, 0.97);
-    transform: scale3d(0.97, 0.97, 0.97);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes bounceIn {
-  from,
-  20%,
-  40%,
-  60%,
-  80%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  20% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-
-  40% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9);
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(1.03, 1.03, 1.03);
-    transform: scale3d(1.03, 1.03, 1.03);
-  }
-
-  80% {
-    -webkit-transform: scale3d(0.97, 0.97, 0.97);
-    transform: scale3d(0.97, 0.97, 0.97);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.bounceIn {
-  -webkit-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-  -webkit-animation-name: bounceIn;
-  animation-name: bounceIn;
-}
-
-@-webkit-keyframes bounceInDown {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
-    transform: translate3d(0, -3000px, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
-    transform: translate3d(0, 25px, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, 5px, 0);
-    transform: translate3d(0, 5px, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes bounceInDown {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
-    transform: translate3d(0, -3000px, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
-    transform: translate3d(0, 25px, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, 5px, 0);
-    transform: translate3d(0, 5px, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.bounceInDown {
-  -webkit-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-}
-
-@-webkit-keyframes bounceInLeft {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0);
-    transform: translate3d(-3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes bounceInLeft {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0);
-    transform: translate3d(-3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.bounceInLeft {
-  -webkit-animation-name: bounceInLeft;
-  animation-name: bounceInLeft;
-}
-
-@-webkit-keyframes bounceInRight {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes bounceInRight {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.bounceInRight {
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight;
-}
-
-@-webkit-keyframes bounceInUp {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 3000px, 0);
-    transform: translate3d(0, 3000px, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, -5px, 0);
-    transform: translate3d(0, -5px, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes bounceInUp {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 3000px, 0);
-    transform: translate3d(0, 3000px, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, -5px, 0);
-    transform: translate3d(0, -5px, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.bounceInUp {
-  -webkit-animation-name: bounceInUp;
-  animation-name: bounceInUp;
-}
-
-@-webkit-keyframes bounceOut {
-  20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9);
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-
-  50%,
-  55% {
-    opacity: 1;
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-}
-
-@keyframes bounceOut {
-  20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9);
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-
-  50%,
-  55% {
-    opacity: 1;
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-}
-
-.bounceOut {
-  -webkit-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-  -webkit-animation-name: bounceOut;
-  animation-name: bounceOut;
-}
-
-@-webkit-keyframes bounceOutDown {
-  20% {
-    -webkit-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
-  }
-
-  40%,
-  45% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
-  }
-}
-
-@keyframes bounceOutDown {
-  20% {
-    -webkit-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
-  }
-
-  40%,
-  45% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
-  }
-}
-
-.bounceOutDown {
-  -webkit-animation-name: bounceOutDown;
-  animation-name: bounceOutDown;
-}
-
-@-webkit-keyframes bounceOutLeft {
-  20% {
-    opacity: 1;
-    -webkit-transform: translate3d(20px, 0, 0);
-    transform: translate3d(20px, 0, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-    transform: translate3d(-2000px, 0, 0);
-  }
-}
-
-@keyframes bounceOutLeft {
-  20% {
-    opacity: 1;
-    -webkit-transform: translate3d(20px, 0, 0);
-    transform: translate3d(20px, 0, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-    transform: translate3d(-2000px, 0, 0);
-  }
-}
-
-.bounceOutLeft {
-  -webkit-animation-name: bounceOutLeft;
-  animation-name: bounceOutLeft;
-}
-
-@-webkit-keyframes bounceOutRight {
-  20% {
-    opacity: 1;
-    -webkit-transform: translate3d(-20px, 0, 0);
-    transform: translate3d(-20px, 0, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-}
-
-@keyframes bounceOutRight {
-  20% {
-    opacity: 1;
-    -webkit-transform: translate3d(-20px, 0, 0);
-    transform: translate3d(-20px, 0, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-}
-
-.bounceOutRight {
-  -webkit-animation-name: bounceOutRight;
-  animation-name: bounceOutRight;
-}
-
-@-webkit-keyframes bounceOutUp {
-  20% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
-  }
-
-  40%,
-  45% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 20px, 0);
-    transform: translate3d(0, 20px, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
-  }
-}
-
-@keyframes bounceOutUp {
-  20% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
-  }
-
-  40%,
-  45% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 20px, 0);
-    transform: translate3d(0, 20px, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
-  }
-}
-
-.bounceOutUp {
-  -webkit-animation-name: bounceOutUp;
-  animation-name: bounceOutUp;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-
-@-webkit-keyframes fadeInDownBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInDownBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInDownBig {
-  -webkit-animation-name: fadeInDownBig;
-  animation-name: fadeInDownBig;
-}
-
-@-webkit-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-}
-
-@-webkit-keyframes fadeInLeftBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-    transform: translate3d(-2000px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInLeftBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-    transform: translate3d(-2000px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInLeftBig {
-  -webkit-animation-name: fadeInLeftBig;
-  animation-name: fadeInLeftBig;
-}
-
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-}
-
-@-webkit-keyframes fadeInRightBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInRightBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInRightBig {
-  -webkit-animation-name: fadeInRightBig;
-  animation-name: fadeInRightBig;
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-@-webkit-keyframes fadeInUpBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInUpBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInUpBig {
-  -webkit-animation-name: fadeInUpBig;
-  animation-name: fadeInUpBig;
-}
-
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-.fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
-}
-
-@-webkit-keyframes fadeOutDown {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-}
-
-@keyframes fadeOutDown {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-}
-
-.fadeOutDown {
-  -webkit-animation-name: fadeOutDown;
-  animation-name: fadeOutDown;
-}
-
-@-webkit-keyframes fadeOutDownBig {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
-  }
-}
-
-@keyframes fadeOutDownBig {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
-  }
-}
-
-.fadeOutDownBig {
-  -webkit-animation-name: fadeOutDownBig;
-  animation-name: fadeOutDownBig;
-}
-
-@-webkit-keyframes fadeOutLeft {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-@keyframes fadeOutLeft {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-.fadeOutLeft {
-  -webkit-animation-name: fadeOutLeft;
-  animation-name: fadeOutLeft;
-}
-
-@-webkit-keyframes fadeOutLeftBig {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-    transform: translate3d(-2000px, 0, 0);
-  }
-}
-
-@keyframes fadeOutLeftBig {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-    transform: translate3d(-2000px, 0, 0);
-  }
-}
-
-.fadeOutLeftBig {
-  -webkit-animation-name: fadeOutLeftBig;
-  animation-name: fadeOutLeftBig;
-}
-
-@-webkit-keyframes fadeOutRight {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
-@keyframes fadeOutRight {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
-.fadeOutRight {
-  -webkit-animation-name: fadeOutRight;
-  animation-name: fadeOutRight;
-}
-
-@-webkit-keyframes fadeOutRightBig {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-}
-
-@keyframes fadeOutRightBig {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-}
-
-.fadeOutRightBig {
-  -webkit-animation-name: fadeOutRightBig;
-  animation-name: fadeOutRightBig;
-}
-
-@-webkit-keyframes fadeOutUp {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-}
-
-@keyframes fadeOutUp {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-}
-
-.fadeOutUp {
-  -webkit-animation-name: fadeOutUp;
-  animation-name: fadeOutUp;
-}
-
-@-webkit-keyframes fadeOutUpBig {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
-  }
-}
-
-@keyframes fadeOutUpBig {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
-  }
-}
-
-.fadeOutUpBig {
-  -webkit-animation-name: fadeOutUpBig;
-  animation-name: fadeOutUpBig;
-}
-
-@-webkit-keyframes flip {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-
-  50% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-}
-
-@keyframes flip {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-
-  50% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-}
-
-.animated.flip {
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-  -webkit-animation-name: flip;
-  animation-name: flip;
-}
-
-@-webkit-keyframes flipInX {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-@keyframes flipInX {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-.flipInX {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: flipInX;
-  animation-name: flipInX;
-}
-
-@-webkit-keyframes flipInY {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-@keyframes flipInY {
-  from {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-}
-
-.flipInY {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: flipInY;
-  animation-name: flipInY;
-}
-
-@-webkit-keyframes flipOutX {
-  from {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-
-  30% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    opacity: 0;
-  }
-}
-
-@keyframes flipOutX {
-  from {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-
-  30% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    opacity: 0;
-  }
-}
-
-.flipOutX {
-  -webkit-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-  -webkit-animation-name: flipOutX;
-  animation-name: flipOutX;
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-}
-
-@-webkit-keyframes flipOutY {
-  from {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-
-  30% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    opacity: 0;
-  }
-}
-
-@keyframes flipOutY {
-  from {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
-
-  30% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    opacity: 0;
-  }
-}
-
-.flipOutY {
-  -webkit-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: flipOutY;
-  animation-name: flipOutY;
-}
-
-@-webkit-keyframes lightSpeedIn {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes lightSpeedIn {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.lightSpeedIn {
-  -webkit-animation-name: lightSpeedIn;
-  animation-name: lightSpeedIn;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-}
-
-@-webkit-keyframes lightSpeedOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
-    transform: translate3d(100%, 0, 0) skewX(30deg);
-    opacity: 0;
-  }
-}
-
-@keyframes lightSpeedOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
-    transform: translate3d(100%, 0, 0) skewX(30deg);
-    opacity: 0;
-  }
-}
-
-.lightSpeedOut {
-  -webkit-animation-name: lightSpeedOut;
-  animation-name: lightSpeedOut;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-}
-
-@-webkit-keyframes rotateIn {
-  from {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes rotateIn {
-  from {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.rotateIn {
-  -webkit-animation-name: rotateIn;
-  animation-name: rotateIn;
-}
-
-@-webkit-keyframes rotateInDownLeft {
-  from {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes rotateInDownLeft {
-  from {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.rotateInDownLeft {
-  -webkit-animation-name: rotateInDownLeft;
-  animation-name: rotateInDownLeft;
-}
-
-@-webkit-keyframes rotateInDownRight {
-  from {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes rotateInDownRight {
-  from {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.rotateInDownRight {
-  -webkit-animation-name: rotateInDownRight;
-  animation-name: rotateInDownRight;
-}
-
-@-webkit-keyframes rotateInUpLeft {
-  from {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes rotateInUpLeft {
-  from {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.rotateInUpLeft {
-  -webkit-animation-name: rotateInUpLeft;
-  animation-name: rotateInUpLeft;
-}
-
-@-webkit-keyframes rotateInUpRight {
-  from {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -90deg);
-    transform: rotate3d(0, 0, 1, -90deg);
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes rotateInUpRight {
-  from {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -90deg);
-    transform: rotate3d(0, 0, 1, -90deg);
-    opacity: 0;
-  }
-
-  to {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.rotateInUpRight {
-  -webkit-animation-name: rotateInUpRight;
-  animation-name: rotateInUpRight;
-}
-
-@-webkit-keyframes rotateOut {
-  from {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, 200deg);
-    transform: rotate3d(0, 0, 1, 200deg);
-    opacity: 0;
-  }
-}
-
-@keyframes rotateOut {
-  from {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, 200deg);
-    transform: rotate3d(0, 0, 1, 200deg);
-    opacity: 0;
-  }
-}
-
-.rotateOut {
-  -webkit-animation-name: rotateOut;
-  animation-name: rotateOut;
-}
-
-@-webkit-keyframes rotateOutDownLeft {
-  from {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
-}
-
-@keyframes rotateOutDownLeft {
-  from {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
-}
-
-.rotateOutDownLeft {
-  -webkit-animation-name: rotateOutDownLeft;
-  animation-name: rotateOutDownLeft;
-}
-
-@-webkit-keyframes rotateOutDownRight {
-  from {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
-    opacity: 0;
-  }
-}
-
-@keyframes rotateOutDownRight {
-  from {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
-    opacity: 0;
-  }
-}
-
-.rotateOutDownRight {
-  -webkit-animation-name: rotateOutDownRight;
-  animation-name: rotateOutDownRight;
-}
-
-@-webkit-keyframes rotateOutUpLeft {
-  from {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
-    opacity: 0;
-  }
-}
-
-@keyframes rotateOutUpLeft {
-  from {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
-    opacity: 0;
-  }
-}
-
-.rotateOutUpLeft {
-  -webkit-animation-name: rotateOutUpLeft;
-  animation-name: rotateOutUpLeft;
-}
-
-@-webkit-keyframes rotateOutUpRight {
-  from {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 90deg);
-    transform: rotate3d(0, 0, 1, 90deg);
-    opacity: 0;
-  }
-}
-
-@keyframes rotateOutUpRight {
-  from {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 90deg);
-    transform: rotate3d(0, 0, 1, 90deg);
-    opacity: 0;
-  }
-}
-
-.rotateOutUpRight {
-  -webkit-animation-name: rotateOutUpRight;
-  animation-name: rotateOutUpRight;
-}
-
-@-webkit-keyframes hinge {
-  0% {
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-  }
-
-  20%,
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 80deg);
-    transform: rotate3d(0, 0, 1, 80deg);
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-  }
-
-  40%,
-  80% {
-    -webkit-transform: rotate3d(0, 0, 1, 60deg);
-    transform: rotate3d(0, 0, 1, 60deg);
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 700px, 0);
-    transform: translate3d(0, 700px, 0);
-    opacity: 0;
-  }
-}
-
-@keyframes hinge {
-  0% {
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-  }
-
-  20%,
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 80deg);
-    transform: rotate3d(0, 0, 1, 80deg);
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-  }
-
-  40%,
-  80% {
-    -webkit-transform: rotate3d(0, 0, 1, 60deg);
-    transform: rotate3d(0, 0, 1, 60deg);
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 700px, 0);
-    transform: translate3d(0, 700px, 0);
-    opacity: 0;
-  }
-}
-
-.hinge {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-name: hinge;
-  animation-name: hinge;
-}
-
-@-webkit-keyframes jackInTheBox {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.1) rotate(30deg);
-    transform: scale(0.1) rotate(30deg);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
-
-  50% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-  }
-
-  70% {
-    -webkit-transform: rotate(3deg);
-    transform: rotate(3deg);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes jackInTheBox {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.1) rotate(30deg);
-    transform: scale(0.1) rotate(30deg);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
-
-  50% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-  }
-
-  70% {
-    -webkit-transform: rotate(3deg);
-    transform: rotate(3deg);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-.jackInTheBox {
-  -webkit-animation-name: jackInTheBox;
-  animation-name: jackInTheBox;
-}
-
-
-@-webkit-keyframes rollIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes rollIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.rollIn {
-  -webkit-animation-name: rollIn;
-  animation-name: rollIn;
-}
-
-
-@-webkit-keyframes rollOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-  }
-}
-
-@keyframes rollOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-  }
-}
-
-.rollOut {
-  -webkit-animation-name: rollOut;
-  animation-name: rollOut;
-}
-
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-.zoomIn {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-@-webkit-keyframes zoomInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-@keyframes zoomInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-.zoomInDown {
-  -webkit-animation-name: zoomInDown;
-  animation-name: zoomInDown;
-}
-
-@-webkit-keyframes zoomInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-@keyframes zoomInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-.zoomInLeft {
-  -webkit-animation-name: zoomInLeft;
-  animation-name: zoomInLeft;
-}
-
-@-webkit-keyframes zoomInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-@keyframes zoomInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-.zoomInRight {
-  -webkit-animation-name: zoomInRight;
-  animation-name: zoomInRight;
-}
-
-@-webkit-keyframes zoomInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-@keyframes zoomInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-.zoomInUp {
-  -webkit-animation-name: zoomInUp;
-  animation-name: zoomInUp;
-}
-
-@-webkit-keyframes zoomOut {
-  from {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes zoomOut {
-  from {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-.zoomOut {
-  -webkit-animation-name: zoomOut;
-  animation-name: zoomOut;
-}
-
-@-webkit-keyframes zoomOutDown {
-  40% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-@keyframes zoomOutDown {
-  40% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-.zoomOutDown {
-  -webkit-animation-name: zoomOutDown;
-  animation-name: zoomOutDown;
-}
-
-@-webkit-keyframes zoomOutLeft {
-  40% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);
-    transform: scale(0.1) translate3d(-2000px, 0, 0);
-    -webkit-transform-origin: left center;
-    transform-origin: left center;
-  }
-}
-
-@keyframes zoomOutLeft {
-  40% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);
-    transform: scale(0.1) translate3d(-2000px, 0, 0);
-    -webkit-transform-origin: left center;
-    transform-origin: left center;
-  }
-}
-
-.zoomOutLeft {
-  -webkit-animation-name: zoomOutLeft;
-  animation-name: zoomOutLeft;
-}
-
-@-webkit-keyframes zoomOutRight {
-  40% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);
-    transform: scale(0.1) translate3d(2000px, 0, 0);
-    -webkit-transform-origin: right center;
-    transform-origin: right center;
-  }
-}
-
-@keyframes zoomOutRight {
-  40% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);
-    transform: scale(0.1) translate3d(2000px, 0, 0);
-    -webkit-transform-origin: right center;
-    transform-origin: right center;
-  }
-}
-
-.zoomOutRight {
-  -webkit-animation-name: zoomOutRight;
-  animation-name: zoomOutRight;
-}
-
-@-webkit-keyframes zoomOutUp {
-  40% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-@keyframes zoomOutUp {
-  40% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  }
-}
-
-.zoomOutUp {
-  -webkit-animation-name: zoomOutUp;
-  animation-name: zoomOutUp;
-}
-
-@-webkit-keyframes slideInDown {
-  from {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideInDown {
-  from {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slideInDown {
-  -webkit-animation-name: slideInDown;
-  animation-name: slideInDown;
-}
-
-@-webkit-keyframes slideInLeft {
-  from {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slideInLeft {
-  -webkit-animation-name: slideInLeft;
-  animation-name: slideInLeft;
-}
-
-@-webkit-keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slideInRight {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
-}
-
-@-webkit-keyframes slideInUp {
-  from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideInUp {
-  from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slideInUp {
-  -webkit-animation-name: slideInUp;
-  animation-name: slideInUp;
-}
-
-@-webkit-keyframes slideOutDown {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-}
-
-@keyframes slideOutDown {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-}
-
-.slideOutDown {
-  -webkit-animation-name: slideOutDown;
-  animation-name: slideOutDown;
-}
-
-@-webkit-keyframes slideOutLeft {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-@keyframes slideOutLeft {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-.slideOutLeft {
-  -webkit-animation-name: slideOutLeft;
-  animation-name: slideOutLeft;
-}
-
-@-webkit-keyframes slideOutRight {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
-@keyframes slideOutRight {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
-.slideOutRight {
-  -webkit-animation-name: slideOutRight;
-  animation-name: slideOutRight;
-}
-
-@-webkit-keyframes slideOutUp {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-}
-
-@keyframes slideOutUp {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-}
-
-.slideOutUp {
-  -webkit-animation-name: slideOutUp;
-  animation-name: slideOutUp;
-}
-
-	html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-body{margin:0}
-article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
-audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
-audio:not([controls]){display:none;height:0}
-[hidden],template{display:none}
-a{background-color:transparent}
-a:active,a:hover{outline:0}
-abbr[title]{border-bottom:1px dotted}
-b,strong{font-weight:700}
-dfn{font-style:italic}
-h1{font-size:2em;margin:.67em 0}
-mark{background:#ff0;color:#000}
-small{font-size:80%}
-sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
-sup{top:-.5em}
-sub{bottom:-.25em}
-img{border:0}
-svg:not(:root){overflow:hidden}
-figure{margin:1em 40px}
-hr{box-sizing:content-box;height:0}
-pre{overflow:auto}
-code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
-button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
-button{overflow:visible}
-button,select{text-transform:none}
-button,html input[type="button"],/* 1 */
-input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
-button[disabled],html input[disabled]{cursor:default}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
-input{line-height:normal;outline:0}
-button{outline:0}
-input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
-input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}
-input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}
-input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
-fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
-legend{border:0;padding:0}
-textarea{overflow:auto}
-optgroup{font-weight:700}
-table{border-collapse:collapse;border-spacing:0}
-td,th{padding:0}
-*{margin:0;padding:0}
-html{height:100%}
-body{width:100%;height:100%;background-color:#fff;font-size:16px;font-weight:500;font-family:'PFDinDisplayPro',serif}
-table{border-spacing:0;border-collapse:collapse;width:100%}
-h1{color:#000;font-size:35px;font-weight:400;line-height:normal;text-align:left;margin:0 0 20px}
-h2,h3,h4{color:#000;font-size:25px;font-weight:400;line-height:normal;margin:0 0 15px}
-ul{list-style:none}
-p{margin:20px 0}
-a{color:#000}
-a:hover{text-decoration:none}
-input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,input:-webkit-autofill:active{-webkit-transition-delay:9999s;-webkit-transition:color 9999s ease-out,background-color 9999s ease-out}
-input::-webkit-input-placeholder{color:#d7d7d7;opacity:1!important}
-input::-moz-placeholder{color:#d7d7d7;opacity:1!important}
-input:-moz-placeholder{color:#d7d7d7;opacity:1!important}
-input:-ms-input-placeholder{color:#d7d7d7;opacity:1!important}
-textarea::-webkit-input-placeholder{color:#d7d7d7;opacity:1!important}
-textarea::-moz-placeholder{color:#d7d7d7;opacity:1!important}
-textarea:-moz-placeholder{color:#d7d7d7;opacity:1!important}
-textarea:-ms-input-placeholder{color:#d7d7d7;opacity:1!important}
-a:active,a:focus{outline:none}
-input,textarea{outline:none}
-input:active,textarea:active{outline:none}
-:focus{outline:none}
-.clearfix:after{content:"";display:table;clear:both}
-.outer{width:100%;margin:0 auto;min-width:300px}
-.inner{max-width:1812px;margin:0 auto}
-@font-face{font-family:'PFDinDisplayPro';src:url(assets/lol-surprise-lp1/1/PFDinDisplayPro-Black.eot?#iefix) format("embedded-opentype"),url(assets/lol-surprise-lp1/1/PFDinDisplayPro-Black.woff) format("woff"),url(assets/lol-surprise-lp1/1/PFDinDisplayPro-Black.ttf) format("truetype"),url(assets/lol-surprise-lp1/1/PFDinDisplayPro-Black.svg#PFDinDisplayPro-Black) format("svg");font-weight:900;font-style:normal}
-@font-face{font-family:'PFDinDisplayPro';src:url(assets/lol-surprise-lp1/1/PFDinDisplayPro-Medium.eot?#iefix) format("embedded-opentype"),url(assets/lol-surprise-lp1/1/PFDinDisplayPro-Medium.woff) format("woff"),url(assets/lol-surprise-lp1/1/PFDinDisplayPro-Medium.ttf) format("truetype"),url(assets/lol-surprise-lp1/1/PFDinDisplayPro-Medium.svg#PFDinDisplayPro-Medium) format("svg");font-weight:500;font-style:normal}
-header{display:block;max-width:1812px;margin:0 auto;text-align:center;position:relative;}
-.header-left{display:inline-block;vertical-align:top;width:37%;margin:38px 0 0}
-.header-menu-a{display:inline-block;vertical-align:middle;text-transform:uppercase;text-decoration:none;margin:0 7% 0 0;font-weight:900}
-.header-menu-a.last{margin-right:0}
-.header-middle{display:inline-block;vertical-align:top;width:446px;text-align:center;box-sizing:border-box;padding:20px 20px 1px;background-color:#85d0de;position:relative}
-.header-middle:after{position:absolute;bottom:-76px;left:0;display:block;content:'';width:0;height:0;border-left:223px solid transparent;border-right:223px solid transparent;border-top:76px solid #85d0de}
-.header-description{color:#fff;margin:3px 0 0}
-.header-right{display:inline-block;vertical-align:top;text-align:right;width:37%;margin:23px 0 0}
-.header-right-item{text-align:left;display:inline-block;vertical-align:middle;margin:0 0 0 10%;width:37.5%}
-.header-right-img{display:inline-block;vertical-align:middle}
-.header-right-info{display:inline-block;vertical-align:middle;margin:0 0 0 5%;width:76%}
-.header-right-info-p{color:#364d62;margin:0}
-.header-tel-a{text-decoration:none;font-size:27px;color:#364d62;display:block}
-.popup-form{display:none;padding:54px 50px 61px;width:657px}
-.popup-title{font-size:48px;text-align:center;margin:0;color:#364D62}
-.popup-line{width:410px;margin:23px auto 27px;height:2px;background-color:#F6F6F6}
-.popup-undertitle{font-family:'PT Sans',sans-serif;font-weight:400;color:#364D62;text-align:center;font-size:20px;margin:0 0 43px}
-.popup-label{display:block;margin:0 auto 20px;box-sizing:border-box;width:430px}
-.popup-input{font-family:'PT Sans',sans-serif;font-weight:400;color:#353535;font-size:18px;border:2px solid #E8E8E8;box-sizing:border-box;border-radius:60px;padding:20px 1% 21px 10%;width:100%}
-.popup-textarea{display:block;resize:none;min-height:124px;border-radius:30px}
-.popup-policy-text{font-family:'PT Sans',sans-serif;font-weight:400;text-align:center;color:#364D62;margin:16px 0 0}
-.popup-button-wrapper{box-sizing:border-box;width:250px;margin:32px auto 0}
-.popup-button{width:100%;padding:17px 1%;font-size:14px;font-weight:900;text-transform:uppercase}
-.red-button{box-sizing:border-box;border:0;border-radius:60px;background:#f16194;background:-moz-linear-gradient(left,#f16194 0%,#ed3a6f 100%);background:-webkit-linear-gradient(left,#f16194 0%,#ed3a6f 100%);background:linear-gradient(to right,#f16194 0%,#ed3a6f 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f16194',endColorstr='#ed3a6f',GradientType=1);text-decoration:none;text-align:center;color:#fff}
-.red-button:hover{background:#FFF;color:#2C4257;box-shadow:0 5px 20px rgba(0,0,0,0.1)}
-.white-dk-button{box-sizing:border-box;border:2px solid #364D62;background-color:transparent;border-radius:60px;text-decoration:none;text-align:center;color:#364D62}
-.white-dk-button:hover{background-color:#364D62;color:#fff}
-.errors_block{display:none}
-.popup-input.error{border:2px solid #F28888;color:#F28888}
-.form-input.error{border:2px solid #F28888;color:#F28888}
-.privacy_head{margin:20px 0 0;font-family:'PT Sans',sans-serif}
-.label_txt{color:#12B8C2;text-decoration:none}
-.privacy_p{margin:10px 0;font-family:'PT Sans',sans-serif;font-weight:400;font-size:15px}
-.firstscreen{background:url(assets/lol-surprise-lp1/1/full_firstscreen.jpg) no-repeat;background-position:center top;min-height:884px;z-index:1;position:relative}
-.first-left{float:left;width:50%;position:relative}
-.first-right{float:right;width:50%;position:relative}
-.first-left-item{text-align:center;width:55%;position:absolute;left:6%;top:505px}
-.first-left-text{font-size:22px;line-height:32px;color:#364d62;margin:0}
-.first-button{display:block;margin:28px auto 0;width:404px;padding:24px 1% 23px;font-size:20px;font-weight:900;text-transform:uppercase}
-.first-right-up{position:absolute;right:0;top:15px}
-.first-right-bullit-img{display:block;margin:0 0 15px}
-.first-right-win{display:block;margin:38px 0 0;position:absolute;/*right:-32px*/right:0;}
-.first-right-down{position:absolute;left:123px;top:315px}
-.first-right-down.hid{display:none}
-.first-right-down-p{color:#364d62;font-size:36px;font-weight:700;font-family:'PT Sans',sans-serif;margin:0;position:relative}
-.first-right-down-p:after{position:absolute;display:block;content:'';background:url(assets/lol-surprise-lp1/1/arrow.png) no-repeat;width:162px;height:102px;left:190px;top:74px}
-.first-cost-circle{display:inline-block;vertical-align:top;margin:54px -85px 0 0;box-sizing:border-box;background-color:#fff;border-radius:100%;padding:50px 20px 10px;width:185px;height:185px;text-align:center;font-size:20px;font-weight:700;font-family:'PT Sans',sans-serif;color:#364d62}
-.first-cost-circle span{font-family:'PFDinDisplayPro',serif;font-weight:500;display:inline-block;vertical-align:top;font-size:80px;line-height:59px}
-.first-rouble-img{display:inline-block;vertical-align:bottom}
-.first-right-pills-img{display:inline-block;vertical-align:bottom}
-@keyframes drawArc {
-    0% { transform: rotate(0deg) translateX(0px) rotate(0deg) ;}
-    100%{ transform: rotate(120deg) translateX(1000px) rotate(-120deg);  }
-}
-.first-right-pills-img{animation:drawArc 2s linear 1;-webkit-animation:drawArc 2s linear 1}
-.first-right-pills-cont{margin:89px 0 0 200px}
-#privacy,#privacy_check{display:none;width:500px;padding:0 20px}
-.first-after{padding:30px 0 20px}
-.first-after-inner{max-width:1812px;margin:0 auto}
-.first-after-item{display:inline-block;vertical-align:top;margin:0 0 0 5%}
-.first-after-item.last{margin-right:0}
-.first-after-img{display:inline-block;vertical-align:middle}
-.first-after-text{display:inline-block;vertical-align:middle;margin:0 0 0 15px;color:#2c4257;font-size:20px}
-.first-after-item.first{width:21%}
-.first-after-item.second{width:15%}
-.first-after-item.third{width:19%}
-.first-after-item.last{margin-right:0;width:22%}
-.second-third-screen{background:url(assets/lol-surprise-lp1/1/gradient_1.jpg) no-repeat;position:relative}
-.second-third-screen .inner{position:relative;z-index:1}
-.second-third-screen-layer-1{position:absolute;top:0;left:0;bottom:0;right:0;background:url(assets/lol-surprise-lp1/1/gradient_1_circles_1.png) no-repeat;background-size:cover}
-.second-third-screen-layer-2{position:absolute;top:0;left:0;bottom:0;right:0;background:url(assets/lol-surprise-lp1/1/gradient_1_circles_2.png) no-repeat;background-size:cover}
-.secondscreen{padding:117px 0 50px}
-.second-inner{text-align:center}
-.all-titles{font-size:36px;color:#2f4457;margin:0;text-align:center}
-.all-titles span{font-size:48px}
-.second-left{display:inline-block;vertical-align:top;width:28%;text-align:right;margin:114px 0 0 5%}
-.second-middle{display:inline-block;vertical-align:top;width:28%;margin:74px .5% -124px;position:relative;opacity:0}
-.second-middle:after{display:block;content:'';position:absolute;width:509px;height:508px;border-radius:100%;background:#ddf6fa;background:-moz-linear-gradient(top,#ddf6fa 0%,#e2f0f6 50%,#f9cadb 100%);background:-webkit-linear-gradient(top,#ddf6fa 0%,#e2f0f6 50%,#f9cadb 100%);background:linear-gradient(to bottom,#ddf6fa 0%,#e2f0f6 50%,#f9cadb 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddf6fa',endColorstr='#f9cadb',GradientType=0);left:0;top:0}
-.second-middle-img{display:block;margin:180px auto 0;position:relative;z-index:1}
-.second-right{display:inline-block;vertical-align:top;width:28%;margin:114px 5% 0 0;text-align:left}
-.second-item{margin:10px 0 0}
-.second-item-img{display:inline-block;vertical-align:middle;margin:0 0 0 3%}
-.second-item-text{display:inline-block;vertical-align:middle;width:63%;margin:0;color:#364d62;font-family:'PT Sans',sans-serif;font-size:22px;line-height:29px}
-.second-line{width:100%;max-width:1470px;height:2px;background-color:#d3eff4;margin:0 auto}
-.thirdscreen{padding:60px 0 80px}
-.third-content{margin:106px 0 0}
-.third-inner{text-align:center}
-.third-left{display:inline-block;vertical-align:top;width:28%;text-align:right;margin:0 0 0 5%;position:relative}
-.third-middle{display:inline-block;vertical-align:top;width:28%;margin:0;position:relative}
-.third-right{display:inline-block;vertical-align:top;width:28%;margin:0 5% 0 0;text-align:left;position:relative}
-.third-middle-up{background:url(assets/lol-surprise-lp1/1/5_components.png) no-repeat;width:461px;height:518px;box-sizing:border-box;padding:190px 0 0 140px;margin:0 auto}
-.third-middle-up-p{width:140px;text-align:center;font-size:22px;color:#2f4457;margin:0}
-.third-middle-up-p span{font-weight:500;display:block;font-size:72px;line-height:59px}
-.third-item{position:absolute}
-.third-item.active{box-sizing:border-box;background-color:#fff;box-shadow:0 5px 20px rgba(0,0,0,0.1);padding:22px 0 48px 48px;position:absolute;width:97%;text-align:left;z-index:1}
-.third-right .third-item.active{padding:22px 48px 48px 0}
-.third-middle .third-item.active{padding:22px 30px 48px}
-.third-middle .active .third-item-hid-text{display:block;width:100%;text-align:center}
-.third-item.first{top:5px;right:-42px}
-.third-item.second{top:209px;right:-35px}
-.third-item.third{bottom:-94px;left:-20px;width:100%}
-.third-item.active.third{bottom:-210px}
-.third-item.fourth{left:-110px;top:21px}
-.third-item.fifth{top:309px;left:-67px}
-.third-item-zoom{background:url(assets/lol-surprise-lp1/1/sprite.png) no-repeat;background-position:6px -429px;background-size:97px auto;display:inline-block;vertical-align:middle;width:56px;height:43px;border-radius:100%;cursor:pointer;margin:0 15px}
-.third-middle .third-item-zoom{display:block;margin:0 auto 17px}
-.third-item-zoom.active{background-position:-5px -553px;background-size:auto;width:56px;height:55px}
-.third-item-text{display:inline-block;vertical-align:middle;font-size:24px;line-height:32px;color:#2c4257;width:60%;margin:0}
-.third-item-hid-text{display:none;color:#364d62;font-family:'PT Sans',sans-serif;font-size:20px;margin:23px 0 0}
-.third-item-hid-text span{display:block;margin:0 0 22px;font-size:22px;font-weight:700}
-.active .third-item-text{display:none}
-.active .third-item-hid-text{display:inline-block;vertical-align:top;width:78.5%}
-.third-down{text-align:center}
-.third-down-p{color:#364d62;margin:130px 0 20px;font-family:'PT Sans',sans-serif;font-size:22px}
-.third-cart-img{background:url(assets/lol-surprise-lp1/1/sprite.png) no-repeat;background-position:-5px -91px;display:inline-block;vertical-align:middle;width:28px;height:29px;margin:0 10px 0 0}
-.third-button:hover .third-cart-img{background-position:-5px -130px}
-.third-button-text{display:inline-block;vertical-align:middle}
-.third-button{text-align:center;display:block;margin:31px auto 0;width:403px;padding:16px 1% 15px;font-weight:900;text-transform:uppercase}
-.fourthscreen{background:url(assets/lol-surprise-lp1/1/gradient_2.jpg) no-repeat;padding:190px 0 158px;position:relative}
-.fourthscreen .inner{position:relative;z-index:1}
-.fourthscreen-layer-1{position:absolute;top:0;left:0;bottom:0;right:0;background:url(assets/lol-surprise-lp1/1/gradient_2_circles_1.png) no-repeat;background-size:cover}
-.fourthscreen-layer-2{position:absolute;top:0;left:0;bottom:0;right:0;background:url(assets/lol-surprise-lp1/1/gradient_2_circles_2.png) no-repeat;background-size:cover}
-.fourth-title{font-size:36px;color:#2f4457;margin:0;text-align:center}
-.fourth-title-mid{display:inline-block;vertical-align:middle;font-weight:900;font-size:100px;text-align:right;line-height:47px;margin:0 38px 0 -4px}
-.fourth-title-mid b{font-size:64px}
-.fourth-title-bot{display:inline-block;vertical-align:bottom;margin-bottom:-8px}
-.fourth-content{margin:43px 0 0;text-align:center}
-.fourth-left{text-align:right;display:inline-block;vertical-align:top;width:47%}
-.fourth-right{text-align:left;display:inline-block;vertical-align:top;width:47%}
-.fourth-left-img{display:inline-block;vertical-align:top;margin:0 4% 37px 0}
-.fourth-text{color:#364d62;font-size:22px;margin:0 0 34px;line-height:31px}
-.fourth-right-img{display:inline-block;vertical-align:top;margin:0 4% 37px 0}
-.fourth-right-img-cont{display:inherit;vertical-align:top}
-.fourth-right-img-cont .fourth-right-img{display:block}
-.fifthscreen{background:url(assets/lol-surprise-lp1/1/pillsscreen.jpg) no-repeat;background-position:center;padding:135px 0 140px;position:relative}
-.fifthscreen .inner{position:relative;z-index:1}
-.pills-layer-1{position:absolute;top:0;left:0;bottom:0;right:0;background:url(assets/lol-surprise-lp1/1/pills_layer_1.png) no-repeat;background-size:cover}
-.pills-layer-2{position:absolute;top:0;left:0;bottom:0;right:0;background:url(assets/lol-surprise-lp1/1/pills_layer_2.png) no-repeat;background-size:cover}
-.fifth-undertitle{text-align:center;color:#364d62;font-family:'PT Sans',sans-serif;font-size:22px;line-height:35px;margin:44px 0 0}
-.fifthscreen:after{content:'';display:block;position:absolute;background:url(assets/lol-surprise-lp1/1/results_girl.png) no-repeat;width:693px;height:718px;bottom:0;left:32.5%}
-.fifth-content{margin:75px 0 0;text-align:center}
-.fifth-left{display:inline-block;vertical-align:top;margin:0 8.5%;box-sizing:border-box;background-color:#fff;width:555px;height:555px;border-radius:100%;padding:113px 50px 60px;box-shadow:0 5px 20px rgba(0,0,0,0.1)}
-.fifth-right{display:inline-block;vertical-align:top;margin:0 8.5%;box-sizing:border-box;background-color:#fff;width:555px;height:555px;border-radius:100%;padding:113px 50px 60px;box-shadow:0 5px 20px rgba(0,0,0,0.1)}
-.fift-item-title{color:#02b4be;margin:0;font-size:24px;line-height:31px}
-.fift-item-title span{font-size:36px;display:block}
-.fift-item-text{color:#364d62;margin:44px 0 25px;font-size:20px;line-height:31px}
-.fifth-right .fift-item-text{color:#364d62;margin:71px 0 60px}
-.fifth-item-down-lotus{display:inline-block;vertical-align:bottom;font-size:36px;background:url(assets/lol-surprise-lp1/1/result_lotus.png) no-repeat;width:144px;height:92px;padding-top:39px;padding-left:17px;box-sizing:border-box;color:#2f4457}
-.fifth-item-down-span{display:inline-block;vertical-align:bottom;font-size:24px;line-height:28px;color:#2f4457;margin:0 23px 20px 18px}
-.fifth-item-down-diet{display:inline-block;vertical-align:bottom;font-size:36px;background:url(assets/lol-surprise-lp1/1/result_diet.png) no-repeat;width:95px;height:96px;padding-top:44px;box-sizing:border-box;color:#2f4457}
-.sixthscreen{background:url(assets/lol-surprise-lp1/1/gradient_3.jpg) no-repeat;padding:89px 0 70px}
-.sixth-content{margin:40px 0 0;text-align:center}
-.sixthscreen .all-titles span{font-weight:900;text-transform:uppercase}
-.sixth-down-p{color:#364d62;margin:49px 0 20px;font-family:'PT Sans',sans-serif;font-size:22px;text-align:center}
-.sixth-button{text-align:center;display:block;margin:31px auto 0;width:403px;padding:16px 1% 15px;font-weight:900;text-transform:uppercase}
-.sixth-slider .slick-prev{background:rgba(0,0,0,0) url(assets/lol-surprise-lp1/1/sprite.png) no-repeat scroll -5px -1025px;width:78px;height:78px;left:25%;top:-55px;position:absolute;z-index:100}
-.sixth-slider .slick-next{background:rgba(0,0,0,0) url(assets/lol-surprise-lp1/1/sprite.png) no-repeat scroll -5px -1113px;width:78px;height:78px;right:23.5%;top:-55px;position:absolute;z-index:100}
-.sixth-slider .slick-prev:hover{background:rgba(0,0,0,0) url(assets/lol-surprise-lp1/1/sprite.png) no-repeat scroll -5px -713px;background-size:145px auto}
-.sixth-slider .slick-next:hover{background:rgba(0,0,0,0) url(assets/lol-surprise-lp1/1/sprite.png) no-repeat scroll -5px -802px;background-size:145px auto}
-.sixth-slider .slick-dots{ display: none !important;}
-.sixth-item{text-align:center;margin:35px 0 0}
-.sixth-item-left{display:inline-block;vertical-align:middle;margin-right:-58px;box-sizing:border-box;background-color:#fff;padding:48px 30px 43px 60px;box-shadow:0 5px 20px rgba(0,0,0,0.1);width:496px;position:relative;z-index:1}
-.sixth-item-left-title{text-transform:uppercase;color:#2c4257;margin:0;font-weight:900;font-size:22px;line-height:31px}
-.sixth-item-left-text{color:#364d62;margin:20px 0 0;font-family:'PT Sans',sans-serif;font-size:20px;line-height:26px}
-.sixth-item-left-line{width:100%;height:3px;background-color:#eefafc;margin:40px 0 26px}
-.sixth-item-middle{display:inline-block;vertical-align:middle;position:relative;width:877px}
-.sixth-item-right{display:inline-block;vertical-align:middle;margin:0 60px 0 -50px;background-color:#fff;padding:38px 30px 29px 40px;box-shadow:0 5px 20px rgba(0,0,0,0.1);width:395px;position:relative;z-index:1;box-sizing:border-box}
-.sixth-item-right:before{display:block;width:0;height:0;border-top:42px solid #fff;border-left:36px solid transparent;content:'';position:absolute;left:-35px;top:58px}
-.sixth-item-right-text{color:#707070;font-family:'PT Sans',sans-serif;font-size:18px;line-height:28px;margin:0}
-.sixth-item-right-text-hid{display:none}
-.sixth-item-right-read-all{color:#85d0de;font-family:'PT Sans',sans-serif;font-weight:700;font-size:18px;line-height:28px;margin:16px 0 17px;cursor:pointer}
-.sixth-item-right-hide-all{display:none;color:#85d0de;font-family:'PT Sans',sans-serif;font-weight:700;font-size:18px;line-height:28px;margin:16px 0 17px;cursor:pointer}
-.sixth-item-right-down{background:url(assets/lol-surprise-lp1/1/big_quote.png) no-repeat;background-position:center;height:74px;box-sizing:border-box;padding-top:18px}
-.sixth-item-right-name{color:rgba(53,53,53,0.4);font-family:'PT Sans',sans-serif;font-weight:700;font-size:14px;margin:0;line-height:18px}
-.sixth-item-right-name span{color:#364d62;display:block;font-size:22px;line-height:28px;margin:0 0 5px}
-.sixth-item-middle-img-cont{display:inline-block;vertical-align:top;margin:0 -2px;position:relative}
-.lost-weight-img{position:absolute;top:64px;left:42%}
-.sixth-item-bef{position:absolute;color:#85d0de;border-radius:50px 0 0 50px;background-color:rgba(255,255,255,.8);box-sizing:border-box;text-align:center;padding:18px 10px;width:91px;display:block;font-weight:900;font-size:18px;text-transform:uppercase;right:0;bottom:35px;margin:0}
-.sixth-item-aft{position:absolute;color:#85d0de;border-radius:0 50px 50px 0;background-color:rgba(255,255,255,.9);box-sizing:border-box;text-align:center;padding:18px 10px;width:107px;font-weight:900;font-size:18px;text-transform:uppercase;left:0;bottom:35px;margin:0}
-.seventh-eighth-ninth-screen{background:url(assets/lol-surprise-lp1/1/gradient_5.jpg) no-repeat;position:relative;text-align:center;background-size:cover}
-.seventh-eighth-ninth-screen .inner{position:relative;z-index:1}
-.seventh-eighth-ninth-layer-1{position:absolute;top:0;left:0;bottom:0;right:0;background:url(assets/lol-surprise-lp1/1/gradient_5_circles_1.png) no-repeat;background-size:cover}
-.seventh-eighth-ninth-layer-2{position:absolute;top:0;left:0;bottom:0;right:0;background:url(assets/lol-surprise-lp1/1/gradient_5_circles2.png) no-repeat;background-size:cover}
-.seventhscreen{padding:153px 0 93px}
-.seventh-left{display:inline-block;vertical-align:top;width:33%;margin:54px 6.5% 0 0}
-.seventh-right{display:inline-block;vertical-align:top;width:50%;text-align:left}
-.seventh-right .all-titles{text-align:left}
-.seventh-dietolog-img{display:block;border-radius:100%;margin:0 auto}
-.seventh-dietolog-name{margin:47px 0 0;color:#61c2c9;font-size:24px;line-height:34px}
-.seventh-dietolog-name span{display:block;font-size:38px;margin:0 0 14px}
-.seventh-right-speech{position:relative;width:83%;margin:30px 0 0}
-.seventh-right-speech:before{position:absolute;display:block;content:'';background:url(assets/lol-surprise-lp1/1/big_quote.png) no-repeat;width:93px;height:74px;top:20px;left:0}
-.seventh-right-speech-left{display:inline-block;vertical-align:top;margin:0 3.5%;width:42%;position:relative;z-index:1}
-.seventh-right-speech-item{margin:28px 0 0;color:#364d62;font-family:'PT Sans',sans-serif;font-size:18px;line-height:28px}
-.seventh-right-speech-item-hid{display:none}
-.seventh-line{width:100%;max-width:1470px;height:2px;background-color:#B9E9F2;margin:0 auto}
-.seventh-right-line{width:92%;height:2px;background-color:#BBE8F0;margin:75px 0 17px}
-.seventh-unique-formula{margin:0;color:#2f4457;font-size:22px;line-height:31px;width:92%}
-.seventh-button{width:405px;padding:21px 1%;font-size:16px;font-weight:900;text-transform:uppercase;display:block;margin:48px 0 0}
-.white-button{box-sizing:border-box;border:0;border-radius:60px;background:#FFF;text-decoration:none;text-align:center;color:#2C4257;box-shadow:0 5px 20px rgba(0,0,0,0.1)}
-.white-button:hover{color:#FFF;background:#f16194;background:-moz-linear-gradient(left,#f16194 0%,#ed3a6f 100%);background:-webkit-linear-gradient(left,#f16194 0%,#ed3a6f 100%);background:linear-gradient(to right,#f16194 0%,#ed3a6f 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f16194',endColorstr='#ed3a6f',GradientType=1);box-shadow:none}
-.eighthscreen{padding:160px 0 112px}
-.eighth-text{color:#2c4257;font-family:'PT Sans',sans-serif;font-size:22px;line-height:28px;margin:70px 0 0}
-.eighth-button{width:405px;padding:21px 1%;font-size:16px;font-weight:900;text-transform:uppercase;display:block;margin:33px auto 0}
-.eighth-item{display:inline-block;vertical-align:top;margin:0 2%;width:24.5%}
-.eighth-item-up{box-sizing:border-box;border-radius:100%;background-color:#fff;width:437px;height:437px;padding:24px;position:relative}
-.eighth-item-pills{color:#efedf2;font-family:'PT Sans',sans-serif;font-weight:700;font-size:27px;line-height:37px;letter-spacing:3px}
-.eighth-item-pills span{display:block;font-size:100px;margin:15px 0 0;letter-spacing:0}
-.eighth-img{display:block;margin:5px auto 0}
-.eighth-cart-img{background:url(assets/lol-surprise-lp1/1/sprite.png) no-repeat;background-position:-5px -91px;display:block;width:28px;height:29px;margin:0 auto 7px}
-.eighth-item-button:hover .eighth-cart-img{background-position:-5px -130px}
-.eighth-item-button-text{display:block}
-.eighth-item-button{box-shadow:0 5px 20px rgba(0,0,0,0.1);width:107px;height:107px;position:absolute;text-decoration:none;bottom:15px;right:19px;text-align:center;display:block;margin:31px auto 0;border-radius:100%;padding:25px 1% 15px;font-weight:900;font-size:12px;line-height:14px;text-transform:uppercase}
-.eighth-item-down{margin:23px 0 0}
-.eighth-old-price{color:#EE6D9A;display:inline-block;vertical-align:middle;font-size:35px;margin:-14px 0 0;line-height:24px}
-.eighth-old-price span{display:inline-block;vertical-align:bottom;text-decoration:line-through}
-.eighth-red-rouble{display:inline-block;vertical-align:bottom;margin:0 0 0 -4px}
-.eighth-new-price{color:#364D62;display:inline-block;vertical-align:middle;font-family:'PT Sans',sans-serif;font-weight:700;font-size:18px;line-height:33px;margin:0}
-.eighth-new-price span{display:inline-block;vertical-align:bottom;font-family:'PFDinDisplayPro',serif;font-weight:500;font-size:60px;line-height:41px}
-.eighth-black-rouble{display:inline-block;vertical-align:bottom}
-.ninthscreen{padding:82px 0 143px}
-.ninth-content{margin:96px 0 0}
-.ninth-inner{text-align:center}
-.ninth-left{display:inline-block;vertical-align:top;width:33%;text-align:right;margin:0 -5% 0 0;position:relative;z-index:1}
-.ninth-middle{display:inline-block;vertical-align:top;width:638px;height:639px;margin:0;position:relative;background:url(assets/lol-surprise-lp1/1/ninth_middle_fon.png) no-repeat}
-.ninth-right{display:inline-block;vertical-align:top;width:33%;margin:0 0 0 -5%;text-align:left;position:relative;z-index:1}
-.ninth-item{position:absolute;width:100%}
-.ninth-item.active{box-sizing:border-box;background-color:#fff;box-shadow:0 5px 20px rgba(0,0,0,0.1);padding:22px 0 48px 48px;position:absolute;width:97%;text-align:left;z-index:1}
-.ninth-right .ninth-item.active{padding:22px 48px 48px 0}
-.ninth-middle .active .ninth-item-hid-text{display:block;width:100%;text-align:center}
-.ninth-item.first{top:37px;right:-95px}
-.ninth-item.active.first{top:15px}
-.ninth-item.second{top:241px;right:20px}
-.ninth-item.active.second{top:219px}
-.ninth-item.third{top:443px;right:-10px}
-.ninth-item.active.third{top:421px}
-.ninth-item.fourth{top:31px;left:-97px}
-.ninth-item.active.fourth{top:9px}
-.ninth-item.fifth{top:241px;left:20px}
-.ninth-item.active.fifth{top:219px}
-.ninth-item.sixth{top:443px;left:-10px}
-.ninth-item.active.sixth{top:421px}
-.ninth-item-zoom{background:url(assets/lol-surprise-lp1/1/sprite.png) no-repeat;background-position:-5px -618px;display:inline-block;vertical-align:middle;width:56px;height:55px;border-radius:100%;cursor:pointer;margin:0 35px}
-.ninth-middle .ninth-item-zoom{display:block;margin:0 auto 17px}
-.ninth-item-zoom.active{background-position:-5px -553px;background-size:auto;width:56px;height:55px}
-.ninth-item-text{display:inline-block;vertical-align:middle;font-family:'PT Sans',sans-serif;font-size:22px;line-height:29px;font-weight:700;color:#364D62;width:65%;margin:0}
-.ninth-item-hid-text{display:none;color:#364d62;font-family:'PT Sans',sans-serif;font-size:22px;line-height:29px;margin:23px 0 0}
-.ninth-item-hid-text span{display:block;margin:0 0 23px;font-size:22px;line-height:29px;font-weight:700}
-.active .ninth-item-text{display:none}
-.active .ninth-item-hid-text{display:inline-block;vertical-align:top;width:75%}
-.tenthscreen{background:url(assets/lol-surprise-lp1/1/gradient_4.jpg) no-repeat;padding:130px 0 149px;text-align:center}
-.tenth-content{margin:60px 0 0}
-.tenth-item{display:inline-block;vertical-align:top;margin:0 2%;width:345px}
-.tenth-item-shadow{box-shadow:0 9px 20px rgba(0,0,0,0.2)}
-.tenth-img-a{box-sizing:border-box;border:15px solid #fff;padding:40px;text-decoration:none;position:relative;display:block;-webkit-box-shadow:inset 0 4px 20px 0 rgba(0,0,0,0.25);-moz-box-shadow:inset 0 4px 20px 0 rgba(0,0,0,0.25);box-shadow:inset 0 4px 20px 0 rgba(0,0,0,0.25)}
-.tenth-img-a:hover:after{position:absolute;display:block;content:'';background:rgba(0,0,0,.15) url(assets/lol-surprise-lp1/1/zoom.png) no-repeat;left:0;top:0;width:100%;height:100%;background-position:center}
-.tenth-img{display:block;margin:0 auto}
-.tenth-text{color:#364d62;font-family:'PT Sans',sans-serif;font-size:24px;line-height:31px;margin:53px 0 0}
-.catalog-wrap-fancy{min-width:1324px;min-height:690px}
-.catalog-wrap-fancy .fancybox-inner{margin:0 auto}
-.catalog-wrap-fancy .fancybox-skin{min-height:640px;padding-top:50px!important}
-.eleventhscreen{background:url(assets/lol-surprise-lp1/1/stomachscreen.jpg) no-repeat;padding:95px 0 128px;text-align:center;position:relative}
-.eleventhscreen .inner{position:relative;z-index:1}
-.cake-layer-1{position:absolute;top:0;left:0;bottom:0;right:0;background:url(assets/lol-surprise-lp1/1/cake_layer_1.png) no-repeat;background-size:cover}
-.cake-layer-2{position:absolute;top:0;left:0;bottom:0;right:0;background:url(assets/lol-surprise-lp1/1/cake_layer_2.png) no-repeat;background-size:cover}
-.eleventhscreen .all-titles span{font-weight:900;text-transform:uppercase;font-size:64px}
-.eleventh-button{width:462px;padding:30px 1%;font-size:20px;font-weight:900;text-transform:uppercase;display:block;margin:74px auto 0}
-.eleventh-button span{display:inline-block;vertical-align:middle}
-.eleventh-button-img{display:inline-block;vertical-align:middle;margin:0 0 0 12px}
-.eleventh-button-img.hid{display:none;}
-.twelfthscreen{background:url(assets/lol-surprise-lp1/1/gradient_6.jpg) no-repeat;padding:136px 0 109px;text-align:center;background-size: cover;}
-.twelfthscreen .all-titles{font-size:48px}
-.faq{margin:65px auto 0;max-width:1140px;text-align:left;font-family:'PT Sans',sans-serif}
-.faq-element{margin-bottom:7px;box-sizing:border-box;padding:34px 3% 35px 8.5%;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;background:#fff}
-.faq-element.opened{padding:27px 3% 35px 8.5%;background:rgba(255,255,255,0.7)}
-.faq-question{color:#2F4457;font-size:24px;line-height:31px;font-weight:700;margin:0;cursor:pointer;display:inline;position:relative}
-.faq-question:before{background:rgba(0,0,0,0) url(assets/lol-surprise-lp1/1/sprite.png) no-repeat scroll -5px -43px;content:"";display:block;width:22px;height:14px;position:absolute;left:-48px;top:12px;z-index:2}
-.faq-element.opened .faq-question:before{background:rgba(0,0,0,0) url(assets/lol-surprise-lp1/1/sprite.png) no-repeat scroll -5px -67px;width:23px}
-.faq-question:hover{border-bottom:none}
-.faq-element.opened .faq-question{border-bottom:none}
-.faq-answer-p{color:#364D62;margin:0}
-.faq-answer{display:none;font-size:22px;line-height:29px;margin:26px 0 -5px}
-.faq-element-display-none{display:none}
-.twelfth-buttons{margin:50px 0 0}
-.twelfth-button-1{display:inline-block;vertical-align:top;margin:0 .7%;padding:21px 1% 20px;text-decoration:none;font-size:16px;width:280px;text-transform:uppercase;font-weight:900}
-.twelfth-button-2{display:inline-block;vertical-align:top;margin:0 .7%;padding:16px 1% 15px;text-decoration:none;font-size:16px;width:320px;text-transform:uppercase;font-weight:900}
-.twelfth-button-2:hover .third-cart-img{background-position:-5px -130px}
-.not-a-medicine-block{text-align:center;background-color:#a1dbe6;padding:28px 0;text-transform:uppercase;color:#fff;letter-spacing:2px;font-size:30px}
-footer .inner{max-width:1547px}
-.footer-up{padding:42px 0 58px}
-.footer-logo-img{display:inline-block;vertical-align:middle}
-.footer-middle{display:inline-block;vertical-align:middle;width:20%;margin:0 18.5% 0 24%;text-align:center}
-.footer-socials{display:inline-block;vertical-align:middle;width:20%;text-align:right}
-.footer-tel-a{text-decoration:none;font-size:36px}
-.footer-tel-p{display:block;color:#9AA6B0;margin:0 0 23px}
-.footer-tel-a{text-decoration:none;font-size:36px}
-.footer-call-a{display:block;margin:0 auto;width:247px;padding:11px 1% 10px;font-size:14px;font-weight:900;text-transform:uppercase}
-.footer-social-a{display:inline-block;vertical-align:top;margin:0 0 0 5px;text-decoration:none;background:rgba(0,0,0,0) url(assets/lol-surprise-lp1/1/sprite.png) no-repeat scroll;width:54px;height:54px}
-.footer-social-a.fb{background-position:-5px -297px}
-.footer-social-a.fb:hover{background-position:-5px -361px}
-.footer-social-a.vk{background-position:-5px -489px}
-.footer-social-a.vk:hover{background-position:-5px -425px}
-.footer-social-a.insta{background-position:-5px -233px}
-.footer-social-a.insta:hover{background-position:-5px -169px}
-.footer-line{margin:0 auto;width:100%;height:1px;background-color:#e1e7e9}
-.footer-menu{margin:32px 0;text-align:center}
-.footer-menu-a{display:inline-block;vertical-align:top;margin:0 2%;color:#2c4257;font-weight:900;text-decoration:none;text-transform:uppercase}
-.footer-del-pay{margin:27px 0;text-align:center}
-.footer-delivery{display:inline-block;vertical-align:top;margin:0 2%}
-.footer-payment{display:inline-block;vertical-align:top;margin:0 2%}
-.footer-del-pay-p{display:inline-block;vertical-align:middle;color:rgba(44,66,87,0.2);font-weight:900;text-transform:uppercase;margin:0 25px 0 0}
-.footer-del-pay-img{display:inline-block;vertical-align:middle;margin:0 0 0 10px}
-.footer-down{background-color:#f5f5f5;padding:20px 0}
-.policy{float:left;width:60%}
-.convert{float:right;text-align:right;width:29%}
-.convert_p{color:#b5c3c9;font-size:18px;margin:7px 0;display:inline-block;vertical-align:middle}
-.convert_logo{text-decoration:none}
-.convert_logo_img{display:inline-block;margin:0 0 0 10px;vertical-align:middle;width:90px}
-.footer-down-text{text-transform:uppercase;color:#b5c3c9;font-family:'PT Sans',sans-serif;font-size:14px;margin:15px 0 10px}
-.footer-privacy-a{text-transform:uppercase;color:#b5c3c9;font-family:'PT Sans',sans-serif;font-weight:700;font-size:14px;display:block}
-#toTop{display:none;color:transparent;text-decoration:none;position:fixed;bottom:10px;right:10px;overflow:hidden;width:66px;height:67px;border:none;text-indent:100%;background:url(assets/lol-surprise-lp1/1/site_up.png) no-repeat left top}
-#toTop:active,#toTop:focus{outline:none}
-.first-after-item.first{width:22.5%}
-.active .ninth-item-hid-text{width:73%}
-.header-gamburger-mobile{display:none;}
-.tablet-header{display:none}
-.header-position-hid{display:none}
-.sixth-item-left.hid{display:none}
-.seventhscreen .all-titles.hid{display:none}
-.menu-upper{left:20px!important;text-align:left}
-.mob-header{display:none}
-.first-inner-hid{display:none}
-.mob-slider-second{display:none!important}
-.mob-slider-third{display:none!important}
-.fourth-title.hid{display:none}
-.fourth-text.hid{display:none}
-.fourth-slider{display:none!important}
-.ninth-content.hid{display:none}
-.tenth-slider{display:none!important}
-.footer-mob-hid{display:none}
-.footer-line.is-hid{display:none}
-@media screen and (max-width: 1820px) {
-    #toTop{z-index:100}
-    .inner{width:96%}
-    header{width:96%}
-    .header-left{width:35.5%}
-    .header-right{width:36%}
-    .header-right-item{margin:0 0 0 3%;width:45%}
-    .header-right-info{margin:0 0 0 3%;width:74.5%}
-    .header-right-info-p{font-size:14px}
-    .header-tel-a{font-size:23px}
-    .header-menu-a{margin:0 5% 0 0}
-    .header-middle{width:370px}
-    .logo-img{max-width:100%}
-    .header-middle:after{bottom:-60px;border-left:185px solid transparent;border-right:185px solid transparent;border-top:60px solid #85d0de}
-    .first-left-item{top:470px}
-    .first-right-pills-img{width:300px}
-    .first-cost-circle{margin:5px -85px 0 0}
-    .first-after-item{margin:0 0 0 3%}
-    .first-after-text{margin:0 0 0 10px;font-size:17px}
-    .second-left{width:33%;margin:114px 0 0 2%}
-    .second-right{width:33%;margin:114px 2% 0 0}
-    .second-middle{width:27%}
-    .second-middle-img{max-width:100%}
-    .second-middle:after{width:400px;height:400px;top:100px}
-    .third-left{width:32%;margin:0 0 0 2%}
-    .third-right{width:32%;margin:0 2% 0 0}
-    .third-item.active.third{bottom:-243px}
-    .fourth-right-img{max-width:376px}
-    .fifth-left,.fifth-right{margin:0 7.5%;width:500px;height:500px;padding:80px 50px 60px}
-    .sixth-item-middle-img{width:350px;height:436px}
-    .sixth-item-middle{width:710px}
-    .sixth-item-left{padding:43px 30px;width:400px}
-    .sixth-slider .slick-prev,.sixth-slider .slick-next{top:-15px}
-    .seventh-right{width:59%}
-    .seventh-dietolog-name{font-size:20px;line-height:25px}
-    .eighth-item-up{width:400px;height:400px}
-    .active .ninth-item-hid-text{width:69%}
-    .pills-img{width:305px}
-}
-@media screen and (max-width: 1600px) {
-    .header-left{width:35.5%}
-    .header-menu-a{margin:0 3% 0 0;font-size:14px}
-    .header-right{width:35.5%}
-    .first-left-text{font-size:19px;line-height:23px}
-    .first-button{margin:20px auto 0;width:350px;padding:21px 1% 20px;font-size:17px}
-    .first-right-pills-img{width:260px}
-    .first-cost-circle{margin:5px -80px 0 0;width:150px;height:150px;padding:50px 20px 10px;font-size:18px}
-    .first-cost-circle span{font-size:59px;line-height:39px}
-    .first-after-item.first,.first-after-item.second,.first-after-item.third,.first-after-item.last{margin:0 1%;width:22%}
-    .first-after-text{font-size:16px;width:75%}
-    .first-after-text br{display:none}
-    .secondscreen{padding:90px 0 50px}
-    .second-middle:after{width:350px;height:350px;top:150px}
-    .second-item-img{width:125px}
-    .second-item-text{width:65%;font-size:19px;line-height:24px}
-    .second-middle{margin:44px .5% -50px}
-    .third-middle-up{background-size:100%;width:361px;height:407px;padding:145px 0 0 96px}
-    .third-middle-up-p{font-size:19px}
-    .third-middle-up-p span{font-size:60px;line-height:48px}
-    .active .third-item-hid-text{width:76.5%;font-size:15px}
-    .third-item-hid-text span{margin:0 0 10px;font-size:20px}
-    .third-item-text{font-size:19px;line-height:23px}
-    .third-item-zoom{background-position:-5px -618px;background-size:auto;width:56px;height:56px}
-    .third-left,.third-right{position:relative;z-index:1}
-    .third-item,.third-item.active{padding:10px 0 20px 20px}
-    .third-right .third-item.active,.third-right .third-item{padding:10px 20px 20px 0}
-    .third-item.first,.third-item.second{right:0}
-    .third-middle .third-item.active,.third-middle .third-item{padding:10px 20px 20px}
-    .third-middle .third-item-zoom{margin:0 auto}
-    .third-item.active.third{bottom:-164px;left:0}
-    .fourthscreen{padding:100px 0 90px}
-    .fourth-left-img.first{width:500px}
-    .fourth-left-img.second{width:250px}
-    .fourth-left-img.third{width:220px}
-    .fourth-right-img{max-width:300px}
-    .fourth-right-img.fifth,.fourth-right-img.sixth{width:250px}
-    .fifth-left,.fifth-right{margin:0 8.5%;width:400px;height:400px;padding:50px 50px 30px}
-    .fift-item-title{font-size:20px;line-height:23px}
-    .fift-item-title span{font-size:27px}
-    .fift-item-text{margin:25px 0;font-size:16px;line-height:22px}
-    .fifth-item-down-span{font-size:22px;margin:0 12px 20px 10px}
-    .fifth-right .fift-item-text{margin:44px 0 50px}
-    .fifthscreen:after{width:500px;background-size:100%;height:516px}
-    .sixth-item-middle-img{width:250px;height:312px}
-    .lost-weight-img{top:10px;left:44%;width:80px}
-    .sixth-item-middle{width:510px}
-    .sixth-item-left{padding:20px;width:350px;margin-right:-10px}
-    .sixth-item-right{margin:0 0 0 -10px;padding:20px;width:350px}
-    .sixth-item-left-text{margin:10px 0 0;font-size:17px;line-height:21px}
-    .sixth-item-left-title{font-size:16px;line-height:21px}
-    .sixth-item-left-line{margin:20px 0}
-    .sixth-item-right-text{font-size:17px;line-height:20px}
-    .sixth-item-right-read-all{margin:10px 0 11px}
-    .seventhscreen{padding:100px 0 93px}
-    .seventh-left{width:30%;margin:54px 2.5% 0 0}
-    .seventh-dietolog-img{width:100%;max-width:548px}
-    .seventh-right{width:65%}
-    .all-titles span{font-size:43px}
-    .eighthscreen{padding:100px 0}
-    .eighth-item-up{width:320px;height:320px;padding:15px;margin:0 auto}
-    .eighth-img{margin:20px auto 0;width:250px}
-    .eighth-item-button{right:0}
-    .eighth-text{margin:40px 0 0}
-    .ninth-middle{width:500px;height:500px;background-size:100%}
-    .ninth-item-hid-text{font-size:18px;line-height:23px}
-    .active .ninth-item-hid-text{width:64.5%}
-    .tenthscreen{padding:100px 0 110px}
-    .twelfthscreen{padding:100px 0}
-    .footer-middle{margin:0 16.5% 0 22%}
-    .pills-img{width:260px}
-    .first-right-win{right:-28px}
-}
-@media screen and (max-width: 1400px) {
-    .first-right-up{top:-22px}
-    .header-middle{width:270px}
-    .header-middle:after{bottom:-40px;border-left:135px solid transparent;border-right:135px solid transparent;border-top:40px solid #85d0de}
-    .header-left{width:37%}
-    .header-menu-a{margin:0 2% 0 0;font-size:13px}
-    .header-right{width:37%}
-    .header-right-img{width:30px}
-    .header-right-info{width:78%}
-    .header-right-info-p{font-size:13px}
-    .header-tel-a{font-size:21px}
-    .first-left-text{background:rgba(249,159,197,.3)}
-    .first-right-bullit-img{margin:0 0 0 10px;width:80px;display:inline-block;vertical-align:top}
-    .first-right-win{margin:-5px 0 0;right:0;width:200px;display:inline-block;vertical-align:middle;position:relative}
-    .first-right-down-p{font-size:29px}
-    .first-right-down-p:after{width:120px;height:78px;left:170px;top:58px;background-size:100%}
-    .first-right-pills-cont{margin:70px 0 0 100px}
-    .first-right-down{top:360px}
-    .first-after-text{font-size:16px;width:71%}
-    .second-middle:after{width:300px;height:300px;top:80px}
-    .second-item-img{width:110px}
-    .second-item-text{font-size:17px;line-height:21px}
-    .second-left,.second-right{margin-top:50px}
-    .second-middle-img{margin:100px auto 0}
-    .active .third-item-hid-text{width:71.5%}
-    .third-right{left:50px;top:-20px}
-    .third-item.active.third{bottom:-179px}
-    .fourth-left-img.first{width:400px}
-    .fourth-left-img.second{width:200px}
-    .fourth-left-img.third{width:200px}
-    .fourth-right-img{max-width:250px;margin:0 0 20px 2%}
-    .fourth-left-img{margin:0 0 20px 2%}
-    .fourth-text{font-size:18px;margin:0 0 18px 15px;line-height:24px}
-    .fifth-left,.fifth-right{margin:0 5.5%}
-    .fifth-content{margin:50px 0 0}
-    .fifthscreen{padding:100px 0 90px}
-    .sixth-slider .slick-prev{left:15%}
-    .sixth-slider .slick-next{right:15%}
-    .sixth-item-left{padding:12px;width:300px}
-    .sixth-item-right{padding:12px;width:310px}
-    .sixth-down-p{margin:30px 0 15px}
-    .all-titles{font-size:31px}
-    .all-titles span{font-size:40px}
-    .seventh-right-speech{width:100%;margin:10px 0 0}
-    .eighth-item-up{width:300px;height:300px;padding:12px}
-    .eighth-new-price span{font-size:49px;line-height:33px}
-    .eighth-old-price{font-size:32px;margin:-20px 0 0}
-    .ninth-content{margin:60px 0 0}
-    .ninth-middle{width:350px;height:350px}
-    .ninth-left,.ninth-right{width:38.5%}
-    .ninth-item-zoom{margin:0 15px}
-    .ninth-item-text{font-size:19px;line-height:22px;width:77%}
-    .ninth-left .ninth-item.active,.ninth-left .ninth-item{padding:10px 0 20px 20px}
-    .ninth-right .ninth-item.active,.ninth-right .ninth-item{padding:10px 20px 20px 0}
-    .ninth-item.first,.ninth-item.active.first{top:21px;right:-50px}
-    .ninth-item.second,.ninth-item.active.second{top:149px;right:0}
-    .ninth-item.third,.ninth-item.active.third{top:263px;right:-40px}
-    .ninth-item.fourth,.ninth-item.active.fourth{top:21px;left:-50px}
-    .ninth-item.fifth,.ninth-item.active.fifth{top:149px;left:0}
-    .ninth-item.sixth,.ninth-item.active.sixth{top:263px;left:-40px}
-    .ninth-item-hid-text{font-size:16px;line-height:20px;margin:0}
-    .ninth-item-hid-text span{margin:0 0 7px;font-size:19px;line-height:22px}
-    .active .ninth-item-hid-text{width:77%}
-    .ninthscreen{padding:80px 0 100px}
-    .tenth-item{margin:0 1.5%;width:325px}
-    .tenth-img{width:210px;height:290px}
-    .tenth-text{font-size:21px;line-height:27px;margin:40px 0 0}
-    .catalog-wrap-fancy{min-width:96%;box-sizing:border-box;min-height:1px}
-    .eleventhscreen{padding:70px 0 90px}
-    .faq-answer{font-size:19px;line-height:24px;margin:12px 0 -5px}
-    .footer-middle{margin:0 12.5% 0 18%;width:25%}
-    @keyframes drawArc {
-        0% { transform: rotate(0deg) translateX(0px) rotate(0deg) ;}
-        100%{ transform: rotate(120deg) translateX(850px) rotate(-120deg);  }
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/assets/lol-surprise-lp/favicon.png">
+  <title>Лучшее бесплатное видео онлайн!</title>
+  <!--
+Fluid Gallery Template
+http://www.templatemo.com/tm-500-fluid-gallery
+-->
+  <!-- load stylesheets -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="/assets/lol-surprise-lp/Font-Awesome-4.7/css/font-awesome.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/assets/lol-surprise-lp/css/bootstrap.min.css">
+  <!-- Bootstrap style -->
+  <link rel="stylesheet" href="/assets/lol-surprise-lp/css/hero-slider-style.css">
+  <!-- Hero slider style (https://codyhouse.co/gem/hero-slider/) -->
+  <link rel="stylesheet" href="/assets/lol-surprise-lp/css/magnific-popup.css">
+  <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
+  <link rel="stylesheet" href="/assets/lol-surprise-lp/css/templatemo-style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+
+  <!-- These two JS are loaded at the top for gray scale including the loader. -->
+
+  <script src="/assets/lol-surprise-lp/js/jquery-1.11.3.min.js"></script>
+  <!-- jQuery (https://jquery.com/download/) -->
+
+  <script>
+    var tm_gray_site = false;
+
+    if (tm_gray_site) {
+      $('html').addClass('gray');
+    } else {
+      $('html').removeClass('gray');
     }
-    .firstscreen{background:url(assets/lol-surprise-lp1/1/first_middle_desktop.png) no-repeat;background-position:center top;position:relative}
-    .firstscreen:after{background:url(assets/lol-surprise-lp1/1/girl.png) no-repeat;background-size:100%;position:absolute;width:788px;height:677px;display:block;content:'';bottom:-34px;left:16.8%}
-    .first-inner{position:relative;z-index:1}
-}
-@media screen and (max-width: 1300px) {
-    .firstscreen:after{left: 13.8%;}
-    .first-right-up{top:-9px}
-}
-@media screen and (max-width: 1200px) {
-    .header-middle:after{bottom:-25px;border-left:85px solid transparent;border-right:85px solid transparent;border-top:25px solid #85d0de}
-    .header-middle{width:170px;padding:15px}
-    .header-description{font-size:10px}
-    .header-left{width:40.5%}
-    .header-menu-a{margin:0 1.5% 0 0;font-size:12px}
-    .header-right{width:39.5%}
-    .header-right-item{margin:0 0 0 1.5%;width:47%}
-    .header-right-img{width:23px}
-    .header-right-info{width:80%}
-    .header-right-info-p{font-size:12px}
-    .header-tel-a{font-size:19px}
-    .first-left-text{background:rgba(255,255,255,.5);font-size:17px;line-height:21px;padding:7px 0}
-    .first-button{width:100%;padding:18px 1% 17px;font-size:15px}
-    .first-right-down-p{font-size:24px;text-shadow:1px 1px 3px rgba(255,255,255,1)}
-    .first-right-down-p br{display:none}
-    .first-right-down-p:after{width:90px;height:57px;top:28px}
-    .first-right-pills-cont{margin:70px 0 0 5px}
-    .first-rouble-img{width:20px}
-    .first-cost-circle{margin:5px -70px 0 0}
-    .first-after-img{width:40px}
-    .secondscreen{padding:70px 0 50px}
-    .second-middle:after{width:250px;height:250px}
-    .second-item-img{width:85px}
-    .second-item-text{font-size:16px;line-height:19px}
-    .second-middle{margin:20px .5% -20px}
-    .second-line{width:90%}
-    .thirdscreen{padding:30px 0 80px}
-    .third-content{margin:70px 0 0}
-    .third-middle-up{width:250px;height:284px;padding:95px 0 0 45px}
-    .third-middle-up-p{font-size:13px}
-    .third-middle-up-p span{font-size:45px;line-height:40px}
-    .third-item.second,.third-item.fifth{top:127px}
-    .active .third-item-hid-text{width:65%;margin:5px 0 0;font-size:14px}
-    .third-item-hid-text span{font-size:17px}
-    .third-item.active.third{bottom:-208px}
-    .fourth-title-mid{font-size:78px;margin:0 15px 0 -4px}
-    .fourth-left-img.first{width:350px}
-    .fourth-left-img.second{width:160px}
-    .fourth-left-img.third{width:150px}
-    .fourth-right-img{max-width:200px}
-    .fifth-undertitle{font-size:18px;line-height:26px;margin:20px 0 0}
-    .fifthscreen:after{display:none}
-    .fifth-left,.fifth-right{margin:0 2%}
-    .sixthscreen{padding:80px 0 70px}
-    .sixth-item-middle-img{width:200px;height:250px}
-    .sixth-item-middle{width:410px}
-    .sixth-item-left{width:265px}
-    .sixth-item-left-text{margin:5px 0 0;font-size:15px;line-height:18px}
-    .sixth-item-right{width:250px}
-    .sixth-item-right-text{font-size:15px;line-height:18px}
-    .sixth-item-right-down{padding-top:5px;height:64px}
-    .sixth-item{margin:35px 0 20px}
-    .all-titles{font-size:28px}
-    .all-titles span{font-size:32px}
-    .seventh-dietolog-name span{font-size:31px;margin:0 0 7px}
-    .seventh-dietolog-name{font-size:17px;line-height:21px}
-    .seventh-right-speech-item{margin:18px 0 0;font-size:17px;line-height:21px}
-    .seventh-right-line{margin:35px 0 17px}
-    .seventh-unique-formula{font-size:19px;line-height:23px}
-    .eighthscreen{padding:80px 0}
-    .eighth-item-pills span{font-size:74px;margin:5px 0 0}
-    .eighth-item-up{width:250px;height:250px}
-    .eighth-img{width:200px}
-    .eighth-item-button{bottom:0}
-    .eighth-old-price{font-size:27px;margin:-17px 0 0;line-height:18px}
-    .eighth-black-rouble{width:20px}
-    .eighth-new-price span{font-size:38px;line-height:26px}
-    .ninth-middle{width:270px;height:270px;margin:50px 0 0}
-    .ninth-content{margin:40px 0 0}
-    .ninth-item-text{font-size:17px;line-height:20px;width:72%}
-    .ninth-item.first,.ninth-item.active.first,.ninth-item.second,.ninth-item.active.second,.ninth-item.third,.ninth-item.active.third{right:0}
-    .ninth-item.fourth,.ninth-item.active.fourth,.ninth-item.fifth,.ninth-item.active.fifth,.ninth-item.sixth,.ninth-item.active.sixth{left:0}
-    .active .ninth-item-hid-text{width:70%}
-    .tenth-item{width:260px}
-    .tenth-img-a{border:10px solid #fff;padding:20px}
-    .tenth-img{width:200px;height:280px}
-    .tenth-text{font-size:17px;line-height:21px;margin:25px 0 0}
-    .tenthscreen{padding:90px 0}
-    .eleventh-button{width:420px;padding:23px 1%;font-size:18px;margin:50px auto 0}
-    .twelfthscreen{padding:80px 0}
-    .footer-middle{margin:0 9.5% 0 14%;width:27%}
-    @keyframes drawArc {
-        0% { transform: rotate(0deg) translateX(0px) rotate(0deg) ;}
-        100%{ transform: rotate(120deg) translateX(650px) rotate(-120deg);  }
+  </script>
+  <style>
+    .cd-hero-slider .selected .cd-full-width h2.tm-figure-title {
+      font-size: 17px;
     }
-    .firstscreen:after{left: 10.5%;}
-    .first-right-win{width: 175px;}
-}
-@media screen and (max-width: 1100px) {
-    .firstscreen:after{left:7%}
-}
-@media screen and (max-width: 1024px) {
-    @keyframes drawArc {
-        0% { transform: rotate(0deg) translateX(0px) rotate(0deg) ;}
-        100%{ transform: rotate(0deg) translateX(0px) rotate(0deg);  }
+
+    .mfp-iframe-scaler iframe {
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0.6) !important;
     }
-    .gamburger-button-a{display:block;margin:-4px auto 43px;width:247px;padding:15px 1% 14px;font-size:14px;font-weight:900;text-transform:uppercase}
-    .nav-close-img,.nav-close-img-2,.nav-close-img-3{display:block;position:relative;cursor:pointer;z-index:100;width:29px;margin:10px 0 27px 10px}
-    .header-left{display:none}
-    .header-gamburger-mobile{text-align:center;display:inline-block;padding:17px 0 0}
-    .menu-a{margin:0 0 30px;font-size:20px;display:block}
-    .navi .footer-tel-a{font-size:42px;color:#364D62;margin:33px 0 0;display:block}
-    .navi .footer-tel-p{margin:-4px 0 40px;font-size:20px;color:#C6CCD3}
-    .navi .header-right-info-p{font-size:20px;margin:0 0 57px}
-    .menu-a:hover{background-color:transparent;border:none}
-    .menu-a:hover:after{display:none}
-    .header-menu-line{margin:0 auto;width:100%;max-width:460px;height:1px;background-color:#e1e7e9}
-    .fifth-left{margin:0 18% 0 0}
-    .fifth-right{margin:0 0 0 18%}
-    .fifthscreen:after{display:block;z-index:1;left:27%}
-    .firstscreen:after{display:none}
-    .gamburger{width:24px;cursor:pointer}
-    .hamb-white{width:100%;height:5px;background-color:#fff}
-    .hamb-black-long{width:100%;height:2px;background-color:#364D62}
-    .hamb-black-short{width:100%;height:2px;background-color:#364D62}
-    .hamb-black-medium{width:100%;height:2px;background-color:#364D62}
-    #razdel-nav,#razdel-nav-2,#razdel-nav-3{box-sizing:border-box;position:absolute;display:none;width:96%;padding:5px 20px 20px;background-color:#fff;box-shadow:0 5px 20px rgba(0,0,0,0.1);top:0;z-index:200}
-    .navi .footer-socials{width:100%;display:block;margin:25px auto 0;text-align:center}
-    .second-third-screen .inner{z-index:0}
-    .low-res-nav,.low-res-nav-2,.low-res-nav-3{cursor:pointer;position:relative;z-index:20;padding:5px;background:#fff}
-    .header-middle:after{display:block;bottom:-47px;border-left:141px solid transparent;border-right:141px solid transparent;border-top:47px solid #85d0de}
-    .inner{max-width:964px}
-    .firstscreen{background:url(assets/lol-surprise-lp1/1/firstscreen_tablet.png) no-repeat;background-position:center top;min-height:558px;overflow:hidden;padding-top:77px}
-    .tablet-header{display:block}
-    .firstscreen header{display:none}
-    .header-right{width:224px;margin:-41px 0 0 11.7%}
-    .header-right-item{margin:0 0 10px 5%;display:block;width:95%}
-    header{margin:0 auto;background:#fff;height:55px;width:100%;padding:0 2%;box-sizing:border-box}
-    .header-position-hid{display:inline-block;width:215px;margin:-56px 5.8% 0 6.8%}
-    .header-position-vis{display:none}
-    .header-right-info-p{font-size:14px}
-    .header-right-img{width:34px}
-    .header-right-info{width:76%;margin:0 0 0 8px}
-    .header-tel-a{font-size:24px;margin:-3px 0 0}
-    .header-middle{width:282px;padding:10px 10px 0;z-index:10;margin-top:-48px}
-    .header-description{font-size:10px}
-    .logo-img{width:236px}
-    .popup-form{width:600px}
-    .first-after-img{vertical-align:top}
-    .first-after-text{font-size:14px;vertical-align:top}
-    .second-left,.second-right{margin-top:30px;width:33%}
-    .second-line{margin:20px auto 0}
-    .secondscreen{padding:50px 0 20px}
-    .third-content{margin:40px 0 0}
-    .third-middle{width:34%}
-    .third-left{width:34.5%;margin:0 -9% 0 0}
-    .third-right{width:34.5%;margin:0 0 0 -6%}
-    .third-item,.third-item.active{padding:10px 0 10px 10px}
-    .third-right .third-item.active,.third-right .third-item{padding:10px 10px 10px 0}
-    .third-item-text{font-size:17px;line-height:19px}
-    .active .third-item-hid-text{width:70%;margin:0;font-size:14px}
-    .third-item-hid-text span{font-size:17px;margin:0 0 5px}
-    .third-item.active.third{bottom:-148px}
-    .fourth-title-mid{font-size:60px;margin:0 10px 0 -4px;line-height:38px}
-    .fourth-title-mid b{font-size:49px}
-    .fourth-title{font-size:27px}
-    .fourthscreen{padding:80px 0 60px}
-    .fourth-text{font-size:16px;width:82%;margin:0 0 15px 15px;line-height:20px}
-    .fourth-right-img{max-width:185px}
-    .fourth-left-img.first{width:340px}
-    .fourth-left-img.third{width:180px}
-    .fourth-left-img.second{width:200px}
-    .fourth-text br{display:none}
-    .fourth-right-img.fifth{width:250px;max-width:250px}
-    .fourth-right-img.sixth{width:180px}
-    .all-titles{font-size:25px}
-    .all-titles span{font-size:31px}
-    .fifth-undertitle{font-size:16px;line-height:20px;margin:12px 0 0}
-    .fifth-content{margin:160px 0 0}
-    .fifth-left,.fifth-right{width:300px;height:300px;padding:35px 30px 30px}
-    .fift-item-title{font-size:16px;line-height:19px}
-    .fift-item-title span{font-size:24px}
-    .fift-item-text{margin:10px 0;font-size:14px;line-height:16px}
-    .fifth-item-down-lotus{background-size:100%;width:100px;height:70px;font-size:24px;padding-top:23px}
-    .fifth-item-down-diet{background-size:100%;width:75px;height:75px;font-size:24px;padding-top:28px}
-    .fifth-item-down-span{font-size:20px;margin:0 7px 20px 5px}
-    .fifth-right .fift-item-text{margin:38px 0 30px}
-    .fifthscreen{padding:80px 0 70px}
-    .sixth-item-middle{width:780px}
-    .lost-weight-img{left:41%;width:57px}
-    .sixth-item-left{width:200px;padding:5px}
-    .sixth-item-left-title{font-size:16px;line-height:17px}
-    .sixth-item-left-text{margin:2px 0 0;font-size:16px;line-height:21px}
-    .sixth-item-left-line{margin:10px 0;height:2px}
-    .sixthscreen{padding:80px 0 10px;background-size:cover}
-    .sixth-item-right{width:100%;padding:28px 7%;max-width:780px;margin:34px 0 60px}
-    .sixth-down{display:none}
-    .sixth-item{margin:35px 0 0}
-    .sixth-item-right-text{background:url(assets/lol-surprise-lp1/1/big_quote.png) no-repeat;background-position:center;min-height:74px;box-sizing:border-box;padding-top:18px;font-size:16px;line-height:25px}
-    .sixth-item-right-down{background:#fff;height:auto}
-    .sixth-item-right-read-all{margin:2px 0 5px;font-size:15px;line-height:18px}
-    .sixth-item-right-name span{font-size:22px;line-height:28px;margin:10px 0 2px}
-    .sixth-item-bef{font-size:14px;padding:10px 5px;width:50px}
-    .sixth-item-aft{font-size:14px;padding:10px 5px;width:70px}
-    .sixth-slider .slick-prev{left:4%}
-    .sixth-slider .slick-next{right:4%}
-    .sixth-down-p{margin:10px 0;font-size:18px}
-    .sixth-button{margin:15px auto 0;width:320px}
-    .seventhscreen{padding:70px 0}
-    .seventhscreen .all-titles.vis{display:none}
-    .seventhscreen .all-titles.hid{display:block}
-    .seventh-left{width:35%}
-    .seventh-right{width:61%;margin:75px 0 0}
-    .seventh-right-speech-left{display:block;margin:0;width:100%}
-    .seventh-dietolog-name{font-size:15px;line-height:18px;margin:25px 0 0}
-    .seventh-dietolog-name span{font-size:25px}
-    .seventh-right-speech-item{margin:12px 0 0;font-size:14px;line-height:18px}
-    .seventh-right-line{margin:20px 0 15px;width:100%}
-    .seventh-unique-formula{font-size:18px;line-height:25px;width:100%}
-    .seventh-line{width:75%}
-    .seventh-button{width:300px;padding:17px 1% 16px;font-size:14px;margin:20px 0 0}
-    .ninth-content{margin:25px 0 0}
-    .ninthscreen{padding:60px 0 80px;overflow:hidden}
-    .tenthscreen{padding:70px 0}
-    .tenth-item{width:250px}
-    .tenth-img-a{padding:15px}
-    .tenth-text{font-size:18px;line-height:23px;margin:35px 0 0}
-    .eleventhscreen .all-titles span{font-size:50px}
-    .cake-layer-2{background-position:right top}
-    .tenth-content{margin:30px 0 0}
-    .catalog-wrap-fancy .fancybox-skin{min-height:500px}
-    .eleventhscreen{padding:50px 0 75px}
-    .popup-title{font-size:40px}
-    .twelfthscreen{padding:50px 0 70px}
-    .faq-question{font-size:18px;line-height:23px}
-    .faq-element{padding:26px 3% 27px 8.5%}
-    .convert{width:24%}
-    .policy{width:75%}
-    .footer-down-text{font-size:13px}
-    .faq-answer{font-size:16px;line-height:19px;margin:5px 0 -5px}
-    .faq-element.opened{padding:20px 3% 28px 8.5%}
-    .faq-question:before{left:-40px;top:5px}
-    .faq{margin:30px auto 0;width:82%}
-    .twelfthscreen .all-titles{font-size:37px}
-    .not-a-medicine-block{padding:20px 0;font-size:24px}
-    .footer-logo-img{width:160px}
-    .footer-socials{width:27%}
-    .footer-middle{margin:0 8% 0 14%}
-    .footer-tel-a{font-size:27px}
-    .footer-call-a{width:100%;padding:9px 1% 8px;font-size:13px}
-    .footer-tel-p{margin:0 0 15px}
-    .first-right-bullit-img{margin:0 0 12px;width:73px;display:block}
-    .first-right-win{margin:5px 0 0;width:150px;position:absolute}
-    .first-left-text{background:transparent}
-    .first-left-item{top:325px}
-    .first-right-down-p br{display:block}
-    .first-right-down{top:113px;left:65px}
-    .first-right-down-p:after{position:absolute;display:block;content:'';background:url(assets/lol-surprise-lp1/1/arrow_tablet.png) no-repeat;width:163px;height:147px;left:119px;top:74px}
-    .first-cost-circle{margin:5px -50px 0 0;width:127px;height:127px;padding:40px 20px 10px;font-size:14px;line-height:21px}
-    .first-cost-circle span{font-size:46px;line-height:31px}
-    .first-right-pills-cont{margin:150px 0 0 115px}
-    .pills-img{width:265px;margin:32px 0 -50px -50px;position:relative;right:-50px}
-    .second-item-img{width:110px}
-    .second-item-text{width:60%}
-    .second-line{width:75%}
-    .second-middle{opacity:1!important}
-    .sixth-slider .slick-prev{width:50px;height:50px;background-size:85px auto;background-position:-2px -625px}
-    .sixth-slider .slick-next{width:50px;height:50px;background-size:85px auto;background-position:-2px -679px}
-    .sixth-slider .slick-prev:hover{background-position:-2px -436px;background-size:89px auto}
-    .sixth-slider .slick-next:hover{background-position:-2px -491px;background-size:89px auto}
-    .sixth-slider .slick-prev{left:20%;top:-15px}
-    .sixth-slider .slick-next{right:20%;top:-15px}
-    .sixth-item-left.vis{display:none}
-    .sixth-item-left.hid{display:block;width:100%;max-width:780px;background:transparent;box-shadow:none;margin:0 auto}
-    .sixth-item-middle-img{width:390px;height:486px}
-    .sixth-item-left-item{float:left;width:50%;box-sizing:border-box;padding:0 2%;margin:23px 0 0;text-align:center}
-    .sixth-item-right:before{display:none}
-    .eighth-item-up{width:300px;height:300px}
-    .eighth-item{margin:0 1.5%;width:29.5%}
-    .eighth-img{width:220px;margin:10px auto 0}
-    .eighth-item-button{font-size:10px;width:77px;height:77px;padding:15px 1%}
-    .eighth-cart-img{margin:0 auto 2px}
-    .eighth-text{margin:72px 0 0;font-size:18px}
-    .ninth-middle{width:400px;height:400px}
-    .ninth-left{margin:60px -10.5% 0 0}
-    .ninth-right{margin:60px 0 0 -10.5%}
-    .ninth-item.second,.ninth-item.active.second{right:40px}
-    .ninth-item.fifth,.ninth-item.active.fifth{left:40px}
-}
-@media screen and (max-width: 1023px) {
-    .header-middle{width:200px}
-    .logo-img{width:170px}
-    .header-middle:after{bottom:-30px;border-left:100px solid transparent;border-right:100px solid transparent;border-top:30px solid #85d0de}
-    .header-right{margin:-41px 0 0 10.7%}
-    .header-position-hid{margin:-56px 5.8% 0 6%}
-    .first-right-pills-cont{margin:150px 0 0 45px}
-    .second-item-img{width:90px}
-    .second-middle:after{width:230px;height:230px}
-    .active .third-item-hid-text{width:65%}
-    .fourth-left-img.second{width:180px}
-    .fourth-right-img.fifth{max-width:200px}
-    .fifthscreen:after{display:none}
-    .fifth-left,.fifth-right{margin:0 6.5%}
-    .fifth-content{margin:70px 0 0}
-    .eighth-item-up{width:250px;height:250px}
-    .eighth-img{width:180px}
-    .eighth-text{margin:40px 0 0}
-    .ninth-middle{width:300px;height:300px}
-    .ninth-left{margin:30px -10.5% 0 0}
-    .ninth-right{margin:30px 0 0 -10.5%}
-    .active .ninth-item-hid-text{width:68%}
-    .ninthscreen{padding:60px 0 100px}
-    .ninth-item-hid-text{font-size:14px;line-height:17px}
-}
-@media screen and (max-width: 900px) {
-    .cake-layer-2{background-position:left top}
-    .tenth-item{width:200px}
-    .tenth-img-a{border:5px solid #fff;padding:10px}
-    .tenth-img{width:170px;height:240px}
-    .tenth-text{font-size:14px;line-height:18px;margin:12px 0 0}
-    .ninth-left,.ninth-right{width:38%}
-    .ninth-left{margin:0 -10% 0 0}
-    .ninth-right{margin:0 0 0 -10%}
-    .ninth-item-text{font-size:15px;line-height:18px;width:67%}
-    .ninth-item-hid-text span{margin:0 0 2px;font-size:16px;line-height:19px}
-    .active .ninth-item-hid-text{width:62.5%;font-size:13px}
-    .eighth-item-up{width:100%;height:auto;background:transparent}
-    .eighth-item-pills{font-size:20px;line-height:32px;color:#364D62}
-    .eighth-item-pills span{font-size:35px;margin:-8px 0 0}
-    .eighth-img{width:100px;margin:10px auto 0}
-    .eighth-item-button{position:relative;border-radius:60px;width:100%;height:auto;margin:8px auto 0;font-size:10px;padding:12px 1% 7px}
-    .eighth-cart-img{display:inline-block;vertical-align:middle;margin:0 5px 0 0}
-    .eighth-item-button-text{display:inline-block;vertical-align:middle}
-    .eighth-item-down{margin:12px 0 0}
-    .eighth-old-price{margin:-11px 0 0;display:block}
-    .eighth-new-price{display:block;line-height:30px}
-    .eighth-new-price span{font-size:30px;line-height:21px}
-    .eighth-text{margin:20px 0 0;font-size:18px;line-height:22px}
-    .sixth-item-left-title{font-size:13px;line-height:17px}
-    .sixth-item-left-text{font-size:12px;line-height:15px}
-    .sixth-item-middle-img{width:300px;height:374px}
-    .sixth-item-middle{width:600px}
-    .fifth-left,.fifth-right{margin:0 3.5%}
-    .fourth-left-img.second{width:160px}
-    .fourth-left-img.third{width:150px}
-    .sixth-slider .slick-prev,.sixth-slider .slick-next{top:-5px}
-    .fourth-right-img{max-width:170px}
-    .fourth-left-img.first{width:300px}
-    .fourth-right-img.fifth,.fourth-right-img.sixth{width:150px}
-    .active .third-item-hid-text{width:60%}
-    .third-item.active.third{bottom:-200px}
-    .all-titles span{font-size:27px}
-    .second-item-img{width:80px}
-    .second-left,.second-right{margin-top:30px;width:46%}
-    .second-middle{display:none}
-    .first-after-img{width:30px}
-    .first-after-text{font-size:12px}
-    .pills-img{width:235px;margin:0 0 -50px;right:0}
-    .first-right-down-p br{display:none}
-    .first-left-text{background:rgba(255,255,255,.5)}
-    .firstscreen{min-height:1px}
-    .first-left-item{top:0;width:70%;position:relative;left:0;margin:150px 0 0}
-    .first-right-down{width:90%;position:relative;top:0;left:0;margin:0 auto}
-    .first-right-down-p:after{top:45px;left:140px;background:url(assets/lol-surprise-lp1/1/arrow_tablet.png) no-repeat}
-    .first-right-down-p{width:80%;margin:0 0 0 15%}
-    .first-right-down-p:after{display:none}
-    .first-right-pills-cont{margin:50px 0 0}
-    .first-right-pills-img{width:235px;margin:0 0 -50px}
-    .first-right-up{position:relative;text-align:right;top:-67px}
-    .first-right-win{position:relative;display:inline-block;margin:0;width:125px}
-    #razdel-nav,#razdel-nav-2,#razdel-nav-3{width:100%}
-    header{max-width:964px}
-    .header-position-hid{display:inline-block;width:215px;margin:-56px 5px 0 5.8%}
-    .header-right{margin:-41px 0 0 3.7%}
-    .header-position-vis{display:none}
-    .header-right-info-p{font-size:14px}
-    .header-right-img{width:34px}
-    .header-right-info{width:76%;margin:0 0 0 8px}
-    .header-tel-a{font-size:24px}
-    .header-middle{width:200px;padding:10px}
-    .header-description{font-size:9px}
-    .first-right-bullit-img{display:inline-block;width:60px}
-}
-@media screen and (max-width: 830px) {
-    .firstscreen{background:url(assets/lol-surprise-lp1/1/first_small_mob.png) no-repeat;background-position:center -92px}
-}
-@media screen and (max-width: 768px) {
-    .first-left,.first-right{margin:40px 0 0}
-    .first-right-up{top:-50px}
-    .header-middle{width:140px;padding:7px}
-    .header-right-img{display:none}
-    .header-right-info{width:100%;margin:0}
-    .header-position-hid{width:28%;margin:-56px 5px 0 10%}
-    .header-right .header-right-item{margin:0;width:100%}
-    .header-left{width:34.5%;margin:15px 0 0}
-    .header-menu-a{font-size:11px}
-    .header-right{width:31%;margin:-41px 0 0 3.7%}
-    .first-cost-circle{margin:5px -55px 0 0}
-    .first-right-pills-img{width:160px}
-    .pills-img{width:160px;margin:45px 0 -50px}
-    .first-right-down-p:after{display:none}
-    .first-right-down-p{width:100%;font-size:16px;margin:0}
-    .first-right-pills-cont{margin:20px 0 0}
-    .first-button{font-size:12px;margin:12px auto 0}
-    .first-left-text{font-size:14px;line-height:16px;padding:7px 5px}
-    .firstscreen{padding:20px 0}
-    .first-right-win{width:140px}
-    .first-left-item{width:90%;margin:150px auto 0}
-    .first-after{padding:20px 0 10px;text-align:center}
-    .first-after-item.first,.first-after-item.second,.first-after-item.third,.first-after-item.last{margin:0 2% 10px;width:44%}
-    .first-after-text{text-align:left}
-    .secondscreen{padding:40px 0 20px}
-    .all-titles{font-size:21px}
-    .all-titles span{font-size:22px}
-    .second-item-img{width:70px}
-    .second-item-text{font-size:14px;line-height:17px;width:68%}
-    .fourth-right-img.fifth,.fourth-right-img.sixth{width:120px}
-    #razdel-nav,#razdel-nav-2,#razdel-nav-3{width:98%}
-    .second-left,.second-right{margin-top:10px;width:47%}
-    .thirdscreen{padding:20px 0 50px}
-    .third-content{margin:20px 0 0}
-    .third-middle-up{display:none}
-    .third-left,.third-middle,.third-right{width:100%;margin:0 0 15px;display:block;left:0;top:0}
-    .third-item.first,.third-item.first.active,.third-item.second,.third-item.second.active,.third-item.third,.third-item.third.active,.third-item.fourth,.third-item.fourth.active,.third-item.fifth,.third-item.fifth.active{top:0;left:0;position:relative;text-align:left;right:auto;padding:0}
-    .third-item-text{display:none}
-    .third-item-hid-text{display:block;font-size:15px;margin:21px 0 0;padding-left:30px;position:relative}
-    .third-item-hid-text:before{display:block;position:absolute;content:'✔';left:5px;color:#85D0DE}
-    .third-item-zoom,.third-middle .third-item-zoom{display:none}
-    .third-down-p{margin:21px 0 10px;font-size:18px}
-    .fourthscreen{padding:60px 0 50px}
-    .fourth-title-mid b{font-size:33px}
-    .fourth-title-mid{font-size:40px;line-height:26px}
-    .fourth-title{font-size:24px}
-    .fourth-title-bot{margin-bottom:-3px}
-    .fourth-content{margin:25px 0 0}
-    .fourth-left-img.first{width:250px}
-    .fourth-left-img.second{width:130px}
-    .fourth-left-img.third{width:110px}
-    .fourth-left-img{margin:0 0 10px 2%}
-    .fourth-right-img{max-width:130px;margin:0 0 10px 2%}
-    .fourth-text br{display:none}
-    .fourth-text{font-size:14px;margin:0 0 10px 15px;line-height:17px}
-    .fifth-undertitle br{display:none}
-    .fifth-left,.fifth-right{width:270px;height:270px;padding:28px 20px 30px;margin:0 10px}
-    .fift-item-text{margin:10px 0 2px}
-    .fifth-right .fift-item-text{margin:34px 0 26px}
-    .fifthscreen{padding:60px 0 50px}
-    .sixthscreen{padding:60px 0 50px}
-    .sixth-item-middle-img{width:250px;height:312px}
-    .sixth-item-right{margin:34px 0 10px}
-    .sixth-item-middle{width:500px}
-    .sixth-item-bef{font-size:11px;padding:7px 5px 5px;width:35px;bottom:10px}
-    .sixth-item-aft{font-size:11px;padding:7px 5px 5px;width:50px;bottom:10px}
-    .sixth-item-left{width:160px}
-    .sixth-item-left-title{font-size:11px;line-height:14px}
-    .sixth-item-left-text{margin:0}
-    .sixth-item-right-text{padding-top:0}
-    .sixth-item-right:before{display:none}
-    .sixth-item-right-name span{font-size:15px;line-height:14px;margin:0}
-    .sixth-down-p{margin:5px 0;font-size:14px}
-    .sixth-button{margin:10px auto 0;width:250px;font-size:13px;padding:12px 1%}
-    .seventhscreen{padding:50px 0}
-    .seventh-left{width:25%;margin:10px 2.5% 0 0}
-    .seventh-dietolog-name{font-size:11px;line-height:13px;margin:12px 0 0}
-    .seventh-dietolog-name span{font-size:20px}
-    .seventh-right{width:69%}
-    .cake-layer-1,.cake-layer-2{display:none}
-    .faq{width:90%}
-    .seventh-right-speech-item{margin:7px 0 0;font-size:12px;line-height:16px}
-    .seventh-unique-formula{font-size:14px;line-height:18px}
-    .eighthscreen{padding:60px 0}
-    .eighth-item-up{padding:0}
-    .eighth-item-down{margin:20px 0 0}
-    .popup-form{width:500px;padding:25px 30px 30px}
-    .popup-title{font-size:33px}
-    .popup-line{width:80%;margin:12px auto 15px}
-    .popup-undertitle{font-size:16px;margin:0 0 20px}
-    .popup-label{margin:0 auto 12px;width:80%}
-    .popup-input{padding:12px 1% 12px 8%}
-    .popup-button-wrapper{width:60%;margin:15px auto 0}
-    .fancybox-close{background-size:100%;width:40px!important;height:40px!important;background-repeat:no-repeat;top:-50px!important}
-    .ninthscreen{padding:50px 0 60px}
-    .ninth-middle{display:none}
-    .ninth-left,.ninth-right{width:100%;margin:0 0 15px;display:block;left:0;top:0}
-    .ninth-item.first,.ninth-item.first.active,.ninth-item.second,.ninth-item.second.active,.ninth-item.third,.ninth-item.third.active,.ninth-item.fourth,.ninth-item.fourth.active,.ninth-item.fifth,.ninth-item.fifth.active,.ninth-item.sixth,.ninth-item.sixth.active{top:0;left:0;position:relative;text-align:left;right:auto;padding:0}
-    .ninth-item-text{display:none}
-    .ninth-item-hid-text{display:block;font-size:15px;margin:21px 0 0;padding-left:30px;position:relative}
-    .ninth-item-hid-text:before{display:block;position:absolute;content:'✔';left:5px;color:#85D0DE}
-    .ninth-item-zoom{display:none}
-    .ninth-down-p{margin:21px 0 10px;font-size:18px}
-    .tenthscreen{padding:50px 0}
-    .tenth-content{margin:15px 0 0}
-    .tenth-item{width:160px}
-    .tenth-img{width:130px;height:180px}
-    .tenth-text{font-size:12px;line-height:13px;margin:10px 0 0}
-    .catalog-wrap-fancy .fancybox-skin{min-height:1px;padding-top:0!important}
-    .catalog-wrap-fancy{min-width:auto}
-    .fancybox-prev span{left:0!important}
-    .fancybox-next span{right:0!important}
-    .eleventhscreen .all-titles span{font-size:35px}
-    .eleventh-button{width:320px;padding:18px 1%;font-size:14px;margin:25px auto 0}
-    .twelfth-buttons{margin:30px 0 0}
-    .twelfth-button-1{font-size:14px;width:230px}
-    .twelfth-button-2{font-size:14px;width:280px}
-    .footer-logo-img{width:130px}
-    .footer-socials{width:33%}
-    .footer-middle{margin:0 5% 0 11%}
-    .footer-tel-a{font-size:23px}
-    .footer-tel-p{margin:0 0 8px;font-size:14px}
-    .footer-up{padding:30px 0 40px}
-    .footer-menu{margin:25px 0}
-    .footer-menu-a{font-size:14px}
-    .policy{width:65%}
-    .convert{width:32%}
-    .footer-down-text{font-size:13px;margin:10px 0 5px}
-    .header-middle:after{bottom:-25px;border-left:70px solid transparent;border-right:70px solid transparent;border-top:25px solid #85d0de}
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),not all,not all {
-    .fancybox-prev span{background-image:url(assets/lol-surprise-lp1/1/prev.png)!important;background-size:auto!important}
-    .fancybox-next span{background-image:url(assets/lol-surprise-lp1/1/next.png)!important;background-size:auto!important}
-}
-@media screen and (max-width: 640px) {
-    .first-right-up{top:-20px}
-    .first-left,.first-right{margin:0}
-    .header-gamburger-mobile{bottom:0;padding:8px 0 0;vertical-align:top}
-    .gamburger{width:25px}
-    #razdel-nav,#razdel-nav-2,#razdel-nav-3{margin:0 0 0 -2.2%}
-    .nav-close-img,.nav-close-img-2,.nav-close-img-3{width:24px;margin:10px 0 27px}
-    .header-right-item{margin:0 0 10px 5px}
-    .header-right-img{width:18px;display:block}
-    .header-tel-a{display:inline-block;vertical-align:top;margin:12px 0 0}
-    .fancybox-margin{margin-right:0!important}
-    .popup-form{box-sizing:border-box;width:100%;padding:10px 10px 15px}
-    #privacy,#privacy_check{box-sizing:border-box;width:100%;padding:0 5px}
-    .catalog-wrap-fancy .fancybox-close{right:43%!important}
-    .firstscreen{background:url(assets/lol-surprise-lp1/1/firstscreen_mob.jpg) no-repeat;background-size:cover;padding:58px 0 30px}
-    .header-left{display:block;width:100%;text-align:center;padding:5px 0;margin:0}
-    .header-menu-a{font-size:9px}
-    .header-description{font-size:8px;line-height:9px;margin:0}
-    .sixth-item-left-title{font-size:16px;line-height:22px}
-    .sixth-item-left-text{font-size:14px;line-height:18px;margin:10px 0 0}
-    .header-right{width:180px;margin:0;text-align:left}
-    .header-middle{width:222px;margin:0 7.5% 0 8%;padding:7px 7px 5px}
-    .header-middle:after{display:block;bottom:-30px;border-left:111px solid transparent;border-right:111px solid transparent;border-top:30px solid #85d0de}
-    .first-left,.first-right{float:none;width:100%}
-    .first-left-item{width:100%;margin:15px auto 0}
-    .first-right-bullit-img{margin:7px 0 0 1px;width:50px}
-    .first-right-win{margin:5px 0 0;width:initial}
-    .first-right-up{text-align:center;margin:0}
-    .first-right-down{margin:-10px auto 0;width:100%}
-    .first-right-down.vis{display:none}
-    .first-right-down.hid{display:block}
-    .first-right-down-p{text-align:center;font-size:20px;line-height:23px;width:210px;margin:0 auto}
-    .first-right-down-p br{display:block}
-    .first-right-down-p:after{display:block;background:url(assets/lol-surprise-lp1/1/arrow_mob.png) no-repeat;width:33px;height:95px;left:-19px;top:24px;background-size:100%}
-    .first-right-pills-img{width:initial;margin:74px 0 0;position:relative;z-index:1}
-    .first-cost-circle{margin:10px 0 0 -66px;width:115px;height:115px;padding:32px 10px 10px}
-    .first-cost-circle span{font-size:44px;line-height:32px}
-    .fancybox-close{width:25px!important;height:25px!important;top:-30px!important}
-    .popup-title{font-size:22px}
-    .popup-line{margin:10px auto 8px}
-    .popup-undertitle{font-size:13px;margin:0 0 15px}
-    .popup-label{margin:0 auto 10px;width:95%}
-    .popup-button-wrapper{width:95%;margin:10px auto 0}
-    .popup-policy-text{margin:10px 0 0;font-size:12px}
-    .first-after-img{width:55px;vertical-align:middle}
-    .first-after-text{font-size:17px;width:72%;vertical-align:middle}
-    .secondscreen{padding:60px 0}
-    .all-titles{font-size:22px}
-    .all-titles br{display:none}
-    .all-titles span{font-size:22px;text-transform:none}
-    .sixthscreen .all-titles span{font-weight:500;text-transform:none}
-    .sixth-item-middle-img{width:170px;height:212px}
-    .second-left,.second-right{display:none}
-    .second-item-img{width:155px;display:block;margin:0 auto 7px}
-    .second-item-text{font-size:18px;line-height:23px;display:block;width:100%}
-    .second-line{margin:10px auto 0}
-    .thirdscreen{padding:0 0 57px}
-    .third-item-hid-text,.ninth-item-hid-text{font-size:14px;margin:15px 0 0}
-    .third-down-p{margin:11px 0 5px}
-    .third-button{width:100%;max-width:300px;margin:20px auto 0;font-size:13px}
-    .popup-textarea{min-height:104px}
-    .fourthscreen{padding:40px 0}
-    .fourth-title-mid{font-size:29px;line-height:19px}
-    .fourth-title-mid b{font-size:24px}
-    .fourth-title-bot{margin-bottom:0}
-    .fourth-content{display:none}
-    .fourth-left{display:block;width:100%;text-align:center}
-    .fourth-right{display:block;width:100%;text-align:center}
-    .fourth-left-img.first{width:200px;margin:0 auto;display:block}
-    .fourth-left-img.second{width:130px;margin:10px 5px 0}
-    .fourth-left-img.third{width:130px;margin:10px 5px 0}
-    .fourth-text{margin:5px 0 10px}
-    .fourth-right-img{max-width:100px;margin:0 5px}
-    .fourth-right-img-cont{display:inline-block}
-    .fourth-right-img-cont .fourth-right-img{margin:0 5px 10px}
-    .fifthscreen{background:#f2fcfe;background:-moz-linear-gradient(left,#f2fcfe 0%,#dbf3f6 100%);background:-webkit-linear-gradient(left,#f2fcfe 0%,#dbf3f6 100%);background:linear-gradient(to right,#f2fcfe 0%,#dbf3f6 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2fcfe',endColorstr='#dbf3f6',GradientType=1);padding:45px 0 50px}
-    .fifth-undertitle{font-size:16px;line-height:25px;margin:17px 0 40px}
-    .fifth-content{margin:15px 0 0}
-    .fifth-left,.fifth-right{display:block;margin:25px auto 0;border-radius:0;width:100%;padding:23px 20px 30px;height:auto}
-    .fift-item-title span{font-size:22px}
-    .fift-item-text{margin:10px 0;font-size:16px;line-height:25px}
-    .fifth-right .fift-item-text{margin:10px 0}
-    .sixth-slider .slick-dots{display:block!important;bottom:-30px!important}
-    .sixth-slider .slick-prev{width:40px;height:40px;background-size:65px auto;background-position:0 -318px}
-    .sixth-slider .slick-next{width:40px;height:40px;background-size:65px auto;background-position:0 -356px}
-    .sixth-slider .slick-prev:hover{background-position:0 -318px;background-size:65px auto}
-    .sixth-slider .slick-next:hover{background-position:0 -356px;background-size:65px auto}
-    .sixth-slider .slick-prev{left:0;top:135px}
-    .sixth-slider .slick-next{right:0;top:135px}
-    .sixth-item-left{width:90%;display:block;margin:0 auto}
-    .sixth-item-middle{width:100%;display:block;margin:0 auto}
-    .sixth-item-right{width:100%;display:block;margin:20px auto 0;box-shadow:none}
-    .sixth-item-right-text{background-position:center top}
-    .sixth-item-right-name{margin:20px 0 0}
-    .sixth-item-right-name span{font-size:20px;line-height:26px;margin:0 0 5px}
-    .sixth-item-right-down{height:auto;background-size:auto 100%;padding:0 0 5px}
-    .sixth-down-p{margin:-10px 0 5px}
-    .seventhscreen{padding:20px 0}
-    .seventh-left{display:block;width:100%;margin:30px 0 0}
-    .seventh-dietolog-img{width:306px}
-    .seventh-dietolog-name{font-size:16px;line-height:25px;width:90%;margin:20px auto 0}
-    .seventh-right{width:100%;display:block;margin:10px 0 0}
-    .all-titles br{display:none}
-    .seventh-right-speech-left{display:block;width:100%;margin:0}
-    .seventh-right-speech-item{margin:15px 0 0;font-size:14px;line-height:17px;text-align:center}
-    .seventh-right-line{margin:25px auto;width:80%}
-    .eighth-item{margin:35px 0 0;width:100%;display:block}
-    .eighth-item-pills{color:#efedf2}
-    .eighth-item-pills span{font-size:70px;margin:5px 0 0}
-    .eighth-item-up{padding:12px;background:#fff;width:303px;height:303px}
-    .seventh-unique-formula{font-size:16px;line-height:23px;text-align:center}
-    .seventh-button{width:95%;max-width:286px;font-size:14px;margin:30px auto 25px}
-    .seventh-line{width:90%}
-    .eighthscreen{padding:20px 0 65px}
-    .eighth-img{width:83%}
-    .eighth-item-button{width:77px;height:77px;padding:15px 1% 7px;right:19px;bottom:15px;position:absolute}
-    .eighth-new-price{display:inline-block;line-height:20px;font-size:16px}
-    .eighth-old-price{display:inline-block}
-    .eighth-text{margin:30px 0 0}
-    .eighth-button{max-width:300px;width:90%;padding:18px 1%;font-size:13px;margin:15px auto 0}
-    .ninthscreen{background:#ECF7F9}
-    .ninth-content.vis{display:none}
-    .ninth-content.hid{display:block}
-    .ninth-content-img{display:block;margin:20px auto;width:100%;max-width:346px}
-    .ninth-slider{width:90%;margin:15px auto 0}
-    .ninth-item{position:relative}
-    .ninth-item-hid-text{display:block;background-color:#fff;font-size:16px;line-height:21px;padding:30px 20px}
-    .ninth-slider .slick-prev,.ninth-slider .slick-next{display:none!important}
-    .ninth-item-hid-text:before{display:none}
-    .ninth-item-hid-text span{margin:0 0 15px;font-size:18px;line-height:23px}
-    .ninth-slider .slick-dots{bottom:-35px!important}
-    .tenthscreen{padding:50px 0 40px}
-    .tenth-item{margin:0 auto 15px}
-    .tenth-text{font-size:18px;line-height:23px;margin:38px 0 0}
-    .eleventhscreen{padding:20px 0}
-    .eleventhscreen .all-titles span{font-size:24px;display:block}
-    .eleventh-button-img{display:none}
-    .eleventh-button{max-width:300px;width:90%;padding:16px 1%;margin:33px auto 0}
-    .twelfthscreen{padding:50px 0}
-    .twelfthscreen .all-titles{font-size:25px;line-height:24px}
-    .faq{margin:35px auto 0;width:100%}
-    .faq-element,.faq-element.opened{padding:7px 7px 12px 45px}
-    .faq-question:before{left:-33px}
-    .faq-question{font-size:16px;line-height:20px}
-    .faq-answer-p{font-size:14px;line-height:18px}
-    .twelfth-buttons{margin:25px 0 0}
-    .twelfth-button-1{display:block;width:246px;font-size:14px;padding:17px 1%;margin:0 auto 12px}
-    .twelfth-button-2{font-size:14px;width:246px;padding:11px 1%;margin:0 auto}
-    .not-a-medicine-block{padding:17px 0;font-size:21px;line-height:26px}
-    .footer-up{padding:15px 0}
-    .footer-logo-img{display:none}
-    .footer-tel-a{font-size:36px;line-height:42px}
-    .footer-middle{display:block;width:90%;margin:15px auto 10px}
-    .footer-tel-p{margin:0 0 22px;font-size:16px}
-    .footer-call-a{width:247px;padding:12px 1% 10px}
-    .footer-socials{width:100%;display:block;text-align:center;margin:0 0 10px}
-    .footer-social-a{margin:0 3px}
-    .footer-menu{display:none}
-    .mob-header .footer-menu-a{font-size:16px;margin:0 0 25px}
-    .footer-menu-a{font-size:16px;margin:0 0 20px;text-align:center}
-    .footer-mob-menu{margin:30px auto 27px}
-    .header-menu-line{max-width:250px}
-    .navi .footer-tel-a{font-size:24px}
-    .navi .footer-tel-p{margin:0 0 25px;font-size:14px}
-    .navi .header-right-info-p{font-size:14px;margin:0 0 35px}
-    .footer-del-pay{margin:18px 0 20px}
-    .footer-del-pay-p{margin:0 0 15px;font-size:16px;display:block}
-    .footer-del-pay-img{margin:0 5px;max-width:initial}
-    .footer-down{padding:10px 0;text-align:center}
-    .policy,.convert{width:100%;float:none;text-align:center}
-    .footer-down-text{font-size:14px;line-height:22px;margin:5px 0}
-    .footer-privacy-a{font-size:14px;margin:3px 0 5px}
-    .first-right-pills-cont{text-align:center;margin:5px 0 0}
-    .first-button{max-width:295px;font-size:14px}
-    .tablet-header{display:none}
-    .mob-header{display:block;height:44px}
-    .first-inner-hid{display:block}
-    .first-inner.inner.clearfix{display:none}
-    .first-logo-img{display:block;margin:27px auto 23px}
-    .first-after-item.first,.first-after-item.second,.first-after-item.third,.first-after-item.last{margin:0 auto 17px;width:275px;display:block}
-    .first-after{padding:40px 0 20px}
-    .mob-slider-second{display:block!important;margin:30px 0 115px}
-    .mob-slider-second .slick-prev,.mob-slider-second .slick-next{display:none!important}
-    .mob-slider-third{display:block!important;margin:30px 0 115px}
-    .mob-slider-third .slick-prev,.mob-slider-third .slick-next{display:none!important}
-    .third-content{display:none}
-    .third-item-img{display:block;margin:0 auto}
-    .third-item-hid-text{display:block;padding:0;font-size:16px;width:90%;margin:20px auto 0}
-    .third-item{position:relative}
-    .third-item-hid-text:before{display:none}
-    .third-item-hid-text span{font-size:20px}
-    .third-item,.third-item.active{padding:0}
-    .fourth-title.vis{display:none}
-    .fourth-title.hid{display:block}
-    .fourth-title.hid span{display:block;font-size:42px;font-weight:900;line-height:30px;margin:10px 0}
-    .fourth-slider{display:block!important;margin:0 auto 50px;width:86%}
-    .fourth-slider .slick-prev,.fourth-slider .slick-next{display:none!important}
-    .fourth-text.hid{display:block;font-size:16px;line-height:23px;text-align:center;margin:30px auto 20px}
-    .tenth-slider{display:block!important;margin:35px 0 0}
-    .tenth-slider .slick-dots{bottom:-10px!important}
-    .tenth-slider .slick-prev,.tenth-slider .slick-next{display:none!important}
-    .tenth-content{display:none}
-    .tenth-item-shadow{width:256px;height:321px;margin:0 auto}
-    .tenth-img-a{border:10px solid #fff;padding:30px;width:256px;height:321px}
-    .tenth-img{width:175px;height:240px}
-    .eleventhscreen .all-titles span{font-size:30px}
-    .eleventhscreen{padding:60px 0 75px;background-size:auto 100%}
-    .eleventh-button-img.vis{display:none}
-    .eleventh-button-img.hid{display:inline-block}
-    .footer-mob-hid{display:block;margin:35px auto 25px}
-    .footer-line.one-more{display:none}
-    .footer-line.is-hid{display:block}
-    .footer-payment{margin:17px auto 0}
-    .footer-delivery{margin:0 auto 20px}
-}
-@media screen and (max-width: 374px) {
-    .logo-img{width:150px}
-    .header-middle{width:182px}
-    .header-middle:after{display:block;bottom:-22px;border-left:91px solid transparent;border-right:91px solid transparent;border-top:22px solid #85d0de}
-    .first-right-win{width:180px}
-    .first-right-bullit-img{margin:3px 0 0 1px;width:44px}
-    .first-logo-img{max-width:100%}
-    .sixth-item-middle-img{width:140px;height:175px}
-    .seventh-dietolog-img{max-width:95%}
-    .eighth-item-up{width:280px;height:280px}
-}
 
+    .mfp-title {
+      position: absolute;
+      color: #000000;
+      background: #FFFFFF;
+      width: 100%;
+      padding: 20px;
+    }  
+    .tm-navbar-bg {
+      overflow: hidden;
+    }
+    .btn-film {
+      margin: 40px; 
+      padding: 1.75rem 7.5rem;
+      font-size: 2.25rem;
+      border-radius: 0.6rem;
+    }
+  </style>
+  <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+</head>
 
-
-#load-modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 999999999;
-    background-color: #000;
-    opacity: .5;
-    display: none;
-
-}
-#load-modal .load {
-    animation: cssload-spin 1410ms infinite linear;
-    -o-animation: cssload-spin 1410ms infinite linear;
-    -ms-animation: cssload-spin 1410ms infinite linear;
-    -webkit-animation: cssload-spin 1410ms infinite linear;
-    -moz-animation: cssload-spin 1410ms infinite linear;
-    width: 60px;
-    height: 60px;
-    border: 8px solid #fff;
-    border-right-color: transparent;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -30px 0 0 -30px;
-
-}
-@keyframes cssload-spin {
-    100%{ transform: rotate(360deg); transform: rotate(360deg); }
-}
-
-@-o-keyframes cssload-spin {
-    100%{ -o-transform: rotate(360deg); transform: rotate(360deg); }
-}
-
-@-ms-keyframes cssload-spin {
-    100%{ -ms-transform: rotate(360deg); transform: rotate(360deg); }
-}
-
-@-webkit-keyframes cssload-spin {
-    100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
-}
-
-@-moz-keyframes cssload-spin {
-    100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }
-}
-
-
-	fancybox-margin{margin-right:17px;}
-	</style>
-	</head>
 <body>
-<div style="text-align: center;">
-    <img src="assets/lol-surprise-lp1/1/not_drug.jpg" style="width: 900px;max-width: 100%;">
-</div>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-<div class="outer">
-    <header class="mob-header" style="z-index: 1000;">
-        <div class="header-gamburger-mobile">
-            <div class="low-res-nav">
-                <div class="gamburger">
-                    <div class="hamb-black-long"></div>
-                    <div class="hamb-white"></div>
-                    <div class="hamb-black-short"></div>
-                    <div class="hamb-white"></div>
-                    <div class="hamb-black-medium"></div>
-                </div>
-            </div>
-            <div class="navi" id="razdel-nav">
-                <img class="nav-close-img" src="assets/lol-surprise-lp1/1/menu_close.png" alt="">
-                <a target="_blank" href="http://lipoxin.ru/gde-kupit/" class="gamburger-button-a white-dk-button">Где купить?</a>
-                <div class="header-menu-line"></div>
-                <a href="tel:88001007129" class="footer-tel-a" onclick="yaCounter48629732.reachGoal(&#39;go_number&#39;);gtag(&#39;event&#39;, &#39;telefon&#39;, {event_category: &#39;button1&#39;,event_action: &#39;telefon&#39;});">8 800 100 71 29</a>
-                <p class="footer-tel-p">Бесплатный звонок по РФ</p>
-                <p class="header-right-info-p">
-                    г. Москва, <br> ул. Гражданская 4-я, д.36
-                </p>
-                <div class="header-menu-line"></div>
-                <div class="footer-socials">
-                    <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a fb"></a>
-                    <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a vk"></a>
-                    <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a insta"></a>
-                </div>
-            </div>
-        </div>
-        <div class="header-middle">
-            <a href="http://lipoxin.org.ru/" class="logo"><img class="logo-img" src="assets/lol-surprise-lp1/1/logo.png" alt=""></a>
-            <p class="header-description">Официальный производитель. Товар сертифицирован</p>
-        </div>
-        <a href="tel:88001007129" class="header-tel-a" onclick="yaCounter48629732.reachGoal(&#39;go_number&#39;);gtag(&#39;event&#39;, &#39;telefon&#39;, {event_category: &#39;button1&#39;,event_action: &#39;telefon&#39;});">
-            <img class="header-right-img" src="assets/lol-surprise-lp1/1/header_tel_mob.png" alt="">
-        </a>
-    </header><div></div>
-    <header class="tablet-header">
-        <div class="menu-upper" style="z-index: 1000;">
-            <div class="header-gamburger-mobile">
-                <div class="low-res-nav-2">
-                    <div class="gamburger">
-                        <div class="hamb-black-long"></div>
-                        <div class="hamb-white"></div>
-                        <div class="hamb-black-short"></div>
-                        <div class="hamb-white"></div>
-                        <div class="hamb-black-medium"></div>
-                    </div>
-                </div>
-                <div class="navi" id="razdel-nav-2">
-                    <img class="nav-close-img-2" src="assets/lol-surprise-lp1/1/menu_close.png" alt="">
-                    <a target="_blank" href="http://lipoxin.ru/gde-kupit/" class="gamburger-button-a white-dk-button">Где купить?</a>
-                    <div class="header-menu-line"></div>
-                    <a href="tel:88001007129" class="footer-tel-a" onclick="yaCounter48629732.reachGoal(&#39;go_number&#39;);gtag(&#39;event&#39;, &#39;telefon&#39;, {event_category: &#39;button1&#39;,event_action: &#39;telefon&#39;});">8 800 100 71 29</a>
-                    <p class="footer-tel-p">Бесплатный звонок по РФ</p>
-                    <p class="header-right-info-p">
-                        г. Москва, ул. Гражданская 4-я, д.36
-                    </p>
-                    <div class="header-menu-line"></div>
-                    <div class="footer-socials">
-                        <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a fb"></a>
-                        <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a vk"></a>
-                        <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a insta"></a>
-                    </div>
-                </div>
-            </div>
-        </div><div></div>
-        <div class="header-right-item header-position-hid">
-            <img class="header-right-img" src="assets/lol-surprise-lp1/1/header_pin.png" alt="">
-            <div class="header-right-info">
-                <p class="header-right-info-p">
-                    г. Москва, <br>ул. Гражданская 4-я, д.36
-                </p>
-            </div>
-        </div>
-        <div class="header-left">
-        </div>
-        <div class="header-middle">
-            <a href="http://lipoxin.org.ru/" class="logo"><img class="logo-img" src="assets/lol-surprise-lp1/1/logo.png" alt=""></a>
-            <p class="header-description">Официальный производитель. Товар сертифицирован</p>
-        </div>
-        <div class="header-right">
-            <div class="header-right-item header-position-vis">
-                <img class="header-right-img" src="assets/lol-surprise-lp1/1/header_pin.png" alt="">
-                <div class="header-right-info">
-                    <p class="header-right-info-p">
-                        г. Москва, <br>ул. Гражданская 4-я, д.36
-                    </p>
-                </div>
-            </div>
-            <div class="header-right-item">
-                <img class="header-right-img" src="assets/lol-surprise-lp1/1/header_tel.png" alt="">
-                <div class="header-right-info">
-                    <p class="header-right-info-p">Бесплатный звонок по РФ</p>
-                    <a href="tel:88001007129" class="header-tel-a" onclick="yaCounter48629732.reachGoal(&#39;go_number&#39;);gtag(&#39;event&#39;, &#39;telefon&#39;, {event_category: &#39;button1&#39;,event_action: &#39;telefon&#39;});">8 800 100 71 29</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="firstscreen" id="block_1">
-        <header>
-            <div class="menu-upper" style="z-index: 1000;">
-                <div class="header-gamburger-mobile">
-                    <div class="low-res-nav-3">
-                        <div class="gamburger">
-                            <div class="hamb-black-long"></div>
-                            <div class="hamb-white"></div>
-                            <div class="hamb-black-short"></div>
-                            <div class="hamb-white"></div>
-                            <div class="hamb-black-medium"></div>
-                        </div>
-                    </div>
-                    <div class="navi" id="razdel-nav-3">
-                        <img class="nav-close-img-3" src="assets/lol-surprise-lp1/1/menu_close.png" alt="">
-                        <a target="_blank" href="http://lipoxin.ru/gde-kupit/" class="gamburger-button-a white-dk-button">Где купить?</a>
-                        <div class="header-menu-line"></div>
-                        <a href="tel:88001007129" class="footer-tel-a" onclick="yaCounter48629732.reachGoal(&#39;go_number&#39;);gtag(&#39;event&#39;, &#39;telefon&#39;, {event_category: &#39;button1&#39;,event_action: &#39;telefon&#39;});">8 800 100 71 29</a>
-                        <p class="footer-tel-p">Бесплатный звонок по РФ</p>
-                        <p class="header-right-info-p">
-                            г. Москва, ул. Гражданская 4-я, д.36
-                        </p>
-                        <div class="header-menu-line"></div>
-                        <div class="footer-socials">
-                            <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a fb"></a>
-                            <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a vk"></a>
-                            <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a insta"></a>
-                        </div>
-                    </div>
-                </div>
-            </div><div></div>
-            <div class="header-right-item header-position-hid">
-                <img class="header-right-img" src="assets/lol-surprise-lp1/1/header_pin.png" alt="">
-                <div class="header-right-info">
-                    <p class="header-right-info-p">
-                        г. Москва, <br>ул. Гражданская 4-я, д.36
-                    </p>
-                </div>
-            </div>
-            <div class="header-left">
-            </div>
-            <div class="header-middle">
-                <a href="http://lipoxin.org.ru/" class="logo"><img class="logo-img" src="assets/lol-surprise-lp1/1/logo.png" alt=""></a>
-                <p class="header-description">Официальный производитель. Товар сертифицирован</p>
-            </div>
-            <div class="header-right">
-                <div class="header-right-item header-position-vis">
-                    <img class="header-right-img" src="assets/lol-surprise-lp1/1/header_pin.png" alt="">
-                    <div class="header-right-info">
-                        <p class="header-right-info-p">
-                            г. Москва, <br>ул. Гражданская 4-я, д.36
-                        </p>
-                    </div>
-                </div>
-                <div class="header-right-item">
-                    <img class="header-right-img" src="assets/lol-surprise-lp1/1/header_tel.png" alt="">
-                    <div class="header-right-info">
-                        <p class="header-right-info-p">Бесплатный звонок по РФ</p>
-                        <a href="tel:88001007129" class="header-tel-a" onclick="yaCounter48629732.reachGoal(&#39;go_number&#39;);gtag(&#39;event&#39;, &#39;telefon&#39;, {event_category: &#39;button1&#39;,event_action: &#39;telefon&#39;});">8 800 100 71 29</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="first-inner inner clearfix">
-            <div class="first-right-down hid">
-                <p class="first-right-down-p">натуральные капсулы для <br> похудения</p>
-                <div class="first-right-pills-cont">
-                    <p class="first-cost-circle">
-                        <span>36</span>
-                        <img class="first-rouble-img" src="assets/lol-surprise-lp1/1/rouble.png" alt=""> <br>
-                        за капсулу
-                    </p>
-                    <img class="first-right-pills-img" src="assets/lol-surprise-lp1/1/first_pills.png" alt="">
-                </div>
-            </div>
-            <div class="first-left">
-                <div class="first-left-item">
-                    <p class="first-left-text"><br>Капсулы действуют не только как жиросжигатель, но и улучшают здоровье, внешность, повышают энергетический тонус, чтобы вы смогли получить тело, которое заслуживаете.</p>
-                    <a href="/#popup-first" class="first-button red-button fancybox" onclick="yaCounter48629732.reachGoal(&#39;button1&#39;);gtag(&#39;event&#39;, &#39;a1&#39;, {event_category: &#39;button2&#39;, event_action: &#39;a1&#39;});">Узнать нужное количество</a>
-                </div>
-            </div>
-            <div class="first-right">
-                <div class="first-right-up">
-                    <img class="first-right-bullit-img" src="assets/lol-surprise-lp1/1/first_right_bullit_2.png" alt="">
-                    <img class="first-right-bullit-img" src="assets/lol-surprise-lp1/1/first_right_bullit_1.png" alt="">
-                    <img class="first-right-win" src="assets/lol-surprise-lp1/1/first_wins.png" alt="">
-                </div>
-                <div class="first-right-down vis">
-                    <p class="first-right-down-p">натуральные капсулы для <br> похудения</p>
-                    <div class="first-right-pills-cont">
-                        <img class="pills-img" src="assets/lol-surprise-lp1/1/first_pills.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="first-inner-hid inner">
-            <div class="first-right-up">
-                <img class="first-right-win" src="assets/lol-surprise-lp1/1/green_cross_mob.png" alt="">
-                <img class="first-right-bullit-img" src="assets/lol-surprise-lp1/1/first_right_bullit_2.png" alt="">
-                <img class="first-right-bullit-img" src="assets/lol-surprise-lp1/1/first_right_bullit_1.png" alt="">
-            </div>
-            <img class="first-logo-img" src="assets/lol-surprise-lp1/1/first_logo.png" alt="">
-            <div class="first-right-down hid">
-                <p class="first-right-down-p">натуральные капсулы<br> для  похудения</p>
-                <div class="first-right-pills-cont">
-                    <img class="first-right-pills-img" src="assets/lol-surprise-lp1/1/mob_first_jars.png" alt="">
-                    <p class="first-cost-circle">
-                        <span>39</span>
-                        <img class="first-rouble-img" src="assets/lol-surprise-lp1/1/rouble.png" alt=""> <br>
-                        за капсулу
-                    </p>
-                </div>
-            </div>
-            <a href="/#popup-first" class="first-button red-button fancybox" onclick="yaCounter48629732.reachGoal(&#39;button1&#39;);gtag(&#39;event&#39;, &#39;a1&#39;, {event_category: &#39;button2&#39;, event_action: &#39;a1&#39;});">Узнать нужное количество</a>
-        </div>
-    </div>
-    <div class="first-after">
-        <div class="first-after-inner inner">
-            <div class="first-after-item first">
-                <img class="first-after-img" src="assets/lol-surprise-lp1/1/first_after_bullit_1.png" alt="">
-                <p class="first-after-text">100% натуральный и безопасный <br> состав для здоровья</p>
-            </div>
-            <div class="first-after-item second">
-                <img class="first-after-img" src="assets/lol-surprise-lp1/1/first_after_bullit_2.png" alt="">
-                <p class="first-after-text">Без ограничений <br> по полу и возрасту</p>
-            </div>
-            <div class="first-after-item third">
-                <img class="first-after-img" src="assets/lol-surprise-lp1/1/first_after_bullit_3.png" alt="">
-                <p class="first-after-text">Быстрая доставка <br> с оплатой при получении</p>
-            </div>
-            <div class="first-after-item last">
-                <img class="first-after-img" src="assets/lol-surprise-lp1/1/first_after_bullit_4.png" alt="">
-                <p class="first-after-text">Без изнурительных диет и <br> тяжелых тренировок</p>
-            </div>
-        </div>
-    </div>
-    <div class="second-third-screen">
-        <div class="second-third-screen-layer-1 parallaxie" data-parallaxie="{&quot;size&quot;: &quot;auto&quot;, &quot;pos_x&quot;:&quot;20%&quot;, &quot;speed&quot;:0.5, &quot;offset&quot;:100}" style="background-image: url(&quot;assets/lol-surprise-lp1/1/gradient_1_circles_1.png&quot;); background-size: auto; background-repeat: no-repeat; background-attachment: fixed; background-position: 20% 645.258px;"></div>
-        <div class="second-third-screen-layer-2 parallaxie" data-parallaxie="{&quot;size&quot;: &quot;auto&quot;, &quot;pos_x&quot;:&quot;20%&quot;, &quot;speed&quot;:-0.5, &quot;offset&quot;:100}" style="background-image: url(&quot;assets/lol-surprise-lp1/1/gradient_1_circles_2.png&quot;); background-size: auto; background-repeat: no-repeat; background-attachment: fixed; background-position: 20% 1735.77px;"></div>
-        <div class="secondscreen" id="block_2">
-            <div class="second-inner inner">
-                <p class="all-titles"><span>Все нужные свойства в одной капсуле, </span> <br> которых вы  не найдете в других средствах для похудения</p>
-                <div class="mob-slider-second slick-initialized slick-slider slick-dotted" style="" role="toolbar"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="">Previous</button>
-                    <div aria-live="polite" class="slick-list draggable" style="height: 100px;"><div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);" role="listbox"><div class="second-item slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 0px;" tabindex="-1">
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_6.png" alt="">
-                        <p class="second-item-text">Оказывает благотворное влияние на весь организм человека</p>
-                    </div><div class="second-item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide10">
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_1.png" alt="">
-                        <p class="second-item-text">Активирует расщепление подкожных жировых отложений и выводит их из организма</p>
-                    </div><div class="second-item slick-slide" data-slick-index="1" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide11">
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_2.png" alt="">
-                        <p class="second-item-text">Ускоряет натуральный обмен веществ без вреда для организма</p>
-                    </div><div class="second-item slick-slide" data-slick-index="2" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide12">
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_3.png" alt="">
-                        <p class="second-item-text">Повышает энергию организма и выносливость, стимулирует к движению</p>
-                    </div><div class="second-item slick-slide" data-slick-index="3" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide13">
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_4.png" alt="">
-                        <p class="second-item-text">Подавляет аппетит и тягу к сладкому, помогает справиться с голодом</p>
-                    </div><div class="second-item slick-slide" data-slick-index="4" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide14">
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_5.png" alt="">
-                        <p class="second-item-text">Блокирует процесс накопления новых жировых клеток. Не разрушает мышечную ткань</p>
-                    </div><div class="second-item slick-slide" data-slick-index="5" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide15">
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_6.png" alt="">
-                        <p class="second-item-text">Оказывает благотворное влияние на весь организм человека</p>
-                    </div><div class="second-item slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" style="width: 0px;" tabindex="-1">
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_1.png" alt="">
-                        <p class="second-item-text">Активирует расщепление подкожных жировых отложений и выводит их из организма</p>
-                    </div></div></div>
-                <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation10" id="slick-slide10"><button type="button" data-role="none" role="button" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation11" id="slick-slide11"><button type="button" data-role="none" role="button" tabindex="0">2</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation12" id="slick-slide12"><button type="button" data-role="none" role="button" tabindex="0">3</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation13" id="slick-slide13"><button type="button" data-role="none" role="button" tabindex="0">4</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation14" id="slick-slide14"><button type="button" data-role="none" role="button" tabindex="0">5</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation15" id="slick-slide15"><button type="button" data-role="none" role="button" tabindex="0">6</button></li></ul></div>
-                <div class="second-left">
-                    <div class="second-item">
-                        <p class="second-item-text">Активирует расщепление подкожных жировых отложений и выводит их из организма</p>
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_1.png" alt="">
-                    </div>
-                    <div class="second-item">
-                        <p class="second-item-text">Ускоряет натуральный обмен веществ без вреда для организма</p>
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_2.png" alt="">
-                    </div>
-                    <div class="second-item">
-                        <p class="second-item-text">Повышает энергию организма и выносливость, стимулирует к движению</p>
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_3.png" alt="">
-                    </div>
-                </div>
-                <div class="second-middle">
-                    <img class="second-middle-img" src="assets/lol-surprise-lp1/1/second_pills.png" alt="">
-                </div>
-                <div class="second-right">
-                    <div class="second-item">
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_4.png" alt="">
-                        <p class="second-item-text">Подавляет аппетит и тягу к сладкому, помогает справиться с голодом</p>
-                    </div>
-                    <div class="second-item">
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_5.png" alt="">
-                        <p class="second-item-text">Блокирует процесс накопления новых жировых клеток. Не разрушает мышечную ткань</p>
-                    </div>
-                    <div class="second-item">
-                        <img class="second-item-img" src="assets/lol-surprise-lp1/1/second_6.png" alt="">
-                        <p class="second-item-text">Оказывает благотворное влияние на весь организм человека</p>
-                    </div>
-                </div>
-            </div>
-            <div class="second-line"></div>
-        </div>
-        <div class="thirdscreen" id="block_3">
-            <div class="third-inner inner">
-                <p class="all-titles">
-                    <span>В состав высокоэффективного препарата входят </span> <br> только природные и безопасные компоненты
-                </p>
-                <div class="mob-slider-third slick-initialized slick-slider slick-dotted" style="" role="toolbar"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="">Previous</button>
-                    <div aria-live="polite" class="slick-list draggable" style="height: 100px;"><div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);" role="listbox"><div class="third-item slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 0px;" tabindex="-1">
-                        <img class="third-item-img" src="assets/lol-surprise-lp1/1/component_5.png" alt="">
-                        <p class="third-item-hid-text">
-                            <span>Йохимба экстракт (Йохимбин)</span>
-                            Повышает выносливость и работоспособность, улучшает настроение, увеличивает адреналин в организме
-                        </p>
-                    </div><div class="third-item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide20">
-                        <img class="third-item-img" src="assets/lol-surprise-lp1/1/component_1.png" alt="">
-                        <p class="third-item-hid-text">
-                            <span>Ивы коры экстракт (Салицин)</span>
-                            Обладает потогонным, мочегонным действием, тонизирует, ускоряет клеточный обмен в организме
-                        </p>
-                    </div><div class="third-item slick-slide" data-slick-index="1" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide21">
-                        <img class="third-item-img" src="assets/lol-surprise-lp1/1/component_2.png" alt="">
-                        <p class="third-item-hid-text">
-                            <span>Померанца экстракт (Синефрин)</span>
-                            Ускоряет обмен веществ, подавляет аппетит, усиливает теплопродукцию, стимулирует мышечную работоспособность
-                        </p>
-                    </div><div class="third-item slick-slide" data-slick-index="2" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide22">
-                        <img class="third-item-img" src="assets/lol-surprise-lp1/1/component_3.png" alt="">
-                        <p class="third-item-hid-text">
-                            <span>Перец кайенский
-                            </span>
-                            Нормализует работу сердца, стимулирует кровообращение, ускоряет процесс переноса полезных веществ по организму
-                        </p>
-                    </div><div class="third-item slick-slide" data-slick-index="3" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide23">
-                        <img class="third-item-img" src="assets/lol-surprise-lp1/1/component_4.png" alt="">
-                        <p class="third-item-hid-text">
-                            <span>Кофеин растительный</span>
-                            Подавляет аппетит, ускоряет процесс сжигания жира, стимулирует нервную систему, повышает умственную и физическую работоспособность
-                        </p>
-                    </div><div class="third-item slick-slide" data-slick-index="4" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide24">
-                        <img class="third-item-img" src="assets/lol-surprise-lp1/1/component_5.png" alt="">
-                        <p class="third-item-hid-text">
-                            <span>Йохимба экстракт (Йохимбин)</span>
-                            Повышает выносливость и работоспособность, улучшает настроение, увеличивает адреналин в организме
-                        </p>
-                    </div><div class="third-item slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" style="width: 0px;" tabindex="-1">
-                        <img class="third-item-img" src="assets/lol-surprise-lp1/1/component_1.png" alt="">
-                        <p class="third-item-hid-text">
-                            <span>Ивы коры экстракт (Салицин)</span>
-                            Обладает потогонным, мочегонным действием, тонизирует, ускоряет клеточный обмен в организме
-                        </p>
-                    </div></div></div>
-                <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation20" id="slick-slide20"><button type="button" data-role="none" role="button" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation21" id="slick-slide21"><button type="button" data-role="none" role="button" tabindex="0">2</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation22" id="slick-slide22"><button type="button" data-role="none" role="button" tabindex="0">3</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation23" id="slick-slide23"><button type="button" data-role="none" role="button" tabindex="0">4</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation24" id="slick-slide24"><button type="button" data-role="none" role="button" tabindex="0">5</button></li></ul></div>
-                <div class="third-content">
-                    <div class="third-left">
-                        <div class="third-item first">
-                            <p class="third-item-text">
-                                Ивы коры экстракт (Салицин)
-                            </p>
-                            <p class="third-item-hid-text">
-                                <span>Ивы коры экстракт (Салицин)</span>
-                                Обладает потогонным, мочегонным действием, тонизирует, ускоряет клеточный обмен в организме
-                            </p>
-                            <div class="third-item-zoom"></div>
-                        </div>
-                        <div class="third-item second">
-                            <p class="third-item-text">
-                                Померанца экстракт (Синефрин)
-                            </p>
-                            <p class="third-item-hid-text">
-                                <span>Померанца экстракт (Синефрин)</span>
-                                Ускоряет обмен веществ, подавляет аппетит, усиливает теплопродукцию, стимулирует мышечную работоспособность
-                            </p>
-                            <div class="third-item-zoom"></div>
-                        </div>
-                    </div>
-                    <div class="third-middle">
-                        <div class="third-middle-up">
-                            <p class="third-middle-up-p">
-                                <span>5 </span> компонентов
-                            </p>
-                        </div>
-                        <div class="third-item third">
-                            <div class="third-item-zoom"></div>
-                            <p class="third-item-text">
-                                Перец кайенский
-                            </p>
-                            <p class="third-item-hid-text">
-                                <span>Перец кайенский
-                                </span>
-                                Нормализует работу сердца, стимулирует кровообращение, ускоряет процесс переноса полезных веществ по организму
-                            </p>
-                        </div>
-                    </div>
-                    <div class="third-right">
-                        <div class="third-item fourth">
-                            <div class="third-item-zoom"></div>
-                            <p class="third-item-text">
-                                Кофеин растительный
-                            </p>
-                            <p class="third-item-hid-text">
-                                <span>Кофеин растительный</span>
-                                Подавляет аппетит, ускоряет процесс сжигания жира, стимулирует нервную систему, повышает умственную и физическую работоспособность
-                            </p>
-                        </div>
-                        <div class="third-item fifth">
-                            <div class="third-item-zoom"></div>
-                            <p class="third-item-text">
-                                Йохимба экстракт (Йохимбин)
-                            </p>
-                            <p class="third-item-hid-text">
-                                <span>Йохимба экстракт (Йохимбин)</span>
-                                Повышает выносливость и работоспособность, улучшает настроение, увеличивает адреналин в организме
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="third-down">
-                    <p class="third-down-p">Все что нужно для быстрого похудения, входит в состав "Липоксин"!</p>
-                    <a href="/#popup-third" class="third-button red-button fancybox">
-                        <span class="third-cart-img"></span>
-                        <span class="third-button-text">Проконсультироваться</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="fourthscreen" id="block_4">
-        <div class="fourthscreen-layer-1 parallaxie" data-parallaxie="{&quot;size&quot;: &quot;auto&quot;, &quot;pos_x&quot;:&quot;20%&quot;, &quot;speed&quot;:0.5, &quot;offset&quot;:100}" style="background-image: url(&quot;assets/lol-surprise-lp1/1/gradient_2_circles_1.png&quot;); background-size: auto; background-repeat: no-repeat; background-attachment: fixed; background-position: 20% 1491.26px;"></div>
-        <div class="fourthscreen-layer-2 parallaxie" data-parallaxie="{&quot;size&quot;: &quot;auto&quot;, &quot;pos_x&quot;:&quot;20%&quot;, &quot;speed&quot;:-0.5, &quot;offset&quot;:100}" style="background-image: url(&quot;assets/lol-surprise-lp1/1/gradient_2_circles_2.png&quot;); background-size: auto; background-repeat: no-repeat; background-attachment: fixed; background-position: 20% 4273.77px;"></div>
-        <div class="inner">
-            <p class="fourth-title vis">
-                Выбор более <span class="fourth-title-mid">130 000<br><b>клиентов</b> </span><span class="fourth-title-bot"> не может быть ошибочным</span>
-            </p>
-            <p class="fourth-title hid">
-                Выбор более <span>130 000 <br> клиентов</span>не может быть ошибочным
-            </p>
-            <p class="fourth-text hid">
-                Наш препарат для похудения помогает <br>
-                людям легко и быстро достигать своих <br>
-                целей по снижению веса
-            </p>
-            <div class="fourth-slider slick-initialized slick-slider slick-dotted" style="" role="toolbar"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="">Previous</button>
-                <div aria-live="polite" class="slick-list draggable" style="height: 100px;"><div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);" role="listbox"><img class="fourth-slider-img slick-slide slick-cloned" src="assets/lol-surprise-lp1/1/client_slide_6.jpg" alt="" data-slick-index="-1" aria-hidden="true" style="width: 0px;" tabindex="-1"><img class="fourth-slider-img slick-slide slick-current slick-active" src="assets/lol-surprise-lp1/1/client_slide_1.jpg" alt="" data-slick-index="0" aria-hidden="false" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide30"><img class="fourth-slider-img slick-slide" src="assets/lol-surprise-lp1/1/client_slide_2.jpg" alt="" data-slick-index="1" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide31"><img class="fourth-slider-img slick-slide" src="assets/lol-surprise-lp1/1/client_slide_3.jpg" alt="" data-slick-index="2" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide32"><img class="fourth-slider-img slick-slide" src="assets/lol-surprise-lp1/1/client_slide_4.jpg" alt="" data-slick-index="3" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide33"><img class="fourth-slider-img slick-slide" src="assets/lol-surprise-lp1/1/client_slide_5.jpg" alt="" data-slick-index="4" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide34"><img class="fourth-slider-img slick-slide" src="assets/lol-surprise-lp1/1/client_slide_6.jpg" alt="" data-slick-index="5" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide35"><img class="fourth-slider-img slick-slide slick-cloned" src="assets/lol-surprise-lp1/1/client_slide_1.jpg" alt="" data-slick-index="6" aria-hidden="true" style="width: 0px;" tabindex="-1"></div></div>
-                
-            <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation30" id="slick-slide30"><button type="button" data-role="none" role="button" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation31" id="slick-slide31"><button type="button" data-role="none" role="button" tabindex="0">2</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation32" id="slick-slide32"><button type="button" data-role="none" role="button" tabindex="0">3</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation33" id="slick-slide33"><button type="button" data-role="none" role="button" tabindex="0">4</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation34" id="slick-slide34"><button type="button" data-role="none" role="button" tabindex="0">5</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation35" id="slick-slide35"><button type="button" data-role="none" role="button" tabindex="0">6</button></li></ul></div>
-            <div class="fourth-content">
-                <div class="fourth-left">
-                    <img class="fourth-left-img first" src="assets/lol-surprise-lp1/1/client_1.jpg" alt="">
-                    <img class="fourth-left-img second" src="assets/lol-surprise-lp1/1/client_2.jpg" alt="">
-                    <img class="fourth-left-img third" src="assets/lol-surprise-lp1/1/client_3.jpg" alt="">
-                </div>
-                <div class="fourth-right">
-                    <p class="fourth-text">
-                        Наш препарат для похудения помогает <br>
-                        людям легко и быстро достигать своих <br>
-                        целей по снижению веса
-                    </p>
-                    <img class="fourth-right-img fourth" src="assets/lol-surprise-lp1/1/client_4.jpg" alt="">
-                    <div class="fourth-right-img-cont">
-                        <img class="fourth-right-img fifth" src="assets/lol-surprise-lp1/1/client_5.jpg" alt="">
-                        <img class="fourth-right-img sixth" src="assets/lol-surprise-lp1/1/client_6.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="fifthscreen" id="block_5">
-        <div class="pills-layer-1 parallaxie" data-parallaxie="{&quot;size&quot;: &quot;auto&quot;, &quot;pos_x&quot;:&quot;20%&quot;, &quot;speed&quot;:0.5, &quot;offset&quot;:100}" style="background-image: url(&quot;assets/lol-surprise-lp1/1/pills_layer_1.png&quot;); background-size: auto; background-repeat: no-repeat; background-attachment: fixed; background-position: 20% 1948.76px;"></div>
-        <div class="pills-layer-2 parallaxie" data-parallaxie="{&quot;size&quot;: &quot;auto&quot;, &quot;pos_x&quot;:&quot;20%&quot;, &quot;speed&quot;:-0.5, &quot;offset&quot;:100}" style="background-image: url(&quot;assets/lol-surprise-lp1/1/pills_layer_2.png&quot;); background-size: auto; background-repeat: no-repeat; background-attachment: fixed; background-position: 20% 5646.27px;"></div>
-        <div class="inner">
-            <p class="all-titles">
-                <span>Результаты исследований капсул для похудения "Липоксин"</span> <br>
-                доказали свою эффективность
-            </p>
-            <p class="fifth-undertitle">
-                Центр исследования ФГБУН "ФИЦ питания и биотехнологии" проводил 2-х месячные <br>
-                исследования по оценке клинической эффективности биологической добавки к пище <br>
-                "Липоксин" у пациентов с ожирением 2-3 степени
-            </p>
-            <div class="fifth-content">
-                <div class="fifth-left">
-                    <p class="fift-item-title">
-                        <span>На 25% больше </span> снижение массы тела
-                    </p>
-                    <p class="fift-item-text">у основной группы, чем у контрольной, не принимающей Липоксин и использующей в качестве средства для снижения веса только низкокаллорийную диету</p>
-                    <div class="fifth-item-down">
-                        <div class="fifth-item-down-lotus">6,9 кг</div>
-                        <p class="fifth-item-down-span">vs</p>
-                        <div class="fifth-item-down-diet">5,2 кг</div>
-                    </div>
-                </div>
-                <div class="fifth-right">
-                    <p class="fift-item-title">
-                        <span>На 56% больше </span> снижение жировой массы
-                    </p>
-                    <p class="fift-item-text">тела у основной группы, <br> чем у контрольной группы</p>
-                    <div class="fifth-item-down">
-                        <div class="fifth-item-down-lotus">5 кг</div>
-                        <p class="fifth-item-down-span">vs</p>
-                        <div class="fifth-item-down-diet">2,5 кг</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="sixthscreen" id="block_6">
-        <div class="inner">
-            <p class="all-titles">
-                Они перестали беспокоиться о своем весе <br><span>Пора забыть и вам!</span>
-            </p>
-            <div class="sixth-slider slick-initialized slick-slider slick-dotted" role="toolbar"><div class="slick-prev slick-arrow" style=""></div>
-                <div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4704px;" role="listbox"><div class="sixth-item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1176px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" tabindex="-1" role="option" aria-describedby="slick-slide00">
-                    <div class="sixth-item-left vis">
-                        <p class="sixth-item-left-title">Что сделано?</p>
-                        <p class="sixth-item-left-text">Курс из 90 капсул в течении 2х месяцев + легкие физические нагрузки</p>
-                        <div class="sixth-item-left-line"></div>
-                        <p class="sixth-item-left-title">Результат</p>
-                        <p class="sixth-item-left-text">- 14 кг за 2 месяца</p>
-                    </div>
-                    <div class="sixth-item-middle">
-                        <div class="sixth-item-middle-imgs">
-                            <div class="sixth-item-middle-img-cont">
-                                <img class="sixth-item-middle-img" src="assets/lol-surprise-lp1/1/before_1.jpg" alt="">
-                                <p class="sixth-item-bef">До</p>
-                            </div>
-                            <div class="sixth-item-middle-img-cont">
-                                <img class="sixth-item-middle-img" src="assets/lol-surprise-lp1/1/after_1.jpg" alt="">
-                                <p class="sixth-item-aft">После</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sixth-item-left hid clearfix">
-                        <div class="sixth-item-left-item">
-                            <p class="sixth-item-left-title">Что сделано?</p>
-                            <p class="sixth-item-left-text">Курс из 90 капсул в течении 2х месяцев + легкие физические нагрузки</p></div>
-                        <div class="sixth-item-left-item">
-                            <p class="sixth-item-left-title">Результат</p>
-                            <p class="sixth-item-left-text">- 14 кг за 2 месяца</p></div>
-                    </div>
-                    <div class="sixth-item-right">
-                        <p class="sixth-item-right-text">
-                            Целыми днями провожу на работе и времени совершенно нет. Лекарствам не сильно доверяю, Липоксин на вид как простые капсулы, но вроде пишут, что антибиотиков и другого нет. Удивило, что оплата наложенным платежом, обычно через интернет платила сразу.
-                            <span class="sixth-item-right-text-hid">Попробовала, уже ж купила, и, что хочу сказать – чуда не на второй не на первый день не произошло, но большой плюс есть стала меньшими порциями, и это для меня уже было чудо. Но я очень ленивая, и знаете даже забывала пить Липоксин, поэтому на весы стала только через 2недели и была в шоке, - 4кг и я при этом ела как обычно. Прошло два месяца и сегодня я выгляжу вот так, результат превзошел ожидания, правда моему организму пришлось привыкать к новому питанию, но все можно преодолеть. Рекомендую!</span>
-                        </p>
-                        <p class="sixth-item-right-read-all">Читать полностью</p>
-                        <p class="sixth-item-right-hide-all">Скрыть</p>
-                        <div class="sixth-item-right-down">
-                            <p class="sixth-item-right-name">
-                                <span>Светлана Тренба </span>
-                                27 лет, Мариуполь
-                            </p>
-                        </div>
-                    </div>
-                </div><div class="sixth-item slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1176px; position: relative; left: -1176px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1" role="option" aria-describedby="slick-slide01">
-                    <div class="sixth-item-left vis">
-                        <p class="sixth-item-left-title">Что сделано?</p>
-                        <p class="sixth-item-left-text">Курс из 30 капсул, 1 раз в день + легкие физические нагрузки</p>
-                        <div class="sixth-item-left-line"></div>
-                        <p class="sixth-item-left-title">Результат</p>
-                        <p class="sixth-item-left-text">- 6 кг за 1 месяц</p>
-                    </div>
-                    <div class="sixth-item-middle">
-                        <div class="sixth-item-middle-imgs">
-                            <div class="sixth-item-middle-img-cont">
-                                <img class="sixth-item-middle-img" src="assets/lol-surprise-lp1/1/before_2.jpg" alt="">
-                                <p class="sixth-item-bef">До</p>
-                            </div>
-                            <div class="sixth-item-middle-img-cont">
-                                <img class="sixth-item-middle-img" src="assets/lol-surprise-lp1/1/after_2.jpg" alt="">
-                                <p class="sixth-item-aft">После</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sixth-item-left hid clearfix">
-                        <div class="sixth-item-left-item">
-                            <p class="sixth-item-left-title">Что сделано?</p>
-                            <p class="sixth-item-left-text">Курс из 30 капсул, 1 раз в день + легкие физические нагрузки</p></div>
-                        <div class="sixth-item-left-item">
-                            <p class="sixth-item-left-title">Результат</p>
-                            <p class="sixth-item-left-text">- 6 кг за 1 месяц</p></div>
-                    </div>
-                    <div class="sixth-item-right">
-                        <p class="sixth-item-right-text">
-                            Никогда не худела, но после вторых родов появилась острая необходимость, не смотря на то, что муж говорит, что рождение сына меня преобразило и любит такой как есть )))) преобразило, но не то, что ниже головы, это уж точно ))) времени на спорт у меня совершенно  нет.
-                            <span class="sixth-item-right-text-hid">Сижу с сыном, редко высыпаюсь )), так что лишний раз лучше посплю, чем позанимаюсь спортом. Когда кормление грудью оказалось позади, решила, что готова пробовать принимать какие-либо жиросжигающие препараты. Липоксин увидела в Инстаграме и решила заказать. Принимаю уже месяц по одной капсуле в день после завтрака. И целый день полна сил. Сразу стала делать себе порции еды заведомо меньше, так как Липоксин же должен уменьшать аппетит. И стала замечать что реально не хочу добавки.) За месяц я скинула 6кг. Посмотрим, что будет дальше. А спорт у меня ещё впереди. Я уверена что у меня будет то тело , которое я хочу.</span>
-                        </p>
-                        <p class="sixth-item-right-read-all">Читать полностью</p>
-                        <p class="sixth-item-right-hide-all">Скрыть</p>
-                        <div class="sixth-item-right-down">
-                            <p class="sixth-item-right-name">
-                                <span>Оксана Мельниченко </span>
-                                29 лет, Новосибирск
-                            </p>
-                        </div>
-                    </div>
-                </div><div class="sixth-item slick-slide" data-slick-index="2" aria-hidden="true" style="width: 1176px; position: relative; left: -2352px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1" role="option" aria-describedby="slick-slide02">
-                    <div class="sixth-item-left vis">
-                        <p class="sixth-item-left-title">Что сделано?</p>
-                        <p class="sixth-item-left-text">Курс из 90 капсул, 1 раз в день + сильные физические нагрузки</p>
-                        <div class="sixth-item-left-line"></div>
-                        <p class="sixth-item-left-title">Результат</p>
-                        <p class="sixth-item-left-text">-11кг за 3,5 месяца</p>
-                    </div>
-                    <div class="sixth-item-middle">
-                        <div class="sixth-item-middle-imgs">
-                            <div class="sixth-item-middle-img-cont">
-                                <img class="sixth-item-middle-img" src="assets/lol-surprise-lp1/1/before_3.jpg" alt="">
-                                <p class="sixth-item-bef">До</p>
-                            </div>
-                            <div class="sixth-item-middle-img-cont">
-                                <img class="sixth-item-middle-img" src="assets/lol-surprise-lp1/1/after_3.jpg" alt="">
-                                <p class="sixth-item-aft">После</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sixth-item-left hid clearfix">
-                        <div class="sixth-item-left-item">
-                            <p class="sixth-item-left-title">Что сделано?</p>
-                            <p class="sixth-item-left-text">Курс из 90 капсул, 1 раз в день + сильные физические нагрузки</p></div>
-                        <div class="sixth-item-left-item">
-                            <p class="sixth-item-left-title">Результат</p>
-                            <p class="sixth-item-left-text">-11кг за 3,5 месяца</p></div>
-                    </div>
-                    <div class="sixth-item-right">
-                        <p class="sixth-item-right-text">
-                            Худеть начала серьезно после вторых родов. Отметка была 74кг. Начинала сбрасывать вес по системе "10стаканов". Но решила что мне этого мало. Заказала Липоксин и начала ходить на групповые занятия в фитнес-клуб.
-                            <span class="sixth-item-right-text-hid">Раскачавшись там хорошенько), стала заниматься с тренером, упор делали на кардио, берпи... что хочу сказать, Липоксин - крутая штука, придающая много сил, энергии и выносливости, что очень важно для меня так как я занимаюсь после работы, когда сил уже не много остаётся. Ещё огромный плюс Липоксина: на сладкое в период безуглеводки не тянет!</span>
-                        </p>
-                        <p class="sixth-item-right-read-all">Читать полностью</p>
-                        <p class="sixth-item-right-hide-all">Скрыть</p>
-                        <div class="sixth-item-right-down">
-                            <p class="sixth-item-right-name">
-                                <span>Анастасия Волошина </span>
-                                28 лет, Чебоксары
-                            </p>
-                        </div>
-                    </div>
-                </div><div class="sixth-item slick-slide" data-slick-index="3" aria-hidden="true" style="width: 1176px; position: relative; left: -3528px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1" role="option" aria-describedby="slick-slide03">
-                    <div class="sixth-item-left vis">
-                        <p class="sixth-item-left-title">Что сделано?</p>
-                        <p class="sixth-item-left-text">Курс из 30 капсул, 1 раз в день + легкие физические нагрузки</p>
-                        <div class="sixth-item-left-line"></div>
-                        <p class="sixth-item-left-title">Результат</p>
-                        <p class="sixth-item-left-text">- 9 кг за месяц</p>
-                    </div>
-                    <div class="sixth-item-middle">
-                        <div class="sixth-item-middle-imgs">
-                            <div class="sixth-item-middle-img-cont">
-                                <img class="sixth-item-middle-img" src="assets/lol-surprise-lp1/1/before_4.jpg" alt="">
-                                <p class="sixth-item-bef">До</p>
-                            </div>
-                            <div class="sixth-item-middle-img-cont">
-                                <img class="sixth-item-middle-img" src="assets/lol-surprise-lp1/1/after_4.jpg" alt="">
-                                <p class="sixth-item-aft">После</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sixth-item-left hid clearfix">
-                        <div class="sixth-item-left-item">
-                            <p class="sixth-item-left-title">Что сделано?</p>
-                            <p class="sixth-item-left-text">Курс из 30 капсул, 1 раз в день + легкие физические нагрузки</p>
-                        </div>
-                        <div class="sixth-item-left-item">
-                            <p class="sixth-item-left-title">Результат</p>
-                            <p class="sixth-item-left-text">- 9 кг за месяц</p>
-                        </div>
-                    </div>
-                    <div class="sixth-item-right">
-                        <p class="sixth-item-right-text">
-                            Лишний вес у меня всегда был, но мысли о тренировках буквально приводят меня в уныние, и есть еще больше хочется. Решила найти «метод похудения для ленивых». Поискала в магазинах аптеках жиросжигатепи.
-                            <span class="sixth-item-right-text-hid">Попробовала варианты из спортивного питания, но они не слишком эффективны без физических тренировок, скорее просто повышают выносливость для того, чтобы больше сделать на тренировке. Пробовала препараты на основе липолиза, они дают неплохой результат, но вес очень быстро возвращается, так что необходимость диеты очевидна Но аппетит сложно побороть, и в этом мне помог Липоксин, Сначала он помогает остановить набор веса, а потом организм привыкает меньше есть. Принимать нужно по инструкции. Мне с помощью липоксина удалось сбросить 9 кг за месяц, при этом общее количество потребляемых калорий за сутки удалось сократить. Сейчас продолжаю пить, чтобы зафиксировать результат.</span>
-                        </p>
-                        <p class="sixth-item-right-read-all">Читать полностью</p>
-                        <p class="sixth-item-right-hide-all">Скрыть</p>
-                        <div class="sixth-item-right-down">
-                            <p class="sixth-item-right-name">
-                                <span>Елена Амаюкова </span>
-                                24 года, Москва
-                            </p>
-                        </div>
-                    </div>
-                </div></div></div>
-                
-                
-                
-            <div class="slick-next slick-arrow" style=""></div><ul class="slick-dots" style="display: block;" role="tablist"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00"><button type="button" data-role="none" role="button" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01"><button type="button" data-role="none" role="button" tabindex="0">2</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02"><button type="button" data-role="none" role="button" tabindex="0">3</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation03" id="slick-slide03"><button type="button" data-role="none" role="button" tabindex="0">4</button></li></ul></div>
-            <div class="sixth-down">
-                <p class="sixth-down-p">
-                    *Результат может отличаться в каждом индивидуальном случае<br><br>
-                    Оставьте заявку и узнайте нужное вам количество капсул для достижения <br> желаемого результата!
-                </p>
-                <a href="/#popup-sixth" class="sixth-button red-button fancybox">Узнать нужное количество</a>
-            </div>
-        </div>
-    </div>
-    <div class="seventh-eighth-ninth-screen"> 
-        </div>
-        <div class="seventh-line"></div>
-        <div class="ninthscreen" id="block_9">
-            <div class="inner">
-                <p class="all-titles">
-                    <span>Препарат по снижению веса "Липоксин"</span> <br>
-                    сочетает в себе множество преимуществ
-                </p>
-                <div class="ninth-content hid">
-                    <img class="ninth-content-img" src="assets/lol-surprise-lp1/1/ninth_slider_img.png" alt="">
-                    <div class="ninth-slider slick-initialized slick-slider slick-dotted" role="toolbar"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="">Previous</button>
-                        <div aria-live="polite" class="slick-list draggable" style="height: 100px;"><div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);" role="listbox"><div class="ninth-item slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 0px;" tabindex="-1">
-                            <p class="ninth-item-hid-text">
-                                <span>Подходит абсолютно всем</span>
-                                Для мужчин и женщин любого возраста, имеющих проблемы с лишним весом, а также тем, кто регулярно занимается спортом
-                            </p>
-                        </div><div class="ninth-item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide40">
-                            <p class="ninth-item-hid-text">
-                                <span>Достигнутый результат сохранится</span>
-                                При соблюдении простых правил питания и физической активности, киллограммы не вернутся!
-                            </p>
-                        </div><div class="ninth-item slick-slide" data-slick-index="1" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide41">
-                            <p class="ninth-item-hid-text">
-                                <span>Высокая скорость получения результата</span>
-                                Воздействие препарата обеспечивает высокую скорость получения результата
-                            </p>
-                        </div><div class="ninth-item slick-slide" data-slick-index="2" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide42">
-                            <p class="ninth-item-hid-text">
-                                <span>Положительные воздействия на весь организм</span>
-                                Стимулирует умственную и физическую деятельность, повышает иммунитет, выравнивает кожу, пропадают угри
-                            </p>
-                        </div><div class="ninth-item slick-slide" data-slick-index="3" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide43">
-                            <p class="ninth-item-hid-text">
-                                <span>Удобно принимать</span>
-                                Один раз в день за 2 часа до приема пищи или после, за полчаса до начала тренировок
-                            </p>
-                        </div><div class="ninth-item slick-slide" data-slick-index="4" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide44">
-                            <p class="ninth-item-hid-text">
-                                <span>Одобрен министерством здравоохранения РФ</span>
-                                В каждой упаковке приложен сертификат с синей печатью. Продается в аптеках
-                            </p>
-                        </div><div class="ninth-item slick-slide" data-slick-index="5" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide45">
-                            <p class="ninth-item-hid-text">
-                                <span>Подходит абсолютно всем</span>
-                                Для мужчин и женщин любого возраста, имеющих проблемы с лишним весом, а также тем, кто регулярно занимается спортом
-                            </p>
-                        </div><div class="ninth-item slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" style="width: 0px;" tabindex="-1">
-                            <p class="ninth-item-hid-text">
-                                <span>Достигнутый результат сохранится</span>
-                                При соблюдении простых правил питания и физической активности, киллограммы не вернутся!
-                            </p>
-                        </div></div></div>
-                        
-                    <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation40" id="slick-slide40"><button type="button" data-role="none" role="button" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation41" id="slick-slide41"><button type="button" data-role="none" role="button" tabindex="0">2</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation42" id="slick-slide42"><button type="button" data-role="none" role="button" tabindex="0">3</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation43" id="slick-slide43"><button type="button" data-role="none" role="button" tabindex="0">4</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation44" id="slick-slide44"><button type="button" data-role="none" role="button" tabindex="0">5</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation45" id="slick-slide45"><button type="button" data-role="none" role="button" tabindex="0">6</button></li></ul></div>
-                </div>
-                <div class="ninth-content vis">
-                    <div class="ninth-left">
-                        <div class="ninth-item first">
-                            <p class="ninth-item-text">
-                                Достигнутый результат сохранится
-                            </p>
-                            <p class="ninth-item-hid-text">
-                                <span>Достигнутый результат сохранится</span>
-                                При соблюдении простых правил питания и физической активности, киллограммы не вернутся!
-                            </p>
-                            <div class="ninth-item-zoom"></div>
-                        </div>
-                        <div class="ninth-item second">
-                            <p class="ninth-item-text">
-                                Высокая скорость получения результата
-                            </p>
-                            <p class="ninth-item-hid-text">
-                                <span>Высокая скорость получения результата</span>
-                                Воздействие препарата обеспечивает высокую скорость получения результата
-                            </p>
-                            <div class="ninth-item-zoom"></div>
-                        </div>
-                        <div class="ninth-item third">
-                            <p class="ninth-item-text">
-                                Положительные воздействия на весь организм
-                            </p>
-                            <p class="ninth-item-hid-text">
-                                <span>Положительные воздействия на весь организм</span>
-                                Стимулирует умственную и физическую деятельность, повышает иммунитет, выравнивает кожу, пропадают угри
-                            </p>
-                            <div class="ninth-item-zoom"></div>
-                        </div>
-                    </div>
-                    <div class="ninth-middle"></div>
-                    <div class="ninth-right">
-                        <div class="ninth-item fourth">
-                            <div class="ninth-item-zoom"></div>
-                            <p class="ninth-item-text">
-                                Удобно принимать
-                            </p>
-                            <p class="ninth-item-hid-text">
-                                <span>Удобно принимать</span>
-                                Один раз в день за 2 часа до приема пищи или после, за полчаса до начала тренировок
-                            </p>
-                        </div>
-                        <div class="ninth-item fifth">
-                            <div class="ninth-item-zoom"></div>
-                            <p class="ninth-item-text">
-                                Одобрен министерством здравоохранения РФ
-                            </p>
-                            <p class="ninth-item-hid-text">
-                                <span>Одобрен министерством здравоохранения РФ</span>
-                                В каждой упаковке приложен сертификат с синей печатью. Продается в аптеках
-                            </p>
-                        </div>
-                        <div class="ninth-item sixth">
-                            <div class="ninth-item-zoom"></div>
-                            <p class="ninth-item-text">
-                                Подходит абсолютно всем
-                            </p>
-                            <p class="ninth-item-hid-text">
-                                <span>Подходит абсолютно всем</span>
-                                Для мужчин и женщин любого возраста, имеющих проблемы с лишним весом, а также тем, кто регулярно занимается спортом
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="tenthscreen" id="block_10">
-        <div class="inner">
-            <p class="all-titles">
-                <span>Качество подтверждено </span><br> многочисленными исследованиями и клиническими испытаниями
-            </p>
-            <div class="tenth-slider slick-initialized slick-slider slick-dotted" style="" role="toolbar"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="">Previous</button>
-                <div aria-live="polite" class="slick-list draggable" style="height: 100px;"><div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);" role="listbox"><div class="tenth-item slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 0px;" tabindex="-1">
-                    <div class="tenth-item-shadow">
-                        <a rel="sert-1" href="assets/lol-surprise-lp1/1/quality_1_big.jpg" class="tenth-img-a fancybox_sert" tabindex="-1">
-                            <img class="tenth-img" src="assets/lol-surprise-lp1/1/quality_3.jpg" alt="">
-                        </a>
-                    </div>
-                    <p class="tenth-text">Сертификат соответствия</p>
-                </div><div class="tenth-item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide50">
-                    <div class="tenth-item-shadow">
-                        <a rel="sert-1" href="assets/lol-surprise-lp1/1/quality_1_big.jpg" class="tenth-img-a fancybox_sert" tabindex="0">
-                            <img class="tenth-img" src="assets/lol-surprise-lp1/1/quality_1.jpg" alt="">
-                        </a>
-                    </div>
-                    <p class="tenth-text">Свидетельство о государственной регистрации</p>
-                </div><div class="tenth-item slick-slide" data-slick-index="1" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide51">
-                    <div class="tenth-item-shadow">
-                        <a rel="sert-1" href="assets/lol-surprise-lp1/1/quality_1_big.jpg" class="tenth-img-a fancybox_sert" tabindex="-1">
-                            <img class="tenth-img" src="assets/lol-surprise-lp1/1/quality_2.jpg" alt="">
-                        </a>
-                    </div>
-                    <p class="tenth-text">Приложение к свидетельству о государственной регистрации</p>
-                </div><div class="tenth-item slick-slide" data-slick-index="2" aria-hidden="true" style="width: 0px;" tabindex="-1" role="option" aria-describedby="slick-slide52">
-                    <div class="tenth-item-shadow">
-                        <a rel="sert-1" href="assets/lol-surprise-lp1/1/quality_1_big.jpg" class="tenth-img-a fancybox_sert" tabindex="-1">
-                            <img class="tenth-img" src="assets/lol-surprise-lp1/1/quality_3.jpg" alt="">
-                        </a>
-                    </div>
-                    <p class="tenth-text">Сертификат соответствия</p>
-                </div><div class="tenth-item slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" style="width: 0px;" tabindex="-1">
-                    <div class="tenth-item-shadow">
-                        <a rel="sert-1" href="assets/lol-surprise-lp1/1/quality_1_big.jpg" class="tenth-img-a fancybox_sert" tabindex="-1">
-                            <img class="tenth-img" src="assets/lol-surprise-lp1/1/quality_1.jpg" alt="">
-                        </a>
-                    </div>
-                    <p class="tenth-text">Свидетельство о государственной регистрации</p>
-                </div></div></div>
-                
-                
-            <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation50" id="slick-slide50"><button type="button" data-role="none" role="button" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation51" id="slick-slide51"><button type="button" data-role="none" role="button" tabindex="0">2</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation52" id="slick-slide52"><button type="button" data-role="none" role="button" tabindex="0">3</button></li></ul></div>
-            <div class="tenth-content">
-                <div class="tenth-item">
-                    <div class="tenth-item-shadow">
-                        <a rel="sert-1" href="assets/lol-surprise-lp1/1/quality_1_big.jpg" class="tenth-img-a fancybox_sert">
-                            <img class="tenth-img" src="assets/lol-surprise-lp1/1/quality_1.jpg" alt="">
-                        </a>
-                    </div>
-                    <p class="tenth-text">Свидетельство о государственной регистрации</p>
-                </div>
-                <div class="tenth-item">
-                    <div class="tenth-item-shadow">
-                        <a rel="sert-1" href="assets/lol-surprise-lp1/1/quality_1_big.jpg" class="tenth-img-a fancybox_sert">
-                            <img class="tenth-img" src="assets/lol-surprise-lp1/1/quality_2.jpg" alt="">
-                        </a>
-                    </div>
-                    <p class="tenth-text">Приложение к свидетельству о государственной регистрации</p>
-                </div>
-                <div class="tenth-item">
-                    <div class="tenth-item-shadow">
-                        <a rel="sert-1" href="assets/lol-surprise-lp1/1/quality_1_big.jpg" class="tenth-img-a fancybox_sert">
-                            <img class="tenth-img" src="assets/lol-surprise-lp1/1/quality_3.jpg" alt="">
-                        </a>
-                    </div>
-                    <p class="tenth-text">Сертификат соответствия</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="twelfthscreen" id="block_12">
-        <div class="inner">
-            <p class="all-titles">Часто задаваемые вопросы</p>
-            <ul class="faq">
-                <li class="faq-element opened">
-                    <div class="faq-element-right">
-                        <a class="faq-question">Как происходит доставка?</a>
-                        <div class="faq-answer" style="display: block;">
-                            <p class="faq-answer-p">
-                                Доставка осуществляется по всей России 2 способами: почтой (почта Россиии Topdelivery) и самовывозом из аптечных пунктов. Подробнее о доставке (ссылка на страницу доставки)
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="faq-element">
-                    <div class="faq-element-right">
-                        <a class="faq-question">Как принимать "Липоксин"?</a>
-                        <div class="faq-answer">
-                            <p class="faq-answer-p">
-                                Для того, чтобы обеспечить себе наилучший эффект от приема Липоксина, Вам требуется соблюдать определенную дозировку и режим применения.
-                                Для того, чтобы привести себя в форму и скинуть не больше 2/3 кг, а также повысить свою физическую и умственную активность лучше всего принимать по 1 капсуле в день во время еды
-                                Для большего результата и снижения массы тела более, чем на 5/10 кг, рекомендуется увеличить дозировку до 2 капсул в день и принимать их за 2 часа до еды.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="faq-element">
-                    <div class="faq-element-right">
-                        <a class="faq-question">Можно ли принимать после родов?</a>
-                        <div class="faq-answer">
-                            <p class="faq-answer-p">
-                                Липоксин можно использовать всем людям в том числе и женщинам после родов.
-                                В состав “Липоксин” не входит стимулятор эфедрин и какие-либо токсические вещества, желательный эффект в сбросе лишнего веса после беременности от применения препарата достигается благодаря безопасным природным веществам.
-                                Кроме похудения, “Липоксин” приносит несомненную пользу для здоровья – пропадает угревая сыпь и аллергические высыпания, нормализуется работа ЖКТ, а также улучшается психоэмоциональный фон после беременности.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="faq-element">
-                    <div class="faq-element-right">
-                        <a class="faq-question">Какие могут быть побочные эффекты?</a>
-                        <div class="faq-answer">
-                            <p class="faq-answer-p">
-                                В силу индивидуальности каждого организма возможно и появление побочных эффектов. К ним относится:<br>
-                                ✔ Головная боль<br>
-                                ✔ Возникновение бессонницы<br>
-                                ✔ Тахикардия<br>
-                                ✔ Повышенная возбудимости<br>
-                                ✔Легкое покраснение кожи<br>
+  <?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
+<div class="container-fluid">
+  <!-- Content -->
+  <div class="cd-hero" id="app">
 
-                                О передозировке свидетельствует:<br>
-                                ✔ Тошнота<br>
-                                ✔ Рвота<br>
-                                ✔ Повышенное слюноотделение и потоотделение<br>
-                                ✔ Слезоточивость глаз<br>
-                                ✔ Тремор<br>
-                                Однако при строгом следовании указаниям производителя по поводу дозировки, частоты применения и периодичности курса шансы на возникновение негативных последствий сводятся к минимуму.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="faq-element">
-                    <div class="faq-element-right">
-                        <a class="faq-question">Как выбрать курс приема?</a>
-                        <div class="faq-answer">
-                            <p class="faq-answer-p">
-                                В каждом конкретном случае курс приема Липоксина будет разным, поэтому чтобы получить точные данные о приеме лично для Вас, свяжитесь с нашими менеджерами в форме ниже или позвоните по телефону: 8-(800)-100-71-29 (Звонок бесплатный по всей России).
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="faq-element">
-                    <div class="faq-element-right">
-                        <a class="faq-question">Какие бывают ограничения в применении и противопоказания?</a>
-                        <div class="faq-answer">
-                            <p class="faq-answer-p">
-                                Основными показателями к ограничению в применении является наличие индивидуальной непереносимости одного или нескольких ингредиентов, а также:
-                                <br>
+    <!-- Navigation -->
+    <div class="cd-slider-nav">
+      <nav class="navbar">
+        <div class="tm-navbar-bg">
 
-                                ✔ Период беременности и лактации<br>
-                                ✔ Повышенное артериальное давление<br>
-                                ✔ Выраженный атеросклероз<br>
-                                ✔ Хроническая бессонницы<br>
-                                ✔ Повышенная нервная возбудимость<br>
-                                ✔ Нарушение функций почек и печени<br>
-                                ✔Прием каких-либо препаратов стимуляторов
+          <a class="navbar-brand text-uppercase" href="#">
+            <img src="/assets/lol-surprise-lp/favicon.png" class="img-fluid" alt="Lifeportal.ml"> Lifeportal.ml</a>
 
-                            </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="twelfth-buttons">
-                <a href="/#popup-twelfth-1" class="twelfth-button-1 white-button fancybox">Задать свой вопрос</a>
-                <a href="/#popup-twelfth-2" class="twelfth-button-2 red-button fancybox" onclick="yaCounter48629732.reachGoal(&#39;button3&#39;);">
-                    <span class="third-cart-img"></span>
-                    <span class="third-button-text">Проконсультироваться</span>
+          <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+            &#9776;
+          </button>
+          <div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
+            <ul class="nav navbar-nav">
+              <li class="nav-item active selected">
+                <a class="nav-link" href="#0" data-no="1">Главная
+                  <span class="sr-only">(current)</span>
                 </a>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#0" data-no="2">Фильмы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#0" data-no="3">Мультики</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#0" data-no="4">Тренд</a>
+              </li>
+              <!-- <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="5">Контакты</a>
+                                </li> -->
+            </ul>
+          </div>
         </div>
+
+      </nav>
     </div>
-    <div class="not-a-medicine-block">
-        <div class="inner">
-            Не является лекарственным средством
-        </div>
-    </div>
-    <a id="toTop" href="/#" style="display: none;"><span id="toTopHover"></span>
-        <span id="toTopHover" style="opacity: 0;">To top</span>
-    </a>
-    <footer>
-        <div class="inner">
-            <div class="footer-up">
-                <img class="footer-logo-img" src="assets/lol-surprise-lp1/1/footer_logo.png" alt="">
-                <div class="footer-middle">
-                    <a href="tel:88001007129" class="footer-tel-a" onclick="yaCounter48629732.reachGoal(&#39;go_number&#39;);gtag(&#39;event&#39;, &#39;telefon&#39;, {event_category: &#39;button1&#39;,event_action: &#39;telefon&#39;});">8 800 100 71 29</a>
-                    <p class="footer-tel-p">Бесплатный звонок по РФ</p>
-                    <a href="/#popup-footer" class="footer-call-a white-dk-button fancybox" onclick="yaCounter48629732.reachGoal(&#39;button4&#39;);gtag(&#39;event&#39;, &#39;a3&#39;, {event_category: &#39;button3&#39;,event_action: &#39;a3&#39;});">Перезвоните мне</a>
-                </div>
-                <div class="footer-mob-hid">
-                    <div class="footer-line"></div>
-                    <div class="footer-mob-menu">
+
+    <ul class="cd-hero-slider">
+
+      <!-- Главная -->
+      <li class="selected">
+        <div class="cd-full-width">
+          <div class="container-fluid js-tm-page-content" data-page-no="1" data-page-type="gallery">
+            <div class="tm-img-gallery-container">
+              <div class="tm-img-gallery">
+                <div class="tm-about-page">
+                  <div class="row tm-white-box-margin-b">
+                    <div class="col-xs-12">
+                      <div class="tm-flex">
+                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding">
+                          <h2 class="tm-text-title">Более 1000 фильмов и мультиков на нашем сайте</h2>
+                          <p class="tm-text">Приветствуем Вас посетитель данного сайта! На этом сайте вы найдете множество фильмов, мультиков
+                            и других видео (новых, популярных, старых, любимых) на любой вкус. Совершенно бесплатно и без
+                            всякой регистрации! Достаточно перейти в нашу картотеку и наслаждаться просмотром.</p>
+                          <p class="tm-text">Наша картотека:
+                            <br>
+                            <a href="#" id="a_1">Фильмы</a>
+                            <br>
+                            <a href="#" id="a_2">Мультфильмы</a>
+                            <br>
+                            <a href="#" id="a_3">Как заработать (тренд недели)</a>
+                          </p>
+
+                        </div>
+                      </div>
                     </div>
-                    <div class="footer-line"></div>
+                  </div>
                 </div>
-                <div class="footer-socials">
-                    <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a fb"></a>
-                    <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a vk"></a>
-                    <a target="_blank" href="http://lipoxin.org.ru/" class="footer-social-a insta"></a>
-                </div>
+              </div>
             </div>
-            <div class="footer-line"></div>
-            <div class="footer-menu">
-            </div>
-            <div class="footer-line one-more"></div>
-            <div class="footer-del-pay">
-                <div class="footer-delivery">
-                    <p class="footer-del-pay-p">Способы доставки</p>
-                    <img class="footer-del-pay-img" src="assets/lol-surprise-lp1/1/delivery_1.jpg" alt="">
-                    <img class="footer-del-pay-img" src="assets/lol-surprise-lp1/1/delivery_2.jpg" alt="">
-                </div>
-                <div class="footer-line is-hid"></div>
-                <div class="footer-payment">
-                    <p class="footer-del-pay-p">Способы оплаты</p>
-                    <img class="footer-del-pay-img" src="assets/lol-surprise-lp1/1/visa.jpg" alt="">
-                    <img class="footer-del-pay-img" src="assets/lol-surprise-lp1/1/mastercard.jpg" alt="">
-                    <img class="footer-del-pay-img" src="assets/lol-surprise-lp1/1/maestro.jpg" alt="">
-                    <img class="footer-del-pay-img" src="assets/lol-surprise-lp1/1/visa_electron.jpg" alt="">
-                    <img class="footer-del-pay-img" src="assets/lol-surprise-lp1/1/mir.jpg" alt="">
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="footer-down">
-            <div class="inner">
-                <div class="policy-and-logo clearfix">
-                    <div class="policy">
-                        <p class="footer-down-text">
-                            ООО "Вайткрафт Ритейл". ИНН/КПП: 7723453213/772301001, 107370, г. Москва, ул. Краснодарская, д. 65/18 К.1
-                        </p>
-                        <a href="/#privacy" class="footer-privacy-a fancybox">Политика конфиденциальности</a>
-                    </div>
-                    <div class="convert">
-                    </div>
+      </li>
+
+
+
+      <!-- Фильмы-->
+      <li>
+        <div class="cd-full-width">
+          <div class="container-fluid js-tm-page-content" data-page-no="2" data-page-type="gallery">
+            <div class="tm-img-gallery-container">
+              <div class="tm-img-gallery gallery-4">
+ 
+
+  
+                <div class="columns">
+                    <youtube-component v-for="youtube in youtubes" :youtube="youtube" />
                 </div>
+                  
+ 
+                  
+
+
+
+                <?php
+                // echo '<div class="grid-item">
+                //       <figure class="effect-sadie">
+                //               <img data-src="https://i.ytimg.com/vi/'.$key['short_url'].'/hqdefault.jpg" alt="Image" class="img-fluid tm-img">
+                //               <figcaption>
+                //                   <h2 class="tm-figure-title"></h2>
+                //                   <p class="tm-figure-description">'.$key['title'].'</p>
+                //                   <a class="popup-youtube" title="'.$key['title'].'<br><br>Фильмы бесплатно и онлайн"  rel="nofollow" href="http://www.youtube.com/watch?v='.$key['short_url'].'">'.$h.'</a>
+                //               </figcaption>           
+                //           </figure>
+                //       </div>';
+                ?>
+
+
+
+              </div>
+              <div class="form-group">
+                <div class="d-flex justify-content-center">
+                  <button v-on:click="add" id="singlebutton" name="singlebutton" class="btn btn-primary btn-film btn-lg">
+                  Ещё
+                  </button>
+                </div>
+              </div>
+
+              <!-- <div class="row"> <button type="button" class="btn btn-film btn-primary btn-lg text-center">Ещё</button></div> -->
+             
             </div>
+          </div>
         </div>
+      </li>
+
+      <!-- Мультики -->
+      <li>
+        <div class="cd-full-width">
+          <div class="container-fluid js-tm-page-content" data-page-no="3" data-page-type="gallery">
+            <div class="tm-img-gallery-container">
+              <div class="tm-img-gallery gallery-4">
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Тренд -->
+      <li>
+        <div class="cd-full-width">
+          <div class="container-fluid js-tm-page-content" data-page-no="4" data-page-type="gallery">
+            <div class="tm-img-gallery-container">
+              <div class="tm-img-gallery gallery-4">
+                <!-- Gallery One pop up connected with JS code below -->
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Page 4 About 
+                <li>
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content tm-page-width tm-pad-b" data-page-no="4">
+
+                            <div class="tm-about-page">
+                            
+                            	<div class="row tm-white-box-margin-b">
+                                    <div class="col-xs-12">
+                                        <div class="tm-flex">
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                                <h2 class="tm-text-title">Multiple Columns</h2>
+                                                <p class="tm-text">Set true or false in HTML page line number 40 to turn on off page color. Mauris elit elit, imperdiet nec lorem sed, finibus maximus mauris. Nam laoreet eros nec convallis placerat.</p>
+                                            </div>
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                                <h2 class="tm-text-title">Class aptent taciti</h2>
+                                                <p class="tm-text">Aenean congue nulla et ligula consectetur consequat. Nullam fringilla blandit risus vitae auctor. Donec sed sapien varius, tincidunt nulla ut, ultrices nisl.</p>     
+                                            </div>
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                                <h2 class="tm-text-title">Aenean auctor</h2>
+                                                <p class="tm-text">Integer enim tortor, tempor quis augue luctus, condimentum porttitor urna. Maecenas condimentum suscipit tortor vitae convallis.</p>     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                <div class="row tm-white-box-margin-b">
+                                    <div class="col-xs-12">
+                                        <div class="tm-flex">
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                                <h2 class="tm-text-title">Nulla vitae magna</h2>
+                                                <p class="tm-text">Donec at felis at risus mattis efficitur. Pellentesque dui urna, blandit a congue ut, blandit sed eros. Sed sagittis consequat pellentesque. Vivamus eros turpis, lobortis sed fermentum euismod, vehicula id eros.</p>
+                                            </div>
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                                <h2 class="tm-text-title">Pellentesque dui urna</h2>
+                                                <p class="tm-text">Maecenas porta placerat lacus a lacinia. In imperdiet cursus erat, luctus molestie lorem congue at. Donec fringilla tortor non ipsum semper, sit amet aliquet magna rutrum.</p>     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+
+                                
+                                
+                                <div class="row tm-white-box-margin-b">
+                                    <div class="col-xs-12">
+                                        <div class="tm-flex">
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding">
+                                                <h2 class="tm-text-title">One Single Column</h2>
+                                                <p class="tm-text">You can simply set <strong>var tm_gray_site = true;</strong> or <strong>var tm_gray_site = false;</strong> in the HTML top script tag to enable / disable gray scale or color of the page. Vivamus sit amet scelerisque diam. Donec congue feugiat consectetur. Donec facilisis, elit non suscipit pretium, lacus quam feugiat nulla, id tempus libero tellus ut nisi. Mauris non mi molestie, tristique nibh eu, auctor nibh. Fusce accumsan pretium ex in ullamcorper.</p>
+                                                <p class="tm-text">Ut blandit nisi purus, eget imperdiet sapien sodales et. Duis euismod, elit in laoreet cursus, ante diam facilisis lacus, sit amet aliquam odio quam ut libero. Proin bibendum ex nec lorem semper euismod. Nulla sed urna at ligula maximus blandit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                                                   
+                        </div>              
+                    </div> 
+
+                </li> -->
+
+      <!-- 
+                <li>
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content tm-page-pad" data-page-no="5">
+                            <div class="tm-contact-page">                                
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="tm-flex tm-contact-container">                                
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
+                                                <h2 class="tm-contact-info">Feel free to say Hi!</h2>
+                                                <p class="tm-text">Nulla sed urna at ligula maximus blandit. Mauris nisi ligula, ultricies ac diam id, hendrerit tincidunt ipsum. Maecenas non massa justo.</p>                                                
+                                                 
+                                                <form action="index.html" method="post" class="tm-contact-form">
+
+                                                    <div class="form-group">
+                                                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                                                    </div>
+                                        
+                                                    <div class="form-group">                                                        
+                                                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                                                    </div>                                                        
+                                                    
+                                                    <div class="form-group">
+                                                        <textarea id="contact_message" name="contact_message" class="form-control" rows="5" placeholder="Message" required></textarea>
+                                                    </div> 
+
+                                                    <button type="submit" class="pull-xs-right tm-submit-btn">Send</button>  
+                                                
+                                                </form>  
+                                            </div>
+
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
+                                                <h2 class="tm-contact-info">4466 Old New St 28290, SF, California</h2> 
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>    
+
+                        </div>
+                        
+                    </div> 
+                </li> Page 5 Contact Us -->
+    </ul>
+
+    <footer class="tm-footer">
+
+      <div class="tm-social-icons-container text-xs-center"> 
+      </div>
+
+      <p class="tm-copyright-text">Copyright &copy;
+        <span class="tm-copyright-year">current year</span>
+      </p>
+
     </footer>
 
+  </div>
+  <!-- .cd-hero -->
+  </div>
 
+  <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+  <div id="loader-wrapper">
 
-<div id="popup-first" class="popup-form">
-    <form action="/send.php" method="post" id="form-first" class="form">
-        <div class="popup-title">Узнать нужное количество</div>
-        <div class="popup-line"></div>
-        <div class="popup-undertitle">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</div>
-        <label class="popup-label">
-            <select class="popup-input" name="country">
-                                <option value="RU">Россия</option>
-                            </select>
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="text" name="fio" placeholder="Ваше имя">
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="tel" name="phone" placeholder="Контактный номер">
-        </label>
-        <div class="popup-button-wrapper">
-            <button class="popup-button white-dk-button">
-                <span class="popup-button-p">Отправить</span>
-            </button>
-        </div>
-        <p class="popup-policy-text">
-            <span class="privacy-click">Нажимая кнопку, вы соглашаетесь с </span><a class="label_txt fancybox" href="/#privacy_check">политикой конфиденциальности</a>
-        </p>
-    </form>
-</div>
-<div id="popup-third" class="popup-form">
-    <form action="/send.php" method="post" id="form-third">
-        <div class="popup-title">Проконсультироваться</div>
-        <div class="popup-line"></div>
-        <div class="popup-undertitle">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</div>
-        <label class="popup-label">
-            <select class="popup-input" name="country">
-                                <option value="RU">Россия</option>
-                            </select>
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="text" name="fio" placeholder="Ваше имя">
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="tel" name="phone" placeholder="Контактный номер">
-        </label>
-        <!--        <label class="popup-label">-->
-        <!--            <textarea class="popup-input popup-textarea" name="address" placeholder="Ваш адрес"></textarea>-->
-        <!--        </label>-->
-        <div class="popup-button-wrapper">
-            <button class="popup-button white-dk-button">
-                <span class="popup-button-p">Отправить</span>
-            </button>
-        </div>
-        <p class="popup-policy-text">
-            <span class="privacy-click">Нажимая кнопку, вы соглашаетесь с </span><a class="label_txt fancybox" href="/#privacy_check">политикой конфиденциальности</a>
-        </p>
-    </form>
-</div>
-<div id="popup-sixth" class="popup-form">
-    <form action="/send.php" method="post" id="form-sixth" class="form">
-        <div class="popup-title">Узнать нужное количество</div>
-        <div class="popup-line"></div>
-        <div class="popup-undertitle">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</div>
-        <label class="popup-label">
-            <select class="popup-input" name="country">
-                                <option value="RU">Россия</option>
-                            </select>
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="text" name="fio" placeholder="Ваше имя">
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="tel" name="phone" placeholder="Контактный номер">
-        </label>
-        <div class="popup-button-wrapper">
-            <button class="popup-button white-dk-button">
-                <span class="popup-button-p">Отправить</span>
-            </button>
-        </div>
-        <p class="popup-policy-text">
-            <span class="privacy-click">Нажимая кнопку, вы соглашаетесь с </span><a class="label_txt fancybox" href="/#privacy_check">политикой конфиденциальности</a>
-        </p>
-    </form>
-</div>
-<div id="popup-eighth" class="popup-form">
-    <form action="/send.php" method="post" id="form-eighth" class="form">
-        <div class="popup-title">Узнать нужное количество</div>
-        <div class="popup-line"></div>
-        <div class="popup-undertitle">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</div>
-        <label class="popup-label">
-            <select class="popup-input" name="country">
-                                <option value="RU">Россия</option>
-                            </select>
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="text" name="fio" placeholder="Ваше имя">
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="tel" name="phone" placeholder="Контактный номер">
-        </label>
-        <div class="popup-button-wrapper">
-            <button class="popup-button white-dk-button">
-                <span class="popup-button-p">Отправить</span>
-            </button>
-        </div>
-        <p class="popup-policy-text">
-            <span class="privacy-click">Нажимая кнопку, вы соглашаетесь с </span><a class="label_txt fancybox" href="/#privacy_check">политикой конфиденциальности</a>
-        </p>
-    </form>
-</div>
-<div id="popup-eighth-1" class="popup-form">
-    <form action="/send.php" method="post" id="form-eighth-1" class="form">
-        <div class="popup-title">Заказать со скидкой</div>
-        <div class="popup-line"></div>
-        <div class="popup-undertitle">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</div>
-        <label class="popup-label">
-            <select class="popup-input" name="country">
-                                <option value="RU">Россия</option>
-                            </select>
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="text" name="fio" placeholder="Ваше имя">
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="tel" name="phone" placeholder="Контактный номер">
-        </label>
-        <div class="popup-button-wrapper">
-            <button class="popup-button white-dk-button">
-                <span class="popup-button-p">Отправить</span>
-            </button>
-        </div>
-        <p class="popup-policy-text">
-            <span class="privacy-click">Нажимая кнопку, вы соглашаетесь с </span><a class="label_txt fancybox" href="/#privacy_check">политикой конфиденциальности</a>
-        </p>
-    </form>
-</div>
-<div id="popup-eighth-2" class="popup-form">
-    <form action="/send.php" method="post" id="form-eighth-2" class="form">
-        <div class="popup-title">Заказать со скидкой</div>
-        <div class="popup-line"></div>
-        <div class="popup-undertitle">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</div>
-        <label class="popup-label">
-            <select class="popup-input" name="country">
-                                <option value="RU">Россия</option>
-                            </select>
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="text" name="fio" placeholder="Ваше имя">
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="tel" name="phone" placeholder="Контактный номер">
-        </label>
-        <div class="popup-button-wrapper">
-            <button class="popup-button white-dk-button">
-                <span class="popup-button-p">Отправить</span>
-            </button>
-        </div>
-        <p class="popup-policy-text">
-            <span class="privacy-click">Нажимая кнопку, вы соглашаетесь с </span><a class="label_txt fancybox" href="/#privacy_check">политикой конфиденциальности</a>
-        </p>
-    </form>
-</div>
-<div id="popup-eighth-3" class="popup-form">
-    <form action="/send.php" method="post" id="form-eighth-3" class="form">
-        <div class="popup-title">Заказать со скидкой</div>
-        <div class="popup-line"></div>
-        <div class="popup-undertitle">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</div>
-        <label class="popup-label">
-            <select class="popup-input" name="country">
-                                <option value="RU">Россия</option>
-                            </select>
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="text" name="fio" placeholder="Ваше имя">
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="tel" name="phone" placeholder="Контактный номер">
-        </label>
-        <div class="popup-button-wrapper">
-            <button class="popup-button white-dk-button">
-                <span class="popup-button-p">Отправить</span>
-            </button>
-        </div>
-        <p class="popup-policy-text">
-            <span class="privacy-click">Нажимая кнопку, вы соглашаетесь с </span><a class="label_txt fancybox" href="/#privacy_check">политикой конфиденциальности</a>
-        </p>
-    </form>
-</div>
-<div id="popup-eleventh" class="popup-form">
-    <form action="/send.php" method="post" id="form-eleventh" class="form">
-        <div class="popup-title">Скачать упражнения в 1 клик</div>
-        <div class="popup-line"></div>
-        <div class="popup-undertitle">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</div>
-        <label class="popup-label">
-            <select class="popup-input" name="country">
-                                <option value="RU">Россия</option>
-                            </select>
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="text" name="fio" placeholder="Ваше имя">
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="tel" name="phone" placeholder="Контактный номер">
-        </label>
-        <div class="popup-button-wrapper">
-            <button class="popup-button white-dk-button">
-                <span class="popup-button-p">Отправить</span>
-            </button>
-        </div>
-        <p class="popup-policy-text">
-            <span class="privacy-click">Нажимая кнопку, вы соглашаетесь с </span><a class="label_txt fancybox" href="/#privacy_check">политикой конфиденциальности</a>
-        </p>
-    </form>
-</div>
-<div id="popup-twelfth-2" class="popup-form">
-    <form action="/send.php" method="post" id="form-twelfth-2" class="form">
-        <div class="popup-title">Заказать со скидкой</div>
-        <div class="popup-line"></div>
-        <div class="popup-undertitle">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</div>
-        <label class="popup-label">
-            <select class="popup-input" name="country">
-                                <option value="RU">Россия</option>
-                            </select>
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="text" name="fio" placeholder="Ваше имя">
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="tel" name="phone" placeholder="Контактный номер">
-        </label>
-        <div class="popup-button-wrapper">
-            <button class="popup-button white-dk-button">
-                <span class="popup-button-p">Отправить</span>
-            </button>
-        </div>
-        <p class="popup-policy-text">
-            <span class="privacy-click">Нажимая кнопку, вы соглашаетесь с </span><a class="label_txt fancybox" href="/#privacy_check">политикой конфиденциальности</a>
-        </p>
-    </form>
-</div>
-<div id="popup-twelfth-1" class="popup-form">
-    <form action="/send.php" method="post" id="form-twelfth-1" class="form">
-        <div class="popup-title">Задать свой вопрос</div>
-        <div class="popup-line"></div>
-        <div class="popup-undertitle">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</div>
-        <label class="popup-label">
-            <select class="popup-input" name="country">
-                                <option value="RU">Россия</option>
-                            </select>
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="text" name="fio" placeholder="Ваше имя">
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="tel" name="phone" placeholder="Контактный номер">
-        </label>
-        <div class="popup-button-wrapper">
-            <button class="popup-button white-dk-button">
-                <span class="popup-button-p">Отправить</span>
-            </button>
-        </div>
-        <p class="popup-policy-text">
-            <span class="privacy-click">Нажимая кнопку, вы соглашаетесь с </span><a class="label_txt fancybox" href="/#privacy_check">политикой конфиденциальности</a>
-        </p>
-    </form>
-</div>
-<div id="popup-footer" class="popup-form">
-    <form action="/send.php" method="post" id="form-footer" class="form">
-        <div class="popup-title">Закажите обратный звонок</div>
-        <div class="popup-line"></div>
-        <div class="popup-undertitle">Оставьте свои контактные данные <br> и мы свяжемся с вами в ближайшее время</div>
-        <label class="popup-label">
-            <select class="popup-input" name="country">
-                                <option value="RU">Россия</option>
-                            </select>
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="text" name="fio" placeholder="Ваше имя">
-        </label>
-        <label class="popup-label">
-            <input class="popup-input" type="tel" name="phone" placeholder="Контактный номер">
-        </label>
-        <div class="popup-button-wrapper">
-            <button class="popup-button white-dk-button">
-                <span class="popup-button-p">Отправить</span>
-            </button>
-        </div>
-        <p class="popup-policy-text">
-            <span class="privacy-click">Нажимая кнопку, вы соглашаетесь с </span><a class="label_txt fancybox" href="/#privacy_check">политикой конфиденциальности</a>
-        </p>
-    </form>
-</div>
-<div id="privacy">
-    <p class="privacy-p">Сайт уважает и соблюдает законодательство РФ. Также мы уважаем ваше право и соблюдаем конфиденциальность при заполнении, передаче и хранении ваших конфиденциальных сведений. <br>
-    Мы запрашиваем ваши персональные данные исключительно для информирования об оказываемых услугах сайта.<br>
-    Персональные данные - это информация, относящаяся к субъекту персональных данных, то есть, к потенциальному покупателю. В частности, это фамилия, имя и отчество, дата рождения, адрес, контактные реквизиты (телефон, адрес электронной почты), семейное, имущественное положение и иные данные, относимые Федеральным законом от 27 июля 2006 года № 152-ФЗ «О персональных данных» к категории персональных данных.<br>
-    Если Вы разместили ваши контактные данных на сайте, то Вы автоматически согласились на обработку данных и дальнейшую передачу ваших контактных данных менеджерам нашего сайта.<br>
-    В случае отзыва согласия на обработку своих персональных данных мы обязуемся удалить ваши персональные данные в срок не позднее 3 рабочих дней.</p>
-</div>
-<div id="privacy_check" class="all-popups">
-    <h2 class="privacy_head">СОГЛАСИЕ</h2>
-    <p class="privacy_p center"><strong>на обработку персональных данных и получение рекламы (далее – «Согласие»)</strong></p>
-    <p class="privacy_p">1. Настоящим я (Пользователь), во исполнение требований законодательства о персональных данных, а также законодательства о рекламе свободно, своей волей и в своем интересе даю своё согласие: ООО «НАЗВАНИЕ» (далее – «Компания») на обработку своих персональных данных, указанных при регистрации и/или оставлении заявки на получение расчета лизинга и/или на получение рекламной информации, связанной с договором лизинга и лизинговой деятельностью (включая рекламу) по любым каналам связи, включая: SMS-оповещение, почтовое письмо, телеграмму, голосовое сообщение (далее – «Рассылка») путем заполнения веб-формы на сайте ССЫЛКА НА САЙТ (далее – «Сайт»). Под персональными данными понимается любая информация, относящаяся ко мне как к субъекту персональных данных, в том числе: фамилия, имя, отчество; номера рабочего и мобильного телефонов, адреса электронной почты, а также иные персональные данные, в том числе полученные посредством заполнения заявки расчета лизинга на Сайте. Целями обработки, в том числе целями сбора, персональных данных являются: определение возможности заключения договоров лизинга, договоров о предоставлении консультационных услуг, договоров купли-продажи, любых иных договоров, необходимых для реализации договора лизинга, их заключения, изменения, исполнения и прекращения, продвижения лизинговых и иных услуг посредством любых средств связи, а также для обеспечения соблюдения законов и иных нормативно-правовых актов.</p>
-    <p class="privacy_p">2. Я согласен (а) с тем, что в рамках обработки персональных данных Компания вправе осуществлять сбор, запись, систематизацию, накопление, анализ, использование, извлечение, распространение, передачу любым иным третьим лицам, в том числе и трансграничную передачу, получение, обработку, хранение, уточнение (обновление, изменение), обезличивание, блокирование, удаление, уничтожение моих персональных данных путем ведения баз данных автоматизированным, механическим, ручным способами в целях: ведения и актуализации клиентской базы; получения и исследования статистических данных об объемах продаж и качестве оказываемых услуг; проведения маркетинговых программ; проведения опросов и исследований, направленных на выявление удовлетворенности/неудовлетворенности Пользователя, постоянного совершенствования уровня предоставляемых услуг; информирования меня о предлагаемых Компанией услугах, проводимых бонусных мероприятиях, акциях и т.д.; рекламирования и иного любого продвижения товаров и услуг на рынке путем осуществления прямых контактов со мной и иными потребителями; технической поддержки при обработке информации и персональных данных с использованием средств автоматизации и без такого использования.</p>
-    <p class="privacy_p">3. Я выражаю согласие на получение рекламы и разрешаю Компании осуществлять в мой адрес смс-рассылки, а также иные виды Рассылок и уведомлений, в том числе рекламного характера, с использованием любых средств связи, в том числе электронной почты.</p>
-    <p class="privacy_p">4. Я ознакомлен (а), что: настоящее согласие на обработку моих персональных данных и получение рекламы действует в течение 20 (двадцати) лет, а в части персональных данных, содержащихся в документах и на иных носителях информации, срок хранения которых по действующему законодательству превышает двадцать лет, согласие на обработку персональных данных действует в течение сроков хранения таких документов и иных носителей информации, установленных действующим законодательством. Согласие на обработку персональных данных может быть отозвано посредством направления соответствующего письменного уведомления в адрес ООО «НАЗВАНИЕ» по адресам места нахождения, указанным в настоящем согласии. В этом случае лицо, получившее отзыв согласия на обработку персональных данных или согласия на получение рекламы, прекращает обработку персональных данных, а персональные данные подлежат уничтожению или обезличиванию, если отсутствуют иные правовые основания для обработки, установленные законодательством РФ или документами лица, получившего отзыв согласия на обработку персональных данных, регламентирующими вопросы.</p>
-</div>
-<div id="load-modal"><div class="load"></div></div>
-<div style="text-align: center;">
-    <img src="assets/lol-surprise-lp1/1/not_drug.jpg" style="width: 900px;max-width: 100%;">
-</div>
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
 
+  </div>
 
-<script type="text/javascript" src="assets/lol-surprise-lp1/1/jquery.min.js"></script>
-<script src="assets/lol-surprise-lp1/1/parallaxie.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
+  <!-- load JS files -->
 
-        fa_top = $(".first-after").offset().top;
+  <script src="/assets/lol-surprise-lp/js/tether.min.js"></script>
+  <!-- Tether (http://tether.io/)  -->
+  <script src="/assets/lol-surprise-lp/js/bootstrap.min.js"></script>
+  <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
+  <script src="/assets/lol-surprise-lp/js/hero-slider-main.js"></script>
+  <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
+  <script src="/assets/lol-surprise-lp/js/jquery.magnific-popup.min.js"></script>
+  <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
+  <script>
+    /*!
+     * Vue.js v2.5.16
+     * (c) 2014-2018 Evan You
+     * Released under the MIT License.
+     */
+    ! function (e, t) {
+      "object" == typeof exports && "undefined" != typeof module ? module.exports = t() : "function" == typeof define &&
+        define.amd ? define(t) : e.Vue = t()
+    }(this, function () {
+      "use strict";
+      var y = Object.freeze({});
 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > fa_top - 400) {
-                $(".outer").css("overflow","hidden");
-                $(".pills-img").addClass("first-right-pills-img");
-                setTimeout(function(){$(".second-middle").addClass("fadeIn animated")}, 2000);
-                $(".outer").css("overflow","auto");
-            }
+      function M(e) {
+        return null == e
+      }
+
+      function D(e) {
+        return null != e
+      }
+
+      function S(e) {
+        return !0 === e
+      }
+
+      function T(e) {
+        return "string" == typeof e || "number" == typeof e || "symbol" == typeof e || "boolean" == typeof e
+      }
+
+      function P(e) {
+        return null !== e && "object" == typeof e
+      }
+      var r = Object.prototype.toString;
+
+      function l(e) {
+        return "[object Object]" === r.call(e)
+      }
+
+      function i(e) {
+        var t = parseFloat(String(e));
+        return 0 <= t && Math.floor(t) === t && isFinite(e)
+      }
+
+      function t(e) {
+        return null == e ? "" : "object" == typeof e ? JSON.stringify(e, null, 2) : String(e)
+      }
+
+      function F(e) {
+        var t = parseFloat(e);
+        return isNaN(t) ? e : t
+      }
+
+      function s(e, t) {
+        for (var n = Object.create(null), r = e.split(","), i = 0; i < r.length; i++) n[r[i]] = !0;
+        return t ? function (e) {
+          return n[e.toLowerCase()]
+        } : function (e) {
+          return n[e]
+        }
+      }
+      var c = s("slot,component", !0),
+        u = s("key,ref,slot,slot-scope,is");
+
+      function f(e, t) {
+        if (e.length) {
+          var n = e.indexOf(t);
+          if (-1 < n) return e.splice(n, 1)
+        }
+      }
+      var n = Object.prototype.hasOwnProperty;
+
+      function p(e, t) {
+        return n.call(e, t)
+      }
+
+      function e(t) {
+        var n = Object.create(null);
+        return function (e) {
+          return n[e] || (n[e] = t(e))
+        }
+      }
+      var o = /-(\w)/g,
+        g = e(function (e) {
+          return e.replace(o, function (e, t) {
+            return t ? t.toUpperCase() : ""
+          })
+        }),
+        d = e(function (e) {
+          return e.charAt(0).toUpperCase() + e.slice(1)
+        }),
+        a = /\B([A-Z])/g,
+        _ = e(function (e) {
+          return e.replace(a, "-$1").toLowerCase()
         });
-    })
-    if ($(window).width() >= '1100'){
-        $('.parallaxie').parallaxie();
+      var v = Function.prototype.bind ? function (e, t) {
+        return e.bind(t)
+      } : function (n, r) {
+        function e(e) {
+          var t = arguments.length;
+          return t ? 1 < t ? n.apply(r, arguments) : n.call(r, e) : n.call(r)
+        }
+        return e._length = n.length, e
+      };
+
+      function h(e, t) {
+        t = t || 0;
+        for (var n = e.length - t, r = new Array(n); n--;) r[n] = e[n + t];
+        return r
+      }
+
+      function m(e, t) {
+        for (var n in t) e[n] = t[n];
+        return e
+      }
+
+      function b(e) {
+        for (var t = {}, n = 0; n < e.length; n++) e[n] && m(t, e[n]);
+        return t
+      }
+
+      function $(e, t, n) {}
+      var O = function (e, t, n) {
+          return !1
+        },
+        w = function (e) {
+          return e
+        };
+
+      function C(t, n) {
+        if (t === n) return !0;
+        var e = P(t),
+          r = P(n);
+        if (!e || !r) return !e && !r && String(t) === String(n);
+        try {
+          var i = Array.isArray(t),
+            o = Array.isArray(n);
+          if (i && o) return t.length === n.length && t.every(function (e, t) {
+            return C(e, n[t])
+          });
+          if (i || o) return !1;
+          var a = Object.keys(t),
+            s = Object.keys(n);
+          return a.length === s.length && a.every(function (e) {
+            return C(t[e], n[e])
+          })
+        } catch (e) {
+          return !1
+        }
+      }
+
+      function x(e, t) {
+        for (var n = 0; n < e.length; n++)
+          if (C(e[n], t)) return n;
+        return -1
+      }
+
+      function R(e) {
+        var t = !1;
+        return function () {
+          t || (t = !0, e.apply(this, arguments))
+        }
+      }
+      var E = "data-server-rendered",
+        k = ["component", "directive", "filter"],
+        A = ["beforeCreate", "created", "beforeMount", "mounted", "beforeUpdate", "updated", "beforeDestroy",
+          "destroyed", "activated", "deactivated", "errorCaptured"
+        ],
+        j = {
+          optionMergeStrategies: Object.create(null),
+          silent: !1,
+          productionTip: !1,
+          devtools: !1,
+          performance: !1,
+          errorHandler: null,
+          warnHandler: null,
+          ignoredElements: [],
+          keyCodes: Object.create(null),
+          isReservedTag: O,
+          isReservedAttr: O,
+          isUnknownElement: O,
+          getTagNamespace: $,
+          parsePlatformTagName: w,
+          mustUseProp: O,
+          _lifecycleHooks: A
+        };
+
+      function N(e, t, n, r) {
+        Object.defineProperty(e, t, {
+          value: n,
+          enumerable: !!r,
+          writable: !0,
+          configurable: !0
+        })
+      }
+      var L = /[^\w.$]/;
+      var I, H = "__proto__" in {},
+        B = "undefined" != typeof window,
+        U = "undefined" != typeof WXEnvironment && !!WXEnvironment.platform,
+        V = U && WXEnvironment.platform.toLowerCase(),
+        z = B && window.navigator.userAgent.toLowerCase(),
+        K = z && /msie|trident/.test(z),
+        J = z && 0 < z.indexOf("msie 9.0"),
+        q = z && 0 < z.indexOf("edge/"),
+        W = (z && z.indexOf("android"), z && /iphone|ipad|ipod|ios/.test(z) || "ios" === V),
+        G = (z && /chrome\/\d+/.test(z), {}.watch),
+        Z = !1;
+      if (B) try {
+        var X = {};
+        Object.defineProperty(X, "passive", {
+          get: function () {
+            Z = !0
+          }
+        }), window.addEventListener("test-passive", null, X)
+      } catch (e) {}
+      var Y = function () {
+          return void 0 === I && (I = !B && !U && "undefined" != typeof global && "server" === global.process.env.VUE_ENV),
+            I
+        },
+        Q = B && window.__VUE_DEVTOOLS_GLOBAL_HOOK__;
+
+      function ee(e) {
+        return "function" == typeof e && /native code/.test(e.toString())
+      }
+      var te, ne = "undefined" != typeof Symbol && ee(Symbol) && "undefined" != typeof Reflect && ee(Reflect.ownKeys);
+      te = "undefined" != typeof Set && ee(Set) ? Set : function () {
+        function e() {
+          this.set = Object.create(null)
+        }
+        return e.prototype.has = function (e) {
+          return !0 === this.set[e]
+        }, e.prototype.add = function (e) {
+          this.set[e] = !0
+        }, e.prototype.clear = function () {
+          this.set = Object.create(null)
+        }, e
+      }();
+      var re = $,
+        ie = 0,
+        oe = function () {
+          this.id = ie++, this.subs = []
+        };
+      oe.prototype.addSub = function (e) {
+        this.subs.push(e)
+      }, oe.prototype.removeSub = function (e) {
+        f(this.subs, e)
+      }, oe.prototype.depend = function () {
+        oe.target && oe.target.addDep(this)
+      }, oe.prototype.notify = function () {
+        for (var e = this.subs.slice(), t = 0, n = e.length; t < n; t++) e[t].update()
+      }, oe.target = null;
+      var ae = [];
+
+      function se(e) {
+        oe.target && ae.push(oe.target), oe.target = e
+      }
+
+      function ce() {
+        oe.target = ae.pop()
+      }
+      var le = function (e, t, n, r, i, o, a, s) {
+          this.tag = e, this.data = t, this.children = n, this.text = r, this.elm = i, this.ns = void 0, this.context =
+            o, this.fnContext = void 0, this.fnOptions = void 0, this.fnScopeId = void 0, this.key = t && t.key, this
+            .componentOptions = a, this.componentInstance = void 0, this.parent = void 0, this.raw = !1, this.isStatic = !
+            1, this.isRootInsert = !0, this.isComment = !1, this.isCloned = !1, this.isOnce = !1, this.asyncFactory =
+            s, this.asyncMeta = void 0, this.isAsyncPlaceholder = !1
+        },
+        ue = {
+          child: {
+            configurable: !0
+          }
+        };
+      ue.child.get = function () {
+        return this.componentInstance
+      }, Object.defineProperties(le.prototype, ue);
+      var fe = function (e) {
+        void 0 === e && (e = "");
+        var t = new le;
+        return t.text = e, t.isComment = !0, t
+      };
+
+      function pe(e) {
+        return new le(void 0, void 0, void 0, String(e))
+      }
+
+      function de(e) {
+        var t = new le(e.tag, e.data, e.children, e.text, e.elm, e.context, e.componentOptions, e.asyncFactory);
+        return t.ns = e.ns, t.isStatic = e.isStatic, t.key = e.key, t.isComment = e.isComment, t.fnContext = e.fnContext,
+          t.fnOptions = e.fnOptions, t.fnScopeId = e.fnScopeId, t.isCloned = !0, t
+      }
+      var ve = Array.prototype,
+        he = Object.create(ve);
+      ["push", "pop", "shift", "unshift", "splice", "sort", "reverse"].forEach(function (o) {
+        var a = ve[o];
+        N(he, o, function () {
+          for (var e = [], t = arguments.length; t--;) e[t] = arguments[t];
+          var n, r = a.apply(this, e),
+            i = this.__ob__;
+          switch (o) {
+            case "push":
+            case "unshift":
+              n = e;
+              break;
+            case "splice":
+              n = e.slice(2)
+          }
+          return n && i.observeArray(n), i.dep.notify(), r
+        })
+      });
+      var me = Object.getOwnPropertyNames(he),
+        ye = !0;
+
+      function ge(e) {
+        ye = e
+      }
+      var _e = function (e) {
+        (this.value = e, this.dep = new oe, this.vmCount = 0, N(e, "__ob__", this), Array.isArray(e)) ? ((H ? be :
+          $e)(e, he, me), this.observeArray(e)) : this.walk(e)
+      };
+
+      function be(e, t, n) {
+        e.__proto__ = t
+      }
+
+      function $e(e, t, n) {
+        for (var r = 0, i = n.length; r < i; r++) {
+          var o = n[r];
+          N(e, o, t[o])
+        }
+      }
+
+      function we(e, t) {
+        var n;
+        if (P(e) && !(e instanceof le)) return p(e, "__ob__") && e.__ob__ instanceof _e ? n = e.__ob__ : ye && !Y() &&
+          (Array.isArray(e) || l(e)) && Object.isExtensible(e) && !e._isVue && (n = new _e(e)), t && n && n.vmCount++,
+          n
+      }
+
+      function Ce(n, e, r, t, i) {
+        var o = new oe,
+          a = Object.getOwnPropertyDescriptor(n, e);
+        if (!a || !1 !== a.configurable) {
+          var s = a && a.get;
+          s || 2 !== arguments.length || (r = n[e]);
+          var c = a && a.set,
+            l = !i && we(r);
+          Object.defineProperty(n, e, {
+            enumerable: !0,
+            configurable: !0,
+            get: function () {
+              var e = s ? s.call(n) : r;
+              return oe.target && (o.depend(), l && (l.dep.depend(), Array.isArray(e) && function e(t) {
+                for (var n = void 0, r = 0, i = t.length; r < i; r++)(n = t[r]) && n.__ob__ && n.__ob__.dep
+                  .depend(), Array.isArray(n) && e(n)
+              }(e))), e
+            },
+            set: function (e) {
+              var t = s ? s.call(n) : r;
+              e === t || e != e && t != t || (c ? c.call(n, e) : r = e, l = !i && we(e), o.notify())
+            }
+          })
+        }
+      }
+
+      function xe(e, t, n) {
+        if (Array.isArray(e) && i(t)) return e.length = Math.max(e.length, t), e.splice(t, 1, n), n;
+        if (t in e && !(t in Object.prototype)) return e[t] = n;
+        var r = e.__ob__;
+        return e._isVue || r && r.vmCount ? n : r ? (Ce(r.value, t, n), r.dep.notify(), n) : e[t] = n
+      }
+
+      function ke(e, t) {
+        if (Array.isArray(e) && i(t)) e.splice(t, 1);
+        else {
+          var n = e.__ob__;
+          e._isVue || n && n.vmCount || p(e, t) && (delete e[t], n && n.dep.notify())
+        }
+      }
+      _e.prototype.walk = function (e) {
+        for (var t = Object.keys(e), n = 0; n < t.length; n++) Ce(e, t[n])
+      }, _e.prototype.observeArray = function (e) {
+        for (var t = 0, n = e.length; t < n; t++) we(e[t])
+      };
+      var Ae = j.optionMergeStrategies;
+
+      function Oe(e, t) {
+        if (!t) return e;
+        for (var n, r, i, o = Object.keys(t), a = 0; a < o.length; a++) r = e[n = o[a]], i = t[n], p(e, n) ? l(r) &&
+          l(i) && Oe(r, i) : xe(e, n, i);
+        return e
+      }
+
+      function Se(n, r, i) {
+        return i ? function () {
+          var e = "function" == typeof r ? r.call(i, i) : r,
+            t = "function" == typeof n ? n.call(i, i) : n;
+          return e ? Oe(e, t) : t
+        } : r ? n ? function () {
+          return Oe("function" == typeof r ? r.call(this, this) : r, "function" == typeof n ? n.call(this, this) :
+            n)
+        } : r : n
+      }
+
+      function Te(e, t) {
+        return t ? e ? e.concat(t) : Array.isArray(t) ? t : [t] : e
+      }
+
+      function Ee(e, t, n, r) {
+        var i = Object.create(e || null);
+        return t ? m(i, t) : i
+      }
+      Ae.data = function (e, t, n) {
+        return n ? Se(e, t, n) : t && "function" != typeof t ? e : Se(e, t)
+      }, A.forEach(function (e) {
+        Ae[e] = Te
+      }), k.forEach(function (e) {
+        Ae[e + "s"] = Ee
+      }), Ae.watch = function (e, t, n, r) {
+        if (e === G && (e = void 0), t === G && (t = void 0), !t) return Object.create(e || null);
+        if (!e) return t;
+        var i = {};
+        for (var o in m(i, e), t) {
+          var a = i[o],
+            s = t[o];
+          a && !Array.isArray(a) && (a = [a]), i[o] = a ? a.concat(s) : Array.isArray(s) ? s : [s]
+        }
+        return i
+      }, Ae.props = Ae.methods = Ae.inject = Ae.computed = function (e, t, n, r) {
+        if (!e) return t;
+        var i = Object.create(null);
+        return m(i, e), t && m(i, t), i
+      }, Ae.provide = Se;
+      var je = function (e, t) {
+        return void 0 === t ? e : t
+      };
+
+      function Ne(n, r, i) {
+        "function" == typeof r && (r = r.options),
+          function (e, t) {
+            var n = e.props;
+            if (n) {
+              var r, i, o = {};
+              if (Array.isArray(n))
+                for (r = n.length; r--;) "string" == typeof (i = n[r]) && (o[g(i)] = {
+                  type: null
+                });
+              else if (l(n))
+                for (var a in n) i = n[a], o[g(a)] = l(i) ? i : {
+                  type: i
+                };
+              e.props = o
+            }
+          }(r),
+          function (e, t) {
+            var n = e.inject;
+            if (n) {
+              var r = e.inject = {};
+              if (Array.isArray(n))
+                for (var i = 0; i < n.length; i++) r[n[i]] = {
+                  from: n[i]
+                };
+              else if (l(n))
+                for (var o in n) {
+                  var a = n[o];
+                  r[o] = l(a) ? m({
+                    from: o
+                  }, a) : {
+                    from: a
+                  }
+                }
+            }
+          }(r),
+          function (e) {
+            var t = e.directives;
+            if (t)
+              for (var n in t) {
+                var r = t[n];
+                "function" == typeof r && (t[n] = {
+                  bind: r,
+                  update: r
+                })
+              }
+          }(r);
+        var e = r.extends;
+        if (e && (n = Ne(n, e, i)), r.mixins)
+          for (var t = 0, o = r.mixins.length; t < o; t++) n = Ne(n, r.mixins[t], i);
+        var a, s = {};
+        for (a in n) c(a);
+        for (a in r) p(n, a) || c(a);
+
+        function c(e) {
+          var t = Ae[e] || je;
+          s[e] = t(n[e], r[e], i, e)
+        }
+        return s
+      }
+
+      function Le(e, t, n, r) {
+        if ("string" == typeof n) {
+          var i = e[t];
+          if (p(i, n)) return i[n];
+          var o = g(n);
+          if (p(i, o)) return i[o];
+          var a = d(o);
+          return p(i, a) ? i[a] : i[n] || i[o] || i[a]
+        }
+      }
+
+      function Ie(e, t, n, r) {
+        var i = t[e],
+          o = !p(n, e),
+          a = n[e],
+          s = Pe(Boolean, i.type);
+        if (-1 < s)
+          if (o && !p(i, "default")) a = !1;
+          else if ("" === a || a === _(e)) {
+          var c = Pe(String, i.type);
+          (c < 0 || s < c) && (a = !0)
+        }
+        if (void 0 === a) {
+          a = function (e, t, n) {
+            if (!p(t, "default")) return;
+            var r = t.default;
+            if (e && e.$options.propsData && void 0 === e.$options.propsData[n] && void 0 !== e._props[n]) return e
+              ._props[n];
+            return "function" == typeof r && "Function" !== Me(t.type) ? r.call(e) : r
+          }(r, i, e);
+          var l = ye;
+          ge(!0), we(a), ge(l)
+        }
+        return a
+      }
+
+      function Me(e) {
+        var t = e && e.toString().match(/^\s*function (\w+)/);
+        return t ? t[1] : ""
+      }
+
+      function De(e, t) {
+        return Me(e) === Me(t)
+      }
+
+      function Pe(e, t) {
+        if (!Array.isArray(t)) return De(t, e) ? 0 : -1;
+        for (var n = 0, r = t.length; n < r; n++)
+          if (De(t[n], e)) return n;
+        return -1
+      }
+
+      function Fe(e, t, n) {
+        if (t)
+          for (var r = t; r = r.$parent;) {
+            var i = r.$options.errorCaptured;
+            if (i)
+              for (var o = 0; o < i.length; o++) try {
+                if (!1 === i[o].call(r, e, t, n)) return
+              } catch (e) {
+                Re(e, r, "errorCaptured hook")
+              }
+          }
+        Re(e, t, n)
+      }
+
+      function Re(e, t, n) {
+        if (j.errorHandler) try {
+          return j.errorHandler.call(null, e, t, n)
+        } catch (e) {
+          He(e, null, "config.errorHandler")
+        }
+        He(e, t, n)
+      }
+
+      function He(e, t, n) {
+        if (!B && !U || "undefined" == typeof console) throw e;
+        console.error(e)
+      }
+      var Be, Ue, Ve = [],
+        ze = !1;
+
+      function Ke() {
+        ze = !1;
+        for (var e = Ve.slice(0), t = Ve.length = 0; t < e.length; t++) e[t]()
+      }
+      var Je = !1;
+      if ("undefined" != typeof setImmediate && ee(setImmediate)) Ue = function () {
+        setImmediate(Ke)
+      };
+      else if ("undefined" == typeof MessageChannel || !ee(MessageChannel) && "[object MessageChannelConstructor]" !==
+        MessageChannel.toString()) Ue = function () {
+        setTimeout(Ke, 0)
+      };
+      else {
+        var qe = new MessageChannel,
+          We = qe.port2;
+        qe.port1.onmessage = Ke, Ue = function () {
+          We.postMessage(1)
+        }
+      }
+      if ("undefined" != typeof Promise && ee(Promise)) {
+        var Ge = Promise.resolve();
+        Be = function () {
+          Ge.then(Ke), W && setTimeout($)
+        }
+      } else Be = Ue;
+
+      function Ze(e, t) {
+        var n;
+        if (Ve.push(function () {
+            if (e) try {
+              e.call(t)
+            } catch (e) {
+              Fe(e, t, "nextTick")
+            } else n && n(t)
+          }), ze || (ze = !0, Je ? Ue() : Be()), !e && "undefined" != typeof Promise) return new Promise(function (e) {
+          n = e
+        })
+      }
+      var Xe = new te;
+
+      function Ye(e) {
+        ! function e(t, n) {
+          var r, i;
+          var o = Array.isArray(t);
+          if (!o && !P(t) || Object.isFrozen(t) || t instanceof le) return;
+          if (t.__ob__) {
+            var a = t.__ob__.dep.id;
+            if (n.has(a)) return;
+            n.add(a)
+          }
+          if (o)
+            for (r = t.length; r--;) e(t[r], n);
+          else
+            for (i = Object.keys(t), r = i.length; r--;) e(t[i[r]], n)
+        }(e, Xe), Xe.clear()
+      }
+      var Qe, et = e(function (e) {
+        var t = "&" === e.charAt(0),
+          n = "~" === (e = t ? e.slice(1) : e).charAt(0),
+          r = "!" === (e = n ? e.slice(1) : e).charAt(0);
+        return {
+          name: e = r ? e.slice(1) : e,
+          once: n,
+          capture: r,
+          passive: t
+        }
+      });
+
+      function tt(e) {
+        function i() {
+          var e = arguments,
+            t = i.fns;
+          if (!Array.isArray(t)) return t.apply(null, arguments);
+          for (var n = t.slice(), r = 0; r < n.length; r++) n[r].apply(null, e)
+        }
+        return i.fns = e, i
+      }
+
+      function nt(e, t, n, r, i) {
+        var o, a, s, c;
+        for (o in e) a = e[o], s = t[o], c = et(o), M(a) || (M(s) ? (M(a.fns) && (a = e[o] = tt(a)), n(c.name, a, c.once,
+          c.capture, c.passive, c.params)) : a !== s && (s.fns = a, e[o] = s));
+        for (o in t) M(e[o]) && r((c = et(o)).name, t[o], c.capture)
+      }
+
+      function rt(e, t, n) {
+        var r;
+        e instanceof le && (e = e.data.hook || (e.data.hook = {}));
+        var i = e[t];
+
+        function o() {
+          n.apply(this, arguments), f(r.fns, o)
+        }
+        M(i) ? r = tt([o]) : D(i.fns) && S(i.merged) ? (r = i).fns.push(o) : r = tt([i, o]), r.merged = !0, e[t] = r
+      }
+
+      function it(e, t, n, r, i) {
+        if (D(t)) {
+          if (p(t, n)) return e[n] = t[n], i || delete t[n], !0;
+          if (p(t, r)) return e[n] = t[r], i || delete t[r], !0
+        }
+        return !1
+      }
+
+      function ot(e) {
+        return T(e) ? [pe(e)] : Array.isArray(e) ? function e(t, n) {
+          var r = [];
+          var i, o, a, s;
+          for (i = 0; i < t.length; i++) M(o = t[i]) || "boolean" == typeof o || (a = r.length - 1, s = r[a], Array
+            .isArray(o) ? 0 < o.length && (at((o = e(o, (n || "") + "_" + i))[0]) && at(s) && (r[a] = pe(s.text +
+              o[0].text), o.shift()), r.push.apply(r, o)) : T(o) ? at(s) ? r[a] = pe(s.text + o) : "" !== o && r.push(
+              pe(o)) : at(o) && at(s) ? r[a] = pe(s.text + o.text) : (S(t._isVList) && D(o.tag) && M(o.key) && D(
+              n) && (o.key = "__vlist" + n + "_" + i + "__"), r.push(o)));
+          return r
+        }(e) : void 0
+      }
+
+      function at(e) {
+        return D(e) && D(e.text) && !1 === e.isComment
+      }
+
+      function st(e, t) {
+        return (e.__esModule || ne && "Module" === e[Symbol.toStringTag]) && (e = e.default), P(e) ? t.extend(e) : e
+      }
+
+      function ct(e) {
+        return e.isComment && e.asyncFactory
+      }
+
+      function lt(e) {
+        if (Array.isArray(e))
+          for (var t = 0; t < e.length; t++) {
+            var n = e[t];
+            if (D(n) && (D(n.componentOptions) || ct(n))) return n
+          }
+      }
+
+      function ut(e, t, n) {
+        n ? Qe.$once(e, t) : Qe.$on(e, t)
+      }
+
+      function ft(e, t) {
+        Qe.$off(e, t)
+      }
+
+      function pt(e, t, n) {
+        Qe = e, nt(t, n || {}, ut, ft), Qe = void 0
+      }
+
+      function dt(e, t) {
+        var n = {};
+        if (!e) return n;
+        for (var r = 0, i = e.length; r < i; r++) {
+          var o = e[r],
+            a = o.data;
+          if (a && a.attrs && a.attrs.slot && delete a.attrs.slot, o.context !== t && o.fnContext !== t || !a || null ==
+            a.slot)(n.default || (n.default = [])).push(o);
+          else {
+            var s = a.slot,
+              c = n[s] || (n[s] = []);
+            "template" === o.tag ? c.push.apply(c, o.children || []) : c.push(o)
+          }
+        }
+        for (var l in n) n[l].every(vt) && delete n[l];
+        return n
+      }
+
+      function vt(e) {
+        return e.isComment && !e.asyncFactory || " " === e.text
+      }
+
+      function ht(e, t) {
+        t = t || {};
+        for (var n = 0; n < e.length; n++) Array.isArray(e[n]) ? ht(e[n], t) : t[e[n].key] = e[n].fn;
+        return t
+      }
+      var mt = null;
+
+      function yt(e) {
+        for (; e && (e = e.$parent);)
+          if (e._inactive) return !0;
+        return !1
+      }
+
+      function gt(e, t) {
+        if (t) {
+          if (e._directInactive = !1, yt(e)) return
+        } else if (e._directInactive) return;
+        if (e._inactive || null === e._inactive) {
+          e._inactive = !1;
+          for (var n = 0; n < e.$children.length; n++) gt(e.$children[n]);
+          _t(e, "activated")
+        }
+      }
+
+      function _t(t, n) {
+        se();
+        var e = t.$options[n];
+        if (e)
+          for (var r = 0, i = e.length; r < i; r++) try {
+            e[r].call(t)
+          } catch (e) {
+            Fe(e, t, n + " hook")
+          }
+        t._hasHookEvent && t.$emit("hook:" + n), ce()
+      }
+      var bt = [],
+        $t = [],
+        wt = {},
+        Ct = !1,
+        xt = !1,
+        kt = 0;
+
+      function At() {
+        var e, t;
+        for (xt = !0, bt.sort(function (e, t) {
+            return e.id - t.id
+          }), kt = 0; kt < bt.length; kt++) t = (e = bt[kt]).id, wt[t] = null, e.run();
+        var n = $t.slice(),
+          r = bt.slice();
+        kt = bt.length = $t.length = 0, wt = {}, Ct = xt = !1,
+          function (e) {
+            for (var t = 0; t < e.length; t++) e[t]._inactive = !0, gt(e[t], !0)
+          }(n),
+          function (e) {
+            var t = e.length;
+            for (; t--;) {
+              var n = e[t],
+                r = n.vm;
+              r._watcher === n && r._isMounted && _t(r, "updated")
+            }
+          }(r), Q && j.devtools && Q.emit("flush")
+      }
+      var Ot = 0,
+        St = function (e, t, n, r, i) {
+          this.vm = e, i && (e._watcher = this), e._watchers.push(this), r ? (this.deep = !!r.deep, this.user = !!r.user,
+              this.lazy = !!r.lazy, this.sync = !!r.sync) : this.deep = this.user = this.lazy = this.sync = !1, this.cb =
+            n, this.id = ++Ot, this.active = !0, this.dirty = this.lazy, this.deps = [], this.newDeps = [], this.depIds =
+            new te, this.newDepIds = new te, this.expression = "", "function" == typeof t ? this.getter = t : (this.getter =
+              function (e) {
+                if (!L.test(e)) {
+                  var n = e.split(".");
+                  return function (e) {
+                    for (var t = 0; t < n.length; t++) {
+                      if (!e) return;
+                      e = e[n[t]]
+                    }
+                    return e
+                  }
+                }
+              }(t), this.getter || (this.getter = function () {})), this.value = this.lazy ? void 0 : this.get()
+        };
+      St.prototype.get = function () {
+        var e;
+        se(this);
+        var t = this.vm;
+        try {
+          e = this.getter.call(t, t)
+        } catch (e) {
+          if (!this.user) throw e;
+          Fe(e, t, 'getter for watcher "' + this.expression + '"')
+        } finally {
+          this.deep && Ye(e), ce(), this.cleanupDeps()
+        }
+        return e
+      }, St.prototype.addDep = function (e) {
+        var t = e.id;
+        this.newDepIds.has(t) || (this.newDepIds.add(t), this.newDeps.push(e), this.depIds.has(t) || e.addSub(this))
+      }, St.prototype.cleanupDeps = function () {
+        for (var e = this.deps.length; e--;) {
+          var t = this.deps[e];
+          this.newDepIds.has(t.id) || t.removeSub(this)
+        }
+        var n = this.depIds;
+        this.depIds = this.newDepIds, this.newDepIds = n, this.newDepIds.clear(), n = this.deps, this.deps = this.newDeps,
+          this.newDeps = n, this.newDeps.length = 0
+      }, St.prototype.update = function () {
+        this.lazy ? this.dirty = !0 : this.sync ? this.run() : function (e) {
+          var t = e.id;
+          if (null == wt[t]) {
+            if (wt[t] = !0, xt) {
+              for (var n = bt.length - 1; kt < n && bt[n].id > e.id;) n--;
+              bt.splice(n + 1, 0, e)
+            } else bt.push(e);
+            Ct || (Ct = !0, Ze(At))
+          }
+        }(this)
+      }, St.prototype.run = function () {
+        if (this.active) {
+          var e = this.get();
+          if (e !== this.value || P(e) || this.deep) {
+            var t = this.value;
+            if (this.value = e, this.user) try {
+              this.cb.call(this.vm, e, t)
+            } catch (e) {
+              Fe(e, this.vm, 'callback for watcher "' + this.expression + '"')
+            } else this.cb.call(this.vm, e, t)
+          }
+        }
+      }, St.prototype.evaluate = function () {
+        this.value = this.get(), this.dirty = !1
+      }, St.prototype.depend = function () {
+        for (var e = this.deps.length; e--;) this.deps[e].depend()
+      }, St.prototype.teardown = function () {
+        if (this.active) {
+          this.vm._isBeingDestroyed || f(this.vm._watchers, this);
+          for (var e = this.deps.length; e--;) this.deps[e].removeSub(this);
+          this.active = !1
+        }
+      };
+      var Tt = {
+        enumerable: !0,
+        configurable: !0,
+        get: $,
+        set: $
+      };
+
+      function Et(e, t, n) {
+        Tt.get = function () {
+          return this[t][n]
+        }, Tt.set = function (e) {
+          this[t][n] = e
+        }, Object.defineProperty(e, n, Tt)
+      }
+
+      function jt(e) {
+        e._watchers = [];
+        var t = e.$options;
+        t.props && function (n, r) {
+          var i = n.$options.propsData || {},
+            o = n._props = {},
+            a = n.$options._propKeys = [];
+          n.$parent && ge(!1);
+          var e = function (e) {
+            a.push(e);
+            var t = Ie(e, r, i, n);
+            Ce(o, e, t), e in n || Et(n, "_props", e)
+          };
+          for (var t in r) e(t);
+          ge(!0)
+        }(e, t.props), t.methods && function (e, t) {
+          e.$options.props;
+          for (var n in t) e[n] = null == t[n] ? $ : v(t[n], e)
+        }(e, t.methods), t.data ? function (e) {
+          var t = e.$options.data;
+          l(t = e._data = "function" == typeof t ? function (e, t) {
+            se();
+            try {
+              return e.call(t, t)
+            } catch (e) {
+              return Fe(e, t, "data()"), {}
+            } finally {
+              ce()
+            }
+          }(t, e) : t || {}) || (t = {});
+          var n = Object.keys(t),
+            r = e.$options.props,
+            i = (e.$options.methods, n.length);
+          for (; i--;) {
+            var o = n[i];
+            r && p(r, o) || (void 0, 36 !== (a = (o + "").charCodeAt(0)) && 95 !== a && Et(e, "_data", o))
+          }
+          var a;
+          we(t, !0)
+        }(e) : we(e._data = {}, !0), t.computed && function (e, t) {
+          var n = e._computedWatchers = Object.create(null),
+            r = Y();
+          for (var i in t) {
+            var o = t[i],
+              a = "function" == typeof o ? o : o.get;
+            r || (n[i] = new St(e, a || $, $, Nt)), i in e || Lt(e, i, o)
+          }
+        }(e, t.computed), t.watch && t.watch !== G && function (e, t) {
+          for (var n in t) {
+            var r = t[n];
+            if (Array.isArray(r))
+              for (var i = 0; i < r.length; i++) Mt(e, n, r[i]);
+            else Mt(e, n, r)
+          }
+        }(e, t.watch)
+      }
+      var Nt = {
+        lazy: !0
+      };
+
+      function Lt(e, t, n) {
+        var r = !Y();
+        "function" == typeof n ? (Tt.get = r ? It(t) : n, Tt.set = $) : (Tt.get = n.get ? r && !1 !== n.cache ? It(t) :
+          n.get : $, Tt.set = n.set ? n.set : $), Object.defineProperty(e, t, Tt)
+      }
+
+      function It(t) {
+        return function () {
+          var e = this._computedWatchers && this._computedWatchers[t];
+          if (e) return e.dirty && e.evaluate(), oe.target && e.depend(), e.value
+        }
+      }
+
+      function Mt(e, t, n, r) {
+        return l(n) && (n = (r = n).handler), "string" == typeof n && (n = e[n]), e.$watch(t, n, r)
+      }
+
+      function Dt(t, e) {
+        if (t) {
+          for (var n = Object.create(null), r = ne ? Reflect.ownKeys(t).filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            }) : Object.keys(t), i = 0; i < r.length; i++) {
+            for (var o = r[i], a = t[o].from, s = e; s;) {
+              if (s._provided && p(s._provided, a)) {
+                n[o] = s._provided[a];
+                break
+              }
+              s = s.$parent
+            }
+            if (!s && "default" in t[o]) {
+              var c = t[o].default;
+              n[o] = "function" == typeof c ? c.call(e) : c
+            }
+          }
+          return n
+        }
+      }
+
+      function Pt(e, t) {
+        var n, r, i, o, a;
+        if (Array.isArray(e) || "string" == typeof e)
+          for (n = new Array(e.length), r = 0, i = e.length; r < i; r++) n[r] = t(e[r], r);
+        else if ("number" == typeof e)
+          for (n = new Array(e), r = 0; r < e; r++) n[r] = t(r + 1, r);
+        else if (P(e))
+          for (o = Object.keys(e), n = new Array(o.length), r = 0, i = o.length; r < i; r++) a = o[r], n[r] = t(e[a],
+            a, r);
+        return D(n) && (n._isVList = !0), n
+      }
+
+      function Ft(e, t, n, r) {
+        var i, o = this.$scopedSlots[e];
+        if (o) n = n || {}, r && (n = m(m({}, r), n)), i = o(n) || t;
+        else {
+          var a = this.$slots[e];
+          a && (a._rendered = !0), i = a || t
+        }
+        var s = n && n.slot;
+        return s ? this.$createElement("template", {
+          slot: s
+        }, i) : i
+      }
+
+      function Rt(e) {
+        return Le(this.$options, "filters", e) || w
+      }
+
+      function Ht(e, t) {
+        return Array.isArray(e) ? -1 === e.indexOf(t) : e !== t
+      }
+
+      function Bt(e, t, n, r, i) {
+        var o = j.keyCodes[t] || n;
+        return i && r && !j.keyCodes[t] ? Ht(i, r) : o ? Ht(o, e) : r ? _(r) !== t : void 0
+      }
+
+      function Ut(n, r, i, o, a) {
+        if (i)
+          if (P(i)) {
+            var s;
+            Array.isArray(i) && (i = b(i));
+            var e = function (t) {
+              if ("class" === t || "style" === t || u(t)) s = n;
+              else {
+                var e = n.attrs && n.attrs.type;
+                s = o || j.mustUseProp(r, e, t) ? n.domProps || (n.domProps = {}) : n.attrs || (n.attrs = {})
+              }
+              t in s || (s[t] = i[t], a && ((n.on || (n.on = {}))["update:" + t] = function (e) {
+                i[t] = e
+              }))
+            };
+            for (var t in i) e(t)
+          } else;
+        return n
+      }
+
+      function Vt(e, t) {
+        var n = this._staticTrees || (this._staticTrees = []),
+          r = n[e];
+        return r && !t || Kt(r = n[e] = this.$options.staticRenderFns[e].call(this._renderProxy, null, this),
+          "__static__" + e, !1), r
+      }
+
+      function zt(e, t, n) {
+        return Kt(e, "__once__" + t + (n ? "_" + n : ""), !0), e
+      }
+
+      function Kt(e, t, n) {
+        if (Array.isArray(e))
+          for (var r = 0; r < e.length; r++) e[r] && "string" != typeof e[r] && Jt(e[r], t + "_" + r, n);
+        else Jt(e, t, n)
+      }
+
+      function Jt(e, t, n) {
+        e.isStatic = !0, e.key = t, e.isOnce = n
+      }
+
+      function qt(e, t) {
+        if (t)
+          if (l(t)) {
+            var n = e.on = e.on ? m({}, e.on) : {};
+            for (var r in t) {
+              var i = n[r],
+                o = t[r];
+              n[r] = i ? [].concat(i, o) : o
+            }
+          } else;
+        return e
+      }
+
+      function Wt(e) {
+        e._o = zt, e._n = F, e._s = t, e._l = Pt, e._t = Ft, e._q = C, e._i = x, e._m = Vt, e._f = Rt, e._k = Bt, e._b =
+          Ut, e._v = pe, e._e = fe, e._u = ht, e._g = qt
+      }
+
+      function Gt(e, t, n, o, r) {
+        var a, s = r.options;
+        p(o, "_uid") ? (a = Object.create(o))._original = o : o = (a = o)._original;
+        var i = S(s._compiled),
+          c = !i;
+        this.data = e, this.props = t, this.children = n, this.parent = o, this.listeners = e.on || y, this.injections =
+          Dt(s.inject, o), this.slots = function () {
+            return dt(n, o)
+          }, i && (this.$options = s, this.$slots = this.slots(), this.$scopedSlots = e.scopedSlots || y), s._scopeId ?
+          this._c = function (e, t, n, r) {
+            var i = rn(a, e, t, n, r, c);
+            return i && !Array.isArray(i) && (i.fnScopeId = s._scopeId, i.fnContext = o), i
+          } : this._c = function (e, t, n, r) {
+            return rn(a, e, t, n, r, c)
+          }
+      }
+
+      function Zt(e, t, n, r) {
+        var i = de(e);
+        return i.fnContext = n, i.fnOptions = r, t.slot && ((i.data || (i.data = {})).slot = t.slot), i
+      }
+
+      function Xt(e, t) {
+        for (var n in t) e[g(n)] = t[n]
+      }
+      Wt(Gt.prototype);
+      var Yt = {
+          init: function (e, t, n, r) {
+            if (e.componentInstance && !e.componentInstance._isDestroyed && e.data.keepAlive) {
+              var i = e;
+              Yt.prepatch(i, i)
+            } else {
+              (e.componentInstance = function (e, t, n, r) {
+                var i = {
+                    _isComponent: !0,
+                    parent: t,
+                    _parentVnode: e,
+                    _parentElm: n || null,
+                    _refElm: r || null
+                  },
+                  o = e.data.inlineTemplate;
+                D(o) && (i.render = o.render, i.staticRenderFns = o.staticRenderFns);
+                return new e.componentOptions.Ctor(i)
+              }(e, mt, n, r)).$mount(t ? e.elm : void 0, t)
+            }
+          },
+          prepatch: function (e, t) {
+            var n = t.componentOptions;
+            ! function (e, t, n, r, i) {
+              var o = !!(i || e.$options._renderChildren || r.data.scopedSlots || e.$scopedSlots !== y);
+              if (e.$options._parentVnode = r, e.$vnode = r, e._vnode && (e._vnode.parent = r), e.$options._renderChildren =
+                i, e.$attrs = r.data.attrs || y, e.$listeners = n || y, t && e.$options.props) {
+                ge(!1);
+                for (var a = e._props, s = e.$options._propKeys || [], c = 0; c < s.length; c++) {
+                  var l = s[c],
+                    u = e.$options.props;
+                  a[l] = Ie(l, u, t, e)
+                }
+                ge(!0), e.$options.propsData = t
+              }
+              n = n || y;
+              var f = e.$options._parentListeners;
+              e.$options._parentListeners = n, pt(e, n, f), o && (e.$slots = dt(i, r.context), e.$forceUpdate())
+            }(t.componentInstance = e.componentInstance, n.propsData, n.listeners, t, n.children)
+          },
+          insert: function (e) {
+            var t, n = e.context,
+              r = e.componentInstance;
+            r._isMounted || (r._isMounted = !0, _t(r, "mounted")), e.data.keepAlive && (n._isMounted ? ((t = r)._inactive = !
+              1, $t.push(t)) : gt(r, !0))
+          },
+          destroy: function (e) {
+            var t = e.componentInstance;
+            t._isDestroyed || (e.data.keepAlive ? function e(t, n) {
+              if (!(n && (t._directInactive = !0, yt(t)) || t._inactive)) {
+                t._inactive = !0;
+                for (var r = 0; r < t.$children.length; r++) e(t.$children[r]);
+                _t(t, "deactivated")
+              }
+            }(t, !0) : t.$destroy())
+          }
+        },
+        Qt = Object.keys(Yt);
+
+      function en(e, t, n, r, i) {
+        if (!M(e)) {
+          var o = n.$options._base;
+          if (P(e) && (e = o.extend(e)), "function" == typeof e) {
+            var a, s, c, l, u, f, p;
+            if (M(e.cid) && void 0 === (e = function (t, n, e) {
+                if (S(t.error) && D(t.errorComp)) return t.errorComp;
+                if (D(t.resolved)) return t.resolved;
+                if (S(t.loading) && D(t.loadingComp)) return t.loadingComp;
+                if (!D(t.contexts)) {
+                  var r = t.contexts = [e],
+                    i = !0,
+                    o = function () {
+                      for (var e = 0, t = r.length; e < t; e++) r[e].$forceUpdate()
+                    },
+                    a = R(function (e) {
+                      t.resolved = st(e, n), i || o()
+                    }),
+                    s = R(function (e) {
+                      D(t.errorComp) && (t.error = !0, o())
+                    }),
+                    c = t(a, s);
+                  return P(c) && ("function" == typeof c.then ? M(t.resolved) && c.then(a, s) : D(c.component) &&
+                    "function" == typeof c.component.then && (c.component.then(a, s), D(c.error) && (t.errorComp =
+                      st(c.error, n)), D(c.loading) && (t.loadingComp = st(c.loading, n), 0 === c.delay ? t.loading = !
+                      0 : setTimeout(function () {
+                        M(t.resolved) && M(t.error) && (t.loading = !0, o())
+                      }, c.delay || 200)), D(c.timeout) && setTimeout(function () {
+                      M(t.resolved) && s(null)
+                    }, c.timeout))), i = !1, t.loading ? t.loadingComp : t.resolved
+                }
+                t.contexts.push(e)
+              }(a = e, o, n))) return s = a, c = t, l = n, u = r, f = i, (p = fe()).asyncFactory = s, p.asyncMeta = {
+              data: c,
+              context: l,
+              children: u,
+              tag: f
+            }, p;
+            t = t || {}, dn(e), D(t.model) && function (e, t) {
+              var n = e.model && e.model.prop || "value",
+                r = e.model && e.model.event || "input";
+              (t.props || (t.props = {}))[n] = t.model.value;
+              var i = t.on || (t.on = {});
+              D(i[r]) ? i[r] = [t.model.callback].concat(i[r]) : i[r] = t.model.callback
+            }(e.options, t);
+            var d = function (e, t, n) {
+              var r = t.options.props;
+              if (!M(r)) {
+                var i = {},
+                  o = e.attrs,
+                  a = e.props;
+                if (D(o) || D(a))
+                  for (var s in r) {
+                    var c = _(s);
+                    it(i, a, s, c, !0) || it(i, o, s, c, !1)
+                  }
+                return i
+              }
+            }(t, e);
+            if (S(e.options.functional)) return function (e, t, n, r, i) {
+              var o = e.options,
+                a = {},
+                s = o.props;
+              if (D(s))
+                for (var c in s) a[c] = Ie(c, s, t || y);
+              else D(n.attrs) && Xt(a, n.attrs), D(n.props) && Xt(a, n.props);
+              var l = new Gt(n, a, i, r, e),
+                u = o.render.call(null, l._c, l);
+              if (u instanceof le) return Zt(u, n, l.parent, o);
+              if (Array.isArray(u)) {
+                for (var f = ot(u) || [], p = new Array(f.length), d = 0; d < f.length; d++) p[d] = Zt(f[d], n, l
+                  .parent, o);
+                return p
+              }
+            }(e, d, t, n, r);
+            var v = t.on;
+            if (t.on = t.nativeOn, S(e.options.abstract)) {
+              var h = t.slot;
+              t = {}, h && (t.slot = h)
+            }! function (e) {
+              for (var t = e.hook || (e.hook = {}), n = 0; n < Qt.length; n++) {
+                var r = Qt[n];
+                t[r] = Yt[r]
+              }
+            }(t);
+            var m = e.options.name || i;
+            return new le("vue-component-" + e.cid + (m ? "-" + m : ""), t, void 0, void 0, void 0, n, {
+              Ctor: e,
+              propsData: d,
+              listeners: v,
+              tag: i,
+              children: r
+            }, a)
+          }
+        }
+      }
+      var tn = 1,
+        nn = 2;
+
+      function rn(e, t, n, r, i, o) {
+        return (Array.isArray(n) || T(n)) && (i = r, r = n, n = void 0), S(o) && (i = nn),
+          function (e, t, n, r, i) {
+            if (D(n) && D(n.__ob__)) return fe();
+            D(n) && D(n.is) && (t = n.is);
+            if (!t) return fe();
+            Array.isArray(r) && "function" == typeof r[0] && ((n = n || {}).scopedSlots = {
+              default: r[0]
+            }, r.length = 0);
+            i === nn ? r = ot(r) : i === tn && (r = function (e) {
+              for (var t = 0; t < e.length; t++)
+                if (Array.isArray(e[t])) return Array.prototype.concat.apply([], e);
+              return e
+            }(r));
+            var o, a;
+            if ("string" == typeof t) {
+              var s;
+              a = e.$vnode && e.$vnode.ns || j.getTagNamespace(t), o = j.isReservedTag(t) ? new le(j.parsePlatformTagName(
+                t), n, r, void 0, void 0, e) : D(s = Le(e.$options, "components", t)) ? en(s, n, e, r, t) : new le(
+                t, n, r, void 0, void 0, e)
+            } else o = en(t, n, e, r);
+            return Array.isArray(o) ? o : D(o) ? (D(a) && function e(t, n, r) {
+              t.ns = n;
+              "foreignObject" === t.tag && (n = void 0, r = !0);
+              if (D(t.children))
+                for (var i = 0, o = t.children.length; i < o; i++) {
+                  var a = t.children[i];
+                  D(a.tag) && (M(a.ns) || S(r) && "svg" !== a.tag) && e(a, n, r)
+                }
+            }(o, a), D(n) && function (e) {
+              P(e.style) && Ye(e.style);
+              P(e.class) && Ye(e.class)
+            }(n), o) : fe()
+          }(e, t, n, r, i)
+      }
+      var on, an, sn, cn, ln, un, fn, pn = 0;
+
+      function dn(e) {
+        var t = e.options;
+        if (e.super) {
+          var n = dn(e.super);
+          if (n !== e.superOptions) {
+            e.superOptions = n;
+            var r = function (e) {
+              var t, n = e.options,
+                r = e.extendOptions,
+                i = e.sealedOptions;
+              for (var o in n) n[o] !== i[o] && (t || (t = {}), t[o] = vn(n[o], r[o], i[o]));
+              return t
+            }(e);
+            r && m(e.extendOptions, r), (t = e.options = Ne(n, e.extendOptions)).name && (t.components[t.name] = e)
+          }
+        }
+        return t
+      }
+
+      function vn(e, t, n) {
+        if (Array.isArray(e)) {
+          var r = [];
+          n = Array.isArray(n) ? n : [n], t = Array.isArray(t) ? t : [t];
+          for (var i = 0; i < e.length; i++)(0 <= t.indexOf(e[i]) || n.indexOf(e[i]) < 0) && r.push(e[i]);
+          return r
+        }
+        return e
+      }
+
+      function hn(e) {
+        this._init(e)
+      }
+
+      function mn(e) {
+        e.cid = 0;
+        var a = 1;
+        e.extend = function (e) {
+          e = e || {};
+          var t = this,
+            n = t.cid,
+            r = e._Ctor || (e._Ctor = {});
+          if (r[n]) return r[n];
+          var i = e.name || t.options.name,
+            o = function (e) {
+              this._init(e)
+            };
+          return ((o.prototype = Object.create(t.prototype)).constructor = o).cid = a++, o.options = Ne(t.options,
+              e), o.super = t, o.options.props && function (e) {
+              var t = e.options.props;
+              for (var n in t) Et(e.prototype, "_props", n)
+            }(o), o.options.computed && function (e) {
+              var t = e.options.computed;
+              for (var n in t) Lt(e.prototype, n, t[n])
+            }(o), o.extend = t.extend, o.mixin = t.mixin, o.use = t.use, k.forEach(function (e) {
+              o[e] = t[e]
+            }), i && (o.options.components[i] = o), o.superOptions = t.options, o.extendOptions = e, o.sealedOptions =
+            m({}, o.options), r[n] = o
+        }
+      }
+
+      function yn(e) {
+        return e && (e.Ctor.options.name || e.tag)
+      }
+
+      function gn(e, t) {
+        return Array.isArray(e) ? -1 < e.indexOf(t) : "string" == typeof e ? -1 < e.split(",").indexOf(t) : (n = e,
+          "[object RegExp]" === r.call(n) && e.test(t));
+        var n
+      }
+
+      function _n(e, t) {
+        var n = e.cache,
+          r = e.keys,
+          i = e._vnode;
+        for (var o in n) {
+          var a = n[o];
+          if (a) {
+            var s = yn(a.componentOptions);
+            s && !t(s) && bn(n, o, r, i)
+          }
+        }
+      }
+
+      function bn(e, t, n, r) {
+        var i = e[t];
+        !i || r && i.tag === r.tag || i.componentInstance.$destroy(), e[t] = null, f(n, t)
+      }
+      hn.prototype._init = function (e) {
+          var t, n, r, i, o = this;
+          o._uid = pn++, o._isVue = !0, e && e._isComponent ? function (e, t) {
+              var n = e.$options = Object.create(e.constructor.options),
+                r = t._parentVnode;
+              n.parent = t.parent, n._parentVnode = r, n._parentElm = t._parentElm, n._refElm = t._refElm;
+              var i = r.componentOptions;
+              n.propsData = i.propsData, n._parentListeners = i.listeners, n._renderChildren = i.children, n._componentTag =
+                i.tag, t.render && (n.render = t.render, n.staticRenderFns = t.staticRenderFns)
+            }(o, e) : o.$options = Ne(dn(o.constructor), e || {}, o),
+            function (e) {
+              var t = e.$options,
+                n = t.parent;
+              if (n && !t.abstract) {
+                for (; n.$options.abstract && n.$parent;) n = n.$parent;
+                n.$children.push(e)
+              }
+              e.$parent = n, e.$root = n ? n.$root : e, e.$children = [], e.$refs = {}, e._watcher = null, e._inactive =
+                null, e._directInactive = !1, e._isMounted = !1, e._isDestroyed = !1, e._isBeingDestroyed = !1
+            }((o._renderProxy = o)._self = o),
+            function (e) {
+              e._events = Object.create(null), e._hasHookEvent = !1;
+              var t = e.$options._parentListeners;
+              t && pt(e, t)
+            }(o),
+            function (i) {
+              i._vnode = null, i._staticTrees = null;
+              var e = i.$options,
+                t = i.$vnode = e._parentVnode,
+                n = t && t.context;
+              i.$slots = dt(e._renderChildren, n), i.$scopedSlots = y, i._c = function (e, t, n, r) {
+                return rn(i, e, t, n, r, !1)
+              }, i.$createElement = function (e, t, n, r) {
+                return rn(i, e, t, n, r, !0)
+              };
+              var r = t && t.data;
+              Ce(i, "$attrs", r && r.attrs || y, null, !0), Ce(i, "$listeners", e._parentListeners || y, null, !0)
+            }(o), _t(o, "beforeCreate"), (n = Dt((t = o).$options.inject, t)) && (ge(!1), Object.keys(n).forEach(
+              function (e) {
+                Ce(t, e, n[e])
+              }), ge(!0)), jt(o), (i = (r = o).$options.provide) && (r._provided = "function" == typeof i ? i.call(r) :
+              i), _t(o, "created"), o.$options.el && o.$mount(o.$options.el)
+        }, on = hn, an = {
+          get: function () {
+            return this._data
+          }
+        }, sn = {
+          get: function () {
+            return this._props
+          }
+        }, Object.defineProperty(on.prototype, "$data", an), Object.defineProperty(on.prototype, "$props", sn), on.prototype
+        .$set = xe, on.prototype.$delete = ke, on.prototype.$watch = function (e, t, n) {
+          if (l(t)) return Mt(this, e, t, n);
+          (n = n || {}).user = !0;
+          var r = new St(this, e, t, n);
+          return n.immediate && t.call(this, r.value),
+            function () {
+              r.teardown()
+            }
+        }, ln = /^hook:/, (cn = hn).prototype.$on = function (e, t) {
+          if (Array.isArray(e))
+            for (var n = 0, r = e.length; n < r; n++) this.$on(e[n], t);
+          else(this._events[e] || (this._events[e] = [])).push(t), ln.test(e) && (this._hasHookEvent = !0);
+          return this
+        }, cn.prototype.$once = function (e, t) {
+          var n = this;
+
+          function r() {
+            n.$off(e, r), t.apply(n, arguments)
+          }
+          return r.fn = t, n.$on(e, r), n
+        }, cn.prototype.$off = function (e, t) {
+          var n = this;
+          if (!arguments.length) return n._events = Object.create(null), n;
+          if (Array.isArray(e)) {
+            for (var r = 0, i = e.length; r < i; r++) this.$off(e[r], t);
+            return n
+          }
+          var o = n._events[e];
+          if (!o) return n;
+          if (!t) return n._events[e] = null, n;
+          if (t)
+            for (var a, s = o.length; s--;)
+              if ((a = o[s]) === t || a.fn === t) {
+                o.splice(s, 1);
+                break
+              }
+          return n
+        }, cn.prototype.$emit = function (t) {
+          var n = this,
+            e = n._events[t];
+          if (e) {
+            e = 1 < e.length ? h(e) : e;
+            for (var r = h(arguments, 1), i = 0, o = e.length; i < o; i++) try {
+              e[i].apply(n, r)
+            } catch (e) {
+              Fe(e, n, 'event handler for "' + t + '"')
+            }
+          }
+          return n
+        }, (un = hn).prototype._update = function (e, t) {
+          var n = this;
+          n._isMounted && _t(n, "beforeUpdate");
+          var r = n.$el,
+            i = n._vnode,
+            o = mt;
+          (mt = n)._vnode = e, i ? n.$el = n.__patch__(i, e) : (n.$el = n.__patch__(n.$el, e, t, !1, n.$options._parentElm,
+              n.$options._refElm), n.$options._parentElm = n.$options._refElm = null), mt = o, r && (r.__vue__ = null),
+            n.$el && (n.$el.__vue__ = n), n.$vnode && n.$parent && n.$vnode === n.$parent._vnode && (n.$parent.$el =
+              n.$el)
+        }, un.prototype.$forceUpdate = function () {
+          this._watcher && this._watcher.update()
+        }, un.prototype.$destroy = function () {
+          var e = this;
+          if (!e._isBeingDestroyed) {
+            _t(e, "beforeDestroy"), e._isBeingDestroyed = !0;
+            var t = e.$parent;
+            !t || t._isBeingDestroyed || e.$options.abstract || f(t.$children, e), e._watcher && e._watcher.teardown();
+            for (var n = e._watchers.length; n--;) e._watchers[n].teardown();
+            e._data.__ob__ && e._data.__ob__.vmCount--, e._isDestroyed = !0, e.__patch__(e._vnode, null), _t(e,
+              "destroyed"), e.$off(), e.$el && (e.$el.__vue__ = null), e.$vnode && (e.$vnode.parent = null)
+          }
+        }, Wt((fn = hn).prototype), fn.prototype.$nextTick = function (e) {
+          return Ze(e, this)
+        }, fn.prototype._render = function () {
+          var t, n = this,
+            e = n.$options,
+            r = e.render,
+            i = e._parentVnode;
+          i && (n.$scopedSlots = i.data.scopedSlots || y), n.$vnode = i;
+          try {
+            t = r.call(n._renderProxy, n.$createElement)
+          } catch (e) {
+            Fe(e, n, "render"), t = n._vnode
+          }
+          return t instanceof le || (t = fe()), t.parent = i, t
+        };
+      var $n, wn, Cn, xn = [String, RegExp, Array],
+        kn = {
+          KeepAlive: {
+            name: "keep-alive",
+            abstract: !0,
+            props: {
+              include: xn,
+              exclude: xn,
+              max: [String, Number]
+            },
+            created: function () {
+              this.cache = Object.create(null), this.keys = []
+            },
+            destroyed: function () {
+              for (var e in this.cache) bn(this.cache, e, this.keys)
+            },
+            mounted: function () {
+              var e = this;
+              this.$watch("include", function (t) {
+                _n(e, function (e) {
+                  return gn(t, e)
+                })
+              }), this.$watch("exclude", function (t) {
+                _n(e, function (e) {
+                  return !gn(t, e)
+                })
+              })
+            },
+            render: function () {
+              var e = this.$slots.default,
+                t = lt(e),
+                n = t && t.componentOptions;
+              if (n) {
+                var r = yn(n),
+                  i = this.include,
+                  o = this.exclude;
+                if (i && (!r || !gn(i, r)) || o && r && gn(o, r)) return t;
+                var a = this.cache,
+                  s = this.keys,
+                  c = null == t.key ? n.Ctor.cid + (n.tag ? "::" + n.tag : "") : t.key;
+                a[c] ? (t.componentInstance = a[c].componentInstance, f(s, c), s.push(c)) : (a[c] = t, s.push(c),
+                    this.max && s.length > parseInt(this.max) && bn(a, s[0], s, this._vnode)), t.data.keepAlive = !
+                  0
+              }
+              return t || e && e[0]
+            }
+          }
+        };
+      $n = hn, Cn = {
+        get: function () {
+          return j
+        }
+      }, Object.defineProperty($n, "config", Cn), $n.util = {
+        warn: re,
+        extend: m,
+        mergeOptions: Ne,
+        defineReactive: Ce
+      }, $n.set = xe, $n.delete = ke, $n.nextTick = Ze, $n.options = Object.create(null), k.forEach(function (e) {
+        $n.options[e + "s"] = Object.create(null)
+      }), m(($n.options._base = $n).options.components, kn), $n.use = function (e) {
+        var t = this._installedPlugins || (this._installedPlugins = []);
+        if (-1 < t.indexOf(e)) return this;
+        var n = h(arguments, 1);
+        return n.unshift(this), "function" == typeof e.install ? e.install.apply(e, n) : "function" == typeof e &&
+          e.apply(null, n), t.push(e), this
+      }, $n.mixin = function (e) {
+        return this.options = Ne(this.options, e), this
+      }, mn($n), wn = $n, k.forEach(function (n) {
+        wn[n] = function (e, t) {
+          return t ? ("component" === n && l(t) && (t.name = t.name || e, t = this.options._base.extend(t)),
+            "directive" === n && "function" == typeof t && (t = {
+              bind: t,
+              update: t
+            }), this.options[n + "s"][e] = t) : this.options[n + "s"][e]
+        }
+      }), Object.defineProperty(hn.prototype, "$isServer", {
+        get: Y
+      }), Object.defineProperty(hn.prototype, "$ssrContext", {
+        get: function () {
+          return this.$vnode && this.$vnode.ssrContext
+        }
+      }), Object.defineProperty(hn, "FunctionalRenderContext", {
+        value: Gt
+      }), hn.version = "2.5.16";
+      var An = s("style,class"),
+        On = s("input,textarea,option,select,progress"),
+        Sn = function (e, t, n) {
+          return "value" === n && On(e) && "button" !== t || "selected" === n && "option" === e || "checked" === n &&
+            "input" === e || "muted" === n && "video" === e
+        },
+        Tn = s("contenteditable,draggable,spellcheck"),
+        En = s(
+          "allowfullscreen,async,autofocus,autoplay,checked,compact,controls,declare,default,defaultchecked,defaultmuted,defaultselected,defer,disabled,enabled,formnovalidate,hidden,indeterminate,inert,ismap,itemscope,loop,multiple,muted,nohref,noresize,noshade,novalidate,nowrap,open,pauseonexit,readonly,required,reversed,scoped,seamless,selected,sortable,translate,truespeed,typemustmatch,visible"
+        ),
+        jn = "http://www.w3.org/1999/xlink",
+        Nn = function (e) {
+          return ":" === e.charAt(5) && "xlink" === e.slice(0, 5)
+        },
+        Ln = function (e) {
+          return Nn(e) ? e.slice(6, e.length) : ""
+        },
+        In = function (e) {
+          return null == e || !1 === e
+        };
+
+      function Mn(e) {
+        for (var t = e.data, n = e, r = e; D(r.componentInstance);)(r = r.componentInstance._vnode) && r.data && (t =
+          Dn(r.data, t));
+        for (; D(n = n.parent);) n && n.data && (t = Dn(t, n.data));
+        return function (e, t) {
+          if (D(e) || D(t)) return Pn(e, Fn(t));
+          return ""
+        }(t.staticClass, t.class)
+      }
+
+      function Dn(e, t) {
+        return {
+          staticClass: Pn(e.staticClass, t.staticClass),
+          class: D(e.class) ? [e.class, t.class] : t.class
+        }
+      }
+
+      function Pn(e, t) {
+        return e ? t ? e + " " + t : e : t || ""
+      }
+
+      function Fn(e) {
+        return Array.isArray(e) ? function (e) {
+          for (var t, n = "", r = 0, i = e.length; r < i; r++) D(t = Fn(e[r])) && "" !== t && (n && (n += " "), n +=
+            t);
+          return n
+        }(e) : P(e) ? function (e) {
+          var t = "";
+          for (var n in e) e[n] && (t && (t += " "), t += n);
+          return t
+        }(e) : "string" == typeof e ? e : ""
+      }
+      var Rn = {
+          svg: "http://www.w3.org/2000/svg",
+          math: "http://www.w3.org/1998/Math/MathML"
+        },
+        Hn = s(
+          "html,body,base,head,link,meta,style,title,address,article,aside,footer,header,h1,h2,h3,h4,h5,h6,hgroup,nav,section,div,dd,dl,dt,figcaption,figure,picture,hr,img,li,main,ol,p,pre,ul,a,b,abbr,bdi,bdo,br,cite,code,data,dfn,em,i,kbd,mark,q,rp,rt,rtc,ruby,s,samp,small,span,strong,sub,sup,time,u,var,wbr,area,audio,map,track,video,embed,object,param,source,canvas,script,noscript,del,ins,caption,col,colgroup,table,thead,tbody,td,th,tr,button,datalist,fieldset,form,input,label,legend,meter,optgroup,option,output,progress,select,textarea,details,dialog,menu,menuitem,summary,content,element,shadow,template,blockquote,iframe,tfoot"
+        ),
+        Bn = s(
+          "svg,animate,circle,clippath,cursor,defs,desc,ellipse,filter,font-face,foreignObject,g,glyph,image,line,marker,mask,missing-glyph,path,pattern,polygon,polyline,rect,switch,symbol,text,textpath,tspan,use,view", !
+          0),
+        Un = function (e) {
+          return Hn(e) || Bn(e)
+        };
+
+      function Vn(e) {
+        return Bn(e) ? "svg" : "math" === e ? "math" : void 0
+      }
+      var zn = Object.create(null);
+      var Kn = s("text,number,password,search,email,tel,url");
+
+      function Jn(e) {
+        if ("string" == typeof e) {
+          var t = document.querySelector(e);
+          return t || document.createElement("div")
+        }
+        return e
+      }
+      var qn = Object.freeze({
+          createElement: function (e, t) {
+            var n = document.createElement(e);
+            return "select" !== e || t.data && t.data.attrs && void 0 !== t.data.attrs.multiple && n.setAttribute(
+              "multiple", "multiple"), n
+          },
+          createElementNS: function (e, t) {
+            return document.createElementNS(Rn[e], t)
+          },
+          createTextNode: function (e) {
+            return document.createTextNode(e)
+          },
+          createComment: function (e) {
+            return document.createComment(e)
+          },
+          insertBefore: function (e, t, n) {
+            e.insertBefore(t, n)
+          },
+          removeChild: function (e, t) {
+            e.removeChild(t)
+          },
+          appendChild: function (e, t) {
+            e.appendChild(t)
+          },
+          parentNode: function (e) {
+            return e.parentNode
+          },
+          nextSibling: function (e) {
+            return e.nextSibling
+          },
+          tagName: function (e) {
+            return e.tagName
+          },
+          setTextContent: function (e, t) {
+            e.textContent = t
+          },
+          setStyleScope: function (e, t) {
+            e.setAttribute(t, "")
+          }
+        }),
+        Wn = {
+          create: function (e, t) {
+            Gn(t)
+          },
+          update: function (e, t) {
+            e.data.ref !== t.data.ref && (Gn(e, !0), Gn(t))
+          },
+          destroy: function (e) {
+            Gn(e, !0)
+          }
+        };
+
+      function Gn(e, t) {
+        var n = e.data.ref;
+        if (D(n)) {
+          var r = e.context,
+            i = e.componentInstance || e.elm,
+            o = r.$refs;
+          t ? Array.isArray(o[n]) ? f(o[n], i) : o[n] === i && (o[n] = void 0) : e.data.refInFor ? Array.isArray(o[n]) ?
+            o[n].indexOf(i) < 0 && o[n].push(i) : o[n] = [i] : o[n] = i
+        }
+      }
+      var Zn = new le("", {}, []),
+        Xn = ["create", "activate", "update", "remove", "destroy"];
+
+      function Yn(e, t) {
+        return e.key === t.key && (e.tag === t.tag && e.isComment === t.isComment && D(e.data) === D(t.data) &&
+          function (e, t) {
+            if ("input" !== e.tag) return !0;
+            var n, r = D(n = e.data) && D(n = n.attrs) && n.type,
+              i = D(n = t.data) && D(n = n.attrs) && n.type;
+            return r === i || Kn(r) && Kn(i)
+          }(e, t) || S(e.isAsyncPlaceholder) && e.asyncFactory === t.asyncFactory && M(t.asyncFactory.error))
+      }
+
+      function Qn(e, t, n) {
+        var r, i, o = {};
+        for (r = t; r <= n; ++r) D(i = e[r].key) && (o[i] = r);
+        return o
+      }
+      var er = {
+        create: tr,
+        update: tr,
+        destroy: function (e) {
+          tr(e, Zn)
+        }
+      };
+
+      function tr(e, t) {
+        (e.data.directives || t.data.directives) && function (t, n) {
+          var e, r, i, o = t === Zn,
+            a = n === Zn,
+            s = rr(t.data.directives, t.context),
+            c = rr(n.data.directives, n.context),
+            l = [],
+            u = [];
+          for (e in c) r = s[e], i = c[e], r ? (i.oldValue = r.value, ir(i, "update", n, t), i.def && i.def.componentUpdated &&
+            u.push(i)) : (ir(i, "bind", n, t), i.def && i.def.inserted && l.push(i));
+          if (l.length) {
+            var f = function () {
+              for (var e = 0; e < l.length; e++) ir(l[e], "inserted", n, t)
+            };
+            o ? rt(n, "insert", f) : f()
+          }
+          u.length && rt(n, "postpatch", function () {
+            for (var e = 0; e < u.length; e++) ir(u[e], "componentUpdated", n, t)
+          });
+          if (!o)
+            for (e in s) c[e] || ir(s[e], "unbind", t, t, a)
+        }(e, t)
+      }
+      var nr = Object.create(null);
+
+      function rr(e, t) {
+        var n, r, i, o = Object.create(null);
+        if (!e) return o;
+        for (n = 0; n < e.length; n++)(r = e[n]).modifiers || (r.modifiers = nr), (o[(i = r, i.rawName || i.name +
+          "." + Object.keys(i.modifiers || {}).join("."))] = r).def = Le(t.$options, "directives", r.name);
+        return o
+      }
+
+      function ir(t, n, r, e, i) {
+        var o = t.def && t.def[n];
+        if (o) try {
+          o(r.elm, t, r, e, i)
+        } catch (e) {
+          Fe(e, r.context, "directive " + t.name + " " + n + " hook")
+        }
+      }
+      var or = [Wn, er];
+
+      function ar(e, t) {
+        var n = t.componentOptions;
+        if (!(D(n) && !1 === n.Ctor.options.inheritAttrs || M(e.data.attrs) && M(t.data.attrs))) {
+          var r, i, o = t.elm,
+            a = e.data.attrs || {},
+            s = t.data.attrs || {};
+          for (r in D(s.__ob__) && (s = t.data.attrs = m({}, s)), s) i = s[r], a[r] !== i && sr(o, r, i);
+          for (r in (K || q) && s.value !== a.value && sr(o, "value", s.value), a) M(s[r]) && (Nn(r) ? o.removeAttributeNS(
+            jn, Ln(r)) : Tn(r) || o.removeAttribute(r))
+        }
+      }
+
+      function sr(e, t, n) {
+        -1 < e.tagName.indexOf("-") ? cr(e, t, n) : En(t) ? In(n) ? e.removeAttribute(t) : (n = "allowfullscreen" ===
+          t && "EMBED" === e.tagName ? "true" : t, e.setAttribute(t, n)) : Tn(t) ? e.setAttribute(t, In(n) ||
+          "false" === n ? "false" : "true") : Nn(t) ? In(n) ? e.removeAttributeNS(jn, Ln(t)) : e.setAttributeNS(jn,
+          t, n) : cr(e, t, n)
+      }
+
+      function cr(t, e, n) {
+        if (In(n)) t.removeAttribute(e);
+        else {
+          if (K && !J && "TEXTAREA" === t.tagName && "placeholder" === e && !t.__ieph) {
+            var r = function (e) {
+              e.stopImmediatePropagation(), t.removeEventListener("input", r)
+            };
+            t.addEventListener("input", r), t.__ieph = !0
+          }
+          t.setAttribute(e, n)
+        }
+      }
+      var lr = {
+        create: ar,
+        update: ar
+      };
+
+      function ur(e, t) {
+        var n = t.elm,
+          r = t.data,
+          i = e.data;
+        if (!(M(r.staticClass) && M(r.class) && (M(i) || M(i.staticClass) && M(i.class)))) {
+          var o = Mn(t),
+            a = n._transitionClasses;
+          D(a) && (o = Pn(o, Fn(a))), o !== n._prevClass && (n.setAttribute("class", o), n._prevClass = o)
+        }
+      }
+      var fr, pr, dr, vr, hr, mr, yr = {
+          create: ur,
+          update: ur
+        },
+        gr = /[\w).+\-_$\]]/;
+
+      function _r(e) {
+        var t, n, r, i, o, a = !1,
+          s = !1,
+          c = !1,
+          l = !1,
+          u = 0,
+          f = 0,
+          p = 0,
+          d = 0;
+        for (r = 0; r < e.length; r++)
+          if (n = t, t = e.charCodeAt(r), a) 39 === t && 92 !== n && (a = !1);
+          else if (s) 34 === t && 92 !== n && (s = !1);
+        else if (c) 96 === t && 92 !== n && (c = !1);
+        else if (l) 47 === t && 92 !== n && (l = !1);
+        else if (124 !== t || 124 === e.charCodeAt(r + 1) || 124 === e.charCodeAt(r - 1) || u || f || p) {
+          switch (t) {
+            case 34:
+              s = !0;
+              break;
+            case 39:
+              a = !0;
+              break;
+            case 96:
+              c = !0;
+              break;
+            case 40:
+              p++;
+              break;
+            case 41:
+              p--;
+              break;
+            case 91:
+              f++;
+              break;
+            case 93:
+              f--;
+              break;
+            case 123:
+              u++;
+              break;
+            case 125:
+              u--
+          }
+          if (47 === t) {
+            for (var v = r - 1, h = void 0; 0 <= v && " " === (h = e.charAt(v)); v--);
+            h && gr.test(h) || (l = !0)
+          }
+        } else void 0 === i ? (d = r + 1, i = e.slice(0, r).trim()) : m();
+
+        function m() {
+          (o || (o = [])).push(e.slice(d, r).trim()), d = r + 1
+        }
+        if (void 0 === i ? i = e.slice(0, r).trim() : 0 !== d && m(), o)
+          for (r = 0; r < o.length; r++) i = br(i, o[r]);
+        return i
+      }
+
+      function br(e, t) {
+        var n = t.indexOf("(");
+        if (n < 0) return '_f("' + t + '")(' + e + ")";
+        var r = t.slice(0, n),
+          i = t.slice(n + 1);
+        return '_f("' + r + '")(' + e + (")" !== i ? "," + i : i)
+      }
+
+      function $r(e) {
+        console.error("[Vue compiler]: " + e)
+      }
+
+      function wr(e, t) {
+        return e ? e.map(function (e) {
+          return e[t]
+        }).filter(function (e) {
+          return e
+        }) : []
+      }
+
+      function Cr(e, t, n) {
+        (e.props || (e.props = [])).push({
+          name: t,
+          value: n
+        }), e.plain = !1
+      }
+
+      function xr(e, t, n) {
+        (e.attrs || (e.attrs = [])).push({
+          name: t,
+          value: n
+        }), e.plain = !1
+      }
+
+      function kr(e, t, n) {
+        e.attrsMap[t] = n, e.attrsList.push({
+          name: t,
+          value: n
+        })
+      }
+
+      function Ar(e, t, n, r, i, o) {
+        var a;
+        (r = r || y).capture && (delete r.capture, t = "!" + t), r.once && (delete r.once, t = "~" + t), r.passive &&
+          (delete r.passive, t = "&" + t), "click" === t && (r.right ? (t = "contextmenu", delete r.right) : r.middle &&
+            (t = "mouseup")), r.native ? (delete r.native, a = e.nativeEvents || (e.nativeEvents = {})) : a = e.events ||
+          (e.events = {});
+        var s = {
+          value: n.trim()
+        };
+        r !== y && (s.modifiers = r);
+        var c = a[t];
+        Array.isArray(c) ? i ? c.unshift(s) : c.push(s) : a[t] = c ? i ? [s, c] : [c, s] : s, e.plain = !1
+      }
+
+      function Or(e, t, n) {
+        var r = Sr(e, ":" + t) || Sr(e, "v-bind:" + t);
+        if (null != r) return _r(r);
+        if (!1 !== n) {
+          var i = Sr(e, t);
+          if (null != i) return JSON.stringify(i)
+        }
+      }
+
+      function Sr(e, t, n) {
+        var r;
+        if (null != (r = e.attrsMap[t]))
+          for (var i = e.attrsList, o = 0, a = i.length; o < a; o++)
+            if (i[o].name === t) {
+              i.splice(o, 1);
+              break
+            }
+        return n && delete e.attrsMap[t], r
+      }
+
+      function Tr(e, t, n) {
+        var r = n || {},
+          i = r.number,
+          o = "$$v",
+          a = o;
+        r.trim && (a = "(typeof $$v === 'string'? $$v.trim(): $$v)"), i && (a = "_n(" + a + ")");
+        var s = Er(t, a);
+        e.model = {
+          value: "(" + t + ")",
+          expression: '"' + t + '"',
+          callback: "function ($$v) {" + s + "}"
+        }
+      }
+
+      function Er(e, t) {
+        var n = function (e) {
+          if (e = e.trim(), fr = e.length, e.indexOf("[") < 0 || e.lastIndexOf("]") < fr - 1) return -1 < (vr = e.lastIndexOf(
+            ".")) ? {
+            exp: e.slice(0, vr),
+            key: '"' + e.slice(vr + 1) + '"'
+          } : {
+            exp: e,
+            key: null
+          };
+          pr = e, vr = hr = mr = 0;
+          for (; !Nr();) Lr(dr = jr()) ? Mr(dr) : 91 === dr && Ir(dr);
+          return {
+            exp: e.slice(0, hr),
+            key: e.slice(hr + 1, mr)
+          }
+        }(e);
+        return null === n.key ? e + "=" + t : "$set(" + n.exp + ", " + n.key + ", " + t + ")"
+      }
+
+      function jr() {
+        return pr.charCodeAt(++vr)
+      }
+
+      function Nr() {
+        return fr <= vr
+      }
+
+      function Lr(e) {
+        return 34 === e || 39 === e
+      }
+
+      function Ir(e) {
+        var t = 1;
+        for (hr = vr; !Nr();)
+          if (Lr(e = jr())) Mr(e);
+          else if (91 === e && t++, 93 === e && t--, 0 === t) {
+          mr = vr;
+          break
+        }
+      }
+
+      function Mr(e) {
+        for (var t = e; !Nr() && (e = jr()) !== t;);
+      }
+      var Dr, Pr = "__r",
+        Fr = "__c";
+
+      function Rr(e, t, n, r, i) {
+        var o, a, s, c, l;
+        t = (o = t)._withTask || (o._withTask = function () {
+          Je = !0;
+          var e = o.apply(null, arguments);
+          return Je = !1, e
+        }), n && (a = t, s = e, c = r, l = Dr, t = function e() {
+          null !== a.apply(null, arguments) && Hr(s, e, c, l)
+        }), Dr.addEventListener(e, t, Z ? {
+          capture: r,
+          passive: i
+        } : r)
+      }
+
+      function Hr(e, t, n, r) {
+        (r || Dr).removeEventListener(e, t._withTask || t, n)
+      }
+
+      function Br(e, t) {
+        if (!M(e.data.on) || !M(t.data.on)) {
+          var n = t.data.on || {},
+            r = e.data.on || {};
+          Dr = t.elm,
+            function (e) {
+              if (D(e[Pr])) {
+                var t = K ? "change" : "input";
+                e[t] = [].concat(e[Pr], e[t] || []), delete e[Pr]
+              }
+              D(e[Fr]) && (e.change = [].concat(e[Fr], e.change || []), delete e[Fr])
+            }(n), nt(n, r, Rr, Hr, t.context), Dr = void 0
+        }
+      }
+      var Ur = {
+        create: Br,
+        update: Br
+      };
+
+      function Vr(e, t) {
+        if (!M(e.data.domProps) || !M(t.data.domProps)) {
+          var n, r, i, o, a = t.elm,
+            s = e.data.domProps || {},
+            c = t.data.domProps || {};
+          for (n in D(c.__ob__) && (c = t.data.domProps = m({}, c)), s) M(c[n]) && (a[n] = "");
+          for (n in c) {
+            if (r = c[n], "textContent" === n || "innerHTML" === n) {
+              if (t.children && (t.children.length = 0), r === s[n]) continue;
+              1 === a.childNodes.length && a.removeChild(a.childNodes[0])
+            }
+            if ("value" === n) {
+              var l = M(a._value = r) ? "" : String(r);
+              o = l, (i = a).composing || "OPTION" !== i.tagName && ! function (e, t) {
+                var n = !0;
+                try {
+                  n = document.activeElement !== e
+                } catch (e) {}
+                return n && e.value !== t
+              }(i, o) && ! function (e, t) {
+                var n = e.value,
+                  r = e._vModifiers;
+                if (D(r)) {
+                  if (r.lazy) return !1;
+                  if (r.number) return F(n) !== F(t);
+                  if (r.trim) return n.trim() !== t.trim()
+                }
+                return n !== t
+              }(i, o) || (a.value = l)
+            } else a[n] = r
+          }
+        }
+      }
+      var zr = {
+          create: Vr,
+          update: Vr
+        },
+        Kr = e(function (e) {
+          var n = {},
+            r = /:(.+)/;
+          return e.split(/;(?![^(]*\))/g).forEach(function (e) {
+            if (e) {
+              var t = e.split(r);
+              1 < t.length && (n[t[0].trim()] = t[1].trim())
+            }
+          }), n
+        });
+
+      function Jr(e) {
+        var t = qr(e.style);
+        return e.staticStyle ? m(e.staticStyle, t) : t
+      }
+
+      function qr(e) {
+        return Array.isArray(e) ? b(e) : "string" == typeof e ? Kr(e) : e
+      }
+      var Wr, Gr = /^--/,
+        Zr = /\s*!important$/,
+        Xr = function (e, t, n) {
+          if (Gr.test(t)) e.style.setProperty(t, n);
+          else if (Zr.test(n)) e.style.setProperty(t, n.replace(Zr, ""), "important");
+          else {
+            var r = Qr(t);
+            if (Array.isArray(n))
+              for (var i = 0, o = n.length; i < o; i++) e.style[r] = n[i];
+            else e.style[r] = n
+          }
+        },
+        Yr = ["Webkit", "Moz", "ms"],
+        Qr = e(function (e) {
+          if (Wr = Wr || document.createElement("div").style, "filter" !== (e = g(e)) && e in Wr) return e;
+          for (var t = e.charAt(0).toUpperCase() + e.slice(1), n = 0; n < Yr.length; n++) {
+            var r = Yr[n] + t;
+            if (r in Wr) return r
+          }
+        });
+
+      function ei(e, t) {
+        var n = t.data,
+          r = e.data;
+        if (!(M(n.staticStyle) && M(n.style) && M(r.staticStyle) && M(r.style))) {
+          var i, o, a = t.elm,
+            s = r.staticStyle,
+            c = r.normalizedStyle || r.style || {},
+            l = s || c,
+            u = qr(t.data.style) || {};
+          t.data.normalizedStyle = D(u.__ob__) ? m({}, u) : u;
+          var f = function (e, t) {
+            var n, r = {};
+            if (t)
+              for (var i = e; i.componentInstance;)(i = i.componentInstance._vnode) && i.data && (n = Jr(i.data)) &&
+                m(r, n);
+            (n = Jr(e.data)) && m(r, n);
+            for (var o = e; o = o.parent;) o.data && (n = Jr(o.data)) && m(r, n);
+            return r
+          }(t, !0);
+          for (o in l) M(f[o]) && Xr(a, o, "");
+          for (o in f)(i = f[o]) !== l[o] && Xr(a, o, null == i ? "" : i)
+        }
+      }
+      var ti = {
+        create: ei,
+        update: ei
+      };
+
+      function ni(t, e) {
+        if (e && (e = e.trim()))
+          if (t.classList) - 1 < e.indexOf(" ") ? e.split(/\s+/).forEach(function (e) {
+            return t.classList.add(e)
+          }) : t.classList.add(e);
+          else {
+            var n = " " + (t.getAttribute("class") || "") + " ";
+            n.indexOf(" " + e + " ") < 0 && t.setAttribute("class", (n + e).trim())
+          }
+      }
+
+      function ri(t, e) {
+        if (e && (e = e.trim()))
+          if (t.classList) - 1 < e.indexOf(" ") ? e.split(/\s+/).forEach(function (e) {
+            return t.classList.remove(e)
+          }) : t.classList.remove(e), t.classList.length || t.removeAttribute("class");
+          else {
+            for (var n = " " + (t.getAttribute("class") || "") + " ", r = " " + e + " "; 0 <= n.indexOf(r);) n = n.replace(
+              r, " ");
+            (n = n.trim()) ? t.setAttribute("class", n): t.removeAttribute("class")
+          }
+      }
+
+      function ii(e) {
+        if (e) {
+          if ("object" == typeof e) {
+            var t = {};
+            return !1 !== e.css && m(t, oi(e.name || "v")), m(t, e), t
+          }
+          return "string" == typeof e ? oi(e) : void 0
+        }
+      }
+      var oi = e(function (e) {
+          return {
+            enterClass: e + "-enter",
+            enterToClass: e + "-enter-to",
+            enterActiveClass: e + "-enter-active",
+            leaveClass: e + "-leave",
+            leaveToClass: e + "-leave-to",
+            leaveActiveClass: e + "-leave-active"
+          }
+        }),
+        ai = B && !J,
+        si = "transition",
+        ci = "animation",
+        li = "transition",
+        ui = "transitionend",
+        fi = "animation",
+        pi = "animationend";
+      ai && (void 0 === window.ontransitionend && void 0 !== window.onwebkittransitionend && (li = "WebkitTransition",
+          ui = "webkitTransitionEnd"), void 0 === window.onanimationend && void 0 !== window.onwebkitanimationend &&
+        (fi = "WebkitAnimation", pi = "webkitAnimationEnd"));
+      var di = B ? window.requestAnimationFrame ? window.requestAnimationFrame.bind(window) : setTimeout : function (
+        e) {
+        return e()
+      };
+
+      function vi(e) {
+        di(function () {
+          di(e)
+        })
+      }
+
+      function hi(e, t) {
+        var n = e._transitionClasses || (e._transitionClasses = []);
+        n.indexOf(t) < 0 && (n.push(t), ni(e, t))
+      }
+
+      function mi(e, t) {
+        e._transitionClasses && f(e._transitionClasses, t), ri(e, t)
+      }
+
+      function yi(t, e, n) {
+        var r = _i(t, e),
+          i = r.type,
+          o = r.timeout,
+          a = r.propCount;
+        if (!i) return n();
+        var s = i === si ? ui : pi,
+          c = 0,
+          l = function () {
+            t.removeEventListener(s, u), n()
+          },
+          u = function (e) {
+            e.target === t && ++c >= a && l()
+          };
+        setTimeout(function () {
+          c < a && l()
+        }, o + 1), t.addEventListener(s, u)
+      }
+      var gi = /\b(transform|all)(,|$)/;
+
+      function _i(e, t) {
+        var n, r = window.getComputedStyle(e),
+          i = r[li + "Delay"].split(", "),
+          o = r[li + "Duration"].split(", "),
+          a = bi(i, o),
+          s = r[fi + "Delay"].split(", "),
+          c = r[fi + "Duration"].split(", "),
+          l = bi(s, c),
+          u = 0,
+          f = 0;
+        return t === si ? 0 < a && (n = si, u = a, f = o.length) : t === ci ? 0 < l && (n = ci, u = l, f = c.length) :
+          f = (n = 0 < (u = Math.max(a, l)) ? l < a ? si : ci : null) ? n === si ? o.length : c.length : 0, {
+            type: n,
+            timeout: u,
+            propCount: f,
+            hasTransform: n === si && gi.test(r[li + "Property"])
+          }
+      }
+
+      function bi(n, e) {
+        for (; n.length < e.length;) n = n.concat(n);
+        return Math.max.apply(null, e.map(function (e, t) {
+          return $i(e) + $i(n[t])
+        }))
+      }
+
+      function $i(e) {
+        return 1e3 * Number(e.slice(0, -1))
+      }
+
+      function wi(n, e) {
+        var r = n.elm;
+        D(r._leaveCb) && (r._leaveCb.cancelled = !0, r._leaveCb());
+        var t = ii(n.data.transition);
+        if (!M(t) && !D(r._enterCb) && 1 === r.nodeType) {
+          for (var i = t.css, o = t.type, a = t.enterClass, s = t.enterToClass, c = t.enterActiveClass, l = t.appearClass,
+              u = t.appearToClass, f = t.appearActiveClass, p = t.beforeEnter, d = t.enter, v = t.afterEnter, h = t.enterCancelled,
+              m = t.beforeAppear, y = t.appear, g = t.afterAppear, _ = t.appearCancelled, b = t.duration, $ = mt, w =
+              mt.$vnode; w && w.parent;) $ = (w = w.parent).context;
+          var C = !$._isMounted || !n.isRootInsert;
+          if (!C || y || "" === y) {
+            var x = C && l ? l : a,
+              k = C && f ? f : c,
+              A = C && u ? u : s,
+              O = C && m || p,
+              S = C && "function" == typeof y ? y : d,
+              T = C && g || v,
+              E = C && _ || h,
+              j = F(P(b) ? b.enter : b),
+              N = !1 !== i && !J,
+              L = ki(S),
+              I = r._enterCb = R(function () {
+                N && (mi(r, A), mi(r, k)), I.cancelled ? (N && mi(r, x), E && E(r)) : T && T(r), r._enterCb = null
+              });
+            n.data.show || rt(n, "insert", function () {
+              var e = r.parentNode,
+                t = e && e._pending && e._pending[n.key];
+              t && t.tag === n.tag && t.elm._leaveCb && t.elm._leaveCb(), S && S(r, I)
+            }), O && O(r), N && (hi(r, x), hi(r, k), vi(function () {
+              mi(r, x), I.cancelled || (hi(r, A), L || (xi(j) ? setTimeout(I, j) : yi(r, o, I)))
+            })), n.data.show && (e && e(), S && S(r, I)), N || L || I()
+          }
+        }
+      }
+
+      function Ci(e, t) {
+        var n = e.elm;
+        D(n._enterCb) && (n._enterCb.cancelled = !0, n._enterCb());
+        var r = ii(e.data.transition);
+        if (M(r) || 1 !== n.nodeType) return t();
+        if (!D(n._leaveCb)) {
+          var i = r.css,
+            o = r.type,
+            a = r.leaveClass,
+            s = r.leaveToClass,
+            c = r.leaveActiveClass,
+            l = r.beforeLeave,
+            u = r.leave,
+            f = r.afterLeave,
+            p = r.leaveCancelled,
+            d = r.delayLeave,
+            v = r.duration,
+            h = !1 !== i && !J,
+            m = ki(u),
+            y = F(P(v) ? v.leave : v),
+            g = n._leaveCb = R(function () {
+              n.parentNode && n.parentNode._pending && (n.parentNode._pending[e.key] = null), h && (mi(n, s), mi(n,
+                c)), g.cancelled ? (h && mi(n, a), p && p(n)) : (t(), f && f(n)), n._leaveCb = null
+            });
+          d ? d(_) : _()
+        }
+
+        function _() {
+          g.cancelled || (e.data.show || ((n.parentNode._pending || (n.parentNode._pending = {}))[e.key] = e), l && l(
+            n), h && (hi(n, a), hi(n, c), vi(function () {
+            mi(n, a), g.cancelled || (hi(n, s), m || (xi(y) ? setTimeout(g, y) : yi(n, o, g)))
+          })), u && u(n, g), h || m || g())
+        }
+      }
+
+      function xi(e) {
+        return "number" == typeof e && !isNaN(e)
+      }
+
+      function ki(e) {
+        if (M(e)) return !1;
+        var t = e.fns;
+        return D(t) ? ki(Array.isArray(t) ? t[0] : t) : 1 < (e._length || e.length)
+      }
+
+      function Ai(e, t) {
+        !0 !== t.data.show && wi(t)
+      }
+      var Oi = function (e) {
+        var r, t, g = {},
+          n = e.modules,
+          _ = e.nodeOps;
+        for (r = 0; r < Xn.length; ++r)
+          for (g[Xn[r]] = [], t = 0; t < n.length; ++t) D(n[t][Xn[r]]) && g[Xn[r]].push(n[t][Xn[r]]);
+
+        function o(e) {
+          var t = _.parentNode(e);
+          D(t) && _.removeChild(t, e)
+        }
+
+        function b(e, t, n, r, i, o, a) {
+          if (D(e.elm) && D(o) && (e = o[a] = de(e)), e.isRootInsert = !i, ! function (e, t, n, r) {
+              var i = e.data;
+              if (D(i)) {
+                var o = D(e.componentInstance) && i.keepAlive;
+                if (D(i = i.hook) && D(i = i.init) && i(e, !1, n, r), D(e.componentInstance)) return d(e, t), S(o) &&
+                  function (e, t, n, r) {
+                    for (var i, o = e; o.componentInstance;)
+                      if (o = o.componentInstance._vnode, D(i = o.data) && D(i = i.transition)) {
+                        for (i = 0; i < g.activate.length; ++i) g.activate[i](Zn, o);
+                        t.push(o);
+                        break
+                      }
+                    u(n, e.elm, r)
+                  }(e, t, n, r), !0
+              }
+            }(e, t, n, r)) {
+            var s = e.data,
+              c = e.children,
+              l = e.tag;
+            D(l) ? (e.elm = e.ns ? _.createElementNS(e.ns, l) : _.createElement(l, e), f(e), v(e, c, t), D(s) && h(
+              e, t)) : S(e.isComment) ? e.elm = _.createComment(e.text) : e.elm = _.createTextNode(e.text), u(n,
+              e.elm, r)
+          }
+        }
+
+        function d(e, t) {
+          D(e.data.pendingInsert) && (t.push.apply(t, e.data.pendingInsert), e.data.pendingInsert = null), e.elm =
+            e.componentInstance.$el, $(e) ? (h(e, t), f(e)) : (Gn(e), t.push(e))
+        }
+
+        function u(e, t, n) {
+          D(e) && (D(n) ? n.parentNode === e && _.insertBefore(e, t, n) : _.appendChild(e, t))
+        }
+
+        function v(e, t, n) {
+          if (Array.isArray(t))
+            for (var r = 0; r < t.length; ++r) b(t[r], n, e.elm, null, !0, t, r);
+          else T(e.text) && _.appendChild(e.elm, _.createTextNode(String(e.text)))
+        }
+
+        function $(e) {
+          for (; e.componentInstance;) e = e.componentInstance._vnode;
+          return D(e.tag)
+        }
+
+        function h(e, t) {
+          for (var n = 0; n < g.create.length; ++n) g.create[n](Zn, e);
+          D(r = e.data.hook) && (D(r.create) && r.create(Zn, e), D(r.insert) && t.push(e))
+        }
+
+        function f(e) {
+          var t;
+          if (D(t = e.fnScopeId)) _.setStyleScope(e.elm, t);
+          else
+            for (var n = e; n;) D(t = n.context) && D(t = t.$options._scopeId) && _.setStyleScope(e.elm, t), n = n.parent;
+          D(t = mt) && t !== e.context && t !== e.fnContext && D(t = t.$options._scopeId) && _.setStyleScope(e.elm,
+            t)
+        }
+
+        function y(e, t, n, r, i, o) {
+          for (; r <= i; ++r) b(n[r], o, e, t, !1, n, r)
+        }
+
+        function w(e) {
+          var t, n, r = e.data;
+          if (D(r))
+            for (D(t = r.hook) && D(t = t.destroy) && t(e), t = 0; t < g.destroy.length; ++t) g.destroy[t](e);
+          if (D(t = e.children))
+            for (n = 0; n < e.children.length; ++n) w(e.children[n])
+        }
+
+        function C(e, t, n, r) {
+          for (; n <= r; ++n) {
+            var i = t[n];
+            D(i) && (D(i.tag) ? (a(i), w(i)) : o(i.elm))
+          }
+        }
+
+        function a(e, t) {
+          if (D(t) || D(e.data)) {
+            var n, r = g.remove.length + 1;
+            for (D(t) ? t.listeners += r : t = function (e, t) {
+                function n() {
+                  0 == --n.listeners && o(e)
+                }
+                return n.listeners = t, n
+              }(e.elm, r), D(n = e.componentInstance) && D(n = n._vnode) && D(n.data) && a(n, t), n = 0; n < g.remove
+              .length; ++n) g.remove[n](e, t);
+            D(n = e.data.hook) && D(n = n.remove) ? n(e, t) : t()
+          } else o(e.elm)
+        }
+
+        function x(e, t, n, r) {
+          for (var i = n; i < r; i++) {
+            var o = t[i];
+            if (D(o) && Yn(e, o)) return i
+          }
+        }
+
+        function k(e, t, n, r) {
+          if (e !== t) {
+            var i = t.elm = e.elm;
+            if (S(e.isAsyncPlaceholder)) D(t.asyncFactory.resolved) ? O(e.elm, t, n) : t.isAsyncPlaceholder = !0;
+            else if (S(t.isStatic) && S(e.isStatic) && t.key === e.key && (S(t.isCloned) || S(t.isOnce))) t.componentInstance =
+              e.componentInstance;
+            else {
+              var o, a = t.data;
+              D(a) && D(o = a.hook) && D(o = o.prepatch) && o(e, t);
+              var s = e.children,
+                c = t.children;
+              if (D(a) && $(t)) {
+                for (o = 0; o < g.update.length; ++o) g.update[o](e, t);
+                D(o = a.hook) && D(o = o.update) && o(e, t)
+              }
+              M(t.text) ? D(s) && D(c) ? s !== c && function (e, t, n, r, i) {
+                  for (var o, a, s, c = 0, l = 0, u = t.length - 1, f = t[0], p = t[u], d = n.length - 1, v = n[0],
+                      h = n[d], m = !i; c <= u && l <= d;) M(f) ? f = t[++c] : M(p) ? p = t[--u] : Yn(f, v) ? (k(f,
+                      v, r), f = t[++c], v = n[++l]) : Yn(p, h) ? (k(p, h, r), p = t[--u], h = n[--d]) : Yn(f, h) ?
+                    (k(f, h, r), m && _.insertBefore(e, f.elm, _.nextSibling(p.elm)), f = t[++c], h = n[--d]) : (Yn(
+                      p, v) ? (k(p, v, r), m && _.insertBefore(e, p.elm, f.elm), p = t[--u]) : (M(o) && (o = Qn(t,
+                      c, u)), M(a = D(v.key) ? o[v.key] : x(v, t, c, u)) ? b(v, r, e, f.elm, !1, n, l) : Yn(s =
+                      t[a], v) ? (k(s, v, r), t[a] = void 0, m && _.insertBefore(e, s.elm, f.elm)) : b(v, r, e,
+                      f.elm, !1, n, l)), v = n[++l]);
+                  u < c ? y(e, M(n[d + 1]) ? null : n[d + 1].elm, n, l, d, r) : d < l && C(0, t, c, u)
+                }(i, s, c, n, r) : D(c) ? (D(e.text) && _.setTextContent(i, ""), y(i, null, c, 0, c.length - 1, n)) :
+                D(s) ? C(0, s, 0, s.length - 1) : D(e.text) && _.setTextContent(i, "") : e.text !== t.text && _.setTextContent(
+                  i, t.text), D(a) && D(o = a.hook) && D(o = o.postpatch) && o(e, t)
+            }
+          }
+        }
+
+        function A(e, t, n) {
+          if (S(n) && D(e.parent)) e.parent.data.pendingInsert = t;
+          else
+            for (var r = 0; r < t.length; ++r) t[r].data.hook.insert(t[r])
+        }
+        var m = s("attrs,class,staticClass,staticStyle,key");
+
+        function O(e, t, n, r) {
+          var i, o = t.tag,
+            a = t.data,
+            s = t.children;
+          if (r = r || a && a.pre, t.elm = e, S(t.isComment) && D(t.asyncFactory)) return t.isAsyncPlaceholder = !0;
+          if (D(a) && (D(i = a.hook) && D(i = i.init) && i(t, !0), D(i = t.componentInstance))) return d(t, n), !0;
+          if (D(o)) {
+            if (D(s))
+              if (e.hasChildNodes())
+                if (D(i = a) && D(i = i.domProps) && D(i = i.innerHTML)) {
+                  if (i !== e.innerHTML) return !1
+                } else {
+                  for (var c = !0, l = e.firstChild, u = 0; u < s.length; u++) {
+                    if (!l || !O(l, s[u], n, r)) {
+                      c = !1;
+                      break
+                    }
+                    l = l.nextSibling
+                  }
+                  if (!c || l) return !1
+                }
+            else v(t, s, n);
+            if (D(a)) {
+              var f = !1;
+              for (var p in a)
+                if (!m(p)) {
+                  f = !0, h(t, n);
+                  break
+                }!f && a.class && Ye(a.class)
+            }
+          } else e.data !== t.text && (e.data = t.text);
+          return !0
+        }
+        return function (e, t, n, r, i, o) {
+          if (!M(t)) {
+            var a, s = !1,
+              c = [];
+            if (M(e)) s = !0, b(t, c, i, o);
+            else {
+              var l = D(e.nodeType);
+              if (!l && Yn(e, t)) k(e, t, c, r);
+              else {
+                if (l) {
+                  if (1 === e.nodeType && e.hasAttribute(E) && (e.removeAttribute(E), n = !0), S(n) && O(e, t, c))
+                    return A(t, c, !0), e;
+                  a = e, e = new le(_.tagName(a).toLowerCase(), {}, [], void 0, a)
+                }
+                var u = e.elm,
+                  f = _.parentNode(u);
+                if (b(t, c, u._leaveCb ? null : f, _.nextSibling(u)), D(t.parent))
+                  for (var p = t.parent, d = $(t); p;) {
+                    for (var v = 0; v < g.destroy.length; ++v) g.destroy[v](p);
+                    if (p.elm = t.elm, d) {
+                      for (var h = 0; h < g.create.length; ++h) g.create[h](Zn, p);
+                      var m = p.data.hook.insert;
+                      if (m.merged)
+                        for (var y = 1; y < m.fns.length; y++) m.fns[y]()
+                    } else Gn(p);
+                    p = p.parent
+                  }
+                D(f) ? C(0, [e], 0, 0) : D(e.tag) && w(e)
+              }
+            }
+            return A(t, c, s), t.elm
+          }
+          D(e) && w(e)
+        }
+      }({
+        nodeOps: qn,
+        modules: [lr, yr, Ur, zr, ti, B ? {
+          create: Ai,
+          activate: Ai,
+          remove: function (e, t) {
+            !0 !== e.data.show ? Ci(e, t) : t()
+          }
+        } : {}].concat(or)
+      });
+      J && document.addEventListener("selectionchange", function () {
+        var e = document.activeElement;
+        e && e.vmodel && Mi(e, "input")
+      });
+      var Si = {
+        inserted: function (e, t, n, r) {
+          "select" === n.tag ? (r.elm && !r.elm._vOptions ? rt(n, "postpatch", function () {
+              Si.componentUpdated(e, t, n)
+            }) : Ti(e, t, n.context), e._vOptions = [].map.call(e.options, Ni)) : ("textarea" === n.tag || Kn(e.type)) &&
+            (e._vModifiers = t.modifiers, t.modifiers.lazy || (e.addEventListener("compositionstart", Li), e.addEventListener(
+              "compositionend", Ii), e.addEventListener("change", Ii), J && (e.vmodel = !0)))
+        },
+        componentUpdated: function (e, t, n) {
+          if ("select" === n.tag) {
+            Ti(e, t, n.context);
+            var r = e._vOptions,
+              i = e._vOptions = [].map.call(e.options, Ni);
+            if (i.some(function (e, t) {
+                return !C(e, r[t])
+              }))(e.multiple ? t.value.some(function (e) {
+              return ji(e, i)
+            }) : t.value !== t.oldValue && ji(t.value, i)) && Mi(e, "change")
+          }
+        }
+      };
+
+      function Ti(e, t, n) {
+        Ei(e, t, n), (K || q) && setTimeout(function () {
+          Ei(e, t, n)
+        }, 0)
+      }
+
+      function Ei(e, t, n) {
+        var r = t.value,
+          i = e.multiple;
+        if (!i || Array.isArray(r)) {
+          for (var o, a, s = 0, c = e.options.length; s < c; s++)
+            if (a = e.options[s], i) o = -1 < x(r, Ni(a)), a.selected !== o && (a.selected = o);
+            else if (C(Ni(a), r)) return void(e.selectedIndex !== s && (e.selectedIndex = s));
+          i || (e.selectedIndex = -1)
+        }
+      }
+
+      function ji(t, e) {
+        return e.every(function (e) {
+          return !C(e, t)
+        })
+      }
+
+      function Ni(e) {
+        return "_value" in e ? e._value : e.value
+      }
+
+      function Li(e) {
+        e.target.composing = !0
+      }
+
+      function Ii(e) {
+        e.target.composing && (e.target.composing = !1, Mi(e.target, "input"))
+      }
+
+      function Mi(e, t) {
+        var n = document.createEvent("HTMLEvents");
+        n.initEvent(t, !0, !0), e.dispatchEvent(n)
+      }
+
+      function Di(e) {
+        return !e.componentInstance || e.data && e.data.transition ? e : Di(e.componentInstance._vnode)
+      }
+      var Pi = {
+          model: Si,
+          show: {
+            bind: function (e, t, n) {
+              var r = t.value,
+                i = (n = Di(n)).data && n.data.transition,
+                o = e.__vOriginalDisplay = "none" === e.style.display ? "" : e.style.display;
+              r && i ? (n.data.show = !0, wi(n, function () {
+                e.style.display = o
+              })) : e.style.display = r ? o : "none"
+            },
+            update: function (e, t, n) {
+              var r = t.value;
+              !r != !t.oldValue && ((n = Di(n)).data && n.data.transition ? (n.data.show = !0, r ? wi(n, function () {
+                e.style.display = e.__vOriginalDisplay
+              }) : Ci(n, function () {
+                e.style.display = "none"
+              })) : e.style.display = r ? e.__vOriginalDisplay : "none")
+            },
+            unbind: function (e, t, n, r, i) {
+              i || (e.style.display = e.__vOriginalDisplay)
+            }
+          }
+        },
+        Fi = {
+          name: String,
+          appear: Boolean,
+          css: Boolean,
+          mode: String,
+          type: String,
+          enterClass: String,
+          leaveClass: String,
+          enterToClass: String,
+          leaveToClass: String,
+          enterActiveClass: String,
+          leaveActiveClass: String,
+          appearClass: String,
+          appearActiveClass: String,
+          appearToClass: String,
+          duration: [Number, String, Object]
+        };
+
+      function Ri(e) {
+        var t = e && e.componentOptions;
+        return t && t.Ctor.options.abstract ? Ri(lt(t.children)) : e
+      }
+
+      function Hi(e) {
+        var t = {},
+          n = e.$options;
+        for (var r in n.propsData) t[r] = e[r];
+        var i = n._parentListeners;
+        for (var o in i) t[g(o)] = i[o];
+        return t
+      }
+
+      function Bi(e, t) {
+        if (/\d-keep-alive$/.test(t.tag)) return e("keep-alive", {
+          props: t.componentOptions.propsData
+        })
+      }
+      var Ui = {
+          name: "transition",
+          props: Fi,
+          abstract: !0,
+          render: function (e) {
+            var t = this,
+              n = this.$slots.default;
+            if (n && (n = n.filter(function (e) {
+                return e.tag || ct(e)
+              })).length) {
+              var r = this.mode,
+                i = n[0];
+              if (function (e) {
+                  for (; e = e.parent;)
+                    if (e.data.transition) return !0
+                }(this.$vnode)) return i;
+              var o = Ri(i);
+              if (!o) return i;
+              if (this._leaving) return Bi(e, i);
+              var a = "__transition-" + this._uid + "-";
+              o.key = null == o.key ? o.isComment ? a + "comment" : a + o.tag : T(o.key) ? 0 === String(o.key).indexOf(
+                a) ? o.key : a + o.key : o.key;
+              var s, c, l = (o.data || (o.data = {})).transition = Hi(this),
+                u = this._vnode,
+                f = Ri(u);
+              if (o.data.directives && o.data.directives.some(function (e) {
+                  return "show" === e.name
+                }) && (o.data.show = !0), f && f.data && (s = o, (c = f).key !== s.key || c.tag !== s.tag) && !ct(f) &&
+                (!f.componentInstance || !f.componentInstance._vnode.isComment)) {
+                var p = f.data.transition = m({}, l);
+                if ("out-in" === r) return this._leaving = !0, rt(p, "afterLeave", function () {
+                  t._leaving = !1, t.$forceUpdate()
+                }), Bi(e, i);
+                if ("in-out" === r) {
+                  if (ct(o)) return u;
+                  var d, v = function () {
+                    d()
+                  };
+                  rt(l, "afterEnter", v), rt(l, "enterCancelled", v), rt(p, "delayLeave", function (e) {
+                    d = e
+                  })
+                }
+              }
+              return i
+            }
+          }
+        },
+        Vi = m({
+          tag: String,
+          moveClass: String
+        }, Fi);
+
+      function zi(e) {
+        e.elm._moveCb && e.elm._moveCb(), e.elm._enterCb && e.elm._enterCb()
+      }
+
+      function Ki(e) {
+        e.data.newPos = e.elm.getBoundingClientRect()
+      }
+
+      function Ji(e) {
+        var t = e.data.pos,
+          n = e.data.newPos,
+          r = t.left - n.left,
+          i = t.top - n.top;
+        if (r || i) {
+          e.data.moved = !0;
+          var o = e.elm.style;
+          o.transform = o.WebkitTransform = "translate(" + r + "px," + i + "px)", o.transitionDuration = "0s"
+        }
+      }
+      delete Vi.mode;
+      var qi = {
+        Transition: Ui,
+        TransitionGroup: {
+          props: Vi,
+          render: function (e) {
+            for (var t = this.tag || this.$vnode.data.tag || "span", n = Object.create(null), r = this.prevChildren =
+                this.children, i = this.$slots.default || [], o = this.children = [], a = Hi(this), s = 0; s < i.length; s++) {
+              var c = i[s];
+              c.tag && null != c.key && 0 !== String(c.key).indexOf("__vlist") && (o.push(c), ((n[c.key] = c).data ||
+                (c.data = {})).transition = a)
+            }
+            if (r) {
+              for (var l = [], u = [], f = 0; f < r.length; f++) {
+                var p = r[f];
+                p.data.transition = a, p.data.pos = p.elm.getBoundingClientRect(), n[p.key] ? l.push(p) : u.push(
+                  p)
+              }
+              this.kept = e(t, null, l), this.removed = u
+            }
+            return e(t, null, o)
+          },
+          beforeUpdate: function () {
+            this.__patch__(this._vnode, this.kept, !1, !0), this._vnode = this.kept
+          },
+          updated: function () {
+            var e = this.prevChildren,
+              r = this.moveClass || (this.name || "v") + "-move";
+            e.length && this.hasMove(e[0].elm, r) && (e.forEach(zi), e.forEach(Ki), e.forEach(Ji), this._reflow =
+              document.body.offsetHeight, e.forEach(function (e) {
+                if (e.data.moved) {
+                  var n = e.elm,
+                    t = n.style;
+                  hi(n, r), t.transform = t.WebkitTransform = t.transitionDuration = "", n.addEventListener(
+                    ui, n._moveCb = function e(t) {
+                      t && !/transform$/.test(t.propertyName) || (n.removeEventListener(ui, e), n._moveCb =
+                        null, mi(n, r))
+                    })
+                }
+              }))
+          },
+          methods: {
+            hasMove: function (e, t) {
+              if (!ai) return !1;
+              if (this._hasMove) return this._hasMove;
+              var n = e.cloneNode();
+              e._transitionClasses && e._transitionClasses.forEach(function (e) {
+                ri(n, e)
+              }), ni(n, t), n.style.display = "none", this.$el.appendChild(n);
+              var r = _i(n);
+              return this.$el.removeChild(n), this._hasMove = r.hasTransform
+            }
+          }
+        }
+      };
+      hn.config.mustUseProp = Sn, hn.config.isReservedTag = Un, hn.config.isReservedAttr = An, hn.config.getTagNamespace =
+        Vn, hn.config.isUnknownElement = function (e) {
+          if (!B) return !0;
+          if (Un(e)) return !1;
+          if (e = e.toLowerCase(), null != zn[e]) return zn[e];
+          var t = document.createElement(e);
+          return -1 < e.indexOf("-") ? zn[e] = t.constructor === window.HTMLUnknownElement || t.constructor ===
+            window.HTMLElement : zn[e] = /HTMLUnknownElement/.test(t.toString())
+        }, m(hn.options.directives, Pi), m(hn.options.components, qi), hn.prototype.__patch__ = B ? Oi : $, hn.prototype
+        .$mount = function (e, t) {
+          return e = e && B ? Jn(e) : void 0, r = e, i = t, (n = this).$el = r, n.$options.render || (n.$options.render =
+            fe), _t(n, "beforeMount"), new St(n, function () {
+            n._update(n._render(), i)
+          }, $, null, !0), i = !1, null == n.$vnode && (n._isMounted = !0, _t(n, "mounted")), n;
+          var n, r, i
+        }, B && setTimeout(function () {
+          j.devtools && Q && Q.emit("init", hn)
+        }, 0);
+      var Wi = /\{\{((?:.|\n)+?)\}\}/g,
+        Gi = /[-.*+?^${}()|[\]\/\\]/g,
+        Zi = e(function (e) {
+          var t = e[0].replace(Gi, "\\$&"),
+            n = e[1].replace(Gi, "\\$&");
+          return new RegExp(t + "((?:.|\\n)+?)" + n, "g")
+        });
+      var Xi = {
+        staticKeys: ["staticClass"],
+        transformNode: function (e, t) {
+          t.warn;
+          var n = Sr(e, "class");
+          n && (e.staticClass = JSON.stringify(n));
+          var r = Or(e, "class", !1);
+          r && (e.classBinding = r)
+        },
+        genData: function (e) {
+          var t = "";
+          return e.staticClass && (t += "staticClass:" + e.staticClass + ","), e.classBinding && (t += "class:" +
+            e.classBinding + ","), t
+        }
+      };
+      var Yi, Qi = {
+          staticKeys: ["staticStyle"],
+          transformNode: function (e, t) {
+            t.warn;
+            var n = Sr(e, "style");
+            n && (e.staticStyle = JSON.stringify(Kr(n)));
+            var r = Or(e, "style", !1);
+            r && (e.styleBinding = r)
+          },
+          genData: function (e) {
+            var t = "";
+            return e.staticStyle && (t += "staticStyle:" + e.staticStyle + ","), e.styleBinding && (t += "style:(" +
+              e.styleBinding + "),"), t
+          }
+        },
+        eo = function (e) {
+          return (Yi = Yi || document.createElement("div")).innerHTML = e, Yi.textContent
+        },
+        to = s("area,base,br,col,embed,frame,hr,img,input,isindex,keygen,link,meta,param,source,track,wbr"),
+        no = s("colgroup,dd,dt,li,options,p,td,tfoot,th,thead,tr,source"),
+        ro = s(
+          "address,article,aside,base,blockquote,body,caption,col,colgroup,dd,details,dialog,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,head,header,hgroup,hr,html,legend,li,menuitem,meta,optgroup,option,param,rp,rt,source,style,summary,tbody,td,tfoot,th,thead,title,tr,track"
+        ),
+        io = /^\s*([^\s"'<>\/=]+)(?:\s*(=)\s*(?:"([^"]*)"+|'([^']*)'+|([^\s"'=<>`]+)))?/,
+        oo = "[a-zA-Z_][\\w\\-\\.]*",
+        ao = "((?:" + oo + "\\:)?" + oo + ")",
+        so = new RegExp("^<" + ao),
+        co = /^\s*(\/?)>/,
+        lo = new RegExp("^<\\/" + ao + "[^>]*>"),
+        uo = /^<!DOCTYPE [^>]+>/i,
+        fo = /^<!\--/,
+        po = /^<!\[/,
+        vo = !1;
+      "x".replace(/x(.)?/g, function (e, t) {
+        vo = "" === t
+      });
+      var ho = s("script,style,textarea", !0),
+        mo = {},
+        yo = {
+          "&lt;": "<",
+          "&gt;": ">",
+          "&quot;": '"',
+          "&amp;": "&",
+          "&#10;": "\n",
+          "&#9;": "\t"
+        },
+        go = /&(?:lt|gt|quot|amp);/g,
+        _o = /&(?:lt|gt|quot|amp|#10|#9);/g,
+        bo = s("pre,textarea", !0),
+        $o = function (e, t) {
+          return e && bo(e) && "\n" === t[0]
+        };
+      var wo, Co, xo, ko, Ao, Oo, So, To, Eo = /^@|^v-on:/,
+        jo = /^v-|^@|^:/,
+        No = /([^]*?)\s+(?:in|of)\s+([^]*)/,
+        Lo = /,([^,\}\]]*)(?:,([^,\}\]]*))?$/,
+        Io = /^\(|\)$/g,
+        Mo = /:(.*)$/,
+        Do = /^:|^v-bind:/,
+        Po = /\.[^.]+/g,
+        Fo = e(eo);
+
+      function Ro(e, t, n) {
+        return {
+          type: 1,
+          tag: e,
+          attrsList: t,
+          attrsMap: function (e) {
+            for (var t = {}, n = 0, r = e.length; n < r; n++) t[e[n].name] = e[n].value;
+            return t
+          }(t),
+          parent: n,
+          children: []
+        }
+      }
+
+      function Ho(e, p) {
+        wo = p.warn || $r, Oo = p.isPreTag || O, So = p.mustUseProp || O, To = p.getTagNamespace || O, xo = wr(p.modules,
+            "transformNode"), ko = wr(p.modules, "preTransformNode"), Ao = wr(p.modules, "postTransformNode"), Co = p
+          .delimiters;
+        var d, v, h = [],
+          i = !1 !== p.preserveWhitespace,
+          m = !1,
+          y = !1;
+
+        function g(e) {
+          e.pre && (m = !1), Oo(e.tag) && (y = !1);
+          for (var t = 0; t < Ao.length; t++) Ao[t](e, p)
+        }
+        return function (i, d) {
+          for (var e, v, h = [], m = d.expectHTML, y = d.isUnaryTag || O, g = d.canBeLeftOpenTag || O, a = 0; i;) {
+            if (e = i, v && ho(v)) {
+              var r = 0,
+                o = v.toLowerCase(),
+                t = mo[o] || (mo[o] = new RegExp("([\\s\\S]*?)(</" + o + "[^>]*>)", "i")),
+                n = i.replace(t, function (e, t, n) {
+                  return r = n.length, ho(o) || "noscript" === o || (t = t.replace(/<!\--([\s\S]*?)-->/g, "$1").replace(
+                      /<!\[CDATA\[([\s\S]*?)]]>/g, "$1")), $o(o, t) && (t = t.slice(1)), d.chars && d.chars(t),
+                    ""
+                });
+              a += i.length - n.length, i = n, A(o, a - r, a)
+            } else {
+              var s = i.indexOf("<");
+              if (0 === s) {
+                if (fo.test(i)) {
+                  var c = i.indexOf("--\x3e");
+                  if (0 <= c) {
+                    d.shouldKeepComment && d.comment(i.substring(4, c)), C(c + 3);
+                    continue
+                  }
+                }
+                if (po.test(i)) {
+                  var l = i.indexOf("]>");
+                  if (0 <= l) {
+                    C(l + 2);
+                    continue
+                  }
+                }
+                var u = i.match(uo);
+                if (u) {
+                  C(u[0].length);
+                  continue
+                }
+                var f = i.match(lo);
+                if (f) {
+                  var p = a;
+                  C(f[0].length), A(f[1], p, a);
+                  continue
+                }
+                var _ = x();
+                if (_) {
+                  k(_), $o(v, i) && C(1);
+                  continue
+                }
+              }
+              var b = void 0,
+                $ = void 0,
+                w = void 0;
+              if (0 <= s) {
+                for ($ = i.slice(s); !(lo.test($) || so.test($) || fo.test($) || po.test($) || (w = $.indexOf("<",
+                    1)) < 0);) s += w, $ = i.slice(s);
+                b = i.substring(0, s), C(s)
+              }
+              s < 0 && (b = i, i = ""), d.chars && b && d.chars(b)
+            }
+            if (i === e) {
+              d.chars && d.chars(i);
+              break
+            }
+          }
+
+          function C(e) {
+            a += e, i = i.substring(e)
+          }
+
+          function x() {
+            var e = i.match(so);
+            if (e) {
+              var t, n, r = {
+                tagName: e[1],
+                attrs: [],
+                start: a
+              };
+              for (C(e[0].length); !(t = i.match(co)) && (n = i.match(io));) C(n[0].length), r.attrs.push(n);
+              if (t) return r.unarySlash = t[1], C(t[0].length), r.end = a, r
+            }
+          }
+
+          function k(e) {
+            var t = e.tagName,
+              n = e.unarySlash;
+            m && ("p" === v && ro(t) && A(v), g(t) && v === t && A(t));
+            for (var r, i, o, a = y(t) || !!n, s = e.attrs.length, c = new Array(s), l = 0; l < s; l++) {
+              var u = e.attrs[l];
+              vo && -1 === u[0].indexOf('""') && ("" === u[3] && delete u[3], "" === u[4] && delete u[4], "" === u[
+                5] && delete u[5]);
+              var f = u[3] || u[4] || u[5] || "",
+                p = "a" === t && "href" === u[1] ? d.shouldDecodeNewlinesForHref : d.shouldDecodeNewlines;
+              c[l] = {
+                name: u[1],
+                value: (r = f, i = p, o = i ? _o : go, r.replace(o, function (e) {
+                  return yo[e]
+                }))
+              }
+            }
+            a || (h.push({
+              tag: t,
+              lowerCasedTag: t.toLowerCase(),
+              attrs: c
+            }), v = t), d.start && d.start(t, c, a, e.start, e.end)
+          }
+
+          function A(e, t, n) {
+            var r, i;
+            if (null == t && (t = a), null == n && (n = a), e && (i = e.toLowerCase()), e)
+              for (r = h.length - 1; 0 <= r && h[r].lowerCasedTag !== i; r--);
+            else r = 0;
+            if (0 <= r) {
+              for (var o = h.length - 1; r <= o; o--) d.end && d.end(h[o].tag, t, n);
+              h.length = r, v = r && h[r - 1].tag
+            } else "br" === i ? d.start && d.start(e, [], !0, t, n) : "p" === i && (d.start && d.start(e, [], !1, t,
+              n), d.end && d.end(e, t, n))
+          }
+          A()
+        }(e, {
+          warn: wo,
+          expectHTML: p.expectHTML,
+          isUnaryTag: p.isUnaryTag,
+          canBeLeftOpenTag: p.canBeLeftOpenTag,
+          shouldDecodeNewlines: p.shouldDecodeNewlines,
+          shouldDecodeNewlinesForHref: p.shouldDecodeNewlinesForHref,
+          shouldKeepComment: p.comments,
+          start: function (e, t, n) {
+            var r = v && v.ns || To(e);
+            K && "svg" === r && (t = function (e) {
+              for (var t = [], n = 0; n < e.length; n++) {
+                var r = e[n];
+                Ko.test(r.name) || (r.name = r.name.replace(Jo, ""), t.push(r))
+              }
+              return t
+            }(t));
+            var i, o, a, s, c, l = Ro(e, t, v);
+            r && (l.ns = r), "style" !== (i = l).tag && ("script" !== i.tag || i.attrsMap.type &&
+              "text/javascript" !== i.attrsMap.type) || Y() || (l.forbidden = !0);
+            for (var u = 0; u < ko.length; u++) l = ko[u](l, p) || l;
+            if (m || (null != Sr(o = l, "v-pre") && (o.pre = !0), l.pre && (m = !0)), Oo(l.tag) && (y = !0), m ?
+              function (e) {
+                var t = e.attrsList.length;
+                if (t)
+                  for (var n = e.attrs = new Array(t), r = 0; r < t; r++) n[r] = {
+                    name: e.attrsList[r].name,
+                    value: JSON.stringify(e.attrsList[r].value)
+                  };
+                else e.pre || (e.plain = !0)
+              }(l) : l.processed || (Uo(l), function (e) {
+                var t = Sr(e, "v-if");
+                if (t) e.if = t, Vo(e, {
+                  exp: t,
+                  block: e
+                });
+                else {
+                  null != Sr(e, "v-else") && (e.else = !0);
+                  var n = Sr(e, "v-else-if");
+                  n && (e.elseif = n)
+                }
+              }(l), null != Sr(a = l, "v-once") && (a.once = !0), Bo(l, p)), d ? h.length || d.if && (l.elseif ||
+                l.else) && Vo(d, {
+                exp: l.elseif,
+                block: l
+              }) : d = l, v && !l.forbidden)
+              if (l.elseif || l.else) s = l, (c = function (e) {
+                var t = e.length;
+                for (; t--;) {
+                  if (1 === e[t].type) return e[t];
+                  e.pop()
+                }
+              }(v.children)) && c.if && Vo(c, {
+                exp: s.elseif,
+                block: s
+              });
+              else if (l.slotScope) {
+              v.plain = !1;
+              var f = l.slotTarget || '"default"';
+              (v.scopedSlots || (v.scopedSlots = {}))[f] = l
+            } else v.children.push(l), l.parent = v;
+            n ? g(l) : (v = l, h.push(l))
+          },
+          end: function () {
+            var e = h[h.length - 1],
+              t = e.children[e.children.length - 1];
+            t && 3 === t.type && " " === t.text && !y && e.children.pop(), h.length -= 1, v = h[h.length - 1],
+              g(e)
+          },
+          chars: function (e) {
+            if (v && (!K || "textarea" !== v.tag || v.attrsMap.placeholder !== e)) {
+              var t, n, r = v.children;
+              if (e = y || e.trim() ? "script" === (t = v).tag || "style" === t.tag ? e : Fo(e) : i && r.length ?
+                " " : "") !m && " " !== e && (n = function (e, t) {
+                var n = t ? Zi(t) : Wi;
+                if (n.test(e)) {
+                  for (var r, i, o, a = [], s = [], c = n.lastIndex = 0; r = n.exec(e);) {
+                    c < (i = r.index) && (s.push(o = e.slice(c, i)), a.push(JSON.stringify(o)));
+                    var l = _r(r[1].trim());
+                    a.push("_s(" + l + ")"), s.push({
+                      "@binding": l
+                    }), c = i + r[0].length
+                  }
+                  return c < e.length && (s.push(o = e.slice(c)), a.push(JSON.stringify(o))), {
+                    expression: a.join("+"),
+                    tokens: s
+                  }
+                }
+              }(e, Co)) ? r.push({
+                type: 2,
+                expression: n.expression,
+                tokens: n.tokens,
+                text: e
+              }) : " " === e && r.length && " " === r[r.length - 1].text || r.push({
+                type: 3,
+                text: e
+              })
+            }
+          },
+          comment: function (e) {
+            v.children.push({
+              type: 3,
+              text: e,
+              isComment: !0
+            })
+          }
+        }), d
+      }
+
+      function Bo(e, t) {
+        var n, r, i, o;
+        (r = Or(n = e, "key")) && (n.key = r), e.plain = !e.key && !e.attrsList.length, (o = Or(i = e, "ref")) && (i.ref =
+            o, i.refInFor = function (e) {
+              for (var t = e; t;) {
+                if (void 0 !== t.for) return !0;
+                t = t.parent
+              }
+              return !1
+            }(i)),
+          function (e) {
+            if ("slot" === e.tag) e.slotName = Or(e, "name");
+            else {
+              var t;
+              "template" === e.tag ? (t = Sr(e, "scope"), e.slotScope = t || Sr(e, "slot-scope")) : (t = Sr(e,
+                "slot-scope")) && (e.slotScope = t);
+              var n = Or(e, "slot");
+              n && (e.slotTarget = '""' === n ? '"default"' : n, "template" === e.tag || e.slotScope || xr(e, "slot",
+                n))
+            }
+          }(e),
+          function (e) {
+            var t;
+            (t = Or(e, "is")) && (e.component = t);
+            null != Sr(e, "inline-template") && (e.inlineTemplate = !0)
+          }(e);
+        for (var a = 0; a < xo.length; a++) e = xo[a](e, t) || e;
+        ! function (e) {
+          var t, n, r, i, o, a, s, c = e.attrsList;
+          for (t = 0, n = c.length; t < n; t++)
+            if (r = i = c[t].name, o = c[t].value, jo.test(r))
+              if (e.hasBindings = !0, (a = zo(r)) && (r = r.replace(Po, "")), Do.test(r)) r = r.replace(Do, ""), o =
+                _r(o), s = !1, a && (a.prop && (s = !0, "innerHtml" === (r = g(r)) && (r = "innerHTML")), a.camel &&
+                  (r = g(r)), a.sync && Ar(e, "update:" + g(r), Er(o, "$event"))), s || !e.component && So(e.tag, e.attrsMap
+                  .type, r) ? Cr(e, r, o) : xr(e, r, o);
+              else if (Eo.test(r)) r = r.replace(Eo, ""), Ar(e, r, o, a, !1);
+          else {
+            var l = (r = r.replace(jo, "")).match(Mo),
+              u = l && l[1];
+            u && (r = r.slice(0, -(u.length + 1))), p = r, d = i, v = o, h = u, m = a, ((f = e).directives || (f.directives = []))
+              .push({
+                name: p,
+                rawName: d,
+                value: v,
+                arg: h,
+                modifiers: m
+              }), f.plain = !1
+          } else xr(e, r, JSON.stringify(o)), !e.component && "muted" === r && So(e.tag, e.attrsMap.type, r) && Cr(e,
+            r, "true");
+          var f, p, d, v, h, m
+        }(e)
+      }
+
+      function Uo(e) {
+        var t;
+        if (t = Sr(e, "v-for")) {
+          var n = function (e) {
+            var t = e.match(No);
+            if (!t) return;
+            var n = {};
+            n.for = t[2].trim();
+            var r = t[1].trim().replace(Io, ""),
+              i = r.match(Lo);
+            i ? (n.alias = r.replace(Lo, ""), n.iterator1 = i[1].trim(), i[2] && (n.iterator2 = i[2].trim())) : n.alias =
+              r;
+            return n
+          }(t);
+          n && m(e, n)
+        }
+      }
+
+      function Vo(e, t) {
+        e.ifConditions || (e.ifConditions = []), e.ifConditions.push(t)
+      }
+
+      function zo(e) {
+        var t = e.match(Po);
+        if (t) {
+          var n = {};
+          return t.forEach(function (e) {
+            n[e.slice(1)] = !0
+          }), n
+        }
+      }
+      var Ko = /^xmlns:NS\d+/,
+        Jo = /^NS\d+:/;
+
+      function qo(e) {
+        return Ro(e.tag, e.attrsList.slice(), e.parent)
+      }
+      var Wo = [Xi, Qi, {
+        preTransformNode: function (e, t) {
+          if ("input" === e.tag) {
+            var n, r = e.attrsMap;
+            if (!r["v-model"]) return;
+            if ((r[":type"] || r["v-bind:type"]) && (n = Or(e, "type")), r.type || n || !r["v-bind"] || (n =
+                "(" + r["v-bind"] + ").type"), n) {
+              var i = Sr(e, "v-if", !0),
+                o = i ? "&&(" + i + ")" : "",
+                a = null != Sr(e, "v-else", !0),
+                s = Sr(e, "v-else-if", !0),
+                c = qo(e);
+              Uo(c), kr(c, "type", "checkbox"), Bo(c, t), c.processed = !0, c.if = "(" + n + ")==='checkbox'" +
+                o, Vo(c, {
+                  exp: c.if,
+                  block: c
+                });
+              var l = qo(e);
+              Sr(l, "v-for", !0), kr(l, "type", "radio"), Bo(l, t), Vo(c, {
+                exp: "(" + n + ")==='radio'" + o,
+                block: l
+              });
+              var u = qo(e);
+              return Sr(u, "v-for", !0), kr(u, ":type", n), Bo(u, t), Vo(c, {
+                exp: i,
+                block: u
+              }), a ? c.else = !0 : s && (c.elseif = s), c
+            }
+          }
+        }
+      }];
+      var Go, Zo, Xo, Yo = {
+          expectHTML: !0,
+          modules: Wo,
+          directives: {
+            model: function (e, t, n) {
+              var r, i, o, a, s, c, l, u, f, p, d, v, h, m, y, g, _ = t.value,
+                b = t.modifiers,
+                $ = e.tag,
+                w = e.attrsMap.type;
+              if (e.component) return Tr(e, _, b), !1;
+              if ("select" === $) h = e, m = _, g = (g =
+                'var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return ' +
+                ((y = b) && y.number ? "_n(val)" : "val") + "});") + " " + Er(m,
+                "$event.target.multiple ? $$selectedVal : $$selectedVal[0]"), Ar(h, "change", g, null, !0);
+              else if ("input" === $ && "checkbox" === w) c = e, l = _, f = (u = b) && u.number, p = Or(c, "value") ||
+                "null", d = Or(c, "true-value") || "true", v = Or(c, "false-value") || "false", Cr(c, "checked",
+                  "Array.isArray(" + l + ")?_i(" + l + "," + p + ")>-1" + ("true" === d ? ":(" + l + ")" : ":_q(" +
+                    l + "," + d + ")")), Ar(c, "change", "var $$a=" + l + ",$$el=$event.target,$$c=$$el.checked?(" +
+                  d + "):(" + v + ");if(Array.isArray($$a)){var $$v=" + (f ? "_n(" + p + ")" : p) +
+                  ",$$i=_i($$a,$$v);if($$el.checked){$$i<0&&(" + Er(l, "$$a.concat([$$v])") + ")}else{$$i>-1&&(" +
+                  Er(l, "$$a.slice(0,$$i).concat($$a.slice($$i+1))") + ")}}else{" + Er(l, "$$c") + "}", null, !0);
+              else if ("input" === $ && "radio" === w) r = e, i = _, a = (o = b) && o.number, s = Or(r, "value") ||
+                "null", Cr(r, "checked", "_q(" + i + "," + (s = a ? "_n(" + s + ")" : s) + ")"), Ar(r, "change", Er(
+                  i, s), null, !0);
+              else if ("input" === $ || "textarea" === $) ! function (e, t, n) {
+                var r = e.attrsMap.type,
+                  i = n || {},
+                  o = i.lazy,
+                  a = i.number,
+                  s = i.trim,
+                  c = !o && "range" !== r,
+                  l = o ? "change" : "range" === r ? Pr : "input",
+                  u = "$event.target.value";
+                s && (u = "$event.target.value.trim()"), a && (u = "_n(" + u + ")");
+                var f = Er(t, u);
+                c && (f = "if($event.target.composing)return;" + f), Cr(e, "value", "(" + t + ")"), Ar(e, l, f,
+                  null, !0), (s || a) && Ar(e, "blur", "$forceUpdate()")
+              }(e, _, b);
+              else if (!j.isReservedTag($)) return Tr(e, _, b), !1;
+              return !0
+            },
+            text: function (e, t) {
+              t.value && Cr(e, "textContent", "_s(" + t.value + ")")
+            },
+            html: function (e, t) {
+              t.value && Cr(e, "innerHTML", "_s(" + t.value + ")")
+            }
+          },
+          isPreTag: function (e) {
+            return "pre" === e
+          },
+          isUnaryTag: to,
+          mustUseProp: Sn,
+          canBeLeftOpenTag: no,
+          isReservedTag: Un,
+          getTagNamespace: Vn,
+          staticKeys: (Go = Wo, Go.reduce(function (e, t) {
+            return e.concat(t.staticKeys || [])
+          }, []).join(","))
+        },
+        Qo = e(function (e) {
+          return s("type,tag,attrsList,attrsMap,plain,parent,children,attrs" + (e ? "," + e : ""))
+        });
+
+      function ea(e, t) {
+        e && (Zo = Qo(t.staticKeys || ""), Xo = t.isReservedTag || O, function e(t) {
+          t.static = function (e) {
+            if (2 === e.type) return !1;
+            if (3 === e.type) return !0;
+            return !(!e.pre && (e.hasBindings || e.if || e.for || c(e.tag) || !Xo(e.tag) || function (e) {
+              for (; e.parent;) {
+                if ("template" !== (e = e.parent).tag) return !1;
+                if (e.for) return !0
+              }
+              return !1
+            }(e) || !Object.keys(e).every(Zo)))
+          }(t);
+          if (1 === t.type) {
+            if (!Xo(t.tag) && "slot" !== t.tag && null == t.attrsMap["inline-template"]) return;
+            for (var n = 0, r = t.children.length; n < r; n++) {
+              var i = t.children[n];
+              e(i), i.static || (t.static = !1)
+            }
+            if (t.ifConditions)
+              for (var o = 1, a = t.ifConditions.length; o < a; o++) {
+                var s = t.ifConditions[o].block;
+                e(s), s.static || (t.static = !1)
+              }
+          }
+        }(e), function e(t, n) {
+          if (1 === t.type) {
+            if ((t.static || t.once) && (t.staticInFor = n), t.static && t.children.length && (1 !== t.children.length ||
+                3 !== t.children[0].type)) return void(t.staticRoot = !0);
+            if (t.staticRoot = !1, t.children)
+              for (var r = 0, i = t.children.length; r < i; r++) e(t.children[r], n || !!t.for);
+            if (t.ifConditions)
+              for (var o = 1, a = t.ifConditions.length; o < a; o++) e(t.ifConditions[o].block, n)
+          }
+        }(e, !1))
+      }
+      var ta = /^([\w$_]+|\([^)]*?\))\s*=>|^function\s*\(/,
+        na = /^[A-Za-z_$][\w$]*(?:\.[A-Za-z_$][\w$]*|\['[^']*?']|\["[^"]*?"]|\[\d+]|\[[A-Za-z_$][\w$]*])*$/,
+        ra = {
+          esc: 27,
+          tab: 9,
+          enter: 13,
+          space: 32,
+          up: 38,
+          left: 37,
+          right: 39,
+          down: 40,
+          delete: [8, 46]
+        },
+        ia = {
+          esc: "Escape",
+          tab: "Tab",
+          enter: "Enter",
+          space: " ",
+          up: ["Up", "ArrowUp"],
+          left: ["Left", "ArrowLeft"],
+          right: ["Right", "ArrowRight"],
+          down: ["Down", "ArrowDown"],
+          delete: ["Backspace", "Delete"]
+        },
+        oa = function (e) {
+          return "if(" + e + ")return null;"
+        },
+        aa = {
+          stop: "$event.stopPropagation();",
+          prevent: "$event.preventDefault();",
+          self: oa("$event.target !== $event.currentTarget"),
+          ctrl: oa("!$event.ctrlKey"),
+          shift: oa("!$event.shiftKey"),
+          alt: oa("!$event.altKey"),
+          meta: oa("!$event.metaKey"),
+          left: oa("'button' in $event && $event.button !== 0"),
+          middle: oa("'button' in $event && $event.button !== 1"),
+          right: oa("'button' in $event && $event.button !== 2")
+        };
+
+      function sa(e, t, n) {
+        var r = t ? "nativeOn:{" : "on:{";
+        for (var i in e) r += '"' + i + '":' + ca(i, e[i]) + ",";
+        return r.slice(0, -1) + "}"
+      }
+
+      function ca(t, e) {
+        if (!e) return "function(){}";
+        if (Array.isArray(e)) return "[" + e.map(function (e) {
+          return ca(t, e)
+        }).join(",") + "]";
+        var n = na.test(e.value),
+          r = ta.test(e.value);
+        if (e.modifiers) {
+          var i = "",
+            o = "",
+            a = [];
+          for (var s in e.modifiers)
+            if (aa[s]) o += aa[s], ra[s] && a.push(s);
+            else if ("exact" === s) {
+            var c = e.modifiers;
+            o += oa(["ctrl", "shift", "alt", "meta"].filter(function (e) {
+              return !c[e]
+            }).map(function (e) {
+              return "$event." + e + "Key"
+            }).join("||"))
+          } else a.push(s);
+          return a.length && (i += "if(!('button' in $event)&&" + a.map(la).join("&&") + ")return null;"), o && (i +=
+            o), "function($event){" + i + (n ? "return " + e.value + "($event)" : r ? "return (" + e.value +
+            ")($event)" : e.value) + "}"
+        }
+        return n || r ? e.value : "function($event){" + e.value + "}"
+      }
+
+      function la(e) {
+        var t = parseInt(e, 10);
+        if (t) return "$event.keyCode!==" + t;
+        var n = ra[e],
+          r = ia[e];
+        return "_k($event.keyCode," + JSON.stringify(e) + "," + JSON.stringify(n) + ",$event.key," + JSON.stringify(r) +
+          ")"
+      }
+      var ua = {
+          on: function (e, t) {
+            e.wrapListeners = function (e) {
+              return "_g(" + e + "," + t.value + ")"
+            }
+          },
+          bind: function (t, n) {
+            t.wrapData = function (e) {
+              return "_b(" + e + ",'" + t.tag + "'," + n.value + "," + (n.modifiers && n.modifiers.prop ? "true" :
+                "false") + (n.modifiers && n.modifiers.sync ? ",true" : "") + ")"
+            }
+          },
+          cloak: $
+        },
+        fa = function (e) {
+          this.options = e, this.warn = e.warn || $r, this.transforms = wr(e.modules, "transformCode"), this.dataGenFns =
+            wr(e.modules, "genData"), this.directives = m(m({}, ua), e.directives);
+          var t = e.isReservedTag || O;
+          this.maybeComponent = function (e) {
+            return !t(e.tag)
+          }, this.onceId = 0, this.staticRenderFns = []
+        };
+
+      function pa(e, t) {
+        var n = new fa(t);
+        return {
+          render: "with(this){return " + (e ? da(e, n) : '_c("div")') + "}",
+          staticRenderFns: n.staticRenderFns
+        }
+      }
+
+      function da(e, t) {
+        if (e.staticRoot && !e.staticProcessed) return va(e, t);
+        if (e.once && !e.onceProcessed) return ha(e, t);
+        if (e.for && !e.forProcessed) return f = t, v = (u = e).for, h = u.alias, m = u.iterator1 ? "," + u.iterator1 :
+          "", y = u.iterator2 ? "," + u.iterator2 : "", u.forProcessed = !0, (d || "_l") + "((" + v + "),function(" +
+          h + m + y + "){return " + (p || da)(u, f) + "})";
+        if (e.if && !e.ifProcessed) return ma(e, t);
+        if ("template" !== e.tag || e.slotTarget) {
+          if ("slot" === e.tag) return function (e, t) {
+            var n = e.slotName || '"default"',
+              r = _a(e, t),
+              i = "_t(" + n + (r ? "," + r : ""),
+              o = e.attrs && "{" + e.attrs.map(function (e) {
+                return g(e.name) + ":" + e.value
+              }).join(",") + "}",
+              a = e.attrsMap["v-bind"];
+            !o && !a || r || (i += ",null");
+            o && (i += "," + o);
+            a && (i += (o ? "" : ",null") + "," + a);
+            return i + ")"
+          }(e, t);
+          var n;
+          if (e.component) a = e.component, c = t, l = (s = e).inlineTemplate ? null : _a(s, c, !0), n = "_c(" + a +
+            "," + ya(s, c) + (l ? "," + l : "") + ")";
+          else {
+            var r = e.plain ? void 0 : ya(e, t),
+              i = e.inlineTemplate ? null : _a(e, t, !0);
+            n = "_c('" + e.tag + "'" + (r ? "," + r : "") + (i ? "," + i : "") + ")"
+          }
+          for (var o = 0; o < t.transforms.length; o++) n = t.transforms[o](e, n);
+          return n
+        }
+        return _a(e, t) || "void 0";
+        var a, s, c, l, u, f, p, d, v, h, m, y
+      }
+
+      function va(e, t) {
+        return e.staticProcessed = !0, t.staticRenderFns.push("with(this){return " + da(e, t) + "}"), "_m(" + (t.staticRenderFns
+          .length - 1) + (e.staticInFor ? ",true" : "") + ")"
+      }
+
+      function ha(e, t) {
+        if (e.onceProcessed = !0, e.if && !e.ifProcessed) return ma(e, t);
+        if (e.staticInFor) {
+          for (var n = "", r = e.parent; r;) {
+            if (r.for) {
+              n = r.key;
+              break
+            }
+            r = r.parent
+          }
+          return n ? "_o(" + da(e, t) + "," + t.onceId++ + "," + n + ")" : da(e, t)
+        }
+        return va(e, t)
+      }
+
+      function ma(e, t, n, r) {
+        return e.ifProcessed = !0,
+          function e(t, n, r, i) {
+            if (!t.length) return i || "_e()";
+            var o = t.shift();
+            return o.exp ? "(" + o.exp + ")?" + a(o.block) + ":" + e(t, n, r, i) : "" + a(o.block);
+
+            function a(e) {
+              return r ? r(e, n) : e.once ? ha(e, n) : da(e, n)
+            }
+          }(e.ifConditions.slice(), t, n, r)
+      }
+
+      function ya(e, t) {
+        var n, r, i = "{",
+          o = function (e, t) {
+            var n = e.directives;
+            if (!n) return;
+            var r, i, o, a, s = "directives:[",
+              c = !1;
+            for (r = 0, i = n.length; r < i; r++) {
+              o = n[r], a = !0;
+              var l = t.directives[o.name];
+              l && (a = !!l(e, o, t.warn)), a && (c = !0, s += '{name:"' + o.name + '",rawName:"' + o.rawName + '"' +
+                (o.value ? ",value:(" + o.value + "),expression:" + JSON.stringify(o.value) : "") + (o.arg ?
+                  ',arg:"' + o.arg + '"' : "") + (o.modifiers ? ",modifiers:" + JSON.stringify(o.modifiers) : "") +
+                "},")
+            }
+            if (c) return s.slice(0, -1) + "]"
+          }(e, t);
+        o && (i += o + ","), e.key && (i += "key:" + e.key + ","), e.ref && (i += "ref:" + e.ref + ","), e.refInFor &&
+          (i += "refInFor:true,"), e.pre && (i += "pre:true,"), e.component && (i += 'tag:"' + e.tag + '",');
+        for (var a = 0; a < t.dataGenFns.length; a++) i += t.dataGenFns[a](e);
+        if (e.attrs && (i += "attrs:{" + wa(e.attrs) + "},"), e.props && (i += "domProps:{" + wa(e.props) + "},"), e.events &&
+          (i += sa(e.events, !1, t.warn) + ","), e.nativeEvents && (i += sa(e.nativeEvents, !0, t.warn) + ","), e.slotTarget &&
+          !e.slotScope && (i += "slot:" + e.slotTarget + ","), e.scopedSlots && (i += (n = e.scopedSlots, r = t,
+            "scopedSlots:_u([" + Object.keys(n).map(function (e) {
+              return ga(e, n[e], r)
+            }).join(",") + "]),")), e.model && (i += "model:{value:" + e.model.value + ",callback:" + e.model.callback +
+            ",expression:" + e.model.expression + "},"), e.inlineTemplate) {
+          var s = function (e, t) {
+            var n = e.children[0];
+            if (1 === n.type) {
+              var r = pa(n, t.options);
+              return "inlineTemplate:{render:function(){" + r.render + "},staticRenderFns:[" + r.staticRenderFns.map(
+                function (e) {
+                  return "function(){" + e + "}"
+                }).join(",") + "]}"
+            }
+          }(e, t);
+          s && (i += s + ",")
+        }
+        return i = i.replace(/,$/, "") + "}", e.wrapData && (i = e.wrapData(i)), e.wrapListeners && (i = e.wrapListeners(
+          i)), i
+      }
+
+      function ga(e, t, n) {
+        return t.for && !t.forProcessed ? (r = e, o = n, a = (i = t).for, s = i.alias, c = i.iterator1 ? "," + i.iterator1 :
+          "", l = i.iterator2 ? "," + i.iterator2 : "", i.forProcessed = !0, "_l((" + a + "),function(" + s + c + l +
+          "){return " + ga(r, i, o) + "})") : "{key:" + e + ",fn:" + ("function(" + String(t.slotScope) +
+          "){return " + ("template" === t.tag ? t.if ? t.if+"?" + (_a(t, n) || "undefined") + ":undefined" : _a(t,
+            n) || "undefined" : da(t, n)) + "}") + "}";
+        var r, i, o, a, s, c, l
+      }
+
+      function _a(e, t, n, r, i) {
+        var o = e.children;
+        if (o.length) {
+          var a = o[0];
+          if (1 === o.length && a.for && "template" !== a.tag && "slot" !== a.tag) return (r || da)(a, t);
+          var s = n ? function (e, t) {
+              for (var n = 0, r = 0; r < e.length; r++) {
+                var i = e[r];
+                if (1 === i.type) {
+                  if (ba(i) || i.ifConditions && i.ifConditions.some(function (e) {
+                      return ba(e.block)
+                    })) {
+                    n = 2;
+                    break
+                  }(t(i) || i.ifConditions && i.ifConditions.some(function (e) {
+                    return t(e.block)
+                  })) && (n = 1)
+                }
+              }
+              return n
+            }(o, t.maybeComponent) : 0,
+            c = i || $a;
+          return "[" + o.map(function (e) {
+            return c(e, t)
+          }).join(",") + "]" + (s ? "," + s : "")
+        }
+      }
+
+      function ba(e) {
+        return void 0 !== e.for || "template" === e.tag || "slot" === e.tag
+      }
+
+      function $a(e, t) {
+        return 1 === e.type ? da(e, t) : 3 === e.type && e.isComment ? (r = e, "_e(" + JSON.stringify(r.text) + ")") :
+          "_v(" + (2 === (n = e).type ? n.expression : Ca(JSON.stringify(n.text))) + ")";
+        var n, r
+      }
+
+      function wa(e) {
+        for (var t = "", n = 0; n < e.length; n++) {
+          var r = e[n];
+          t += '"' + r.name + '":' + Ca(r.value) + ","
+        }
+        return t.slice(0, -1)
+      }
+
+      function Ca(e) {
+        return e.replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029")
+      }
+      new RegExp("\\b" +
+        "do,if,for,let,new,try,var,case,else,with,await,break,catch,class,const,super,throw,while,yield,delete,export,import,return,switch,default,extends,finally,continue,debugger,function,arguments"
+        .split(",").join("\\b|\\b") + "\\b"), new RegExp("\\b" + "delete,typeof,void".split(",").join(
+        "\\s*\\([^\\)]*\\)|\\b") + "\\s*\\([^\\)]*\\)");
+
+      function xa(t, n) {
+        try {
+          return new Function(t)
+        } catch (e) {
+          return n.push({
+            err: e,
+            code: t
+          }), $
+        }
+      }
+      var ka, Aa, Oa = (ka = function (e, t) {
+        var n = Ho(e.trim(), t);
+        !1 !== t.optimize && ea(n, t);
+        var r = pa(n, t);
+        return {
+          ast: n,
+          render: r.render,
+          staticRenderFns: r.staticRenderFns
+        }
+      }, function (s) {
+        function e(e, t) {
+          var n = Object.create(s),
+            r = [],
+            i = [];
+          if (n.warn = function (e, t) {
+              (t ? i : r).push(e)
+            }, t)
+            for (var o in t.modules && (n.modules = (s.modules || []).concat(t.modules)), t.directives && (n.directives =
+                m(Object.create(s.directives || null), t.directives)), t) "modules" !== o && "directives" !== o &&
+              (n[o] = t[o]);
+          var a = ka(e, n);
+          return a.errors = r, a.tips = i, a
+        }
+        return {
+          compile: e,
+          compileToFunctions: (c = e, l = Object.create(null), function (e, t, n) {
+            (t = m({}, t)).warn, delete t.warn;
+            var r = t.delimiters ? String(t.delimiters) + e : e;
+            if (l[r]) return l[r];
+            var i = c(e, t),
+              o = {},
+              a = [];
+            return o.render = xa(i.render, a), o.staticRenderFns = i.staticRenderFns.map(function (e) {
+              return xa(e, a)
+            }), l[r] = o
+          })
+        };
+        var c, l
+      })(Yo).compileToFunctions;
+
+      function Sa(e) {
+        return (Aa = Aa || document.createElement("div")).innerHTML = e ? '<a href="\n"/>' : '<div a="\n"/>', 0 < Aa.innerHTML
+          .indexOf("&#10;")
+      }
+      var Ta = !!B && Sa(!1),
+        Ea = !!B && Sa(!0),
+        ja = e(function (e) {
+          var t = Jn(e);
+          return t && t.innerHTML
+        }),
+        Na = hn.prototype.$mount;
+      return hn.prototype.$mount = function (e, t) {
+        if ((e = e && Jn(e)) === document.body || e === document.documentElement) return this;
+        var n = this.$options;
+        if (!n.render) {
+          var r = n.template;
+          if (r)
+            if ("string" == typeof r) "#" === r.charAt(0) && (r = ja(r));
+            else {
+              if (!r.nodeType) return this;
+              r = r.innerHTML
+            }
+          else e && (r = function (e) {
+            {
+              if (e.outerHTML) return e.outerHTML;
+              var t = document.createElement("div");
+              return t.appendChild(e.cloneNode(!0)), t.innerHTML
+            }
+          }(e));
+          if (r) {
+            var i = Oa(r, {
+                shouldDecodeNewlines: Ta,
+                shouldDecodeNewlinesForHref: Ea,
+                delimiters: n.delimiters,
+                comments: n.comments
+              }, this),
+              o = i.render,
+              a = i.staticRenderFns;
+            n.render = o, n.staticRenderFns = a
+          }
+        }
+        return Na.call(this, e, t)
+      }, hn.compile = Oa, hn
+    });
+    /*!
+     * vue-resource v1.5.0
+     * https://github.com/pagekit/vue-resource
+     * Released under the MIT License.
+     */
+    ! function (t, e) {
+      "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define &&
+        define.amd ? define(e) : t.VueResource = e()
+    }(this, function () {
+      "use strict";
+      var t = 2;
+
+      function e(e) {
+        this.state = t, this.value = void 0, this.deferred = [];
+        var n = this;
+        try {
+          e(function (t) {
+            n.resolve(t)
+          }, function (t) {
+            n.reject(t)
+          })
+        } catch (t) {
+          n.reject(t)
+        }
+      }
+      e.reject = function (t) {
+        return new e(function (e, n) {
+          n(t)
+        })
+      }, e.resolve = function (t) {
+        return new e(function (e, n) {
+          e(t)
+        })
+      }, e.all = function (t) {
+        return new e(function (n, o) {
+          var r = 0,
+            i = [];
+
+          function s(e) {
+            return function (o) {
+              i[e] = o, (r += 1) === t.length && n(i)
+            }
+          }
+          0 === t.length && n(i);
+          for (var u = 0; u < t.length; u += 1) e.resolve(t[u]).then(s(u), o)
+        })
+      }, e.race = function (t) {
+        return new e(function (n, o) {
+          for (var r = 0; r < t.length; r += 1) e.resolve(t[r]).then(n, o)
+        })
+      };
+      var n = e.prototype;
+
+      function o(t, e) {
+        t instanceof Promise ? this.promise = t : this.promise = new Promise(t.bind(e)), this.context = e
+      }
+      n.resolve = function (e) {
+        var n = this;
+        if (n.state === t) {
+          if (e === n) throw new TypeError("Promise settled with itself.");
+          var o = !1;
+          try {
+            var r = e && e.then;
+            if (null !== e && "object" == typeof e && "function" == typeof r) return void r.call(e, function (t) {
+              o || n.resolve(t), o = !0
+            }, function (t) {
+              o || n.reject(t), o = !0
+            })
+          } catch (t) {
+            return void(o || n.reject(t))
+          }
+          n.state = 0, n.value = e, n.notify()
+        }
+      }, n.reject = function (e) {
+        var n = this;
+        if (n.state === t) {
+          if (e === n) throw new TypeError("Promise settled with itself.");
+          n.state = 1, n.value = e, n.notify()
+        }
+      }, n.notify = function () {
+        var e, n = this;
+        i(function () {
+          if (n.state !== t)
+            for (; n.deferred.length;) {
+              var e = n.deferred.shift(),
+                o = e[0],
+                r = e[1],
+                i = e[2],
+                s = e[3];
+              try {
+                0 === n.state ? i("function" == typeof o ? o.call(void 0, n.value) : n.value) : 1 === n.state &&
+                  ("function" == typeof r ? i(r.call(void 0, n.value)) : s(n.value))
+              } catch (t) {
+                s(t)
+              }
+            }
+        }, e)
+      }, n.then = function (t, n) {
+        var o = this;
+        return new e(function (e, r) {
+          o.deferred.push([t, n, e, r]), o.notify()
+        })
+      }, n.catch = function (t) {
+        return this.then(void 0, t)
+      }, "undefined" == typeof Promise && (window.Promise = e), o.all = function (t, e) {
+        return new o(Promise.all(t), e)
+      }, o.resolve = function (t, e) {
+        return new o(Promise.resolve(t), e)
+      }, o.reject = function (t, e) {
+        return new o(Promise.reject(t), e)
+      }, o.race = function (t, e) {
+        return new o(Promise.race(t), e)
+      };
+      var r = o.prototype;
+      r.bind = function (t) {
+        return this.context = t, this
+      }, r.then = function (t, e) {
+        return t && t.bind && this.context && (t = t.bind(this.context)), e && e.bind && this.context && (e = e.bind(
+          this.context)), new o(this.promise.then(t, e), this.context)
+      }, r.catch = function (t) {
+        return t && t.bind && this.context && (t = t.bind(this.context)), new o(this.promise.catch(t), this.context)
+      }, r.finally = function (t) {
+        return this.then(function (e) {
+          return t.call(this), e
+        }, function (e) {
+          return t.call(this), Promise.reject(e)
+        })
+      };
+      var i, s = {}.hasOwnProperty,
+        u = [].slice,
+        a = !1,
+        c = "undefined" != typeof window;
+
+      function f(t) {
+        return t ? t.replace(/^\s*|\s*$/g, "") : ""
+      }
+
+      function p(t) {
+        return t ? t.toLowerCase() : ""
+      }
+      var h = Array.isArray;
+
+      function d(t) {
+        return "string" == typeof t
+      }
+
+      function l(t) {
+        return "function" == typeof t
+      }
+
+      function m(t) {
+        return null !== t && "object" == typeof t
+      }
+
+      function y(t) {
+        return m(t) && Object.getPrototypeOf(t) == Object.prototype
+      }
+
+      function v(t, e, n) {
+        var r = o.resolve(t);
+        return arguments.length < 2 ? r : r.then(e, n)
+      }
+
+      function b(t, e, n) {
+        return l(n = n || {}) && (n = n.call(e)), T(t.bind({
+          $vm: e,
+          $options: n
+        }), t, {
+          $options: n
+        })
+      }
+
+      function g(t, e) {
+        var n, o;
+        if (h(t))
+          for (n = 0; n < t.length; n++) e.call(t[n], t[n], n);
+        else if (m(t))
+          for (o in t) s.call(t, o) && e.call(t[o], t[o], o);
+        return t
+      }
+      var w = Object.assign || function (t) {
+        return u.call(arguments, 1).forEach(function (e) {
+          x(t, e)
+        }), t
+      };
+
+      function T(t) {
+        return u.call(arguments, 1).forEach(function (e) {
+          x(t, e, !0)
+        }), t
+      }
+
+      function x(t, e, n) {
+        for (var o in e) n && (y(e[o]) || h(e[o])) ? (y(e[o]) && !y(t[o]) && (t[o] = {}), h(e[o]) && !h(t[o]) && (t[o] = []),
+          x(t[o], e[o], n)) : void 0 !== e[o] && (t[o] = e[o])
+      }
+
+      function j(t, e, n) {
+        var o, r, i, s = (o = t, r = ["+", "#", ".", "/", ";", "?", "&"], {
+            vars: i = [],
+            expand: function (t) {
+              return o.replace(/\{([^{}]+)\}|([^{}]+)/g, function (e, n, o) {
+                if (n) {
+                  var s = null,
+                    u = [];
+                  if (-1 !== r.indexOf(n.charAt(0)) && (s = n.charAt(0), n = n.substr(1)), n.split(/,/g).forEach(
+                      function (e) {
+                        var n = /([^:*]*)(?::(\d+)|(\*))?/.exec(e);
+                        u.push.apply(u, function (t, e, n, o) {
+                          var r = t[n],
+                            i = [];
+                          if (E(r) && "" !== r)
+                            if ("string" == typeof r || "number" == typeof r || "boolean" == typeof r) r =
+                              r.toString(), o && "*" !== o && (r = r.substring(0, parseInt(o, 10))), i.push(
+                                O(e, r, P(e) ? n : null));
+                            else if ("*" === o) Array.isArray(r) ? r.filter(E).forEach(function (t) {
+                            i.push(O(e, t, P(e) ? n : null))
+                          }) : Object.keys(r).forEach(function (t) {
+                            E(r[t]) && i.push(O(e, r[t], t))
+                          });
+                          else {
+                            var s = [];
+                            Array.isArray(r) ? r.filter(E).forEach(function (t) {
+                                s.push(O(e, t))
+                              }) : Object.keys(r).forEach(function (t) {
+                                E(r[t]) && (s.push(encodeURIComponent(t)), s.push(O(e, r[t].toString())))
+                              }), P(e) ? i.push(encodeURIComponent(n) + "=" + s.join(",")) : 0 !== s.length &&
+                              i.push(s.join(","))
+                          } else ";" === e ? i.push(encodeURIComponent(n)) : "" !== r || "&" !== e && "?" !==
+                            e ? "" === r && i.push("") : i.push(encodeURIComponent(n) + "=");
+                          return i
+                        }(t, s, n[1], n[2] || n[3])), i.push(n[1])
+                      }), s && "+" !== s) {
+                    var a = ",";
+                    return "?" === s ? a = "&" : "#" !== s && (a = s), (0 !== u.length ? s : "") + u.join(a)
+                  }
+                  return u.join(",")
+                }
+                return C(o)
+              })
+            }
+          }),
+          u = s.expand(e);
+        return n && n.push.apply(n, s.vars), u
+      }
+
+      function E(t) {
+        return null != t
+      }
+
+      function P(t) {
+        return ";" === t || "&" === t || "?" === t
+      }
+
+      function O(t, e, n) {
+        return e = "+" === t || "#" === t ? C(e) : encodeURIComponent(e), n ? encodeURIComponent(n) + "=" + e : e
+      }
+
+      function C(t) {
+        return t.split(/(%[0-9A-Fa-f]{2})/g).map(function (t) {
+          return /%[0-9A-Fa-f]/.test(t) || (t = encodeURI(t)), t
+        }).join("")
+      }
+
+      function $(t, e) {
+        var n, o = this || {},
+          r = t;
+        return d(t) && (r = {
+          url: t,
+          params: e
+        }), r = T({}, $.options, o.$options, r), $.transforms.forEach(function (t) {
+          var e, r, i;
+          d(t) && (t = $.transform[t]), l(t) && (e = t, r = n, i = o.$vm, n = function (t) {
+            return e.call(i, t, r)
+          })
+        }), n(r)
+      }
+
+      function U(t) {
+        return new o(function (e) {
+          var n = new XDomainRequest,
+            o = function (o) {
+              var r = o.type,
+                i = 0;
+              "load" === r ? i = 200 : "error" === r && (i = 500), e(t.respondWith(n.responseText, {
+                status: i
+              }))
+            };
+          t.abort = function () {
+              return n.abort()
+            }, n.open(t.method, t.getUrl()), t.timeout && (n.timeout = t.timeout), n.onload = o, n.onabort = o, n
+            .onerror = o, n.ontimeout = o, n.onprogress = function () {}, n.send(t.getBody())
+        })
+      }
+      $.options = {
+        url: "",
+        root: null,
+        params: {}
+      }, $.transform = {
+        template: function (t) {
+          var e = [],
+            n = j(t.url, t.params, e);
+          return e.forEach(function (e) {
+            delete t.params[e]
+          }), n
+        },
+        query: function (t, e) {
+          var n = Object.keys($.options.params),
+            o = {},
+            r = e(t);
+          return g(t.params, function (t, e) {
+            -1 === n.indexOf(e) && (o[e] = t)
+          }), (o = $.params(o)) && (r += (-1 == r.indexOf("?") ? "?" : "&") + o), r
+        },
+        root: function (t, e) {
+          var n, o, r = e(t);
+          return d(t.root) && !/^(https?:)?\//.test(r) && (n = t.root, o = "/", r = (n && void 0 === o ? n.replace(
+            /\s+$/, "") : n && o ? n.replace(new RegExp("[" + o + "]+$"), "") : n) + "/" + r), r
+        }
+      }, $.transforms = ["template", "query", "root"], $.params = function (t) {
+        var e = [],
+          n = encodeURIComponent;
+        return e.add = function (t, e) {
+            l(e) && (e = e()), null === e && (e = ""), this.push(n(t) + "=" + n(e))
+          },
+          function t(e, n, o) {
+            var r, i = h(n),
+              s = y(n);
+            g(n, function (n, u) {
+              r = m(n) || h(n), o && (u = o + "[" + (s || r ? u : "") + "]"), !o && i ? e.add(n.name, n.value) :
+                r ? t(e, n, u) : e.add(u, n)
+            })
+          }(e, t), e.join("&").replace(/%20/g, "+")
+      }, $.parse = function (t) {
+        var e = document.createElement("a");
+        return document.documentMode && (e.href = t, t = e.href), e.href = t, {
+          href: e.href,
+          protocol: e.protocol ? e.protocol.replace(/:$/, "") : "",
+          port: e.port,
+          host: e.host,
+          hostname: e.hostname,
+          pathname: "/" === e.pathname.charAt(0) ? e.pathname : "/" + e.pathname,
+          search: e.search ? e.search.replace(/^\?/, "") : "",
+          hash: e.hash ? e.hash.replace(/^#/, "") : ""
+        }
+      };
+      var R = c && "withCredentials" in new XMLHttpRequest;
+
+      function A(t) {
+        return new o(function (e) {
+          var n, o, r = t.jsonp || "callback",
+            i = t.jsonpCallback || "_jsonp" + Math.random().toString(36).substr(2),
+            s = null;
+          n = function (n) {
+              var r = n.type,
+                u = 0;
+              "load" === r && null !== s ? u = 200 : "error" === r && (u = 500), u && window[i] && (delete window[
+                i], document.body.removeChild(o)), e(t.respondWith(s, {
+                status: u
+              }))
+            }, window[i] = function (t) {
+              s = JSON.stringify(t)
+            }, t.abort = function () {
+              n({
+                type: "abort"
+              })
+            }, t.params[r] = i, t.timeout && setTimeout(t.abort, t.timeout), (o = document.createElement("script"))
+            .src = t.getUrl(), o.type = "text/javascript", o.async = !0, o.onload = n, o.onerror = n, document.body
+            .appendChild(o)
+        })
+      }
+
+      function S(t) {
+        return new o(function (e) {
+          var n = new XMLHttpRequest,
+            o = function (o) {
+              var r = t.respondWith("response" in n ? n.response : n.responseText, {
+                status: 1223 === n.status ? 204 : n.status,
+                statusText: 1223 === n.status ? "No Content" : f(n.statusText)
+              });
+              g(f(n.getAllResponseHeaders()).split("\n"), function (t) {
+                r.headers.append(t.slice(0, t.indexOf(":")), t.slice(t.indexOf(":") + 1))
+              }), e(r)
+            };
+          t.abort = function () {
+              return n.abort()
+            }, n.open(t.method, t.getUrl(), !0), t.timeout && (n.timeout = t.timeout), t.responseType &&
+            "responseType" in n && (n.responseType = t.responseType), (t.withCredentials || t.credentials) && (n.withCredentials = !
+              0), t.crossOrigin || t.headers.set("X-Requested-With", "XMLHttpRequest"), l(t.progress) && "GET" ===
+            t.method && n.addEventListener("progress", t.progress), l(t.downloadProgress) && n.addEventListener(
+              "progress", t.downloadProgress), l(t.progress) && /^(POST|PUT)$/i.test(t.method) && n.upload.addEventListener(
+              "progress", t.progress), l(t.uploadProgress) && n.upload && n.upload.addEventListener("progress", t
+              .uploadProgress), t.headers.forEach(function (t, e) {
+              n.setRequestHeader(e, t)
+            }), n.onload = o, n.onabort = o, n.onerror = o, n.ontimeout = o, n.send(t.getBody())
+        })
+      }
+
+      function k(t) {
+        var e = require("got");
+        return new o(function (n) {
+          var o, r = t.getUrl(),
+            i = t.getBody(),
+            s = t.method,
+            u = {};
+          t.headers.forEach(function (t, e) {
+            u[e] = t
+          }), e(r, {
+            body: i,
+            method: s,
+            headers: u
+          }).then(o = function (e) {
+            var o = t.respondWith(e.body, {
+              status: e.statusCode,
+              statusText: f(e.statusMessage)
+            });
+            g(e.headers, function (t, e) {
+              o.headers.set(e, t)
+            }), n(o)
+          }, function (t) {
+            return o(t.response)
+          })
+        })
+      }
+
+      function I(t) {
+        return (t.client || (c ? S : k))(t)
+      }
+      var L = function (t) {
+        var e = this;
+        this.map = {}, g(t, function (t, n) {
+          return e.append(n, t)
+        })
+      };
+
+      function q(t, e) {
+        return Object.keys(t).reduce(function (t, n) {
+          return p(e) === p(n) ? n : t
+        }, null)
+      }
+      L.prototype.has = function (t) {
+        return null !== q(this.map, t)
+      }, L.prototype.get = function (t) {
+        var e = this.map[q(this.map, t)];
+        return e ? e.join() : null
+      }, L.prototype.getAll = function (t) {
+        return this.map[q(this.map, t)] || []
+      }, L.prototype.set = function (t, e) {
+        this.map[function (t) {
+          if (/[^a-z0-9\-#$%&'*+.^_`|~]/i.test(t)) throw new TypeError("Invalid character in header field name");
+          return f(t)
+        }(q(this.map, t) || t)] = [f(e)]
+      }, L.prototype.append = function (t, e) {
+        var n = this.map[q(this.map, t)];
+        n ? n.push(f(e)) : this.set(t, e)
+      }, L.prototype.delete = function (t) {
+        delete this.map[q(this.map, t)]
+      }, L.prototype.deleteAll = function () {
+        this.map = {}
+      }, L.prototype.forEach = function (t, e) {
+        var n = this;
+        g(this.map, function (o, r) {
+          g(o, function (o) {
+            return t.call(e, o, r, n)
+          })
+        })
+      };
+      var H = function (t, e) {
+        var n, r, i, s = e.url,
+          u = e.headers,
+          a = e.status,
+          c = e.statusText;
+        this.url = s, this.ok = a >= 200 && a < 300, this.status = a || 0, this.statusText = c || "", this.headers =
+          new L(u), this.body = t, d(t) ? this.bodyText = t : (i = t, "undefined" != typeof Blob && i instanceof Blob &&
+            (this.bodyBlob = t, (0 === (r = t).type.indexOf("text") || -1 !== r.type.indexOf("json")) && (this.bodyText =
+              (n = t, new o(function (t) {
+                var e = new FileReader;
+                e.readAsText(n), e.onload = function () {
+                  t(e.result)
+                }
+              })))))
+      };
+      H.prototype.blob = function () {
+        return v(this.bodyBlob)
+      }, H.prototype.text = function () {
+        return v(this.bodyText)
+      }, H.prototype.json = function () {
+        return v(this.text(), function (t) {
+          return JSON.parse(t)
+        })
+      }, Object.defineProperty(H.prototype, "data", {
+        get: function () {
+          return this.body
+        },
+        set: function (t) {
+          this.body = t
+        }
+      });
+      var B = function (t) {
+        var e;
+        this.body = null, this.params = {}, w(this, t, {
+          method: (e = t.method || "GET", e ? e.toUpperCase() : "")
+        }), this.headers instanceof L || (this.headers = new L(this.headers))
+      };
+      B.prototype.getUrl = function () {
+        return $(this)
+      }, B.prototype.getBody = function () {
+        return this.body
+      }, B.prototype.respondWith = function (t, e) {
+        return new H(t, w(e || {}, {
+          url: this.getUrl()
+        }))
+      };
+      var M = {
+        "Content-Type": "application/json;charset=utf-8"
+      };
+
+      function N(t) {
+        var e = this || {},
+          n = function (t) {
+            var e = [I],
+              n = [];
+
+            function r(r) {
+              for (; e.length;) {
+                var i = e.pop();
+                if (l(i)) {
+                  var s = void 0,
+                    u = void 0;
+                  if (m(s = i.call(t, r, function (t) {
+                      return u = t
+                    }) || u)) return new o(function (e, o) {
+                    n.forEach(function (e) {
+                      s = v(s, function (n) {
+                        return e.call(t, n) || n
+                      }, o)
+                    }), v(s, e, o)
+                  }, t);
+                  l(s) && n.unshift(s)
+                } else c = "Invalid interceptor of type " + typeof i + ", must be a function", "undefined" != typeof console &&
+                  a && console.warn("[VueResource warn]: " + c)
+              }
+              var c
+            }
+            return m(t) || (t = null), r.use = function (t) {
+              e.push(t)
+            }, r
+          }(e.$vm);
+        return function (t) {
+          u.call(arguments, 1).forEach(function (e) {
+            for (var n in e) void 0 === t[n] && (t[n] = e[n])
+          })
+        }(t || {}, e.$options, N.options), N.interceptors.forEach(function (t) {
+          d(t) && (t = N.interceptor[t]), l(t) && n.use(t)
+        }), n(new B(t)).then(function (t) {
+          return t.ok ? t : o.reject(t)
+        }, function (t) {
+          var e;
+          return t instanceof Error && (e = t, "undefined" != typeof console && console.error(e)), o.reject(t)
+        })
+      }
+
+      function D(t, e, n, o) {
+        var r = this || {},
+          i = {};
+        return g(n = w({}, D.actions, n), function (n, s) {
+          n = T({
+            url: t,
+            params: w({}, e)
+          }, o, n), i[s] = function () {
+            return (r.$http || N)(function (t, e) {
+              var n, o = w({}, t),
+                r = {};
+              switch (e.length) {
+                case 2:
+                  r = e[0], n = e[1];
+                  break;
+                case 1:
+                  /^(POST|PUT|PATCH)$/i.test(o.method) ? n = e[0] : r = e[0];
+                  break;
+                case 0:
+                  break;
+                default:
+                  throw "Expected up to 2 arguments [params, body], got " + e.length + " arguments"
+              }
+              return o.body = n, o.params = w({}, o.params, r), o
+            }(n, arguments))
+          }
+        }), i
+      }
+
+      function J(t) {
+        var e, n, r;
+        J.installed || (n = (e = t).config, r = e.nextTick, i = r, a = n.debug || !n.silent, t.url = $, t.http = N, t
+          .resource = D, t.Promise = o, Object.defineProperties(t.prototype, {
+            $url: {
+              get: function () {
+                return b(t.url, this, this.$options.url)
+              }
+            },
+            $http: {
+              get: function () {
+                return b(t.http, this, this.$options.http)
+              }
+            },
+            $resource: {
+              get: function () {
+                return t.resource.bind(this)
+              }
+            },
+            $promise: {
+              get: function () {
+                var e = this;
+                return function (n) {
+                  return new t.Promise(n, e)
+                }
+              }
+            }
+          }))
+      }
+      return N.options = {}, N.headers = {
+        put: M,
+        post: M,
+        patch: M,
+        delete: M,
+        common: {
+          Accept: "application/json, text/plain, */*"
+        },
+        custom: {}
+      }, N.interceptor = {
+        before: function (t) {
+          l(t.before) && t.before.call(this, t)
+        },
+        method: function (t) {
+          t.emulateHTTP && /^(PUT|PATCH|DELETE)$/i.test(t.method) && (t.headers.set("X-HTTP-Method-Override", t.method),
+            t.method = "POST")
+        },
+        jsonp: function (t) {
+          "JSONP" == t.method && (t.client = A)
+        },
+        json: function (t) {
+          var e = t.headers.get("Content-Type") || "";
+          return m(t.body) && 0 === e.indexOf("application/json") && (t.body = JSON.stringify(t.body)),
+            function (t) {
+              return t.bodyText ? v(t.text(), function (e) {
+                var n, o;
+                if (0 === (t.headers.get("Content-Type") || "").indexOf("application/json") || (o = (n = e).match(
+                    /^\s*(\[|\{)/)) && {
+                    "[": /]\s*$/,
+                    "{": /}\s*$/
+                  }[o[1]].test(n)) try {
+                  t.body = JSON.parse(e)
+                } catch (e) {
+                  t.body = null
+                } else t.body = e;
+                return t
+              }) : t
+            }
+        },
+        form: function (t) {
+          var e;
+          e = t.body, "undefined" != typeof FormData && e instanceof FormData ? t.headers.delete("Content-Type") :
+            m(t.body) && t.emulateJSON && (t.body = $.params(t.body), t.headers.set("Content-Type",
+              "application/x-www-form-urlencoded"))
+        },
+        header: function (t) {
+          g(w({}, N.headers.common, t.crossOrigin ? {} : N.headers.custom, N.headers[p(t.method)]), function (e,
+            n) {
+            t.headers.has(n) || t.headers.set(n, e)
+          })
+        },
+        cors: function (t) {
+          if (c) {
+            var e = $.parse(location.href),
+              n = $.parse(t.getUrl());
+            n.protocol === e.protocol && n.host === e.host || (t.crossOrigin = !0, t.emulateHTTP = !1, R || (t.client =
+              U))
+          }
+        }
+      }, N.interceptors = ["before", "method", "jsonp", "json", "form", "header", "cors"], ["get", "delete", "head",
+        "jsonp"
+      ].forEach(function (t) {
+        N[t] = function (e, n) {
+          return this(w(n || {}, {
+            url: e,
+            method: t
+          }))
+        }
+      }), ["post", "put", "patch"].forEach(function (t) {
+        N[t] = function (e, n, o) {
+          return this(w(o || {}, {
+            url: e,
+            method: t,
+            body: n
+          }))
+        }
+      }), D.actions = {
+        get: {
+          method: "GET"
+        },
+        save: {
+          method: "POST"
+        },
+        query: {
+          method: "GET"
+        },
+        update: {
+          method: "PUT"
+        },
+        remove: {
+          method: "DELETE"
+        },
+        delete: {
+          method: "DELETE"
+        }
+      }, "undefined" != typeof window && window.Vue && window.Vue.use(J), J
+    });
+  </script>
+
+  <script>
+    function adjustHeightOfPage(pageNo) {
+
+      var pageContentHeight = 0;
+
+      var pageType = $('div[data-page-no="' + pageNo + '"]').data("page-type");
+
+      if (pageType != undefined && pageType == "gallery") {
+        pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .tm-img-gallery-container").height();
+      } else {
+        pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .js-tm-page-content").height() + 20;
+      }
+
+      // Get the page height
+      var totalPageHeight = $('.cd-slider-nav').height() +
+        pageContentHeight +
+        $('.tm-footer').outerHeight();
+
+      // Adjust layout based on page height and window height
+      if (totalPageHeight > $(window).height()) {
+        $('.cd-hero-slider').addClass('small-screen');
+        $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", totalPageHeight + "px");
+      } else {
+        $('.cd-hero-slider').removeClass('small-screen');
+        $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", "100%");
+      }
     }
-</script>
-<link rel="stylesheet" href="assets/lol-surprise-lp1/1/jquery.fancybox.css" type="text/css" media="screen" property="">
-<script src="assets/lol-surprise-lp1/1/jquery.fancybox.pack.js"></script>
-<script src="assets/lol-surprise-lp1/1/jquery.validate.min.js"></script>
-<script src="assets/lol-surprise-lp1/1/jquery.inputmask.bundle.min.js"></script>
-<link rel="stylesheet" type="text/css" href="assets/lol-surprise-lp1/1/slick.css" property="">
-<link rel="stylesheet" type="text/css" href="assets/lol-surprise-lp1/1/slick-theme.css" property="">
-<script type="text/javascript" src="assets/lol-surprise-lp1/1/slick.min.js"></script>
-<script src="assets/lol-surprise-lp1/1/easing.js" type="text/javascript"></script>
-<script src="assets/lol-surprise-lp1/1/jquery.ui.totop.min.js" type="text/javascript"></script>
-<script type="text/javascript" charset="utf-8" src="assets/lol-surprise-lp1/1/jquery-scrolltofixed-min.js"></script>
-<script src="assets/lol-surprise-lp1/1/main.js"></script>
 
-<script src="assets/lol-surprise-lp1/1/script.php" type="text/javascript"></script>
+    /*
+        Everything is loaded including images.
+    */
+    $(window).load(function () {
 
-<a href="/#" id="toTop">To Top</a></body></html>
+      adjustHeightOfPage(1); // Adjust page height
+
+      /* Gallery One pop up
+      -----------------------------------------*/
+      $('.gallery-one').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'iframe',
+        gallery: {
+          enabled: true
+        },
+        iframe: {
+          markup: '<div class="mfp-iframe-scaler">' +
+            '<div class="mfp-close"></div>' +
+            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+            '<div class="mfp-title">Some caption</div>' +
+            '</div>'
+        },
+        callbacks: {
+          markupParse: function (template, values, item) {
+            values.title = item.el.attr('title');
+          }
+        }
+      });
+
+      /* Gallery Two pop up
+                -----------------------------------------*/
+      $('.gallery-two').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'iframe',
+        gallery: {
+          enabled: true
+        },
+        iframe: {
+          markup: '<div class="mfp-iframe-scaler">' +
+            '<div class="mfp-close"></div>' +
+            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+            '<div class="mfp-title">Some caption</div>' +
+            '</div>'
+        },
+        callbacks: {
+          markupParse: function (template, values, item) {
+            values.title = item.el.attr('title');
+          }
+        }
+      });
+
+      /* Gallery Three pop up
+      -----------------------------------------*/
+      $('.gallery-three').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'iframe',
+        gallery: {
+          enabled: true
+        },
+        iframe: {
+          markup: '<div class="mfp-iframe-scaler">' +
+            '<div class="mfp-close"></div>' +
+            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+            '<div class="mfp-title">Some caption</div>' +
+            '</div>'
+        },
+        callbacks: {
+          markupParse: function (template, values, item) {
+            values.title = item.el.attr('title');
+          }
+        }
+      });
+
+      $('.gallery-4').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'iframe',
+        gallery: {
+          enabled: true
+        },
+        iframe: {
+          markup: '<div class="mfp-iframe-scaler">' +
+            '<div class="mfp-close"></div>' +
+            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+            '<div class="mfp-title">Some caption</div>' +
+            '</div>'
+        },
+        callbacks: {
+          markupParse: function (template, values, item) {
+            values.title = item.el.attr('title');
+          }
+        }
+      });
+
+      /* Collapse menu after click 
+      -----------------------------------------*/
+      $('#tmNavbar a').click(function () {
+        $('#tmNavbar').collapse('hide');
+
+        adjustHeightOfPage($(this).data("no")); // Adjust page height       
+      });
+
+      /* Browser resized 
+      -----------------------------------------*/
+      $(window).resize(function () {
+        var currentPageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
+
+        // wait 3 seconds
+        setTimeout(function () {
+          adjustHeightOfPage(currentPageNo);
+        }, 1000);
+
+      });
+
+      // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
+      $('body').addClass('loaded');
+
+      // Write current year in copyright text.
+      $(".tm-copyright-year").text(new Date().getFullYear());
+
+    });
+
+    $("#a_1").click(function () {
+      $("a.nav-link")[1].click();
+    });
+    $("#a_2").click(function () {
+      $("a.nav-link")[2].click();
+    });
+    $("#a_3").click(function () {
+      $("a.nav-link")[3].click();
+    });
+  </script> 
+
+  
+
+  <script> 
+ 
+  
+  var _current_page_films = 1; var all_pages_films = 1; var _scrolled = false; 
+  // document.addEventListener("DOMContentLoaded", ready);
+  // function ready()
+  // {
+  //   window.onscroll = () => {
+  //     let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight  === document.documentElement.offsetHeight;
+
+  //     if (bottomOfWindow) {
+  //       if(_current_page_films < all_pages_films)
+  //       {
+  //         // current_page_films++;
+  //         // app.getAllPosts();
+  //         // alert(1);
+  //       } 
+  //     }
+  //   };
+  // }
+ 
+Vue.component('youtube-component', {
+  template: `<div class="grid-item">
+      <figure class="effect-sadie">
+              <img :src="'https://i.ytimg.com/vi/'+youtube.short_url + '/hqdefault.jpg'" alt="Image" class="img-fluid tm-img">
+              <figcaption>
+                  <h2 class="tm-figure-title">{{youtube.title}}</h2>
+                  <p class="tm-figure-description">{{youtube.description}}</p>
+                  <a class="popup-youtube" :title="youtube.title+'<br><br>'+youtube.description"  rel="nofollow" :href="'http://www.youtube.com/watch?v='+youtube.short_url">{{youtube.description}}</a>
+              </figcaption>           
+          </figure>
+    </div>`,
+  props: {
+    youtube: {}
+  }
+});
+
+var fff = setInterval(function() {
+  $(window).resize();
+}, 1000);
+
+function getPosition(el) {
+  var xPos = 0;
+  var yPos = 0;
+ 
+  while (el) {
+    if (el.tagName == "BODY") {
+      // deal with browser quirks with body/window/document and page scroll
+      var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
+      var yScroll = el.scrollTop || document.documentElement.scrollTop;
+ 
+      xPos += (el.offsetLeft - xScroll + el.clientLeft);
+      yPos += (el.offsetTop - yScroll + el.clientTop);
+    } else {
+      // for all other non-BODY elements
+      xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+      yPos += (el.offsetTop - el.scrollTop + el.clientTop);
+    }
+ 
+    el = el.offsetParent;
+  }
+  return {
+    x: xPos,
+    y: yPos
+  };
+}
+
+function scrollToTop(scrollDuration) {
+const   scrollHeight = window.scrollY,
+        scrollStep = Math.PI / ( scrollDuration / 15 ),
+        cosParameter = scrollHeight / 2;
+var     scrollCount = 0,
+        scrollMargin,
+        scrollInterval = setInterval( function() {
+            if ( window.scrollY != 0 ) {
+                scrollCount = scrollCount + 1;  
+                scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
+                window.scrollTo( window.scrollY, ( scrollHeight - scrollMargin ) );
+            } 
+            else clearInterval(scrollInterval); 
+        }, 15 );
+}
+
+var app = new Vue({
+  el: '#app',
+  data: function () {
+  return {
+    youtubes: [],
+    youtube: [],
+    current_page_films: _current_page_films,
+    all_pages_films: all_pages_films,
+    scrolled: _scrolled
+  };
+}, 
+  computed: {
+        resource: function() {
+            return this.$resource('https://lol-surprise-lp1.tk/api/v1/youtubes/search?category=films&page='+this.current_page_films)
+        }
+    }, 
+  methods: {
+    handleScroll: function (){
+      var t = document.querySelectorAll('.grid-item');
+      var tt = t[t.length-1]
+      var position = getPosition(tt);
+      if(position.y <= window.scrollY)
+      {
+        
+        if(_current_page_films < all_pages_films && _scrolled == false)
+        _scrolled = true;
+        _current_page_films++;
+          app.current_page_films = _current_page_films;
+        //this.$set(this, current_page_films, _current_page_films);
+        //contact.phpVue.set(app.current_page_films, 0, {current_page_films: _current_page_films++});
+        
+        
+        this.getAllPosts();
+       
+      }
+        
+      //alert(3333);
+      //console.log(window.scrollY);
+    // this.scrolled = window.scrollY > 0;
+    // alert(22);
+  },
+  add: function (event) {
+    _scrolled = true;
+    _current_page_films++;
+    app.current_page_films = _current_page_films;
+    this.getAllPosts();
+  },
+    getAllPosts: function() {
+      _scrolled = true;
+      var options = { 
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }
+            this.resource.get().then(function(response) {
+              console.log(response);
+              all_pages_films = response.headers.map['x-pagination-page-count'][0];
+              _current_page_films = response.headers.map['x-pagination-current-page'][0];
+              app.youtubes = app.youtubes.concat(response.data);
+              if(app.youtubes.length % 100 == 0)
+              {
+                for(var i = 0; i < response.data.length; i++)
+                {
+                  app.youtubes.shift();
+                }
+                //scrollToTop(1000);
+              }
+
+                   
+              //$(window).scrollTop(window.scrollY-20);
+              //app.$set(app.youtubes, response.data)
+              //this.youtubes = response.data;
+              var fff = setInterval(function() { 
+                _scrolled = false;
+               }, 4000);
+              
+
+            }, function(error) {
+              _current_page_films--;
+               console.log(error);
+            })
+        }
+    },
+    created: function() {
+         this.getAllPosts();
+         //window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed: function()  {
+  //window.removeEventListener('scroll', this.handleScroll);
+}
+}); 
+  </script>
+</body>
+
+</html>
