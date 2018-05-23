@@ -234,11 +234,11 @@ class DefaultController extends Controller
         }
         $a = urldecode(Yii::$app->request->get('utm_source', ''));
         
-        if(strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false || strpos(Yii::$app->getRequest()->serverName, 'lifeportal') !== false)
-        { 
-            if($country != 'RU') return $this->render("lifeportal",['model' => $model2, "a" => $a, "model3" => Youtubeen::find()->select('*')->all()]);
-            else return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a, "model3" => Youtube::find()->select('*')->all()]);
-        }
+        // if((strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false &&  strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp1') === false) || strpos(Yii::$app->getRequest()->serverName, 'lifeportal') !== false)
+        // { 
+        //     if($country != 'RU') return $this->render("lifeportal",['model' => $model2, "a" => $a, "model3" => Youtubeen::find()->select('*')->all()]);
+        //     else return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a, "model3" => Youtube::find()->select('*')->all()]);
+        // }
         return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a]);
     }
 

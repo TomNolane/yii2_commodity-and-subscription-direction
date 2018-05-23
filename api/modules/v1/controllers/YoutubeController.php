@@ -35,14 +35,16 @@ class YoutubeController extends ActiveController
 
             $query = $model->find();
                 foreach ($_GET as $key => $value) {
-                    if($key != "page")
+                    if($key != "page" && $key != "title")
                         $query->andWhere([ '=', $key , $value ]);
+                    else if($key == "title")
+                        $query->andWhere([ 'like', $key , $value ]);
                 } 
 
                 $provider = new ActiveDataProvider([
                     'query' => $query,
                     'pagination' => [
-                    'defaultPageSize' => 20,
+                    'defaultPageSize' => 48,
                     'page' => ($page -1)
                     ],
                 ]);
