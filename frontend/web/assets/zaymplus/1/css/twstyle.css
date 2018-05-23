@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+    font-family:Verdana, Geneva, sans-serif;
+    padding:0;
+    margin:0;
+}
+#main_feed
+{
+    width:100%;
+    margin:0 auto;
+}
+/*.title
+{
+    width:302px;
+}*/
+.title h3
+{
+    font-size: 37px;
+    color:#23CBFF;
+    font-weight:bold;
+    padding:5px 0 0 0;
+    margin:0px 0px 15px 0px;
+}
+#feed
+{
+    width:100%;
+    /*margin:20px auto 0;*/
+}
+#feed_content
+{
+    overflow-y: auto;
+    border: 1px solid #CCC;
+    background:#fff;
+}
+#data p
+{
+    font-size:11px;
+    color:#000;
+    font-weight:normal;
+    padding:0;
+    margin:0;
+}
+#feed_name
+{
+    font-weight:bold;
+    color:#39588F;
+    float:left;
+    border-bottom:1px solid #CCC;
+    width:100%;
+}
+#feed_name img
+{
+    border-radius:10px;
+    padding:5px;
+    float:left;
+}
+#feed_name a
+{
+    text-decoration:none;
+    font-size:13px;
+    color:#000;
+}
+#feed_name span
+{
+    font-weight:normal;
+    color:#000;
+    font-size:12px;
+}
+span.ctime
+{
+    padding:0 10px 0 0;
+    font-size:11px !important;
+    color:#8B9396 !important;
+    float:right !important;
+}
+
+.fb
+{
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#feed_name .like-reply
+{
+    color: #3b5998;
+    line-height: 13px;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+#feed_name i.fa.fa-circle {
+    color: #8B9396 !important;
+    font-size: 2px;
+    height: 4px;
+    vertical-align: middle;
+}

@@ -362,6 +362,16 @@ class DefaultController extends Controller
     }
 
     /**
+     * Displays lk5 page.
+     *
+     * @return mixed
+     */
+    public function actionRegister()
+    { 
+        return $this->render('register'); 
+    }
+
+    /**
      * Displays save page.
      *
      * @return mixed
