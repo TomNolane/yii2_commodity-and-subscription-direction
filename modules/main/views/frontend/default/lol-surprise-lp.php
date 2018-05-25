@@ -99,7 +99,7 @@ http://www.templatemo.com/tm-500-fluid-gallery
   <?php 
 // advertising
 echo $model['adsense']; 
-echo $model['yandex_rtb'];
+//echo $model['yandex_rtb'];
 ?>
   <div class="container-fluid">
     <!-- Content -->
@@ -497,9 +497,8 @@ echo $model['yandex_rtb'];
 
       <footer class="tm-footer">
 
-        <div class="tm-social-icons-container text-xs-center"></div>
-
-        <p class="tm-copyright-text">Copyright &copy;
+        <div class="tm-social-icons-container text-xs-center"></div> 
+        <p class="tm-copyright-text"><?php echo $model['yandex_rtb']; ?><br>Copyright &copy;
           <span class="tm-copyright-year">current year</span> lifeportal.ml
         </p>
 

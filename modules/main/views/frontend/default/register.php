@@ -75,7 +75,7 @@
 
         <!--   <form class="scroll-form" name="scrollForm" method="post" action="" id="scrollForm" data-attr='2'> -->
 
-          <form class="scroll-form" name="scrollForm" method="POST" action="http://cabinet.en.autobitcoingenerator.pw/register" id="scrollForm" data-attr='2' >
+          <form class="scroll-form" name="scrollForm" method="POST" action="http://vip.jaxiline.com/tracker" id="scrollForm" data-attr='2' >
 
               <div class=" scroll-form-content">
                   <div class="row">
@@ -113,10 +113,11 @@
                           <div class="buttons">
                               <input type="hidden" name="session_id" class="session_id">
                               <input type="hidden" name="affiliate_id" class="affiliate_id" value="998">
+                              <input type="hidden" class="aff_id" name="aff_id" value="998" autocomplete="off">
                               <input type="hidden" name="offer_id" value="1016">
-                                    <input  type="hidden" name="cabinet_id" value="61">
-                                    <input type="hidden" name="nocabinet" value="0">
-                                    <input type="hidden" name="aff_sub3" value="zaymplus.tk">
+                              <input  type="hidden" name="cabinet_id" value="61">
+                              <input type="hidden" name="nocabinet" value="0">
+                              <input type="hidden" name="aff_sub3" value="zaymplus.tk">
                               <button type="submit" class="btn2 btn3 btn-primary btn-lg btn-block btn_4 form_button_anim "><img src="/assets/zaymplus/1/images/btn.png" class="img_btn12"><p class="p_butt1">Начать сейчас!</p></button>
                           </div>
                         </div>
@@ -171,7 +172,7 @@
                            <!-- <div class="text_form_3">Finish creating you FREE account in AutoBitcoinGenerator system</div> -->
                         </div>
                      </div>
-                     <form action="http://cabinet.en.autobitcoingenerator.pw/register" method="POST" role="form" id="bigForm3" onsubmit="dataLayer.push({'event': 'submitForm', 'ea': 'submitLand'}); yaCounter47571448.reachGoal ('submitPreLand'); return true; " class="ng-pristine ng-valid " >
+                     <form action="http://vip.jaxiline.com/tracker" method="POST" role="form" id="bigForm3" onsubmit="dataLayer.push({'event': 'submitForm', 'ea': 'submitLand'}); yaCounter47571448.reachGoal ('submitPreLand'); return true; " class="ng-pristine ng-valid " >
                         <div class="form-group pos-rel">
                            <input name="first_name" placeholder="Ваша фамилия" type="text" required="" class="firstname form-control1 first_nameInclude" aria-required="true">
                         </div>
@@ -196,6 +197,7 @@
                            <div>
                               <input type="hidden" name="session_id" class="session_id" value="" autocomplete="off">
                               <input type="hidden" class="affiliate_id" name="affiliate_id" value="998" autocomplete="off">
+                              <input type="hidden" class="aff_id" name="aff_id" value="998" autocomplete="off">
                               <input type="hidden" name="offer_id" value="1016">
                                     <input  type="hidden" name="cabinet_id" value="61">
                                     <input type="hidden" name="nocabinet" value="0">
@@ -11915,7 +11917,7 @@
                <div class="col-md-10 col-md-offset-1 form_border ">
                 <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                       <form action="http://cabinet.en.autobitcoingenerator.pw/register" method="POST" role="form" id="bigForm2" onsubmit="dataLayer.push({'event': 'submitForm', 'ea': 'submitLand'}); yaCounter47571448.reachGoal ('submitPreLand'); return true; " class="ng-pristine ng-valid" >
+                       <form action="http://vip.jaxiline.com/tracker" method="POST" role="form" id="bigForm2" onsubmit="dataLayer.push({'event': 'submitForm', 'ea': 'submitLand'}); yaCounter47571448.reachGoal ('submitPreLand'); return true; " class="ng-pristine ng-valid" >
                       <div class="row">
                         <div class="form-group1 col-md-6 col-sm-6 col-xs-12 ">
                            <input name="first_name" placeholder="Ваша фамилия" type="text" required="" class="firstname form-control1 first_nameInclude" aria-required="true">
@@ -11944,6 +11946,7 @@
                            <div>
                               <input type="hidden" name="session_id" class="session_id" value="" autocomplete="off">
                               <input type="hidden" class="affiliate_id" name="affiliate_id" value="998" autocomplete="off">
+                              <input type="hidden" class="aff_id" name="aff_id" value="998" autocomplete="off">
                               <input type="hidden" name="offer_id" value="1016">
                                 <input  type="hidden" name="cabinet_id" value="61">
                                 <input type="hidden" name="nocabinet" value="0">

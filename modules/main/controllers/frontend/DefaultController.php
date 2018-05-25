@@ -142,11 +142,34 @@ class DefaultController extends Controller
             {
                 $a = urldecode(Yii::$app->request->get('utm_source', ''));	
 
-                if(empty(explode("_", $a)[0])) $show_white = true; 
-                else if(empty(explode("_", $a)[1])) $show_white = true;
-                else if(empty(explode("_", $a)[2])) $show_white = true;
-
-                $s1 = explode("_", $a)[0]; $s2 = explode("_", $a)[1]; $s3 = explode("_", $a)[2];
+                if(!empty(Yii::$app->request->get('utm_source', '')) && Yii::$app->request->get('utm_source', '') == "facebook" && !empty(Yii::$app->request->get('utm_medium', '')) && !empty(Yii::$app->request->get('utm_campaign', '')))
+                {
+                    try {
+                        $s1 = Yii::$app->request->get('utm_source', ''); 
+                        $s2 = Yii::$app->request->get('utm_medium', '');
+                        $s3 = Yii::$app->request->get('utm_campaign', '');
+                        $a = $s1."_".$s2.'_'.$s3;
+                    }
+                    catch (Exception $e) {
+                        //echo 'Caught exception: ',  $e->getMessage(), "\n";
+                    }
+                }
+                else 
+                {
+                    if(empty(explode("_", $a)[0])) $show_white = true; 
+                    else if(empty(explode("_", $a)[1])) $show_white = true;
+                    else if(empty(explode("_", $a)[2])) $show_white = true;
+                    else {
+                        try { 
+                            $s1 = explode("_", $a)[0]; 
+                            $s2 = explode("_", $a)[1]; 
+                            $s3 = explode("_", $a)[2];
+                        }
+                        catch (Exception $e) {
+                            //echo 'Caught exception: ',  $e->getMessage(), "\n";
+                        }
+                    } 
+                } 
             } 
         }
         
@@ -232,7 +255,20 @@ class DefaultController extends Controller
                 $banip->save(); // insert to banip
             } 
         }
-        $a = urldecode(Yii::$app->request->get('utm_source', ''));
+
+        if(Yii::$app->request->get('utm_source', '') != "facebook")
+            $a = urldecode(Yii::$app->request->get('utm_source', ''));
+        else{
+            try {
+                $s1 = Yii::$app->request->get('utm_source', ''); 
+                $s2 = Yii::$app->request->get('utm_medium', 'test1');
+                $s3 = Yii::$app->request->get('utm_campaign', 'test2');
+                $a = $s1."_".$s2.'_'.$s3;
+            }
+            catch (Exception $e) {
+                //echo 'Caught exception: ',  $e->getMessage(), "\n";
+            }
+        }
         
         // if((strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false &&  strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp1') === false) || strpos(Yii::$app->getRequest()->serverName, 'lifeportal') !== false)
         // { 
