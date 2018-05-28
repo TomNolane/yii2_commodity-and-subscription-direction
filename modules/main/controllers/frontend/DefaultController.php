@@ -9,6 +9,7 @@ use frontend\models\Banip;
 use frontend\models\Temp_ban;
 use frontend\models\Youtube;
 use frontend\models\Youtubeen;
+use frontend\models\Youtubege;
 use backend\models\Sites;
 use modules\main\models\frontend\ContactForm;
 use modules\main\Module;
@@ -270,11 +271,15 @@ class DefaultController extends Controller
             }
         }
         
-        // if((strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false &&  strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp1') === false) || strpos(Yii::$app->getRequest()->serverName, 'lifeportal') !== false)
-        // { 
-        //     if($country != 'RU') return $this->render("lifeportal",['model' => $model2, "a" => $a, "model3" => Youtubeen::find()->select('*')->all()]);
-        //     else return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a, "model3" => Youtube::find()->select('*')->all()]);
-        // }
+        if((strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false &&  strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp1') === false) || strpos(Yii::$app->getRequest()->serverName, 'lifeportal') !== false)
+        { 
+            // if($country != 'RU' && $country != 'AT') 
+            //     return $this->render("lifeportal",['model' => $model2, "a" => $a, "model3" => Youtubeen::find()->select('*')->all()]);
+            // else  
+            if($country == 'AT')
+                return $this->render("lifeportalge",['model' => $model2, "a" => $a, "model3" => Youtubege::find()->select('*')->all()]);
+            else return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a, "model3" => Youtube::find()->select('*')->all()]);
+        }
         return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a]);
     }
 

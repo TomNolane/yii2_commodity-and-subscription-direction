@@ -69,6 +69,12 @@ return [
                 ],
                 [
                     'class' => 'yii\rest\UrlRule',
+                    'controller' => 'v1/youtubege', 
+                    'except' => ['post','get'],
+                    'extraPatterns' => ['GET search' => 'search']
+                ],
+                [
+                    'class' => 'yii\rest\UrlRule',
                     'controller' => 'v1/country',
                     'tokens' => [
                         '{id}' => '<id:\\w+>'

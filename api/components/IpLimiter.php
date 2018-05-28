@@ -14,7 +14,7 @@ class IpLimiter implements RateLimitInterface
     /**
      * Разрешенное количество запросов
      */
-    const RATE_LIMIT = 12;
+    const RATE_LIMIT = 24;
 
     /**
      * Время в секундах

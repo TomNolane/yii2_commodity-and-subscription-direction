@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/assets/lol-surprise-lp/favicon.png">
-  <title>Best free video online!</title>
+  <title>Besten Kostenlose online-video!</title>
   <!--
 Fluid Gallery Template
 http://www.templatemo.com/tm-500-fluid-gallery
@@ -121,18 +121,18 @@ echo $model['adsense'];
 
               <ul class="nav navbar-nav">
                 <li class="nav-item active selected">
-                  <a class="nav-link" href="#0" data-no="1">Main page
+                  <a class="nav-link" href="#0" data-no="1">Hauptseite
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#0" data-no="2">Films</a>
+                  <a class="nav-link" href="#0" data-no="2">Filme</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#0" data-no="3">For kids</a>
+                  <a class="nav-link" href="#0" data-no="3">Cartoons</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#0" data-no="4">Music video</a>
+                  <a class="nav-link" href="#0" data-no="4">Musikvideo</a>
                 </li>
 
                 <!-- <li class="nav-item">
@@ -158,12 +158,12 @@ echo $model['adsense'];
                       <div class="col-xs-12">
                         <div class="tm-flex">
                           <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding">
-                          <h2 class="tm-text-title">More than 1000 movies and cartoons on our website</h2>
-                          <p class="tm-text">Welcome to this site! On this site you will find a lot of movies, cartoons and other videos (new, popular, old, favorite) for every taste. Absolutely free and without any registration! It is enough to go to our file Cabinet and enjoy watching.</p>
-                          <p class="tm-text">Our filing Cabinet:<br>
-                          <a href="#" onclick="document.querySelectorAll('a.nav-link')[1].click()" id="a_1">Films</a><br>
+                          <h2 class="tm-text-title">Mehr als 1000 Filme und Zeichentrickfilme auf unserer website</h2>
+                          <p class="tm-text">Willkommen auf dieser Website! Auf dieser Seite finden Sie eine Menge von Filmen, cartoons und andere videos (neue, beliebte, alte, Favorit) für jeden Geschmack. Absolut kostenlos und ohne Registrierung! Es ist genug zu gehen, um unsere Datei-Kabinett beobachten und genießen.</p>
+                          <p class="tm-text">Unser Aktenschrank:<br>
+                          <a href="#" onclick="document.querySelectorAll('a.nav-link')[1].click()" id="a_1">Filme</a><br>
                           <a href="#" onclick="document.querySelectorAll('a.nav-link')[2].click()" id="a_2">Cartoons</a><br>
-                          <a href="#" onclick="document.querySelectorAll('a.nav-link')[3].click()" id="a_3">Music video</a>
+                          <a href="#" onclick="document.querySelectorAll('a.nav-link')[3].click()" id="a_3">Musikvideo</a>
                           </p> 
                           </div>
                         </div>
@@ -195,7 +195,7 @@ echo $model['adsense'];
                   <div class="form-group">
                     <div class="d-flex justify-content-center">
                       <button v-on:click="add" id="singlebutton" name="singlebutton" class="btn btn-primary btn-film btn-lg">
-                        More
+                        Noch nicht
                       </button>
                     </div>
                   </div>
@@ -221,7 +221,7 @@ echo $model['adsense'];
                   <div class="form-group">
                     <div class="d-flex justify-content-center">
                       <button v-on:click="add2" id="singlebutton2" name="singlebutton2" class="btn btn-primary btn-film btn-lg">
-                        More
+                        Noch nicht
                       </button>
                     </div>
                   </div>
@@ -251,7 +251,7 @@ echo $model['adsense'];
                   <div class="form-group">
                     <div class="d-flex justify-content-center">
                       <button v-on:click="add3" id="singlebutton3" name="singlebutton3" class="btn btn-primary btn-film btn-lg">
-                        More
+                        Noch nicht
                       </button>
                     </div>
                   </div>
@@ -284,7 +284,7 @@ echo $model['adsense'];
               <div class="form-group">
                 <div class="d-flex justify-content-center">
                   <button v-on:click="add3" id="singlebutton3" name="singlebutton3" class="btn btn-primary btn-film btn-lg">
-                  More
+                  Noch nicht
                   </button>
                 </div>
               </div>
@@ -475,72 +475,7 @@ echo $model['adsense'];
     $(window).load(function () {
 
       adjustHeightOfPage(1); // Adjust page height
-
-      /* Gallery One pop up
-      -----------------------------------------*/
-      $('.gallery-one').magnificPopup({
-        delegate: 'a', // child items selector, by clicking on it popup will open
-        type: 'iframe',
-        gallery: {
-          enabled: true
-        },
-        iframe: {
-          markup: '<div class="mfp-iframe-scaler">' +
-            '<div class="mfp-close"></div>' +
-            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-            '<div class="mfp-title">Some caption</div>' +
-            '</div>'
-        },
-        callbacks: {
-          markupParse: function (template, values, item) {
-            values.title = item.el.attr('title');
-          }
-        }
-      });
-
-      /* Gallery Two pop up
-                -----------------------------------------*/
-      $('.gallery-two').magnificPopup({
-        delegate: 'a', // child items selector, by clicking on it popup will open
-        type: 'iframe',
-        gallery: {
-          enabled: true
-        },
-        iframe: {
-          markup: '<div class="mfp-iframe-scaler">' +
-            '<div class="mfp-close"></div>' +
-            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-            '<div class="mfp-title">Some caption</div>' +
-            '</div>'
-        },
-        callbacks: {
-          markupParse: function (template, values, item) {
-            values.title = item.el.attr('title');
-          }
-        }
-      });
-
-      /* Gallery Three pop up
-      -----------------------------------------*/
-      $('.gallery-three').magnificPopup({
-        delegate: 'a', // child items selector, by clicking on it popup will open
-        type: 'iframe',
-        gallery: {
-          enabled: true
-        },
-        iframe: {
-          markup: '<div class="mfp-iframe-scaler">' +
-            '<div class="mfp-close"></div>' +
-            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-            '<div class="mfp-title">Some caption</div>' +
-            '</div>'
-        },
-        callbacks: {
-          markupParse: function (template, values, item) {
-            values.title = item.el.attr('title');
-          }
-        }
-      });
+ 
 
       $('.gallery-4').magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
@@ -549,7 +484,7 @@ echo $model['adsense'];
           enabled: true
         },
         iframe: {
-          markup: '<div class="mfp-iframe-scaler"><div class="mfp-close"></div><iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe><div class="mfp-title">Some caption</div></div><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-1233613285194868", enable_page_level_ads: true});</script>';
+          markup: "<div class='mfp-iframe-scaler'><div class='mfp-close'></div><iframe class='mfp-iframe' frameborder='0' allowfullscreen></iframe><div class='mfp-title'>Some caption</div></div>",
         },
         callbacks: {
           markupParse: function (template, values, item) {
@@ -744,21 +679,21 @@ echo $model['adsense'];
       },
       computed: {
         resource: function () {
-          return this.$resource('/api/v1/youtubeens/search?category=films&page=' + this.current_page_films)
+          return this.$resource('/api/v1/youtubeges/search?category=films&page=' + this.current_page_films)
         },
         resource2: function () {
-          return this.$resource('/api/v1/youtubeens/search?category=cartoons&page=' + this.current_page_films2)
+          return this.$resource('/api/v1/youtubeges/search?category=cartoons&page=' + this.current_page_films2)
         },
         resource3: function () {
           return this.$resource('/api/v1/youtubeens/search?category=music&page=' +
             this.current_page_films3)
         },
         resource4: function () {
-          return this.$resource('/api/v1/youtubeens/search?category=films&title=' + this
+          return this.$resource('/api/v1/youtubeges/search?category=films&title=' + this
             .video)
         },
         resource5: function () {
-          return this.$resource('/api/v1/youtubeens/search?category=cartoons&title=' + this
+          return this.$resource('/api/v1/youtubeges/search?category=cartoons&title=' + this
             .video2)
         },
         resource6: function () {
