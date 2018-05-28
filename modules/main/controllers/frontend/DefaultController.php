@@ -421,4 +421,16 @@ class DefaultController extends Controller
     { 
         return $this->render('save'); 
     }
+
+    /**
+     * Displays video page.
+     *
+     * @return mixed
+     */
+    public function actionVideo()
+    { 
+        $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
+        $model3 = Youtube::find()->select('*')->where(['short_url' => Yii::$app->request->get('short_url', 'z_93aPcssLc')])->one();
+        return $this->render('video',['model' => $model2,'model3' => $model3]); 
+    } 
 }
