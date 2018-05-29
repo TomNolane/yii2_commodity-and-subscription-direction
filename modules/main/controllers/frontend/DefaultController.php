@@ -276,8 +276,7 @@ class DefaultController extends Controller
             // if($country != 'RU' && $country != 'AT') 
             //     return $this->render("lifeportal",['model' => $model2, "a" => $a, "model3" => Youtubeen::find()->select('*')->all()]);
             // else  
-            if($country == 'AT')
-                return $this->render("lifeportalge",['model' => $model2, "a" => $a, "model3" => Youtubege::find()->select('*')->all()]);
+            if($country != 'RU') return $this->render("lifeportalge",['model' => $model2, "a" => $a, "model3" => Youtubege::find()->select('*')->all()]);
             else return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a, "model3" => Youtube::find()->select('*')->all()]);
         }
         return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a]);
@@ -432,5 +431,20 @@ class DefaultController extends Controller
         $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
         $model3 = Youtube::find()->select('*')->where(['short_url' => Yii::$app->request->get('short_url', 'z_93aPcssLc')])->one();
         return $this->render('video',['model' => $model2,'model3' => $model3]); 
-    } 
+    }
+	
+	public function actionMenu()
+    {  
+        return $this->render('menu'); 
+    }
+	
+	public function actionTodaySpecial()
+    {  
+        return $this->render('today-special'); 
+    }
+	
+	public function actionContact2()
+    {  
+        return $this->render('contact2'); 
+    }
 }

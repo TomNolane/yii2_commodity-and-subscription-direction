@@ -28,7 +28,7 @@ class Bootstrap
             [
                 // Declaration of rules here
                 '' => 'main/default/index',
-                '<_a:(agreement|lk|register|lk2|lk3|lk4|lk5|order|save|politics|captcha|video)>' => 'main/default/<_a>',
+                '<_a:(agreement|lk|register|lk2|lk3|lk4|lk5|order|save|today-special|contact2|menu|politics|captcha|video)>' => 'main/default/<_a>',
             ]
         );
     }
