@@ -271,14 +271,17 @@ class DefaultController extends Controller
             }
         }
         
+		
         if((strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false &&  strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp1') === false) || strpos(Yii::$app->getRequest()->serverName, 'lifeportal') !== false)
         { 
             // if($country != 'RU' && $country != 'AT') 
             //     return $this->render("lifeportal",['model' => $model2, "a" => $a, "model3" => Youtubeen::find()->select('*')->all()]);
             // else  
-            if($country != 'RU') return $this->render("lifeportalge",['model' => $model2, "a" => $a, "model3" => Youtubege::find()->select('*')->all()]);
-            else return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a, "model3" => Youtube::find()->select('*')->all()]);
+            //if($country != 'RU') return $this->render("lifeportalge",['model' => $model2, "a" => $a, "model3" => Youtubege::find()->select('*')->all()]);
+            //else 
+				return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a, "model3" => Youtube::find()->select('*')->all()]);
         }
+		
         return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a]);
     }
 
