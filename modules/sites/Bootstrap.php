@@ -13,7 +13,7 @@ class Bootstrap
     public function __construct()
     {
         $i18n = Yii::$app->i18n;
-        $i18n->translations['modules/sites/*'] = [
+        $i18n->translations['*'] = [
             'class' => 'yii\i18n\PhpMessageSource',
             'basePath' => '@modules/sites/messages',
             'fileMap' => [

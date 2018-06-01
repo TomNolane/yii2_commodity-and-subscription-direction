@@ -20,7 +20,20 @@
     <![endif]-->
 
   </head>
+  <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
+  </head>
   <body>
+   <?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
     <!-- Preloader -->
     <div id="loader-wrapper">
       <div id="loader"></div>

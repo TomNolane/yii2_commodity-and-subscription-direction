@@ -22,9 +22,51 @@
   ol {
     padding: 0;
   }
+  .textcenter {
+    text-align: center !important;
+  }
+  .order-now-link {
+    padding-top: 26px;
+    font-size: 21px;
+  }
+  .tm-popular-item {
+    max-width: none;
+    text-align: center;
+  }
+  .tm-popular-item  > img {
+    margin-top: 20px; 
+    margin-left: 3%;
+    max-width: 93%;
+  }
+  .tm-popular-item-title {
+    text-align: center;
+  }
+  .tm-section-header {
+    width: unset;
+  }
+  pre {
+  white-space: pre-line; 
+  word-wrap: break-word;
+  font-family: inherit;
+  background-color: transparent;
+  border: none; 
+}
 </style>
+ <?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
   </head>
   <body>
+   <?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
+  <div id="app">
     <!-- Preloader -->
     <div id="loader-wrapper">
       <div id="loader"></div>
@@ -78,109 +120,13 @@
             <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="assets/recipe-house/img/logo.png" alt="Logo" class="tm-site-logo"> Меню дня</h2>
             <div class="tm-hr-container"><hr class="tm-hr"></div>
           </div>
-          <div class="col-lg-12 tm-popular-items-container">
-            <div class="tm-popular-item">
-              <img src="assets/recipe-house/img/popular-1.jpg" alt="Popular" class="tm-popular-item-img">
-              <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">A</span>mericano</h3><hr class="tm-popular-item-hr">
-                <p>Американо готовится из одной или двух порций эспрессо, в который добавляется от 30 до 470 мл горячей воды. В процессе приготовления горячую воду можно брать как из эспрессо-машины, так и из отдельного чайника или подогревателя. Схожим по составу, однако отличающимся по рецептуре является кофейный напиток «Лонг блэк».
-                  <br><br>&#x25cf; Холодный (ледяной) американо — изготавливается путём добавления холодной, а не горячей воды;
-                  <br>&#x25cf; «Рэд ай» (англ. Red Eye, также известен как «Канадиано») — изготавливается аналогично американо, но с использованием кофе из кофейного фильтра вместо воды.
-                 </p>
-              </div>              
-            </div>
-            <div class="tm-popular-item">
-              <img src="assets/recipe-house/img/popular-2.jpg" alt="Popular" class="tm-popular-item-img">
-              <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">C</span>appuccino</h3><hr class="tm-popular-item-hr">
-                <p>Классический итальянский напиток готовится по следующему рецепту: в керамическую чашку из кофемашины наливается одна порция эспрессо, после чего в чашку вливается подогретое и вспененное паром молоко. Иногда при вливании молока в эспрессо бариста особыми движениями создают на поверхности напитка рисунок — такая техника называется латте-арт. Основа напитка закладывается в пропорциональном соотношении молока и эспрессо — пять к одному. Также текстура вспененного молока должна быть мелкодисперсной и походить на стеклянную поверхность, а его температура в питчере должна быть в пределах 60—65 °C. При достижении данной температуры в молоке происходит расщепление лактозы на глюкозу и галактозу, что делает молоко сладким.</p>
-              </div>              
-            </div>
-            <div class="tm-popular-item">
-              <img src="assets/recipe-house/img/popular-3.jpg" alt="Popular" class="tm-popular-item-img">
-              <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">M</span>ocha</h3><hr class="tm-popular-item-hr">
-                <p>Сорт кофе Мокко очень древний. Он был одним из самых первых сортов кофе, с которым познакомилось человечество. Вам понадобятся такие компоненты:
-                  <ul>
-                    <li>Кофе эспрессо – 50 мл.</li>
-                    <li>Сахар – по вашему вкусу.</li>
-                    <li>Молоко – 50 мл.</li>
-                    <li>Шоколад (горький) – 60 г.</li>
-                    <li>Сливки взбитые 33% – по вашему вкусу.</li>
-                  </ul>
-                  Этапы приготовления:<br>
-                </p>
-                <ul>
-                    <li>Для начала сварите эспрессо с помощью турки или в кофемашине. Если вы предпочитаете сладкий напиток, добавьте к нему сахар по вкусу.</li>
-                    <li>Растопите шоколад на водяной бане или в микроволновке.</li>
-                    <li>Молоко подогрейте, не допуская закипания, чтобы не образовалась пенка.</li>
-                    <li>На дно чашки или бокала поместите растопленный шоколад. Сверху шоколада аккуратно влейте молоко. Следующим слоем наливаем кофе. В завершение этой композиции украсьте напиток взбитыми сливками, корицей и шоколадной стружкой.</li>
-                  </ul>
-              </div>              
-            </div>
+          <div class="col-lg-12 tm-popular-items-container"> 
 
-
-            <div class="tm-popular-item">
-              <img src="assets/recipe-house/img/popular-4.jpg" alt="Popular" class="tm-popular-item-img">
-              <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">Р</span>ыбная окрошка</h3><hr class="tm-popular-item-hr">
-                <p>Ингредиенты: филе белой рыбы – 500 г, горчица – 1 ч. л., сметана – 3 ст. л., яйцо – 3 шт., редька – 1 шт., зеленый лук – 1 пучок, петрушка и укроп – по 5 веточек, картофель – 3 шт., соль – по вкусу, квас хлебный – 1,5 л, огурцы свежие – 3 шт.<br>
-                Время готовки: 1 ч, Кол-во порций: 6, Сложность: средняя, Технология: варка, Кол-во ккал: 209, Белков: 19 г, Жиров: 4 г., Углеводы: 27 г.
-                </p>
-                <ol>
-                  <li>Шаг. Рыбу вымыть. В кастрюле вскипятить небольшое количество подсоленой воды, положить рыбу и варить
-                      8-10 мин. до готовности. Откинуть на дуршлаг, дать остыть, затем нарезать небольшими кусочками.</li>
-                  <li>Шаг. Огурцы и редьку вымыть, очисить от кожуры. Огурцы нарезать мелкими кубиками, редьку натереть на мелкой терке.</li>
-                  <li>Шаг. Лук и зелень вымыть и измельчить.</li>
-                  <li>Шаг. Картофель вымыть и отварить в мундире. Яйца сварить вкрутую. Дать картофелю и яйцам остыть, затем очистить. Картофель нарезать кубиками, яйца мелко порубить.</li>
-                  <li>Шаг. Лук растереть пестиком с солью, сахаром и горчицей. Развести небольшое количеством кваса.</li>
-                  <li>Шаг. Смешать в миске картофель, яйца, огурцы и редьку, зелень и луковую заправку. Залить квасом. Перед подачей положить в окрошку кусочки рыбы. Подавать со сметаной</li>
-                </ol>
-              </div>              
-            </div>
-            <div class="tm-popular-item">
-              <img src="assets/recipe-house/img/popular-5.jpg" alt="Popular" class="tm-popular-item-img">
-              <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">Б</span>ыстрый завтрак</h3><hr class="tm-popular-item-hr">
-                <p>Овсяная каша с яблоками и корицей. Ингредиенты: 2 стакана овсяных хлопьев, 2 яблока, 400 мл яблочного сока, 400 мл молока, 2 ст. л. коричневого сахара, 1 ч. л. молотой корицы, 1/3 стакана сливок жирностью 22%<br>
-                  Время готовки: 17 мин, Кол-во порций: 4, Сложность: лекго, Технология: варка</p>
-                  <ol>
-                      <li>Шаг. Овсяные хлопья насыпьте в кастрюлю. Влейте молоко, добавьте сахар. Поставьте на огонь и, постоянно помешивая, доведите до кипения. Влейте сок, еще раз доведите до кипения.</li>
-                      <li>Шаг. Яблоки очистите от кожуры и сердцевины, нарежьте тонкими дольками, добавьте в кашу. Уменьшите огонь до минимума и варите 5 мин. Снимите с огня, накройте крышкой и оставьте в теплом месте еще на 5 мин.</li>
-                      <li>Шаг. Добавьте в горячую кашу корицу и сливки. Быстро перемешайте и подавайте.</li>
-                    </ol>
-              </div>              
-            </div>
-            <div class="tm-popular-item">
-              <img src="assets/recipe-house/img/popular-6.jpg" alt="Popular" class="tm-popular-item-img">
-              <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">Ш</span>ашлык</h3><hr class="tm-popular-item-hr">
-                <p>Шашлык из курицы и овощей в пряностях. Ингредиенты: 1,5 кг куриных бедрышек без кости, 1.5 кг куриных крыльев, 5 крупных красных сладких перцев, 4 некрупных цукини, 400 г помидоров на ветке, по 1,5 ст. л. чесночного и имбирного порошка, 2 ст. л. сладкой паприки, 1 ст. л. молотой зиры, 1 ст. л. свежемолотой смеси перцев, 2–3 ст. л. соли среднего помола<br>
-                  Время подготовки: 14 ч, Время готовки: 40 мин, Кол-во порций: 10, Сложность: лекго</p>
-                  <ol>
-                      <li>Шаг. Смешайте все специи и соль до однородности.</li>
-                      <li>Шаг. Крылышки разрежьте по суставам (третью фалангу не используйте). Обваляйте крылышки и бедрышки в специях, сложите в герметично закрывающийся контейнер и маринуйте в холодильнике 12–48 ч.</li>
-                      <li>Шаг. Перед жарением выньте мясо из холодильника за 2 ч. Отряхните от специй, обсушите бумажными полотенцами.</li>
-                      <li>Шаг. Очистите сладкие перцы, нарежьте квадратиками со стороной 5–6 см. Цукини нарежьте произвольно.</li>
-                      <li>Шаг. Выложите крылышки и бедрышки в решетки, чередуя с перцем и цукини. Жарьте на углях на среднем жару, часто поворачивая, пока мясо не будет полностью готово. Помидоры жарьте отдельно на шампурах. Подавайте немедленно.</li>
-                    </ol>
-              </div>              
-            </div>
-
-
-
-
-
+           <popular-component v-for="recipe in recipes" :recipe="recipe"></popular-component> 
 
           </div>       
         </section>
-        <section class="tm-section">
-          <div class="row">
-            <div class="col-lg-12 tm-section-header-container">
-              <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="assets/recipe-house/img/logo.png" alt="Logo" class="tm-site-logo"> Меню дня</h2> 
-              <div class="tm-hr-container"><hr class="tm-hr"></div> 
-            </div>  
-          </div>          
+        <section class="tm-section">   
           <div class="row">
             <div class="tm-daily-menu-container margin-top-60">
               <div class="col-lg-4 col-md-4">
@@ -246,6 +192,97 @@
    <!-- JS -->
    <script type="text/javascript" src="assets/recipe-house/js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
    <script type="text/javascript" src="assets/recipe-house/js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+   <script>
+   window.mobilecheck = function() {
+      var check = false;
+      (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+      if(check)
+      { 
+        var arr = document.getElementsByClassName("bookmarks"); 
+        for(var item = 0; item < arr.length; item++)  arr[item].style.display = 'none'; 
+      }
+      
+    }();
+   </script>
+  <script>
+    <?php include 'vue.php';?>
+  </script>
+  <script>
+    Vue.component('popular-component', {
+    template: `<div class="tm-popular-item">
+            <img :src="recipe.image" alt="Popular" class="tm-popular-item-img img-responsive">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter"></span>{{recipe.name}}</h3><hr class="tm-popular-item-hr">
+              <p><strong>{{recipe.post_author}}</strong></p>
+              <p>{{recipe.ingredients}}</p>  
+              <p><pre>{{recipe.recipe}}</pre></p> 
+              <p><strong class="bookmarks">Понравился рецепт? Нажмите "Ctrl" + "D" чтобы добавить его в закладки!</strong></p>
+            </div>              
+          </div>`,
+          methods: {
+        formatP(value) {
+          //&lt;br&gt;
+          return value;
+        },
+      },
+      props: {
+        recipe: {}
+      }
+    });
 
+    var _current_page = 300;
+    var _all_pages = 1;
+
+  var app = new Vue({
+      el: '#app',
+      data: function () {
+        return {
+          recipes: [],
+          current_page: _current_page, 
+          all_pages: _all_pages,
+        }
+      },
+      computed: {
+        resource: function () {
+          return this.$resource('/api/v1/recipes/search?page=' + this.current_page)
+        },
+      },
+      methods: { 
+        getAllPosts: function (message) {
+          var options = {
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          }
+          this.resource.get().then(function (response) {
+            console.log(response);
+            var dd = response.headers; 
+            _all_pages = (typeof dd.map['x-pagination-page-count'] != "undefined") ? dd.map['x-pagination-page-count'][0] : dd.map['X-Pagination-Page-Count'][0];
+            _current_page = (typeof dd.map['x-pagination-current-page'] != "undefined") ? dd.map['x-pagination-current-page'][0] : dd.map['X-Pagination-Current-Page'][0];
+            var _data = [];
+            for(var i = 0; i < response.data.length; i++)
+            {
+              if(i < 30) 
+              {
+                if(response.data[i].image == 'нету фото') response.data[i].image = "/no_photo.png";
+                //response.data[i].recipe = response.data[i].recipe.replace(/(?:\r\n|\r|\n)/g, '<br>');
+                //console.log(response.data[i].recipe);
+                _data = _data.concat(response.data[i]);
+                
+              }
+            }
+            app.recipes = app.recipes.concat(_data);
+          }, function (error) {
+            _current_page--;
+            console.log(error);
+          })
+        }
+      },
+      created: function () {
+        this.getAllPosts();
+      }
+  });
+  </script>
+  </div>
  </body>
  </html>

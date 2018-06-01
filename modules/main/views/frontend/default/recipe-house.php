@@ -26,9 +26,44 @@
     padding-top: 26px;
     font-size: 21px;
   }
+  .tm-popular-item {
+    max-width: none;
+    text-align: center;
+  }
+  .tm-popular-item  > img {
+    margin-top: 20px; 
+    margin-left: 3%;
+    max-width: 93%;
+  }
+  .tm-popular-item-title {
+    text-align: center;
+  }
+  .tm-section-header {
+    width: unset;
+  }
+  pre {
+  white-space: pre-line; 
+  word-wrap: break-word;
+  font-family: inherit;
+  background-color: transparent;
+  border: none; 
+}
 </style>
+<?php 
+        // counts
+       echo $model['facebook'];
+       echo $model['senpuls'];
+       echo $model['google_analytics'];
+       echo $model['metrika'];
+    ?>
   </head>
   <body>
+   <?php 
+// advertising
+echo $model['adsense']; 
+echo $model['yandex_rtb'];
+?>
+    <div id="app">
     <!-- Preloader -->
     <div id="loader-wrapper">
       <div id="loader"></div>
@@ -69,7 +104,8 @@
         <div class="row tm-welcome-content">
           <h2 class="white-text tm-handwriting-font tm-welcome-header"><img src="/assets/recipe-house/img/header-line.png" alt="Line" class="tm-header-line">&nbsp;Welcome To&nbsp;&nbsp;<img src="/assets/recipe-house/img/header-line.png" alt="Line" class="tm-header-line"></h2>
           <h2 class="gold-text tm-welcome-header-2">Рецепт House</h2>
-          <p class="gray-text tm-welcome-description textcenter">пожалуй лучший сайт кулинарной тематики в рунете (на сегодняшний день ✌)</p>
+          <p class="gray-text tm-welcome-description textcenter">пожалуй лучший сайт кулинарной тематики в рунете (на сегодняшний день ✌)
+          </p>
           <a href="#main" class="tm-more-button tm-more-button-welcome">Подробнее</a>      
         </div>
         <img src="/assets/recipe-house/img/table-set.png" alt="Table Set" class="tm-table-set img-responsive">             
@@ -81,7 +117,7 @@
           <div class="col-lg-9 col-md-9 col-sm-8">
             <h2 class="tm-section-header gold-text tm-handwriting-font">Рецепт House</h2>
             <h2>Привет!</h2>
-            <p class="tm-welcome-description">Рады приветствовать Вас на нашем сайте Рецепт House. Здесь вы найдёте лучшие кулинарные рецепты проверенные временем, ресторанами и нами. Рецепты опубликованы по разным категориям: бюджетные, полезные, популярные, для здоровья, для похудения, модные и многие многие другие. Для поиска перейдите в <a href="//menu">"МЕНЮ"</a>. Для полного погружения рекомендуем начать с чашечки кофе. Кстати немного о нём:</p>
+            <p class="tm-welcome-description">Рады приветствовать Вас на нашем сайте Рецепт House. Здесь вы найдёте лучшие кулинарные рецепты проверенные временем, ресторанами и нами. Рецепты опубликованы по разным категориям: бюджетные, полезные, популярные, для здоровья, для похудения, модные и многие многие другие. Для поиска перейдите в <a href="//menu">"МЕНЮ"</a>. Для полного погружения рекомендуем начать с чашечки кофе.</p>
             <a href="#main2" class="tm-more-button margin-top-30">Начать</a> 
           </div>
           <div class="col-lg-3 col-md-3 col-sm-4 tm-welcome-img-container">
@@ -92,49 +128,21 @@
         </section>          
         <section class="tm-section tm-section-margin-bottom-0 row">
           <div class="col-lg-12 tm-section-header-container">
-            <h2 class="tm-section-header gold-text tm-handwriting-font" id="main2"><img src="/assets/recipe-house/img/logo.png" alt="Logo" class="tm-site-logo"> О кофе</h2>
+            <h2 class="tm-section-header gold-text tm-handwriting-font" id="main2"><img src="/assets/recipe-house/img/logo.png" alt="Logo" class="tm-site-logo"> Популярные рецепты</h2>
             <div class="tm-hr-container"><hr class="tm-hr"></div>
           </div>
-          <div class="col-lg-12 tm-popular-items-container">
-            <div class="tm-popular-item">
-              <img src="/assets/recipe-house/img/popular-1.jpg" alt="Popular" class="tm-popular-item-img">
-              <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">a</span>mericano</h3><hr class="tm-popular-item-hr">
-                <p>Америка́но (итал. Caffè Americano — «кофе по-американски») — способ приготовления кофе, заключающийся в соединении определённого количества горячей воды и эспрессо.
+            <div class="col-lg-12 tm-popular-items-container">  
 
-                    Напиток придумали в Италии ещё во время Второй мировой войны для американцев как аналог американского популярного фильтрового напитка «регуляр». Общим у этих двух напитков были лишь большой объём и не очень концентрированный вкус.</p>
-                <div class="order-now-container">
-                  <a href="/today-special#main" class="order-now-link tm-handwriting-font">Рецепт</a>
-                </div>
-              </div>              
-            </div>
-            <div class="tm-popular-item">
-              <img src="/assets/recipe-house/img/popular-2.jpg" alt="Popular" class="tm-popular-item-img">
-              <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">c</span>appuccino</h3><hr class="tm-popular-item-hr">
-                <p>
-                    Капучи́но (от итал. cappuccino — капуцин) — кофейный напиток итальянской кухни на основе эспрессо с добавлением в него подогретого вспененного молока.
-                    Происхождение названия напитка связано с тем, что в Европе XVII века название ордена капуцинов служило, в частности, и для обозначения характерного цвета (красно-коричневого), который имели рясы монахов этого ордена; в XVIII веке так же стали называть кофейный напиток из яичных желтков и сливок, который стали готовить в Австрии (нем. Kapuziner). Итальянская форма названия напитка (cappuccino) фиксируется лишь с XX века.
-                </p>
-                <div class="order-now-container">
-                  <a href="/today-special#main" class="order-now-link tm-handwriting-font">Рецепт</a>
-                </div>
-              </div>              
-            </div>
-            <div class="tm-popular-item">
-              <img src="/assets/recipe-house/img/popular-3.jpg" alt="Popular" class="tm-popular-item-img">
-              <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">m</span>ocha</h3><hr class="tm-popular-item-hr">
-                <p>
-                    Мо́кко, или мокка, — сорт кофе вида арабика, названный по портовому городу Моха в Йемене.
-                    Предания, записанные в 1763 году, связывают расцвет города Моха с именем шейха Шадди и говорят, что именно при нём было осуществлено массовое расширение посадок кофейных деревьев. В Европе его название стало известно как Мокко и им же назвали сорт кофе. В результате окончательного приобретения статуса «Кофейной» провинции, даже горы вокруг Мохи, сплошь покрытые кофейными плантациями, расположенными террасами на склонах, называли «кофейными».
-                </p>
-                <div class="order-now-container">
-                  <a href="/today-special#main" class="order-now-link tm-handwriting-font">Рецепт</a>
-                </div>
-              </div>              
-            </div>
-          </div>          
+            <popular-component v-for="recipe in recipes" :recipe="recipe"></popular-component>
+
+          </div>  
+
+
+
+
+
+
+
         </section>
 
 
@@ -271,7 +279,97 @@
    </footer> 
    <!-- JS -->
    <script type="text/javascript" src="/assets/recipe-house/js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
-   <script type="text/javascript" src="/assets/recipe-house/js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+   <script type="text/javascript" src="/assets/recipe-house/js/templatemo-script.js"></script>      <!-- Templatemo Script --> 
+   <script>
+   window.mobilecheck = function() {
+      var check = false;
+      (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+      if(check)
+      { 
+        var arr = document.getElementsByClassName("bookmarks"); 
+        for(var item = 0; item < arr.length; item++)  arr[item].style.display = 'none'; 
+      }
+      
+    }();
+   </script>
+  <script>
+    <?php include 'vue.php';?>
+  </script>
+  <script>
+    Vue.component('popular-component', {
+    template: `<div class="tm-popular-item">
+            <img :src="recipe.image" alt="Popular" class="tm-popular-item-img img-responsive">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter"></span>{{recipe.name}}</h3><hr class="tm-popular-item-hr">
+              <p><strong>{{recipe.post_author}}</strong></p>
+              <p>{{recipe.ingredients}}</p>  
+              <p><pre>{{recipe.recipe}}</pre></p> 
+              <p><strong class="bookmarks">Понравился рецепт? Нажмите "Ctrl" + "D" чтобы добавить его в закладки!</strong></p>
+            </div>              
+          </div>`,
+          methods: {
+        formatP(value) { 
+          return value;
+        },
+      },
+      props: {
+        recipe: {}
+      }
+    });
 
+    var _current_page = 500;
+    var _all_pages = 1;
+
+  var app = new Vue({
+      el: '#app',
+      data: function () {
+        return {
+          recipes: [],
+          current_page: _current_page, 
+          all_pages: _all_pages,
+        }
+      },
+      computed: {
+        resource: function () {
+          return this.$resource('/api/v1/recipes/search?page=' + this.current_page)
+        },
+      },
+      methods: { 
+        getAllPosts: function (message) {
+          var options = {
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          }
+          this.resource.get().then(function (response) {
+            console.log(response);
+            var dd = response.headers; 
+            _all_pages = (typeof dd.map['x-pagination-page-count'] != "undefined") ? dd.map['x-pagination-page-count'][0] : dd.map['X-Pagination-Page-Count'][0];
+            _current_page = (typeof dd.map['x-pagination-current-page'] != "undefined") ? dd.map['x-pagination-current-page'][0] : dd.map['X-Pagination-Current-Page'][0];
+            var _data = [];
+            for(var i = 0; i < response.data.length; i++)
+            {
+              if(i < 10) 
+              {
+                if(response.data[i].image == 'нету фото') response.data[i].image = "/no_photo.png";
+                //response.data[i].recipe = response.data[i].recipe.replace(/(?:\r\n|\r|\n)/g, '<br>');
+                //console.log(response.data[i].recipe);
+                _data = _data.concat(response.data[i]);
+                
+              }
+            }
+            app.recipes = app.recipes.concat(_data);
+          }, function (error) {
+            _current_page--;
+            console.log(error);
+          })
+        }
+      },
+      created: function () {
+        this.getAllPosts();
+      }
+  });
+  </script>
+  </div>
  </body>
  </html>

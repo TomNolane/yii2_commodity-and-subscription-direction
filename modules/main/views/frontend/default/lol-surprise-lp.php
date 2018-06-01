@@ -23,7 +23,7 @@ http://www.templatemo.com/tm-500-fluid-gallery
   <link rel="stylesheet" href="/assets/lol-surprise-lp/css/magnific-popup.css">
   <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
   <link rel="stylesheet" href="/assets/lol-surprise-lp/css/templatemo-style.css">
-
+  <meta name="google-site-verification" content="wGMPBHvfZAgwnUAn0cRNga4G-UFBzaJ6REc6ME7axmE" />
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>

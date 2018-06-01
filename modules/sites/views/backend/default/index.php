@@ -41,7 +41,7 @@ $this->params['breadcrumbs'][] = Module::t('module', 'All sites');
 <h1><?= Html::encode($this->title) ?></h1>
 <?php Pjax::begin(); ?>
 <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
+<?php echo \Yii::t('module', 'All sites'); ?>
 <p>
     <?= Html::a('Добавить сайт', ['create'], ['class' => 'btn btn-success']) ?>
 </p>

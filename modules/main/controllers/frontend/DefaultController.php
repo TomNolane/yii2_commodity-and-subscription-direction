@@ -10,6 +10,7 @@ use frontend\models\Temp_ban;
 use frontend\models\Youtube;
 use frontend\models\Youtubeen;
 use frontend\models\Youtubege;
+use frontend\models\Recipe;
 use backend\models\Sites;
 use modules\main\models\frontend\ContactForm;
 use modules\main\Module;
@@ -113,7 +114,7 @@ class DefaultController extends Controller
         $detect = new \Mobile_Detect;
         $a = strtolower($useragent);
         $is_bot = 0;
-        if(preg_match('/robot|bot|facebookexternalhit|facebot|ia_archiver|Google-Adwords-DisplayAds|Go-http-client|Riddle|socketcrawler|NetcraftSurveyAgent|yahoo|mail|antivirus|fetcher|mail.ru_bot|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|radioclicker|dataprovider|spider|crawler|curl|^$/i', $a)) $is_bot = 1;
+        if(preg_match('/robot|bot|facebookexternalhit|facebot|ia_archiver|Google-Adwords-DisplayAds|Go-http-client|Riddle|socketcrawler|NetcraftSurveyAgent|yahoo|mail|antivirus|fetcher|mail.ru_bot|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|radioclicker|dataprovider|spider|crawler|curl|Console|Google-Site-Verification|^$/i', $a)) $is_bot = 1;
         if ($detect->isBot() || $detect->isSpider()) $is_bot = 1;
 
         if(!empty(urldecode(Yii::$app->request->queryString))) $serverName = 'https://'.Yii::$app->getRequest()->serverName."?".urldecode(Yii::$app->request->queryString);
@@ -280,7 +281,7 @@ class DefaultController extends Controller
             //if($country != 'RU') return $this->render("lifeportalge",['model' => $model2, "a" => $a, "model3" => Youtubege::find()->select('*')->all()]);
             //else 
 				return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a, "model3" => Youtube::find()->select('*')->all()]);
-        }
+        } 
 		
         return $this->render(explode(".", $serverName)[0],['model' => $model2, "a" => $a]);
     }
@@ -438,16 +439,19 @@ class DefaultController extends Controller
 	
 	public function actionMenu()
     {  
-        return $this->render('menu'); 
+        $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
+        return $this->render('menu',['model' => $model2]); 
     }
 	
 	public function actionTodaySpecial()
     {  
-        return $this->render('today-special'); 
+        $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
+        return $this->render('today-special',['model' => $model2]); 
     }
 	
 	public function actionContact2()
     {  
-        return $this->render('contact2'); 
+        $model2 = Sites::find()->select('*')->where(['site' => 'https://'.Yii::$app->getRequest()->serverName])->one();
+        return $this->render('contact2',['model' => $model2]); 
     }
 }
