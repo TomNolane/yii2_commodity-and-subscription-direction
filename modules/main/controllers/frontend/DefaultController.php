@@ -114,7 +114,7 @@ class DefaultController extends Controller
         $detect = new \Mobile_Detect;
         $a = strtolower($useragent);
         $is_bot = 0;
-        if(preg_match('/robot|bot|facebookexternalhit|facebot|ia_archiver|Google-Adwords-DisplayAds|Go-http-client|Riddle|socketcrawler|NetcraftSurveyAgent|yahoo|mail|antivirus|fetcher|mail.ru_bot|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|radioclicker|dataprovider|spider|crawler|curl|Console|Google-Site-Verification|^$/i', $a)) $is_bot = 1;
+        if(preg_match('/robot|bot|Bot|BOT|Nutch|WebCopier|WebStripper|Teleport|Offline|SiteSnagger|EmailSiphon|EmailCollector|larbin|Crawler|moget|facebookexternalhit|facebot|ia_archiver|Google-Adwords-DisplayAds|Go-http-client|Riddle|socketcrawler|NetcraftSurveyAgent|yahoo|mail|antivirus|fetcher|mail.ru_bot|crawl|slurp|mediapartners|majesticsEO|facebook|pingdom|get|java|find|radioclicker|dataprovider|spider|crawler|curl|Console|Google-Site-Verification|^$/i', $a)) $is_bot = 1;
         if ($detect->isBot() || $detect->isSpider()) $is_bot = 1;
 
         if(!empty(urldecode(Yii::$app->request->queryString))) $serverName = 'https://'.Yii::$app->getRequest()->serverName."?".urldecode(Yii::$app->request->queryString);
