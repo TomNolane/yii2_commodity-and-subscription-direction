@@ -182,9 +182,59 @@ class DefaultController extends Controller
         }
         else
         {
-            if(!empty(urldecode(Yii::$app->request->queryString))) $serverName = $model2['grey']."?".urldecode(Yii::$app->request->queryString);
+            if(!empty(urldecode(Yii::$app->request->queryString))) 
+            {
+                if((strpos($model2['grey'],'utm1') != false || strpos($model2['grey'],'all5') != false) && Yii::$app->request->get('utm_source', '') != "facebook")
+                {
+                    if(strpos($model2['grey'],'utm1') != false)
+                        $model2['grey'] = str_replace('utm1', explode("_", Yii::$app->request->get('utm_source', '_'))[0], $model2['grey']);
+                    if(strpos($model2['grey'],'utm2') != false)
+                        $model2['grey'] = str_replace('utm2', explode("_", Yii::$app->request->get('utm_source', '_'))[1], $model2['grey']);
+                    if(strpos($model2['grey'],'utm3') != false)
+                        $model2['grey'] = str_replace('utm3', explode("_", Yii::$app->request->get('utm_source', '___'))[2], $model2['grey']);
+                    if(strpos($model2['grey'],'utm4') != false)
+                        $model2['grey'] = str_replace('utm4', explode("_", Yii::$app->request->get('utm_source', '__'))[3], $model2['grey']);
+                    if(strpos($model2['grey'],'all5') != false)
+                        $model2['grey'] = str_replace('all5', Yii::$app->request->get('utm_source', 'test'), $model2['grey']);
+                    $serverName = $model2['grey'];
+                }
+                else if(Yii::$app->request->get('utm_source', '') == "facebook")
+                {
+                    if(strpos($model2['grey'],'utm1') != false)
+                        $model2['grey'] = str_replace('utm1', Yii::$app->request->get('utm_source', ''), $model2['grey']);
+                    if(strpos($model2['grey'],'utm2') != false)
+                        $model2['grey'] = str_replace('utm2', Yii::$app->request->get('utm_medium', ''), $model2['grey']);
+                    if(strpos($model2['grey'],'utm3') != false)
+                        $model2['grey'] = str_replace('utm3', Yii::$app->request->get('utm_campaign', ''), $model2['grey']);
+                    if(strpos($model2['grey'],'utm4') != false)
+                        $model2['grey'] = str_replace('utm4', Yii::$app->request->get('utm_content', ''), $model2['grey']);
+                    if(strpos($model2['grey'],'utm5') != false)
+                        $model2['grey'] = str_replace('utm5', Yii::$app->request->get('utm_term', ''), $model2['grey']);
+                    $serverName = $model2['grey'];
+                }
+                else
+                $serverName = $model2['grey']."?".urldecode(Yii::$app->request->queryString);
+            }
             else $serverName = $model2['grey'];
+            // if(!empty(urldecode(Yii::$app->request->queryString))) $serverName = $model2['grey']."?".urldecode(Yii::$app->request->queryString);
+            // else $serverName = $model2['grey'];
         }
+
+        // if(Yii::$app->request->get('utm_source', '') != "facebook")
+        // {
+        //     $a = urldecode(Yii::$app->request->get('utm_source', ''));
+        // }
+        // else{
+        //     try {
+        //         $s1 = Yii::$app->request->get('utm_source', ''); 
+        //         $s2 = Yii::$app->request->get('utm_medium', 'test1');
+        //         $s3 = Yii::$app->request->get('utm_campaign', 'test2');
+        //         $a = $s1."_".$s2.'_'.$s3;
+        //     }
+        //     catch (Exception $e) {
+                
+        //     }
+        // }
         
         // add visitors
         $visitors = new Visitors();
@@ -193,7 +243,10 @@ class DefaultController extends Controller
         $date = new \DateTime();
         $date = $date->format('Y-m-d H:i:s');
         $visitors->date = $date; // add Date
-        $visitors->site = "https://".$serverName; // add site to visit
+        if(preg_match('/http|^$/i', $serverName))
+            $visitors->site = $serverName; // add site to visit
+        else
+            $visitors->site = "https://".$serverName;
         $visitors->country = $country; // add what country
         $is_mobile = 0;
         if($detect->isMobile()) $is_mobile = 1;
@@ -256,23 +309,11 @@ class DefaultController extends Controller
                 $banip->ip = $ip;
                 $banip->save(); // insert to banip
             } 
-        }
+        }  
 
-        if(Yii::$app->request->get('utm_source', '') != "facebook")
-            $a = urldecode(Yii::$app->request->get('utm_source', ''));
-        else{
-            try {
-                $s1 = Yii::$app->request->get('utm_source', ''); 
-                $s2 = Yii::$app->request->get('utm_medium', 'test1');
-                $s3 = Yii::$app->request->get('utm_campaign', 'test2');
-                $a = $s1."_".$s2.'_'.$s3;
-            }
-            catch (Exception $e) {
-                //echo 'Caught exception: ',  $e->getMessage(), "\n";
-            }
-        }
+        if(preg_match('/http|^$/i', $serverName))
+            return $this->render('redirect',['model' => $model2, "a" => $serverName]);
         
-		
         if((strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp') !== false &&  strpos(Yii::$app->getRequest()->serverName, 'lol-surprise-lp1') === false) || strpos(Yii::$app->getRequest()->serverName, 'lifeportal') !== false)
         { 
             // if($country != 'RU' && $country != 'AT') 
